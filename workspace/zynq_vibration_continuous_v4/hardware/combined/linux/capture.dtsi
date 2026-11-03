@@ -1,0 +1,22 @@
+/* MRG1 only: capture and S2MM are exclusively owned by one driver.
+ * IRQ_F2P[1] = GIC interrupt ID62 = DT SPI30. Display retains SPI29.
+ */
+/ {
+	capture_clk50: capture-clock {
+		compatible = "fixed-clock";
+		#clock-cells = <0>;
+		clock-frequency = <50000000>;
+	};
+};
+&amba {
+	ax7z020_capture: capture@43c10000 {
+		compatible = "codex,ax7z020-capture-mrg1";
+		reg = <0x43c10000 0x10000>, <0x40400000 0x10000>;
+		reg-names = "capture", "s2mm";
+		interrupt-parent = <&intc>;
+		interrupts = <0 30 4>;
+		clocks = <&capture_clk50>;
+		clock-names = "axi";
+		status = "okay";
+	};
+};

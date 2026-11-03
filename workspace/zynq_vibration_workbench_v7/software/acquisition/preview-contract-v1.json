@@ -1,0 +1,43 @@
+{
+  "schema": "vibration.capture.v2",
+  "extension": "committed raw-record preview v1; final CAPDDR2 output contract unchanged",
+  "opt_in":"Only a start request with top-level preview:true enables preview events for that finite job. Missing or false never emits preview, preserving existing strict v2 clients. Other types are rejected; plan fields are unchanged. CapturePage explicitly opts in.",
+  "transport": {"control_request_max_bytes":8192,"control_response_max_bytes":8192,"preview_line_max_bytes":196608,"line_limit_excludes_lf":true,"interval_ms":40,"record_bytes":32,"max_records_per_frame":4096,"driver_copy_records_per_ioctl":256},
+  "preview_capability": {"preview_available":"boolean: actual SG+committed capability and INFO ioctl; explicit fixture is allowed only with synthetic=true","preview_reason":"empty or unavailable reason","preview_interval_ms":40,"preview_max_records":4096,"preview_line_max_bytes":196608},
+  "event": {
+    "schema":"vibration.capture.v2","type":"event","event":"preview",
+    "job_id":"opaque service job_id, same as start/status",
+    "generation":"nonzero decimal uint64 string from actual capture_id; explicit fixture uses its own monotonic generation",
+    "frame_seq":"positive integer, strictly increases within job/generation",
+    "first_record":"uint32 original index of first record",
+    "record_count":"integer 1..4096",
+    "committed_records":"validated contiguous SG prefix; >=first_record+record_count",
+    "requested_records":"original full finite job count",
+    "sample_rate_hz":"50000|25000|10000|5000",
+    "clock_hz":50000000,
+    "ppr":"integer 1..4096 from explicit user-confirmed capture request; analysis metadata, not hardware setting",
+    "adc_range_uv":5000000,
+    "channel_map":328449,
+    "record_bytes":32,
+    "source":"adc_unconfirmed|hardware_test|test_fixture",
+    "hardware_confirmed":"true only for the real ioctl backend",
+    "synthetic":"false only for adc_unconfirmed; true for both test sources",
+    "source_flags":"uint32 source flag bit0 TEST, other bits zero; fixture explicitly emulates TEST",
+    "validity_flags":"requires COMMITTED=1, RECORDS_VALID=2, SOURCE_VERIFIED=8, CRC32=16; JOB_COMPLETE=4 optional",
+    "raw_base64":"canonical base64 of exactly record_count*32 unmodified little-endian raw record bytes",
+    "crc32":"uint32 IEEE CRC32 of decoded raw bytes only, same polynomial/initial/final convention as CAPDDR2/zlib.crc32",
+    "dropped_preview_records":"records skipped since the preceding fully written preview frame; preview-only, never dropped raw-file records"
+  },
+  "record_layout":"<QQhhhHII: index@0 tick@8 CH1/CH2/CH3 int16@16/18/20 flags@22 speed_period_ticks@24 speed_edge_count@28. Original flags bits0..4 remain unchanged; source is separate metadata.",
+  "record_validation":"index=first_record+i, ADC valid bit0=1, no flags outside0x1f; period-valid bit1 implies positive period and no timeout bit2. Timestamp step=clock_hz/sample_rate_hz; tick-index*step anchor constant within generation and no uint64 overflow. CRC and actual source verification must pass before forwarding.",
+  "identity":"The client must first compare the successful start response plan with its own original start request. Every frame, including the first, must match that confirmed plan's sample_rate_hz/pulses_per_rev/requested_records and actual backend source policy. job_id+generation+source+hardware_confirmed+synthetic+source_flags+sample_rate_hz+clock_hz+ppr+adc_range_uv+channel_map+record_bytes+requested_records are immutable within one live job. Missing/unknown/duplicate fields or wrong types reject the frame. A metadata/generation/source change quarantines preview for that job, while final raw capture can continue independently.",
+  "sequence":"Reject duplicate/out-of-order frame_seq or first_record below the last accepted end; never append overlapping data twice. Later first_record above the accepted end is a visible gap. Client/model compute the observed gap independently, taking max with dropped_preview_records rather than double-counting.",
+  "backpressure":"The capture worker never writes stdout directly: bounded control-response FIFO plus latest job-status and latest-preview slots. A dedicated nonblocking writer completes an in-flight JSONL frame before selecting the newest queued preview. Replaced previews are dropped, their skipped record interval is explicit. The driver and full raw-file acquisition remain unaffected.",
+  "signals": {
+    "CaptureClient":"liveFrame(const QJsonObject&), existing jobUpdated(const QJsonObject&) remains",
+    "CapturePage":"liveFrame(const QJsonObject&), captureState(const QJsonObject&), existing captureReady(QString)/statusChanged(QString) remain",
+    "CapturePage_public":"cancelCurrent() supports external window shutdown/cancel; no direct driver or hardware action"
+  },
+  "preview_rejection":"Invalid preview data is not displayed. Emit a preview_error on captureState/job status; do not silently substitute fixture data or mark a final capture failed merely because a display frame was dropped. Final capture still undergoes independent full counts/index/ticks/CRC/loader verification.",
+  "ui_memory":"Renderer retains at most a 2-second bounded window, marks observed gaps as NaN, and must not append preview losses to the final CAPDDR2 dropped_records field."
+}

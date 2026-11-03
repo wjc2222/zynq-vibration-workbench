@@ -1,0 +1,3 @@
+# Keep automatic eudev block events from probing filesystem contents/UUIDs.
+# The configured p1 is identified explicitly by mount-captures-ro only.
+SUBSYSTEM=="block", ENV{UDEV_DISABLE_PERSISTENT_STORAGE_RULES_FLAG}="1"

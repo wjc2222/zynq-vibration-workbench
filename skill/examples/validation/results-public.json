@@ -1,0 +1,571 @@
+{
+  "schema": "skill-cli-validation.v1",
+  "created_utc": "2026-11-03T09:04:12.975381+00:00",
+  "python": "3.11.9",
+  "cases": [
+    {
+      "case": "numeric-absolute-pass",
+      "script": "compare_numeric.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "compared_values": 2,
+        "mismatches": 0,
+        "shape_errors": 0,
+        "max_absolute_error": 0.0005,
+        "details": [],
+        "passed": true,
+        "schema": "numeric-comparison.v1",
+        "source_kind": "synthetic",
+        "actual_sha256": "f9bf423cb4cbc595b94f4d84e75f710c75e8a659000452592c157c48e8a09e0c",
+        "expected_sha256": "63cbaf561c188d36f4dbafe6d8dc1bcec36aca66073c6bfd5c9787663f4efd99",
+        "atol": 0.001,
+        "rtol": 0.0,
+        "rule": "abs(actual-expected) <= atol + rtol*abs(expected)"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-relative-pass",
+      "script": "compare_numeric.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "compared_values": 1,
+        "mismatches": 0,
+        "shape_errors": 0,
+        "max_absolute_error": 0.5,
+        "details": [],
+        "passed": true,
+        "schema": "numeric-comparison.v1",
+        "source_kind": "synthetic",
+        "actual_sha256": "da4067b91e19abe1f727d689d4d8961a115cad633a21be8f8c221dfebd3c7c6f",
+        "expected_sha256": "1ba1d4207257bde59c95c599077b8e4737a048ee5d02e332025f2164010b11ee",
+        "atol": 0.0,
+        "rtol": 0.001,
+        "rule": "abs(actual-expected) <= atol + rtol*abs(expected)"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-tolerance-fail",
+      "script": "compare_numeric.py",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": {
+        "compared_values": 1,
+        "mismatches": 1,
+        "shape_errors": 0,
+        "max_absolute_error": 2.0,
+        "details": [
+          {
+            "path": "$/0",
+            "kind": "numeric",
+            "actual": 1002,
+            "expected": 1000,
+            "absolute_error": 2.0,
+            "allowed_error": 1.0
+          }
+        ],
+        "passed": false,
+        "schema": "numeric-comparison.v1",
+        "source_kind": "synthetic",
+        "actual_sha256": "60e223e44f76b9763ad6e529c8ec40df980ef732b95b235c83f135c64245a4b5",
+        "expected_sha256": "7cd0293cbae2e0b1605df002902aa71db533aed523261212b4a6d8536c5cea2f",
+        "atol": 0.0,
+        "rtol": 0.001,
+        "rule": "abs(actual-expected) <= atol + rtol*abs(expected)"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-shape-fail",
+      "script": "compare_numeric.py",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": {
+        "compared_values": 2,
+        "mismatches": 0,
+        "shape_errors": 1,
+        "max_absolute_error": 0.0,
+        "details": [
+          {
+            "path": "$/1",
+            "kind": "shape",
+            "reason": "数组长度或节点类型不同"
+          }
+        ],
+        "passed": false,
+        "schema": "numeric-comparison.v1",
+        "source_kind": "synthetic",
+        "actual_sha256": "2ce1506f23766b649ef41e6bdfe0fdbe4f0511b691fae88138226d089ed82a4b",
+        "expected_sha256": "03a4cc702aa6e4f169ff34dd055714141eae3d2d7c50f6f053150cc72ef12638",
+        "atol": 0.0,
+        "rtol": 0.0,
+        "rule": "abs(actual-expected) <= atol + rtol*abs(expected)"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-nan-rejected",
+      "script": "compare_numeric.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "numeric-comparison.v1",
+        "passed": false,
+        "error": "不允许非有限常量: NaN"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-overflow-rejected",
+      "script": "compare_numeric.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "numeric-comparison.v1",
+        "passed": false,
+        "error": "$/0: 叶子必须是有限 binary64 数值"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-arithmetic-overflow-fail",
+      "script": "compare_numeric.py",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": {
+        "compared_values": 1,
+        "mismatches": 1,
+        "shape_errors": 0,
+        "max_absolute_error": null,
+        "details": [
+          {
+            "path": "$/0",
+            "kind": "numeric",
+            "reason": "误差或容差计算溢出",
+            "actual": 1e+308,
+            "expected": -1e+308
+          }
+        ],
+        "passed": false,
+        "schema": "numeric-comparison.v1",
+        "source_kind": "synthetic",
+        "actual_sha256": "6eaf409a9d43a748b78d147ad9ac9664cbc3771aad7851a8aea784053de708c6",
+        "expected_sha256": "91636b61661a7a79d254c4633a7a1a233371d3c4e5df3ea2c5cb31d6647bbc9f",
+        "atol": 0.0,
+        "rtol": 0.0,
+        "rule": "abs(actual-expected) <= atol + rtol*abs(expected)"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-bool-rejected",
+      "script": "compare_numeric.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "numeric-comparison.v1",
+        "passed": false,
+        "error": "$/0: 叶子必须是有限 binary64 数值"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-duplicate-key-rejected",
+      "script": "compare_numeric.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "numeric-comparison.v1",
+        "passed": false,
+        "error": "重复 JSON 键: x"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "numeric-negative-tolerance-rejected",
+      "script": "compare_numeric.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "numeric-comparison.v1",
+        "passed": false,
+        "error": "atol/rtol 必须是有限非负数"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-synthetic-negative-slack-preserved",
+      "script": "summarize_vivado.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": true,
+        "source_kind": "synthetic",
+        "reports": {
+          "utilization": {
+            "sha256": "2dcc65a215738a18b2ff9dd415c2a2118c4bb0c85e38e04901907fbac7b52fa6",
+            "tool_version": "SYNTHETIC FORMAT FIXTURE",
+            "design": "synthetic_design",
+            "device": "synthetic_device",
+            "design_state": "Routed"
+          },
+          "timing": {
+            "sha256": "0c807563a02558feac7517cba87d553d28538986bb1161ba4d351458aac12dd6",
+            "tool_version": "SYNTHETIC FORMAT FIXTURE",
+            "design": "synthetic_design",
+            "device": "synthetic_device",
+            "design_state": "Routed"
+          }
+        },
+        "resources": {
+          "lut": 123,
+          "ff": 456,
+          "bram_36k_equivalent": 2.5,
+          "dsp": 3
+        },
+        "timing": {
+          "wns_ns": -0.1,
+          "tns_ns": -0.2,
+          "setup_failing_endpoints": 2,
+          "setup_total_endpoints": 100,
+          "whs_ns": 0.05,
+          "ths_ns": 0.0,
+          "hold_failing_endpoints": 0,
+          "hold_total_endpoints": 100
+        },
+        "limitation": "仅摘录报告；不判断CDC/DRC/约束完整性，不证明上板或当前构建身份"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-missing-resources-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "缺失或歧义资源字段: lut"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-unknown-format-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "需恰好一个标准设计级时序汇总表，实际: 0"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-paired-design-mismatch-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "资源/时序报告身份不一致: design"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-paired-device-mismatch-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "资源/时序报告器件不一致，或属于未支持的器件别名"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-reordered-resource-columns-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "不支持的资源表头/列次序，需 Site Type/Used/Fixed/Prohibited/Available/Util%"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-missing-resource-header-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "资源行缺少有效表头: Slice LUTs"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-setup-failing-exceeds-total-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "失败端点数量大于总端点数量"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-hold-failing-exceeds-total-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "失败端点数量大于总端点数量"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-pulse-failing-exceeds-total-rejected",
+      "script": "summarize_vivado.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": false,
+        "error": "失败端点数量大于总端点数量"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "sha-manifest-create",
+      "script": "project_audit.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "schema": "sha256-files.v1",
+        "files": [
+          {
+            "path": "payload.txt",
+            "size": 25,
+            "sha256": "ca9a68392013a4e48f1885576f1f067cde5ef28370cc7dc99e9741c1502189a4"
+          }
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "case": "sha-verify-pass",
+      "script": "project_audit.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "schema": "project-audit.v1",
+        "mode": "verify",
+        "read_only": true,
+        "passed": true,
+        "files": [
+          {
+            "path": "payload.txt",
+            "passed": true,
+            "expected": {
+              "path": "payload.txt",
+              "size": 25,
+              "sha256": "ca9a68392013a4e48f1885576f1f067cde5ef28370cc7dc99e9741c1502189a4"
+            },
+            "actual": {
+              "path": "payload.txt",
+              "size": 25,
+              "sha256": "ca9a68392013a4e48f1885576f1f067cde5ef28370cc7dc99e9741c1502189a4"
+            }
+          }
+        ],
+        "limitation": "只检查清单列出的文件；未列文件不代表已验证"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "sha-content-change-detected",
+      "script": "project_audit.py",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": {
+        "schema": "project-audit.v1",
+        "mode": "verify",
+        "read_only": true,
+        "passed": false,
+        "files": [
+          {
+            "path": "payload.txt",
+            "passed": false,
+            "expected": {
+              "path": "payload.txt",
+              "size": 25,
+              "sha256": "ca9a68392013a4e48f1885576f1f067cde5ef28370cc7dc99e9741c1502189a4"
+            },
+            "actual": {
+              "path": "payload.txt",
+              "size": 26,
+              "sha256": "f6cc3f8f083b0b23987ded5426b9790cbe8ffd38060449e157add63a25235044"
+            }
+          }
+        ],
+        "limitation": "只检查清单列出的文件；未列文件不代表已验证"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "sha-traversal-rejected",
+      "script": "project_audit.py",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "passed": true,
+      "output": {
+        "schema": "project-audit.v1",
+        "passed": false,
+        "read_only": true,
+        "error": "清单路径须为无 . 或 .. 的相对 / 路径: ../escape.txt"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "diagnose-selected-entry-pass",
+      "script": "project_audit.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "schema": "project-audit.v1",
+        "mode": "diagnose",
+        "read_only": true,
+        "python": "3.11.9",
+        "passed": true,
+        "entries": [
+          {
+            "path": "payload.txt",
+            "passed": true
+          }
+        ],
+        "limitation": "仅证明所列文件存在且路径安全，不证明编译/板端/工具许可可用"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "diagnose-missing-entry-fail",
+      "script": "project_audit.py",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "passed": true,
+      "output": {
+        "schema": "project-audit.v1",
+        "mode": "diagnose",
+        "read_only": true,
+        "python": "3.11.9",
+        "passed": false,
+        "entries": [
+          {
+            "path": "missing.txt",
+            "passed": false,
+            "error": "[WinError 2] 系统找不到指定的文件。: '<temporary-test-root>\\\\missing.txt'"
+          }
+        ],
+        "limitation": "仅证明所列文件存在且路径安全，不证明编译/板端/工具许可可用"
+      },
+      "stderr": ""
+    },
+    {
+      "case": "vivado-public-synthetic-12column-pass",
+      "script": "summarize_vivado.py",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "passed": true,
+      "output": {
+        "schema": "vivado-summary.v1",
+        "parsed": true,
+        "source_kind": "synthetic",
+        "reports": {
+          "utilization": {
+            "sha256": "2dcc65a215738a18b2ff9dd415c2a2118c4bb0c85e38e04901907fbac7b52fa6",
+            "tool_version": "SYNTHETIC FORMAT FIXTURE",
+            "design": "synthetic_design",
+            "device": "synthetic_device",
+            "design_state": "Routed"
+          },
+          "timing": {
+            "sha256": "185f457f105c63e10285f645ae80bbe72fb86dcc2be4e66e8b94361338279ef1",
+            "tool_version": "SYNTHETIC FORMAT FIXTURE",
+            "design": "synthetic_design",
+            "device": "synthetic_device",
+            "design_state": "Routed"
+          }
+        },
+        "resources": {
+          "lut": 123,
+          "ff": 456,
+          "bram_36k_equivalent": 2.5,
+          "dsp": 3
+        },
+        "timing": {
+          "wns_ns": 0.2,
+          "tns_ns": 0.0,
+          "setup_failing_endpoints": 0,
+          "setup_total_endpoints": 100,
+          "whs_ns": 0.1,
+          "ths_ns": 0.0,
+          "hold_failing_endpoints": 0,
+          "hold_total_endpoints": 100,
+          "wpws_ns": 0.15,
+          "tpws_ns": 0.0,
+          "pulse_width_failing_endpoints": 0,
+          "pulse_width_total_endpoints": 100
+        },
+        "limitation": "仅摘录报告；不判断CDC/DRC/约束完整性，不证明上板或当前构建身份"
+      },
+      "stderr": ""
+    }
+  ],
+  "case_count": 27,
+  "passed_count": 27,
+  "passed": true,
+  "helper_sha256": {
+    "compare_numeric.py": "a272ac33db72ea4481ce02eebfb6b025278b7c2529087b35f582794555fbb016",
+    "project_audit.py": "f3d6ebdbe057cac88d600128abbbf153dc23f816db135e75af8d90fdb6a92f01",
+    "summarize_vivado.py": "d652285ff196b347795974d6851e7e282a6c94231409f4d64d5bad8fda5cf8c7"
+  },
+  "scope": "27项全部合成；26项继承合成断言，1项12列成功案例替换私人实际报告案例。临时路径已脱敏；未综合/上板/训练，不是机械准确率验证"
+}

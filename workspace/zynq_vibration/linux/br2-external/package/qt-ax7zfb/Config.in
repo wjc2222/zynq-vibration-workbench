@@ -1,0 +1,10 @@
+config BR2_PACKAGE_QT_AX7ZFB
+	bool "Optional AX7Z020 two-page Qt QPA plugin"
+	depends on BR2_PACKAGE_QT5BASE_GUI
+	depends on BR2_PACKAGE_QT5BASE_LINUXFB
+	depends on BR2_AX7Z020_DISPLAY_PLATFORM
+	help
+	  Build an additional ax7zfb platform plugin for the pinned Qt build.
+	  The original linuxfb plugin is unchanged. Runtime use is explicit via
+	  QT_QPA_PLATFORM=ax7zfb:fb=/dev/fb0. This requires the reviewed fixed
+	  codex-ax7z020-fb driver and will fail clearly on other hardware.

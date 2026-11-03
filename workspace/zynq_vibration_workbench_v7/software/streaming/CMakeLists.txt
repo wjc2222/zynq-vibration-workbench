@@ -1,0 +1,26 @@
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core QUIET)
+if(NOT QT_FOUND)
+  message(STATUS "Qt Core unavailable: vibration_stream_service not built")
+  return()
+endif()
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
+find_package(Threads REQUIRED)
+add_executable(vibration_stream_service stream_service.cpp stream_output.cpp stream_output.hpp)
+target_compile_features(vibration_stream_service PRIVATE cxx_std_17)
+target_include_directories(vibration_stream_service PRIVATE ${PROJECT_SOURCE_DIR}/hardware/combined/include)
+target_link_libraries(vibration_stream_service PRIVATE vibration_core Qt${QT_VERSION_MAJOR}::Core Threads::Threads)
+if(NOT MSVC)
+  target_compile_options(vibration_stream_service PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+install(TARGETS vibration_stream_service RUNTIME DESTINATION bin)
+if(BUILD_TESTING AND UNIX AND NOT CMAKE_CROSSCOMPILING)
+  find_package(Python3 COMPONENTS Interpreter QUIET)
+  if(Python3_Interpreter_FOUND)
+    add_test(NAME stream_service_storage_protocol COMMAND ${Python3_EXECUTABLE} -B
+      ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_stream.py
+      --service $<TARGET_FILE:vibration_stream_service>
+      --analyze $<TARGET_FILE:vibration_analyze>
+      --report ${CMAKE_CURRENT_BINARY_DIR}/host-test-report.json)
+    set_tests_properties(stream_service_storage_protocol PROPERTIES TIMEOUT 90)
+  endif()
+endif()

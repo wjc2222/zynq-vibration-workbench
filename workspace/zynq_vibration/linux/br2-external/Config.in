@@ -1,0 +1,12 @@
+menu "AX7Z020 offline vibration software"
+source "$BR2_EXTERNAL_AX7Z020_PATH/package/vibration-offline/Config.in"
+source "$BR2_EXTERNAL_AX7Z020_PATH/package/ax7z020-display-tools/Config.in"
+source "$BR2_EXTERNAL_AX7Z020_PATH/package/qt-ax7zfb/Config.in"
+config BR2_AX7Z020_DISPLAY_PLATFORM
+	bool "Build the fixed AX7Z020 PS+display platform"
+	depends on BR2_LINUX_KERNEL
+	select BR2_PACKAGE_AX7Z020_DISPLAY_TOOLS
+	help
+	  Requires the matching PS+display XSA/bitstream and its ps7_init.
+	  This platform cannot use the PS-only hardware image.
+endmenu

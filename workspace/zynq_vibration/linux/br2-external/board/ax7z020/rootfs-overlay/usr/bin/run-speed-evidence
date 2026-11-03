@@ -1,0 +1,26 @@
+#!/bin/sh
+# Real speed measurement only; no mechanical vibration/fault truth declaration.
+set -eu
+sample=/usr/share/vibration/speed-only/CAP00003.BIN
+report=/tmp/speed-only-analysis.json
+timing=/tmp/speed-only-timing.txt
+stdout=/tmp/speed-only-cli.txt
+echo 'AX7Z020_SPEED_ONLY_CHECK_BEGIN'
+uname -a
+printf 'CPUs online: '; cat /sys/devices/system/cpu/online
+echo 'AX7Z020_SPEED_ONLY_INPUT_HASH_BEFORE'
+sha256sum "$sample"
+if ! busybox time -v vibration_analyze "$sample" --ppr 1 --signal unknown --output "$report" >"$stdout" 2>"$timing"; then
+    cat "$stdout"
+    cat "$timing" >&2
+    exit 1
+fi
+echo 'AX7Z020_SPEED_ONLY_TIMING_BEGIN'
+cat "$timing"
+echo 'AX7Z020_SPEED_ONLY_TIMING_END'
+echo 'AX7Z020_SPEED_ONLY_ANALYSIS_JSON_BEGIN'
+cat "$report"
+echo 'AX7Z020_SPEED_ONLY_ANALYSIS_JSON_END'
+echo 'AX7Z020_SPEED_ONLY_INPUT_HASH_AFTER'
+sha256sum "$sample"
+echo 'AX7Z020_SPEED_ONLY_CHECK_END'

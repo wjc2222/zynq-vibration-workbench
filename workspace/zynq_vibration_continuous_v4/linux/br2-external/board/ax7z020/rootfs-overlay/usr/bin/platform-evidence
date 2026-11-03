@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+trap 'result=$?; if [ "$result" -ne 0 ]; then printf "AX7Z020_PLATFORM_EVIDENCE_FAILED=%s\n" "$result"; echo AX7Z020_PLATFORM_EVIDENCE_END; fi' EXIT
+echo 'AX7Z020_PLATFORM_EVIDENCE_BEGIN'
+echo 'AX7Z020 software/platform evidence; no fault truth or accuracy validation'
+date -u
+uname -a
+printf 'Model: '; tr -d '\000' < /proc/device-tree/model; echo
+printf 'CPUs online: '; cat /sys/devices/system/cpu/online
+echo '--- CPU details ---'; cat /proc/cpuinfo
+grep -E 'MemTotal|MemAvailable' /proc/meminfo
+echo '--- mounted storage ---'; cat /proc/mounts
+echo '--- input devices ---'; cat /proc/bus/input/devices
+echo '--- USB devices ---'; lsusb
+echo '--- capture directory ---'; ls -la /mnt/captures
+echo '--- display devices ---'; ls /dev/fb* /dev/dri/* 2>/dev/null || true
+echo 'AX7Z020_PLATFORM_EVIDENCE_EXIT=0'
+echo 'AX7Z020_PLATFORM_EVIDENCE_END'

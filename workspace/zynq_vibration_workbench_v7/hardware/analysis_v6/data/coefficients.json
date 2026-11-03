@@ -1,0 +1,81 @@
+{
+  "coefficient_fraction_bits": 23,
+  "output_fraction_bits": 7,
+  "rounding": "nearest_ties_even",
+  "profiles": [
+    {
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "first_output_raw_index": 640,
+      "required_raw_frames": 82551,
+      "group_delay_raw_samples": 320,
+      "coefficient_sum": 8388482,
+      "ripple_db": 0.00034500725850758837,
+      "passband_min_gain_db": -0.00016789183761719865,
+      "passband_max_gain_db": 0.00017711542089038972,
+      "gain_at_2000_hz_db": -0.00014850415069937937,
+      "stopband_attenuation_db": 107.33382123210787,
+      "sha256": "2a194220bdde8914d19a5b2d27826010a66e12ee1d9d2076c314d4da930147f8",
+      "file_sha256": "4cae882f90050669db709bea07d9085073512bc1081a7244c905c5acd9cee5e7"
+    },
+    {
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "first_output_raw_index": 320,
+      "required_raw_frames": 41276,
+      "group_delay_raw_samples": 160,
+      "coefficient_sum": 8388437,
+      "ripple_db": 0.00034386561222783804,
+      "passband_min_gain_db": -0.00017706182801089884,
+      "passband_max_gain_db": 0.0001668037842169392,
+      "gain_at_2000_hz_db": -0.00015328622801551563,
+      "stopband_attenuation_db": 109.96445702727803,
+      "sha256": "d01079a3bb4bd649f4a42a2e85e66f94920cb62453dac3d47d8caa1113df409e",
+      "file_sha256": "ee4a463c079568e8927a329504ac80fb52556e0f0eeeef9c7c28a955c9d55ba3"
+    },
+    {
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "first_output_raw_index": 128,
+      "required_raw_frames": 16511,
+      "group_delay_raw_samples": 64,
+      "coefficient_sum": 8388462,
+      "ripple_db": 0.0003335968993420952,
+      "passband_min_gain_db": -0.00016738562519889015,
+      "passband_max_gain_db": 0.00016621127414320503,
+      "gain_at_2000_hz_db": -0.00015615520662831678,
+      "stopband_attenuation_db": 111.71657830990314,
+      "sha256": "e148455dca88280ff972f7367c84a0f55706a89b322b90060712c97dda526c15",
+      "file_sha256": "15908dcf2fa2d52288ca69c095120a3716796f2fc0244923f582874c179ae9b9"
+    },
+    {
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "first_output_raw_index": 64,
+      "required_raw_frames": 8256,
+      "group_delay_raw_samples": 32,
+      "coefficient_sum": 8388124,
+      "ripple_db": 0.0010196078577948745,
+      "passband_min_gain_db": -0.0005138168343673898,
+      "passband_max_gain_db": 0.0005057910234274847,
+      "gain_at_2000_hz_db": -0.0005047914298475293,
+      "stopband_attenuation_db": 104.15373129248326,
+      "sha256": "5272fb22695ff46ffcea970833e2f5f786add8f60a66598f2f76e0b3448325a8",
+      "file_sha256": "623b1ac8ca6ec1e0a3c2b5560015c934a3c07ac3070b0aed9e09c6c5a4bed9cf"
+    }
+  ],
+  "hann": {
+    "fraction_bits": 23,
+    "storage": "unsigned24",
+    "sum": 34359738368,
+    "sum_squares": 216172782237851264,
+    "sha256": "571921b4de73dfdbad852f4f6222966f5219077eae58d9da9fb53f6381ecc1b3",
+    "sha256_encoding": "literal_file_bytes"
+  },
+  "fir_sha256_encoding": "signed24_twos_complement_hex6_lowercase_LF",
+  "fir_all_file_sha256": "6da2a678dd3cc97f5783686230be598a453eb91ee027404d1bb2a3ceab93b486"
+}

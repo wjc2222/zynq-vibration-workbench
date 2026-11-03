@@ -1,0 +1,12 @@
+TEMPLATE = lib
+TARGET = qax7zfb
+CONFIG += plugin c++11
+CONFIG -= app_bundle
+QT += core-private gui-private service_support-private eventdispatcher_support-private fontdatabase_support-private fb_support-private
+qtHaveModule(input_support-private): QT += input_support-private
+DEFINES += QT_NO_FOREACH
+SOURCES = main.cpp qax7zfbintegration.cpp qax7zfbscreen.cpp qax7zfbwindow.cpp
+HEADERS = qax7zfbintegration.h qax7zfbscreen.h qax7zfbwindow.h ax7zflipbuffer.h ax7zsinglesource.h
+OTHER_FILES += ax7zfb.json
+target.path = /usr/lib/qt/plugins/platforms
+INSTALLS += target

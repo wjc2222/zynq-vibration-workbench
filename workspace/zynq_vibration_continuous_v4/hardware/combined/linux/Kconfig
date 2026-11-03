@@ -1,0 +1,6 @@
+config AX7Z020_CAPTURE
+	bool "AX7Z020 combined MRG1 finite capture"
+	depends on ARCH_ZYNQ && OF && HAS_DMA
+	help
+	  Exclusive misc device for the MRG1 capture producer and its simple S2MM
+	  DMA. Do not create a separate DMAengine device for these resources.

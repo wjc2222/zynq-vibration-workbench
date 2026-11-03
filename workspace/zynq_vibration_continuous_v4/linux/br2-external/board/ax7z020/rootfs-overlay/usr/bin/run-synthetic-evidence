@@ -1,0 +1,27 @@
+#!/bin/sh
+# Explicit RAM-only software check, never a mechanical fault experiment.
+set -eu
+sample=/usr/share/vibration/synthetic/synthetic_10s.BIN
+sidecar=/usr/share/vibration/synthetic/synthetic_10s.meta.json
+report=/tmp/synthetic-analysis.json
+timing=/tmp/synthetic-timing.txt
+stdout=/tmp/synthetic-cli.txt
+echo 'AX7Z020_SYNTHETIC_SOFTWARE_CHECK_BEGIN'
+uname -a
+printf 'CPUs online: '; cat /sys/devices/system/cpu/online
+echo 'Synthetic inputs before analysis:'
+sha256sum "$sample" "$sidecar"
+if ! busybox time -v vibration_analyze "$sample" --ppr 1 --output "$report" >"$stdout" 2>"$timing"; then
+    cat "$stdout"
+    cat "$timing" >&2
+    exit 1
+fi
+echo 'AX7Z020_TIMING_BEGIN'
+cat "$timing"
+echo 'AX7Z020_TIMING_END'
+echo 'AX7Z020_ANALYSIS_JSON_BEGIN'
+cat "$report"
+echo 'AX7Z020_ANALYSIS_JSON_END'
+echo 'Synthetic inputs after analysis:'
+sha256sum "$sample" "$sidecar"
+echo 'AX7Z020_SYNTHETIC_SOFTWARE_CHECK_END'

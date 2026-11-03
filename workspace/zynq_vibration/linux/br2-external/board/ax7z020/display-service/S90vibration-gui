@@ -1,0 +1,95 @@
+#!/bin/sh
+# One start attempt per boot. No process-wide kill and no restart loop.
+set -u
+APP=/usr/bin/vibration_gui
+PIDFILE=/run/vibration-gui.pid
+START_LOG=/var/log/vibration-startup.log
+GUI_LOG=/var/log/vibration-gui.log
+AUTOSTART=1
+PLATFORM=ax7zfb:fb=/dev/fb0
+CAPTURE_DEVICE=/dev/mmcblk0p1
+CAPTURE_DIRECTORY=/mnt/captures
+[ ! -r /etc/default/vibration-gui ] || . /etc/default/vibration-gui
+mkdir -p /run /var/log
+
+log() { printf '%s %s\n' "$(date -u '+%Y-%m-%dT%H:%M:%SZ')" "$*" >> "$START_LOG"; }
+is_running() {
+    [ -r "$PIDFILE" ] || return 1
+    read -r app_pid < "$PIDFILE" || return 1
+    case "$app_pid" in ''|*[!0-9]*) return 1 ;; esac
+    [ "$app_pid" -gt 1 ] 2>/dev/null || return 1
+    [ "$(readlink "/proc/$app_pid/exe" 2>/dev/null)" = "$APP" ]
+}
+mount_configured_capture() {
+    # No probing of p2, USB disks, alternate partitions or filesystems for repair.
+    if [ "$CAPTURE_DEVICE" != /dev/mmcblk0p1 ] || [ "$CAPTURE_DIRECTORY" != /mnt/captures ]; then
+        log 'MOUNT_SKIPPED_UNSUPPORTED_CONFIG; GUI continues'
+        return
+    fi
+    if [ ! -b "$CAPTURE_DEVICE" ]; then
+        log 'MOUNT_SKIPPED_NO_SD_P1; GUI continues'
+        return
+    fi
+    if awk -v dev="$CAPTURE_DEVICE" '$1 == dev && $2 == "/mnt/captures" && $4 ~ /(^|,)ro(,|$)/ {ok=1} END {exit !ok}' /proc/mounts &&
+       [ "$(blockdev --getro "$CAPTURE_DEVICE" 2>/dev/null)" = 1 ]; then
+        log 'MOUNT_ALREADY_READ_ONLY'
+    elif /usr/bin/mount-captures-ro "$CAPTURE_DEVICE" >> "$START_LOG" 2>&1; then
+        log 'MOUNT_READ_ONLY_OK'
+    else
+        result=$?
+        log "MOUNT_FAILED=$result; GUI continues"
+    fi
+}
+start() {
+    [ "$AUTOSTART" = 1 ] || { log 'GUI_AUTOSTART_DISABLED'; return 0; }
+    is_running && { log "GUI_ALREADY_RUNNING=$app_pid"; return 0; }
+    case "$PLATFORM" in
+        ax7zfb:fb=/dev/fb0|linuxfb) ;;
+        *) log "GUI_START_FAILED_UNSUPPORTED_PLATFORM=$PLATFORM; no automatic fallback"; return 0 ;;
+    esac
+    if [ ! -x "$APP" ] || [ ! -c /dev/fb0 ]; then
+        log 'GUI_START_FAILED_MISSING_APP_OR_FB0; no automatic retry'
+        return 0
+    fi
+    if command -v udevadm >/dev/null 2>&1; then
+        if udevadm settle --timeout=10 >> "$START_LOG" 2>&1; then
+            log 'UDEV_INITIAL_DEVICES_READY'
+        else
+            log "UDEV_SETTLE_FAILED=$?; GUI continues and hotplug monitor remains enabled"
+        fi
+    else
+        log 'UDEVADM_MISSING; final profile configuration is incomplete'
+    fi
+    mount_configured_capture
+    # -p plus -x constrain both start detection and stop to this app's PID/ELF.
+    if start-stop-daemon -S -q -b -m -p "$PIDFILE" -x "$APP" -O "$GUI_LOG" -- \
+        -platform "$PLATFORM" --fullscreen --ppr 1 --directory "$CAPTURE_DIRECTORY"; then
+        log "GUI_START_REQUESTED_PLATFORM=$PLATFORM; see vibration-gui.log; no restart loop"
+    else
+        log "GUI_START_FAILED=$?; no automatic retry"
+    fi
+    return 0
+}
+stop() {
+    if is_running; then
+        log "GUI_STOP_REQUESTED=$app_pid"
+        start-stop-daemon -K -q -p "$PIDFILE" -x "$APP" -s TERM || true
+        for attempt in 1 2 3; do
+            is_running || break
+            sleep 1
+        done
+        if is_running; then
+            log "GUI_STOP_KILL=$app_pid"
+            start-stop-daemon -K -q -p "$PIDFILE" -x "$APP" -s KILL || true
+        fi
+    fi
+    rm -f "$PIDFILE"
+    log 'GUI_STOPPED; capture filesystem remains read-only'
+}
+case "${1:-}" in
+    start) start ;;
+    stop) stop ;;
+    restart) stop; start ;;
+    status) if is_running; then echo "running $app_pid"; else echo stopped; exit 3; fi ;;
+    *) echo "Usage: $0 {start|stop|restart|status}" >&2; exit 2 ;;
+esac

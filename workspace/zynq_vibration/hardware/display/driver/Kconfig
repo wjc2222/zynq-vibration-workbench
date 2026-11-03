@@ -1,0 +1,16 @@
+config FB_CODEX_AX7Z020
+	bool "AX7Z020 fixed 720p VDMA framebuffer"
+	depends on FB && OF && ARCH_ZYNQ && DMA_CMA
+	depends on !OF_OVERLAY && !SUSPEND && !HIBERNATION
+	select FB_SYS_FILLRECT
+	select FB_SYS_COPYAREA
+	select FB_SYS_IMAGEBLIT
+	select FB_SYS_FOPS
+	help
+	  Fixed built-in scanout driver for the project's AX7Z020 PS+display
+	  hardware. Owns its VDMA, VTC and status GPIO together. No runtime
+	  device removal, device-tree overlays or PL reconfiguration is supported.
+	  System suspend/hibernation are unsupported in v1; ordinary CPU idle
+	  remains available. These unsupported configurations disable selection.
+	  Select the display kernel profile, including 64 MiB CMA, and use the
+	  matching display XSA/FSBL. The PS-only image does not use this driver.

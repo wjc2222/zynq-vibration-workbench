@@ -1,0 +1,27 @@
+# Generated and local-only files
+.git/
+__pycache__/
+*.pyc
+.venv/
+build/
+build-*/
+.Xil/
+*.jou
+*.log
+*.wdb
+*.dcp
+*.xsa
+*.bit
+*.elf
+*.BIN
+*.bin
+*.model
+*.exe
+*.dll
+*.zip
+*.tar.gz
+rootfs*
+private_review/
+.env
+.env.*
+# Coefficient .mem and synthetic test source are intentionally tracked.

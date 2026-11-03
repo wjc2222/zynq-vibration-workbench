@@ -1,0 +1,27 @@
+#!/bin/sh
+set -eu
+device=${1:-/dev/mmcblk0p1}
+case "$device" in
+    /dev/mmcblk0p[1-4]|/dev/sd[a-z][1-4]) ;;
+    *) echo "Specify a card/USB partition, for example /dev/mmcblk0p1" >&2; exit 2 ;;
+esac
+[ -b "$device" ] || { echo "Partition not present: $device" >&2; exit 1; }
+if grep -q ' /mnt/captures ' /proc/mounts; then
+    echo "/mnt/captures is already mounted; inspect /proc/mounts before changing it" >&2
+    exit 1
+fi
+mkdir -p /mnt/captures
+# No fsck, repartitioning, formatting or write mount is performed.
+# Kernel-enforced block read-only also prevents ext4 journal replay writes.
+blockdev --setro "$device"
+[ "$(blockdev --getro "$device")" = 1 ] || {
+    echo "Could not enforce block read-only: $device" >&2; exit 1;
+}
+filesystem=$(blkid "$device" | sed -n 's/.*TYPE="\([^"]*\)".*/\1/p')
+case "$filesystem" in
+    # utf8=1 enables Unicode translation while preserving FAT case semantics.
+    # iocharset=utf8 instead replaces the case table and is discouraged by FAT.
+    vfat) mount -t vfat -o ro,nosuid,nodev,noexec,utf8=1 "$device" /mnt/captures ;;
+    *) mount -o ro,nosuid,nodev,noexec "$device" /mnt/captures ;;
+esac
+grep ' /mnt/captures ' /proc/mounts

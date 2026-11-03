@@ -1,0 +1,84 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+/*
+ * ALINX AX7Z020 carrier + AC7Z020 module, XC7Z020-2CLG400I.
+ * Board-specific facts: supplied AX7Z020 manual pp. 29-34,39;
+ * supplied base schematic pp. 7-9; boards/ax7z020/ps_config.tcl.
+ * FSBL from this project's XSA configures DDR and PS MIO pin multiplexing.
+ * Do not replace it with ZedBoard ps7_init or an acquisition BOOT.bin.
+ */
+/ {
+	model = "ALINX AX7Z020 offline vibration PS platform";
+	compatible = "alinx,ax7z020", "xlnx,zynq-7000";
+
+	aliases {
+		serial0 = &uart1; /* MIO48 TX / MIO49 RX; Linux ttyPS0. */
+		mmc0 = &sdhci0;
+		ethernet0 = &gem0;
+		usb0 = &usb0;
+	};
+
+	chosen {
+		stdout-path = "serial0:115200n8";
+		bootargs = "console=ttyPS0,115200 earlycon rdinit=/sbin/init";
+	};
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x00000000 0x40000000>; /* 1 GiB, not ZedBoard 512 MiB. */
+	};
+
+	usb_phy0: phy@e0002000 {
+		compatible = "ulpi-phy";
+		#phy-cells = <0>;
+		reg = <0xe0002000 0x1000>;
+		view-port = <0x0170>;
+		drv-vbus; /* USB3320C CPEN drives the carrier's TPS2051B. */
+	};
+};
+
+&clkc {
+	ps-clk-frequency = <33333333>;
+};
+
+&uart1 {
+	bootph-all;
+	status = "okay";
+};
+
+&sdhci0 {
+	bootph-all;
+	status = "okay";
+	bus-width = <4>; /* SD0 MIO40-45, native card-detect MIO47. */
+	disable-wp;
+	no-1-8-v;
+	max-frequency = <25000000>; /* Conservative first bring-up rate. */
+};
+
+&gpio0 {
+	/* USB3320C RESETB is active low; FSBL already performs reset. */
+	usb0-reset-release {
+		gpio-hog;
+		gpios = <46 0>; /* PS MIO46, GPIO_ACTIVE_HIGH. */
+		output-high;
+		line-name = "usb0-phy-reset-release";
+	};
+};
+
+&usb0 {
+	status = "okay";
+	dr_mode = "host";
+	phy_type = "ulpi";
+	usb-phy = <&usb_phy0>;
+};
+
+&gem0 {
+	status = "okay";
+	phy-mode = "rgmii-id";
+	phy-handle = <&ethernet_phy>;
+
+	ethernet_phy: ethernet-phy@3 {
+		reg = <3>; /* KSZ9031RNX strapped PHYAD[2:0]=011. */
+	};
+};
+
+/* No PL framebuffer, HDMI encoder, acquisition DMA or fabricated display node. */

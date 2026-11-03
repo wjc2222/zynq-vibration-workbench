@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "status": "Fixed driver5953 compiled and board revalidated; final eudev/libudev/uinput rootfs uses fresh output",
+  "linux": "upstream 6.6.70",
+  "hardware_sha256": {
+    "hardware/display/evidence/20261025_011856/prebit_export/ax7z020_display_prebit.xsa": "1b56982e94826434d5850afe82f7f1a948b70b00845af80cc18c2be8e4bad385",
+    "hardware/display/evidence/20261025_011856/prebit_export/ps7_init.tcl": "8d964e9a37502d3c530f0370824219beb67c4323dd2215d1126a6189b34c3ad3",
+    "hardware/display/evidence/20261025_011856/prebit_export/address_map.txt": "48540d45b1e0e7a9cc6de537ca8281a93701b96b58aa7a1bb5066d10953a5b4d",
+    "hardware/display/evidence/20261025_011856/prebit_export/block_parameters.txt": "1172db64d2f058e9b9bb9fbf51813ea916d7f8d4115052a04138fb215d8daff9",
+    "hardware/display/evidence/20261025_011856/export/ax7z020_display_720p60.bit": "b1856e965097a9ea0ddb3ef61a412adbc1bbedbc4f73a0f7e5085957e63c6e16",
+    "hardware/display/evidence/20261025_011856/export/ax7z020_display.xsa": "0e615320911092535d83d0a52f3eebf5b4029753ae88d4a026c50d381a877a12",
+    "hardware/display/evidence/20261025_011856/export/ps7_init.tcl": "8d964e9a37502d3c530f0370824219beb67c4323dd2215d1126a6189b34c3ad3",
+    "hardware/display/evidence/20261025_011856/export/address_map.txt": "48540d45b1e0e7a9cc6de537ca8281a93701b96b58aa7a1bb5066d10953a5b4d",
+    "hardware/display/evidence/20261025_011856/export/block_parameters.txt": "1172db64d2f058e9b9bb9fbf51813ea916d7f8d4115052a04138fb215d8daff9"
+  },
+  "source_sha256": {
+    "hardware/display/driver/codex_ax7z020_fb.c": "5953e0d67a59572b623c8b4417d0fb3cb8fc61d50ee24fe424c5ba2f70b2e3a8",
+    "hardware/display/driver/Kconfig": "b8c943aad9393d3f6c8bfd2046a9e15972200cfbb41abc6ee54fa29d480333e3",
+    "hardware/display/driver/Makefile": "ae8efebdaadd612543711816f2e4a4edd5572727ccb08c8e1ab76a7af6d0c161",
+    "hardware/display/linux/display.dtsi": "55eecc8a400514c26faae28234bd8a8d9b16e9e488f12dcde07334cb58d7bd73",
+    "hardware/display/linux/display_kernel.fragment": "2d27c921adf9a130068fcd3221dfb1d54a9553eba5c743ec834e4bdc7cf9f8e8",
+    "linux/br2-external/board/ax7z020/dts/ax7z020-display.dtsi": "55eecc8a400514c26faae28234bd8a8d9b16e9e488f12dcde07334cb58d7bd73",
+    "linux/br2-external/board/ax7z020/display_kernel.fragment": "a04fe389f500a34cc797745443e7d39a5a62108edc540f584d27bed66341cbe1",
+    "hardware/display/tools/fb_scanout_test.c": "f68fada4bda656055566d363fa4bce03d005f2b7e38eb9eec03d922bdac56a0d"
+  },
+  "built_in_only": true,
+  "runtime_overlay_supported": false,
+  "registers": {
+    "vtc": "0x43c00000",
+    "status": "0x41200000",
+    "vdma": "0x43000000",
+    "axi_clock_hz": 100000000,
+    "irq_spi": 29
+  },
+  "board_display_verified": false,
+  "preferred_hardware_directory": "hardware/display/evidence/20261025_011856/export",
+  "preferred_bit_filename": "ax7z020_display_720p60.bit"
+}

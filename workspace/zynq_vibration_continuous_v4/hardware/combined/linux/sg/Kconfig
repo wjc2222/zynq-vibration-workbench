@@ -1,0 +1,7 @@
+config AX7Z020_CAPTURE_SG
+	bool "AX7Z020 combined finite SG capture with committed preview"
+	depends on ARCH_ZYNQ && OF && HAS_DMA && !AX7Z020_CAPTURE
+	select CRC32
+	help
+	  Preposts a complete finite SG chain. Only validated BD.Complete data is
+	  copied to preview callers. The simple-DMA hardware is explicitly refused.

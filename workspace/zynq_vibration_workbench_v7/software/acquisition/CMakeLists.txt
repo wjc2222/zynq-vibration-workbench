@@ -1,0 +1,26 @@
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Core QUIET)
+if(NOT QT_FOUND)
+  message(STATUS "Qt Core unavailable: vibration_capture_service not built")
+  return()
+endif()
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
+find_package(Threads REQUIRED)
+add_executable(vibration_capture_service capture_service.cpp capture_output.cpp capture_output.hpp)
+target_compile_features(vibration_capture_service PRIVATE cxx_std_17)
+target_include_directories(vibration_capture_service PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_link_libraries(vibration_capture_service PRIVATE vibration_core Qt${QT_VERSION_MAJOR}::Core Threads::Threads)
+if(NOT MSVC)
+  target_compile_options(vibration_capture_service PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+install(TARGETS vibration_capture_service RUNTIME DESTINATION bin)
+if(BUILD_TESTING AND UNIX AND NOT CMAKE_CROSSCOMPILING)
+  find_package(Python3 COMPONENTS Interpreter QUIET)
+  if(Python3_Interpreter_FOUND)
+    add_test(NAME capture_service_protocol COMMAND ${Python3_EXECUTABLE} -B
+      ${CMAKE_CURRENT_SOURCE_DIR}/tests/test_service.py
+      --service $<TARGET_FILE:vibration_capture_service>
+      --analyze $<TARGET_FILE:vibration_analyze>
+      --report ${CMAKE_CURRENT_BINARY_DIR}/host-test-report.json)
+    set_tests_properties(capture_service_protocol PROPERTIES TIMEOUT 90)
+  endif()
+endif()

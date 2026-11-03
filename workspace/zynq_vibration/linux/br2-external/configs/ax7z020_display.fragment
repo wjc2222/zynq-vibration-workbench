@@ -1,0 +1,9 @@
+# Qt software plus the separately implemented PS+display platform.
+BR2_AX7Z020_DISPLAY_PLATFORM=y
+BR2_PACKAGE_QT_AX7ZFB=y
+# A fresh output is required when changing device managers.
+# BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_MDEV is not set
+BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_EUDEV=y
+BR2_PACKAGE_EUDEV=y
+BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES="$(BR2_EXTERNAL_AX7Z020_PATH)/board/ax7z020/linux.fragment $(BR2_EXTERNAL_AX7Z020_PATH)/board/ax7z020/display_kernel.fragment"
+BR2_LINUX_KERNEL_CUSTOM_DTS_PATH="$(BR2_EXTERNAL_AX7Z020_PATH)/board/ax7z020/dts/display/zynq-ax7z020.dts $(BR2_EXTERNAL_AX7Z020_PATH)/board/ax7z020/dts/ax7z020-common.dtsi $(BR2_EXTERNAL_AX7Z020_PATH)/board/ax7z020/dts/ax7z020-display.dtsi"

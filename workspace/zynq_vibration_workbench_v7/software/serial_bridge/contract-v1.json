@@ -1,0 +1,22 @@
+{
+  "schema": "vibration.serial.v1",
+  "version": "1.1",
+  "transport": {"encoding": "UTF-8 JSONL", "baud": 115200, "baud_options": [115200, 460800, 921600], "preview_interval_ms": {"115200": 1000, "460800": 250, "921600": 250}, "port_setup": "caller configures stty and PC physical-port rate; --baud only declares rate and selects bounded preview timer", "max_wire_line": 131072, "max_decoded_bytes": 2097152, "max_request_line": 8192, "heartbeat_seconds": 3, "client_loss_seconds": 15},
+  "request": {"schema": "vibration.serial.v1", "id": "unique ASCII [A-Za-z0-9_-]{1,64}", "command": "hello|ping|start|cancel|list_records|analyze_record|download_begin|download_chunk|shutdown"},
+  "packet": {"schema": "vibration.serial.v1", "type": "packet", "seq": "strictly increasing integer", "codec": "qcompress-base64", "payload": "canonical base64 of four-byte big-endian uncompressed length followed by zlib stream", "sha256": "lowercase SHA256 of uncompressed compact JSON bytes"},
+  "response": {"id": "echo request id", "command": "echo command", "ok": true, "data": {}},
+  "error": {"id": "echo request id, empty for malformed requests", "command": "echo command or empty", "ok": false, "error": {"code": "stable ASCII code", "message": "human readable"}},
+  "event": {"event": "service_ready|job_status|preview|preview_rejected|analysis|analysis_failed|records_ready|connection_lost", "data": {}},
+  "start": {"plan": {"sample_rate_hz": "5000|10000|25000|50000", "duration_seconds": "integer 1..40, capacity constrained by unchanged service", "pulses_per_rev": "integer 1..4096"}},
+  "cancel": {"job_id": "optional; defaults to active job"},
+  "analyze_record": {"record_id": "opaque listed record ID only"},
+  "download_begin": {"record_id": "opaque listed record ID only", "returns": {"record_id": "ID", "files": [{"kind": "bin|meta", "name": "basename", "bytes": "integer", "sha256": "lowercase"}], "max_chunk": 3072}},
+  "download_chunk": {"record_id": "ID after successful download_begin", "kind": "bin|meta", "offset": "integer >=0", "length": "integer 1..3072", "returns": {"record_id": "ID", "kind": "bin|meta", "offset": "integer", "length": "integer", "total": "integer", "data": "base64 raw bytes", "crc32": "unsigned integer IEEE reflected CRC32"}},
+  "record_root": "/tmp/vibration-serial-records",
+  "record_id": "32-hex session UUID/capture basename without extension; resolved only through validated registry",
+  "storage": "volatile RAM, complete validated BIN+original .meta.json only, recovered across bridge restarts within the same RAM boot, no automatic deletion",
+  "analysis": "full complete-record core analysis at original default FFT65536; display arrays may be peak-preserving decimated after analysis, with actual FFT/bin width/segment metadata and original bin counts retained",
+  "preview": "1Hz at115200;4Hz at460800/921600; latest-only validated original raw model summary, voltage/rpm gaps preserved, voltage-only FFT8192 computed on original contiguous raw samples, preview_only/not_classified diagnosis",
+  "backpressure": "nonblocking stdout, bounded reliable queue, one replaceable queued preview; terminal events discard queued previews; queue overflow closes bridge and cancels its owned service",
+  "modes": "production default; --test-fixture or --hardware-self-test explicit QA only; no shell execution, no arbitrary file API"
+}

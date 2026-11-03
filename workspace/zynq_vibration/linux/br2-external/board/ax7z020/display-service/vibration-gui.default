@@ -1,0 +1,7 @@
+# RAM-only display service. Only this explicitly configured partition is probed.
+AUTOSTART=1
+# Explicit backend. Set PLATFORM=linuxfb for an operator-requested rollback.
+# No fallback occurs if ax7zfb initialization or a page exchange fails.
+PLATFORM=ax7zfb:fb=/dev/fb0
+CAPTURE_DEVICE=/dev/mmcblk0p1
+CAPTURE_DIRECTORY=/mnt/captures

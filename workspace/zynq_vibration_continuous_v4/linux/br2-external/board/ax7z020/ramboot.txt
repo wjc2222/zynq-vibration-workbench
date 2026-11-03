@@ -1,0 +1,10 @@
+# Run in U-Boot only after the project-specific FSBL initialized this board,
+# U-Boot ELF has started, and JTAG downloaded all three payloads to RAM:
+#   zynq-ax7z020.dtb -> 0x01f00000
+#   zImage          -> 0x02000000
+#   rootfs.cpio.gz  -> 0x10000000
+# Set ramdisk_size to the exact hex byte count from ramboot-current.txt.
+# Keep rootfs size below 0x10000000 so it stays below 0x20000000.
+setenv bootargs 'console=ttyPS0,115200 earlycon rdinit=/sbin/init'
+# Paste the generated ramboot-current.txt lines here; run ramboot starts Linux.
+# No SD image, BOOT.bin or flash write is required for this test.

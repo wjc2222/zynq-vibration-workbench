@@ -1,0 +1,2 @@
+# Preserve release hashes across Git checkouts. Shell sources are already LF.
+* -text

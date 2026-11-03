@@ -1,0 +1,90 @@
+{
+  "verified_on": "2026-10-24",
+  "buildroot": {
+    "version": "2025.02.19",
+    "series": "2025.02 LTS",
+    "release_date": "2026-10-22",
+    "series_eol": "2028-03",
+    "git": "https://gitlab.com/buildroot.org/buildroot.git",
+    "mirror": "https://github.com/buildroot/buildroot.git",
+    "commit": "4f924fd52841608d68ac3dcb83fccee8b8c90316",
+    "annotated_tag_object": "26cf11070212000d698141be5732d107dde08946"
+  },
+  "linux": {
+    "provider": "kernel.org upstream stable",
+    "version": "6.6.70",
+    "archive": "linux-6.6.70.tar.xz",
+    "url": "https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.6.70.tar.xz",
+    "mirror_url": "https://mirrors.tuna.tsinghua.edu.cn/kernel/v6.x/linux-6.6.70.tar.xz",
+    "sha256": "84d23ee07fb26febbcb6d1295ba15efdc67ac382b4137b2c8853146c10fd2f97",
+    "release_signer_fingerprint": "647F28654894E3BD457199BE38DBBDC86092693E",
+    "reason": "Same-version upstream Zynq PS support avoids the observed slow non-range GitHub archive. Official SHA256 and Greg developer signature verified before adoption; board acceptance is separate."
+  },
+  "linux_upstream_candidate": {
+    "provider": "kernel.org upstream stable",
+    "version": "6.6.70",
+    "archive": "linux-6.6.70.tar.xz",
+    "url": "https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.6.70.tar.xz",
+    "mirror_url": "https://mirrors.tuna.tsinghua.edu.cn/kernel/v6.x/linux-6.6.70.tar.xz",
+    "sha256": "84d23ee07fb26febbcb6d1295ba15efdc67ac382b4137b2c8853146c10fd2f97",
+    "checksum_source": "https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc",
+    "signature_url": "https://www.kernel.org/pub/linux/kernel/v6.x/linux-6.6.70.tar.sign",
+    "expected_release_signer_fingerprint": "647F28654894E3BD457199BE38DBBDC86092693E",
+    "status": "adopted_after_official_sha256_developer_signature_and_static_PS_compatibility_review"
+  },
+  "uboot": {
+    "provider": "Xilinx",
+    "tag": "xlnx_rebase_v2024.01_2024.2",
+    "archive": "xlnx_rebase_v2024.01_2024.2.tar.gz",
+    "sha256": "f1a86ccdbe60bac89177a24bbfd56fc6e8e67823669f0997de563c3cc0ea4dd1"
+  },
+  "toolchain": {
+    "provider": "Bootlin",
+    "variant": "armv7-eabihf--glibc--stable-2024.05-1",
+    "gcc_major": 13,
+    "archive_sha256": "608263bc9dc3eadf0962ddb1165f1c2291001190f9927dee47d464e26374462c",
+    "note": "The prebuilt toolchain's older userspace headers are compatible with the newer running kernel. Kernel configuration uses the built kernel tree."
+  },
+  "hardware_initialization": {
+    "provider": "AMD Vivado/Vitis",
+    "version": "2025.2",
+    "fsbl": "Must be generated from this project's AX7Z020 XSA; not downloaded or copied from ZedBoard/colleague acquisition firmware.",
+    "compatibility": "Zynq-7000 PS register and DT interfaces allow this FSBL to hand off to the pinned U-Boot/kernel. Actual DDR, SMP, peripherals and boot still require board tests."
+  },
+  "sources": [
+    "https://buildroot.org/download.html",
+    "https://raw.githubusercontent.com/buildroot/buildroot/2025.02.19/configs/zynq_zed_defconfig",
+    "https://raw.githubusercontent.com/buildroot/buildroot/2025.02.19/board/xilinx/patches/linux/linux.hash",
+    "https://raw.githubusercontent.com/buildroot/buildroot/2025.02.19/board/xilinx/patches/uboot/uboot.hash",
+    "https://api.github.com/repos/buildroot/buildroot/git/tags/26cf11070212000d698141be5732d107dde08946",
+    "https://raw.githubusercontent.com/buildroot/buildroot/2025.02.19/toolchain/toolchain-external/toolchain-external-bootlin/toolchain-external-bootlin.hash"
+  ],
+  "linux_xlnx_reference": {
+    "provider": "Xilinx",
+    "tag": "xlnx_rebase_v6.6_LTS_merge_6.6.70",
+    "archive": "xlnx_rebase_v6.6_LTS_merge_6.6.70.tar.gz",
+    "sha256": "b726226e8784d92049190f19768d393eccf3ad111c7a2e685bb29cfa1bdf1f70",
+    "reason": "Exact Zynq kernel baseline shipped and hash-checked in Buildroot 2025.02.19. This is a bring-up baseline, not a claim that every component is at its newest upstream security patch."
+  },
+  "board_kernel_patches": [
+    {
+      "license": "GPL-2.0-or-later",
+      "path": "br2-external/patches/linux/0001-usb-phy-ax7z020-ulpi-viewport.patch",
+      "sha256": "ad7f0a391435e5942e673269b5512381fcbf05fb2895cfa7d34d54f9661f4bdc",
+      "source_review": "Independent source review passed; compiled/linked and actual board USB3320 ID/integrity/EHCI root hub verified in base serial UART log",
+      "reference_sha256": "9b2e3374b0682a2ce65adaac8cc6bb0f14799fe8c6b4dbc90abc3e3dfc919935",
+      "source_reference": "https://github.com/Xilinx/linux-xlnx/blob/xlnx_rebase_v6.6_LTS_merge_6.6.70/drivers/usb/phy/phy-ulpi.c",
+      "scope": "Fixed AX7Z020 USB3320 OF viewport and VBUS glue plus ULPI read-error propagation"
+    }
+  ],
+  "qtbase_target": {
+    "git_url": "https://invent.kde.org/qt/qt/qtbase",
+    "sha256": "3b4bfbd1844aba3b753146ca7d008177010ebb819fcb224c6c0afd8496d8abff",
+    "commit": "bebdfd54917e25d1c100e6bd9f5dd53c2e645fd8",
+    "version_identity": "KDE Qt5 patch collection, closest upstream Qt5.15.18",
+    "download_status": "Complete official Buildroot cache archive, 70132032 bytes; Windows8-range download and independent WSL source/destination SHA verification passed",
+    "host_qa_qt": "Ubuntu22.04 Qt5.15.3; distinct from target package",
+    "buildroot_cache_archive": "qt5base-bebdfd54917e25d1c100e6bd9f5dd53c2e645fd8-git4.tar.gz",
+    "hash_authority": "Pinned Buildroot2025.02.19 package/qt5/qt5base/qt5base.hash"
+  }
+}

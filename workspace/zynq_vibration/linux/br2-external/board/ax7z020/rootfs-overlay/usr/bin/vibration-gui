@@ -1,0 +1,19 @@
+#!/bin/sh
+set -eu
+PLATFORM=linuxfb
+[ ! -r /etc/default/vibration-gui ] || . /etc/default/vibration-gui
+case "$PLATFORM" in
+    ax7zfb:fb=/dev/fb0|linuxfb) ;;
+    *) echo "Unsupported configured GUI platform: $PLATFORM" >&2; exit 1 ;;
+esac
+if [ ! -e /dev/fb0 ]; then
+    echo "No /dev/fb0: AX7Z020 PL display pipeline is not installed/verified." >&2
+    echo "Use vibration_analyze through the serial console for current bring-up." >&2
+    exit 1
+fi
+command -v vibration_gui >/dev/null 2>&1 || {
+    echo "Qt GUI is absent; build the separate qt profile." >&2; exit 1;
+}
+# User-confirmed rig setting: one valid pulse per revolution. The application
+# records the explicit override and still rejects conflicting nonzero headers.
+exec /usr/bin/vibration_gui -platform "$PLATFORM" --fullscreen --ppr 1 --directory /mnt/captures "$@"

@@ -1,0 +1,44 @@
+{
+  "schema": "public-method-index.v1",
+  "status": "unpublished preparation candidate",
+  "original_acceptance_evidence": "retained privately; not bundled or rehashed as anonymized equivalents",
+  "methods": [
+    {
+      "id": "e01",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e02",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e03",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e04",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e05",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e06",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e07",
+      "document": "evidence.md"
+    },
+    {
+      "id": "e08",
+      "document": "evidence.md"
+    }
+  ],
+  "public_validation": {
+    "generator": "../examples/validation/run_checks.py",
+    "results": "../examples/validation/results-public.json",
+    "scope": "27 synthetic cases: 26 inherited plus 1 replacement, no private actual-report input"
+  }
+}

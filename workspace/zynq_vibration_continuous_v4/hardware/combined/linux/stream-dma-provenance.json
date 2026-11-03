@@ -1,0 +1,27 @@
+{
+  "schema": "ax7z020-stream-dma-design-provenance-v1",
+  "primary_source": "https://docs.amd.com/r/en-US/pg021_axi_dma/Descriptor-Management",
+  "document": "AMD AXI DMA LogiCORE IP Product Guide PG021, version 7.1, 2025-06-24",
+  "verified_utc_date": "2026-10-27",
+  "supporting_sources": [
+    "https://docs.amd.com/r/en-US/pg021_axi_dma/RX-Descriptor-Fields",
+    "https://docs.amd.com/r/en-US/pg021_axi_dma/Scatter/Gather-Mode"
+  ],
+  "derived_rules": [
+    "CPU may process and reallocate only descriptors with Completed set.",
+    "Clear completion before advancing TAILDESC to the final reallocated descriptor.",
+    "Updating TAILDESC resumes a paused engine or changes its future pause point.",
+    "RX descriptor completion, transferred bytes, SOP and EOP establish each completed packet."
+  ],
+  "implementation": {
+    "cyclic_dma": false,
+    "descriptor_count": 256,
+    "chunk_period_us": 40000,
+    "maximum_raw_ring_bytes": 16384000,
+    "reallocation": "Only after successful copy_to_user; dma_rmb before payload reads; dma_wmb before tail update",
+    "full_ring": "Explicit ENOBUFS terminal state with readable validated prefix; never overwrite unread data",
+    "normal_stop": "PL boundary stop, drain final DMA descriptor, then quiesce DMA without producer ABORT",
+    "failure_scope": "Committed DMA prefix is distinct from SD fsync durability"
+  },
+  "acceptance_boundary": "RTL simulation, static ABI checks and kernel compilation do not establish physical DMA ordering or SD sustained-write performance."
+}

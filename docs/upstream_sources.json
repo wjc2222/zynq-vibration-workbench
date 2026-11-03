@@ -1,0 +1,336 @@
+{
+  "schema": "repository-upstream-sources.v1",
+  "project": "zynq-vibration-workbench",
+  "contest_group": "junior",
+  "checked_date": "2026-11-03",
+  "status": "private_candidate_publication_deferred_project_license_unselected",
+  "path_convention": "All evidence_repo_paths are relative to repository root; no workstation paths, device identifiers or private log paths are included. Empty paths mean historical excluded context, not current usage proof.",
+  "version_metadata": [
+    {
+      "component": "project",
+      "version": "V7 supervised pipeline",
+      "status": "local_source_candidate_not_public_release",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/core/src/supervised_model.cpp",
+        "workspace/zynq_vibration_workbench_v7/software/core/src/supervised_features.cpp",
+        "license_status.md"
+      ]
+    },
+    {
+      "component": "qtbase",
+      "version": "5.15.18",
+      "audited_upstream_commit": "bebdfd54917e25d1c100e6bd9f5dd53c2e645fd8",
+      "official_source_url": "https://invent.kde.org/qt/qt/qtbase",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration/linux/qt-ax7zfb/prepare.py",
+        "workspace/zynq_vibration/linux/qt-ax7zfb-direct/prepare.py",
+        "workspace/zynq_vibration_workbench_v7/software/workbench/CMakeLists.txt"
+      ],
+      "note": "Exact commit recorded from original audited upstream source metadata; the upstream source archive is not vendored. prepare.py provides local version/hash expectations."
+    },
+    {
+      "component": "linux",
+      "version": "6.6.70",
+      "official_source_url": "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.70.tar.xz",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration/linux/br2-external/board/ax7z020/linux.config"
+      ],
+      "note": "Configuration seed version evidence; no claim of a fresh full kernel build from this candidate."
+    },
+    {
+      "component": "buildroot",
+      "version": "2025.02.19",
+      "official_source_url": "https://buildroot.org/downloads/buildroot-2025.02.19.tar.gz",
+      "evidence_repo_paths": [
+        "docs/dependencies.md",
+        "workspace/zynq_vibration/linux/br2-external/package/qt-ax7zfb/qt-ax7zfb.mk"
+      ],
+      "note": "Version captured from the original privately audited source archive; framework archive and full legal-info are not vendored. The retained recipe alone does not prove this version."
+    },
+    {
+      "component": "u-boot-xlnx",
+      "version": "xlnx_rebase_v2024.01_2024.2",
+      "official_source_url": "https://github.com/Xilinx/u-boot-xlnx/tree/xlnx_rebase_v2024.01_2024.2",
+      "evidence_repo_paths": [
+        "docs/dependencies.md"
+      ],
+      "note": "Historical boot dependency metadata captured from the original audit, not U-Boot source or firmware bundled in this candidate."
+    },
+    {
+      "component": "external-toolchain",
+      "version": "Bootlin2024.05-1 reference; matching SDK still external",
+      "official_source_url": "https://toolchains.bootlin.com/downloads/releases/toolchains/armv7-eabihf/tarballs",
+      "evidence_repo_paths": [
+        "build-entrypoints/build-arm.sh",
+        "docs/dependencies.md"
+      ],
+      "note": "Original target manifest marked its license unknown. This candidate does not include that manifest or SDK; precise runtime library provenance remains to prepare if binaries enter scope."
+    },
+    {
+      "component": "pc-python-environment",
+      "version": "not_locked_for_current_candidate",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/serial_pc/app.py",
+        "workspace/zynq_vibration_workbench_v7/software/serial_pc/serial_device.py"
+      ],
+      "note": "Imports prove dependency names, not installed wheel versions or full third-party notice closure. No current-candidate PC binary rebuild is claimed."
+    }
+  ],
+  "official_license_sources": [
+    {
+      "id": "linux-6.6-license-rules",
+      "official_url": "https://docs.kernel.org/6.6/process/license-rules.html",
+      "title": "Linux kernel licensing rules",
+      "component": "Linux kernel",
+      "version_scope": "6.6文档；不等于逐文件核验项目6.6.x具体源码",
+      "candidate_role": "candidate_kernel_driver_sources",
+      "verified_summary": "内核整体GPL-2.0-only并含Linux-syscall-note；单文件可有兼容许可或双许可。UAPI syscall边界有明确例外，不能把用户态程序一概写成内核GPL。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/ax7z020_capture.c",
+        "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/ax7z020_accel.c",
+        "licenses/linux/copying.txt",
+        "licenses/linux/gpl-2.0.txt",
+        "licenses/linux/linux-syscall-note.txt"
+      ]
+    },
+    {
+      "id": "buildroot-legal-info",
+      "official_url": "https://buildroot.org/downloads/manual/manual.html",
+      "title": "Buildroot user manual, Chapter 13",
+      "component": "Buildroot / generated root filesystem",
+      "version_scope": "当前官方手册；项目具体Buildroot版本和包recipe仍需核对",
+      "candidate_role": "external_build_system_and_retained_recipes",
+      "verified_summary": "make legal-info收集配置、host/target清单、源码、补丁和许可文本，并报告unknown及未保存项；输出不是完整合规保证。REDISTRIBUTE=NO源码不保存，外部工具链等可能需手工补充。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration/linux/br2-external/package/vibration-offline/vibration-offline.mk",
+        "build-entrypoints/build-arm.sh",
+        "docs/dependencies.md"
+      ]
+    },
+    {
+      "id": "qt5-qtbase-5.15.16-header",
+      "official_url": "https://raw.githubusercontent.com/qt/qtbase/v5.15.16-lts-lgpl/src/corelib/global/qglobal.h",
+      "title": "qt/qtbase v5.15.16-lts-lgpl qglobal.h",
+      "component": "Qt 5 QtCore exemplar",
+      "version_scope": "固定tag v5.15.16-lts-lgpl，QtCore文件示例；不是整个Qt或项目实际版本证明",
+      "candidate_role": "license_structure_reference_only_actual_candidate_qt5_15_18",
+      "verified_summary": "此文件列商业许可、LGPLv3及GPLv2/GPLv3选项，并要求对应许可文本。必须按实际Qt版本、模块及第三方文件分别核对，不能只以Qt5名称确定全项目许可。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/workbench/CMakeLists.txt",
+        "workspace/zynq_vibration/linux/qt-ax7zfb/prepare.py"
+      ]
+    },
+    {
+      "id": "qt5-lgpl3-text",
+      "official_url": "https://raw.githubusercontent.com/qt/qtbase/v5.15.16-lts-lgpl/LICENSE.LGPL3",
+      "title": "qtbase v5.15.16-lts-lgpl LICENSE.LGPL3",
+      "component": "Qt 5 LGPL text exemplar",
+      "version_scope": "固定Qt tag携带的LGPLv3文本；不替用户选择许可方案",
+      "candidate_role": "retained_qt_derivative_sources",
+      "verified_summary": "LGPLv3对组合分发列出notice及GPL/LGPL文本、可重新组合/链接或合适共享库机制等条件。若公开带Qt的二进制/rootfs，需逐项准备对应材料，不能将动态链接视为自动满足全部条件。",
+      "evidence_repo_paths": [
+        "licenses/qt5base/license.lgplv3.txt",
+        "workspace/zynq_vibration/linux/qt-ax7zfb/qax7zfbscreen.cpp"
+      ]
+    },
+    {
+      "id": "qt6-licensing",
+      "official_url": "https://doc.qt.io/qt-6.8/licensing.html",
+      "title": "Qt Licensing, Qt 6.8",
+      "component": "Qt 6",
+      "version_scope": "Qt6.8文档例；项目实际使用Qt5或Qt6及模块版本由本地证据决定",
+      "candidate_role": "optional_build_compatibility_not_proven_target_runtime",
+      "verified_summary": "Qt有商业及开源许可选项；部分模块开源分发仅GPL而非LGPL，另含第三方独立条款。支持Qt6编译不等于目标板实际依赖Qt6，模块清单及notice应匹配实际版本。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/acquisition/CMakeLists.txt",
+        "workspace/zynq_vibration_workbench_v7/software/gui/CMakeLists.txt"
+      ]
+    },
+    {
+      "id": "pyside6-distributions",
+      "official_url": "https://doc.qt.io/qtforpython-6/commercial/index.html",
+      "title": "Commercial Use - Qt for Python",
+      "component": "PySide6 / Qt for Python",
+      "version_scope": "当前Qt for Python6官方说明；不是实际wheel版本/来源证明",
+      "candidate_role": "actual_pc_import_dependency_version_not_locked_in_candidate",
+      "verified_summary": "官方区分Community Edition（LGPLv3/GPLv3）和Commercial Edition。需核实际wheel/模块来源和许可文本；不能把板端C++ Qt与PC端PySide6依赖混为一套，也不因pip包名就推定使用者已满足许可条件。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/serial_pc/app.py",
+        "workspace/zynq_vibration_workbench_v7/software/serial_pc/serial_device.py"
+      ]
+    },
+    {
+      "id": "pyside6-third-party",
+      "official_url": "https://doc.qt.io/qtforpython-6/licenses.html",
+      "title": "Licenses Used in Qt for Python",
+      "component": "Qt for Python third-party components",
+      "version_scope": "当前文档；第三方集合可能随版本/模块变化",
+      "candidate_role": "pc_dependency_third_party_scope_review",
+      "verified_summary": "Qt for Python和Qt本体均可能包含独立第三方条款；官方说明仅需满足实际随应用使用的组件条款，不能将整站所有第三方包都列成项目实用依赖。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/serial_pc/app.py",
+        "third_party_notices.md"
+      ]
+    },
+    {
+      "id": "pyserial-3.5-license",
+      "official_url": "https://raw.githubusercontent.com/pyserial/pyserial/v3.5/LICENSE.txt",
+      "title": "pyserial v3.5 LICENSE.txt",
+      "component": "pyserial",
+      "version_scope": "固定tag v3.5；项目实际版本需核requirements或安装元数据",
+      "candidate_role": "actual_pc_import_dependency_3_5_is_reviewed_license_example_not_candidate_lock",
+      "verified_summary": "源码再分发须保留版权、条件和免责；二进制随文档等复现这些notice；不得未经许可用作者/贡献者名义背书。不能删去原文件头后给全包套新许可。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/software/serial_pc/serial_device.py"
+      ]
+    },
+    {
+      "id": "digilent-repo-root-license",
+      "official_url": "https://raw.githubusercontent.com/Digilent/vivado-library/master/License.txt",
+      "title": "vivado-library License.txt",
+      "component": "Digilent vivado-library root",
+      "version_scope": "master在线快照，未与项目拷贝revision逐字节比对",
+      "candidate_role": "upstream_root_comparison_not_local_rgb2dvi_license",
+      "verified_summary": "根文件为2017 Digilent MIT文本，要求在副本或实质部分保留版权及许可notice。但同仓具体文件可另有许可，不能仅用根MIT替换已有源码条款。",
+      "evidence_repo_paths": [
+        "fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "digilent-rgb2dvi-file-license",
+      "official_url": "https://github.com/Digilent/vivado-library/blob/master/ip/rgb2dvi/src/rgb2dvi.vhd",
+      "title": "rgb2dvi/src/rgb2dvi.vhd file header",
+      "component": "Digilent rgb2dvi VHDL",
+      "version_scope": "master在线文件头；项目实际复制文件仍需核对",
+      "candidate_role": "actual_local_rgb2dvi_bsd3_notice",
+      "verified_summary": "rgb2dvi.vhd文件头为2014 Digilent BSD3条款，区别于根MIT；保留源码notice，二进制材料复现notice，不用作者名背书。逐文件判断实际HDMI IP，不整树一律标MIT。",
+      "evidence_repo_paths": [
+        "fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "amd-vivado-2025.2-install-licenses",
+      "official_url": "https://docs.amd.com/r/2025.2-English/ug973-vivado-release-notes-install-license/Running-the-Installer",
+      "title": "UG973 2025.2 Running the Installer",
+      "component": "AMD Vivado / Vitis / Bootgen tools",
+      "version_scope": "2025.2官方文档",
+      "candidate_role": "external_pl_build_tool",
+      "verified_summary": "官方2025.2安装文档分别列出Vivado、Vitis、Bootgen等EULA及第三方说明。构建工具、可分发组件与独立开源文件须分开核，不能因生成成功或无额外费用推定可将工具文件公开。",
+      "evidence_repo_paths": [
+        "build-entrypoints/build-pl.ps1"
+      ]
+    },
+    {
+      "id": "amd-vivado-2025.2-eula",
+      "official_url": "https://download.amd.com/docnav/documents/eula/ug1593_vivado_ml_eulas_2025.2.pdf",
+      "title": "Vivado ML End User License Agreement linked by UG973 2025.2",
+      "component": "AMD Vivado software and designated distributable components",
+      "version_scope": "2025.2官方链接的7页PDF，正文版本日期2023.05.03；实际安装时接受协议仍须核对",
+      "candidate_role": "external_tool_and_specific_artifact_review",
+      "verified_summary": "指定可分发组件区分可修改源码与受限形态；分发条件含转为bitstream/编译对象或接收者持相同软件有效许可，且仅Xilinx器件用途。独立OSS/第三方条款另行适用。",
+      "evidence_repo_paths": [
+        "build-entrypoints/build-pl.ps1",
+        "license_status.md"
+      ],
+      "not_determined": "未判定项目每个xci/dcp/xsa/netlist/model具体再分发资格，也未认定同学或厂商提供的全部材料属于本条可分发组件。"
+    },
+    {
+      "id": "amd-vitis-2025.2-eula",
+      "official_url": "https://download.amd.com/docnav/documents/eula/end-user-license-agreement_2025.2.pdf",
+      "title": "Vitis Unified Software Platform Unified End User License Agreement",
+      "component": "AMD Vitis designated components",
+      "version_scope": "2025.2官方链接的7页PDF；不替代项目实际文件头或embeddedsw独立开源许可",
+      "candidate_role": "external_boot_source_context_not_fsbl_archive_in_candidate",
+      "verified_summary": "该协议也区分指定可分发组件及独立第三方/开源条款。FSBL、BSP驱动等须看实际版本/文件头和仓库许可，不能仅由Vitis生成或来自AMD即一概归为同一种许可。",
+      "evidence_repo_paths": [
+        "docs/dependencies.md"
+      ]
+    },
+    {
+      "id": "amd-fft-pg109-license",
+      "official_url": "https://docs.amd.com/r/en-US/pg109-xfft/Licensing-and-Ordering",
+      "title": "PG109 Licensing and Ordering",
+      "component": "AMD XFFT LogiCORE 9.1",
+      "version_scope": "PG109 v9.1当前页面，Release_Date2026-07-17；不直接证明2025.2每一模型文件的条款",
+      "candidate_role": "external_fft_ip_generation",
+      "verified_summary": "FFT9.1以无额外费用方式随Vivado提供，但仍受End User License约束。无额外费用不等于开源、公共领域或可把C模型/网表任意公开。具体文件仍需核所附notice和实际EULA。",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/generate_fft.tcl"
+      ]
+    },
+    {
+      "id": "pyinstaller-license",
+      "official_url": "https://pyinstaller.org/en/stable/license.html",
+      "title": "pyinstaller-license",
+      "component": "pyinstaller-license",
+      "version_scope": "Official6.22.3 documentation fetched2026-11-03",
+      "candidate_role": "optional_packaging_tool_not_vendored_or_required_by_candidate_build",
+      "verified_summary": "GPL2 with bundling exception; certain files Apache2; dependency licenses still apply. No project license selected.",
+      "evidence_repo_paths": [
+        "third_party_notices.md"
+      ]
+    },
+    {
+      "id": "numpy-2.4.2-license",
+      "official_url": "https://raw.githubusercontent.com/numpy/numpy/v2.4.2/LICENSE.txt",
+      "title": "numpy-2.4.2-license",
+      "component": "numpy-2.4.2-license",
+      "version_scope": "Fixedv2.4.2",
+      "candidate_role": "legacy_training_tool_import_dependency_not_production_rf",
+      "verified_summary": "BSD3 root license; does not inventory all wheel third-party libraries.",
+      "evidence_repo_paths": [
+        "workspace/zynq_vibration_workbench_v7/tools/model_training/train_model.py"
+      ]
+    },
+    {
+      "id": "scipy-1.17.1-license",
+      "official_url": "https://raw.githubusercontent.com/scipy/scipy/v1.17.1/LICENSE.txt",
+      "title": "scipy-1.17.1-license",
+      "component": "scipy-1.17.1-license",
+      "version_scope": "Fixedv1.17.1",
+      "candidate_role": "historical_exploration_excluded_from_default_candidate",
+      "verified_summary": "BSD3 root license; wheel bundled third-party clauses separately.",
+      "evidence_repo_paths": []
+    },
+    {
+      "id": "pywavelets-1.8.0-license",
+      "official_url": "https://raw.githubusercontent.com/PyWavelets/pywt/v1.8.0/LICENSE",
+      "title": "pywavelets-1.8.0-license",
+      "component": "pywavelets-1.8.0-license",
+      "version_scope": "Fixedv1.8.0",
+      "candidate_role": "historical_exploration_excluded_from_default_candidate",
+      "verified_summary": "MIT root license; preserve notice if redistributed.",
+      "evidence_repo_paths": []
+    },
+    {
+      "id": "sklearn-1.8.0-license",
+      "official_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.8.0/COPYING",
+      "title": "sklearn-1.8.0-license",
+      "component": "sklearn-1.8.0-license",
+      "version_scope": "Fixed1.8.0",
+      "candidate_role": "historical_exploration_excluded_from_default_candidate",
+      "verified_summary": "BSD3 root license; actual wheels and transitive components not inspected.",
+      "evidence_repo_paths": []
+    }
+  ],
+  "local_license_texts_expected": [
+    "fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt",
+    "workspace/zynq_vibration/hardware/display/driver/LICENSE",
+    "licenses/linux/copying.txt",
+    "licenses/linux/gpl-2.0.txt",
+    "licenses/linux/linux-syscall-note.txt",
+    "licenses/qt5base/license.lgplv3.txt",
+    "licenses/qt5base/license.gpl2.txt",
+    "licenses/qt5base/license.gpl3.txt",
+    "licenses/qt5base/license.gpl3-except.txt",
+    "licenses/qt5base/license.fdl.txt",
+    "licenses/buildroot/copying.txt"
+  ],
+  "boundaries": [
+    "Official URLs identify upstream documentation/terms, not permission for every candidate file.",
+    "Qt5.15.16 official examples are license-structure references; actual project Qt5.15.18 is a separate version fact.",
+    "Only actual modules and distributed components should enter notices; excluded Python exploration is not a production dependency.",
+    "The existence of local license texts does not select a project license or establish complete binary/rootfs obligations.",
+    "No publication, project-license selection, board operation or full fresh cross-machine rebuild was performed by this documentation work."
+  ]
+}

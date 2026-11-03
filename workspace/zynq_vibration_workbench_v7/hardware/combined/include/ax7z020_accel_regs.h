@@ -1,0 +1,35 @@
+/* SPDX-License-Identifier: MIT. Relative V6 AXI-Lite register contract. */
+#ifndef AX7Z020_ACCEL_REGS_H
+#define AX7Z020_ACCEL_REGS_H
+#define ACC_ID 0x00
+#define ACC_CONTROL 0x04
+#define ACC_STATUS 0x08
+#define ACC_PROFILE 0x0c
+#define ACC_INPUT_CH12 0x10
+#define ACC_INPUT_CH3_COMMIT 0x14
+#define ACC_RAW_COUNT 0x18
+#define ACC_LOW_COUNT 0x1c
+#define ACC_RESULT_INDEX 0x20
+#define ACC_RESULT_LO 0x24
+#define ACC_RESULT_HI 0x28
+#define ACC_REVISION 0x2c
+#define ACC_CYCLES_LO 0x30
+#define ACC_CYCLES_HI 0x34
+#define ACC_ERRORS 0x38
+#define ACC_RAW_REQUIRED 0x3c
+#define ACC_BANDS 0x40
+#define ACC_RESULT_READY_INDEX 0x78
+#define ACC_EXPECTED_REVISION 0x00060001u
+#define ACC_CONTROL_START 1u
+#define ACC_CONTROL_RESET 2u
+#define ACC_CONTROL_ACK 4u
+#define ACC_STATUS_IDLE 1u
+#define ACC_STATUS_BUSY 2u
+#define ACC_STATUS_DONE 4u
+#define ACC_STATUS_ERROR 8u
+#define ACC_STATUS_INPUT_READY 16u
+#define ACC_TAPS_50000 641u
+#define ACC_TAPS_25000 321u
+#define ACC_TAPS_10000 129u
+#define ACC_TAPS_5000 65u
+#endif

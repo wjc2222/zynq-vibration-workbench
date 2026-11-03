@@ -1,0 +1,16 @@
+/* Include ONLY in the PS+display image after matching its implemented XSA.
+ * These ranges belong exclusively to this fbdev driver, not DMAengine/GPIO.
+ */
+&amba {
+	ax7z020_fb: framebuffer@43000000 {
+		compatible = "codex,ax7z020-vdma-fb";
+		reg = <0x43000000 0x10000>, <0x43c00000 0x10000>,
+		      <0x41200000 0x10000>;
+		reg-names = "vdma", "vtc", "status";
+		interrupt-parent = <&intc>;
+		interrupts = <0 29 4>;
+		clocks = <&clkc 15>;
+		clock-names = "axi";
+		status = "okay";
+	};
+};
