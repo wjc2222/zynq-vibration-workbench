@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "schema": "dataset-audit.v1",
+  "basis": "declared metadata only; no sample reads or model evaluation",
+  "row_count": 8,
+  "split_counts": {
+    "train": 4,
+    "validation": 2,
+    "test": 2
+  },
+  "expected_labels": [
+    "fault",
+    "normal"
+  ],
+  "missing_labels_by_required_split": {
+    "train": [],
+    "validation": [],
+    "test": []
+  },
+  "unexpected_labels": [],
+  "group_leakage": [],
+  "duplicate_identities": [],
+  "checks": {
+    "required_splits_populated": true,
+    "label_coverage": true,
+    "groups_disjoint_across_splits": true,
+    "identities_unique": true
+  }
+}

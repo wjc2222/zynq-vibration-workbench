@@ -1,0 +1,13 @@
+{
+  "channels": 8,
+  "sampling_hz": 20000,
+  "bytes_per_sample": 3,
+  "per_record_overhead_bytes": 12,
+  "uart_baud": 115200,
+  "uart_framing_efficiency": 0.8,
+  "storage_MBps": 2,
+  "duration_seconds": 60,
+  "analysis_decimation": 4,
+  "fft_size": 1024,
+  "signal_max_hz": 6000
+}

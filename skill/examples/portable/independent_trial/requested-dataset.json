@@ -1,0 +1,61 @@
+{
+  "expected_labels": [
+    "normal",
+    "fault"
+  ],
+  "required_splits": [
+    "train",
+    "validation",
+    "test"
+  ],
+  "rows": [
+    {
+      "label": "normal",
+      "group": "run-a",
+      "split": "train",
+      "filepath": "symbolic/run-a/chunk-0001.bin"
+    },
+    {
+      "label": "normal",
+      "group": "run-a",
+      "split": "validation",
+      "filepath": "symbolic/run-a/chunk-0002.bin"
+    },
+    {
+      "label": "normal",
+      "group": "normal-train-other",
+      "split": "train",
+      "filepath": "symbolic/normal-train-other.bin"
+    },
+    {
+      "label": "fault",
+      "group": "fault-train-other",
+      "split": "train",
+      "filepath": "symbolic/fault-train-other.bin"
+    },
+    {
+      "label": "normal",
+      "group": "normal-validation-other",
+      "split": "validation",
+      "filepath": "symbolic/normal-validation-other.bin"
+    },
+    {
+      "label": "fault",
+      "group": "fault-validation-other",
+      "split": "validation",
+      "filepath": "symbolic/fault-validation-other.bin"
+    },
+    {
+      "label": "normal",
+      "group": "normal-test-other",
+      "split": "test",
+      "filepath": "symbolic/normal-test-other.bin"
+    },
+    {
+      "label": "fault",
+      "group": "fault-test-other",
+      "split": "test",
+      "filepath": "symbolic/fault-test-other.bin"
+    }
+  ]
+}

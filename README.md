@@ -15,7 +15,9 @@
 | 标注与训练 | 正常、不平衡、不对中、松动；完整记录人工标签，现场 ARM 训练并保存模型 |
 | 识别 | 提取69维，生产模型选42维；32树、深度3的原生C++随机森林，不用RPM选择参考或拒绝分类 |
 | PL处理 | 对称FIR、抽取至5 kHz、8192点共享FFT，采用PS经AXI-Lite送料的分析支路 |
-| Skill | 可复用工作流与三个检查脚本，见 [skill/README.md](skill/README.md) |
+| Skill | 面向其他FPGA/SoC工程的工作流、六类模板、五个CLI与跨任务验证，见 [skill/README.md](skill/README.md) |
+
+PL案例记录了对称FIR预加、三轴并行、双口BRAM、共享FFT及PS送料开销的取舍，并给出DSP/LUT/FF/BRAM占用、实际Vivado报告和分层A/B结果，见 [PL资源利用与优化案例](skill/examples/project_case/README.md)。新工程可复用方法，需替换自己的数据与硬件参数并重新验证。
 
 ## 快速开始
 

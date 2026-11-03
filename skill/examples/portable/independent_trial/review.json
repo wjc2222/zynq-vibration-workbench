@@ -1,0 +1,53 @@
+{
+  "schema": "independent-offline-reuse.v1",
+  "evaluator": "independent agent acting as an unfamiliar team",
+  "inputs": "synthetic engineering requirements and declared dataset inventory",
+  "original_project_configuration_used": false,
+  "hardware_executed": false,
+  "model_trained": false,
+  "outcomes": [
+    {
+      "input": "requested-profile.json",
+      "output": "requested-budget-result.json",
+      "exit_code": 1
+    },
+    {
+      "input": "candidate-no-decimation-profile.json",
+      "output": "candidate-no-decimation-budget-result.json",
+      "exit_code": 1
+    },
+    {
+      "input": "requested-dataset.json",
+      "output": "requested-dataset-result.json",
+      "exit_code": 1
+    },
+    {
+      "input": "candidate-grouped-dataset.json",
+      "output": "candidate-grouped-dataset-result.json",
+      "exit_code": 0
+    }
+  ],
+  "documentation_followup": {
+    "status": "pass",
+    "all_original_missing_documents_resolved": true,
+    "template_checks": {
+      "templates_valid_json_without_duplicate_keys": true,
+      "both_explicitly_planning_only": true,
+      "both_explicitly_incomplete": true,
+      "project_target_identity_unknown": true,
+      "project_adc_data_parameters_unknown": true,
+      "project_fir_fft_numeric_parameters_unknown": true,
+      "project_model_unspecified": true,
+      "experiment_no_fixed_classes_or_model": true,
+      "experiment_training_fit_only": true,
+      "experiment_status_not_run": true,
+      "experiment_group_fields_need_filling": true,
+      "originally_missing_docs_now_present": true,
+      "local_markdown_link_targets_exist": true,
+      "used_core_python_modules_unchanged": true
+    },
+    "markdown_documents_checked_at_review": 14,
+    "relative_links_checked_at_review": 78
+  },
+  "note": "Historical first-use missing-template observation retained in local review; finalized template links then rechecked. No hardware or classification performance inference."
+}

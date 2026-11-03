@@ -1,0 +1,17 @@
+{
+  "schema": "redacted-report-provenance.v1",
+  "reports": [
+    {
+      "file": "utilization.rpt",
+      "original_sha256": "9f3084a558446e8cb62ddcfc843c179bef5428f93cfa363ada40a0186be410cb",
+      "public_sha256": "418e74bd50537bc57ab36aaeab407dca0a7dc15c059a2db9990bf4197b4b7212",
+      "transformation": "Only Host and Command header lines redacted; all numeric tables and other lines byte-identical."
+    },
+    {
+      "file": "timing_summary.rpt",
+      "original_sha256": "ce7e295b3de9d2450d2161f2b89d1b18d44d429407a9e1f70470c2007736800d",
+      "public_sha256": "2426946b39d3ba8dbe457fb34451cd22c28204f0315cbd1d6b27bd4503937eed",
+      "transformation": "Only Host and Command header lines redacted; all numeric tables and other lines byte-identical."
+    }
+  ]
+}

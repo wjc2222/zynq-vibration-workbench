@@ -1,0 +1,11 @@
+{
+  "expected_labels": ["normal", "fault"],
+  "rows": [
+    {"label": "normal", "group": "train-a", "split": "train", "filepath": "samples/train/normal.csv"},
+    {"label": "fault", "group": "train-b", "split": "train", "filepath": "samples/train/fault.csv"},
+    {"label": "normal", "session": "validation-a", "split": "validation", "filepath": "samples/validation/normal.csv"},
+    {"label": "fault", "session": "validation-b", "split": "validation", "filepath": "samples/validation/fault.csv"},
+    {"label": "normal", "group": "test-a", "split": "test", "filepath": "samples/test/normal.csv"},
+    {"label": "fault", "group": "test-b", "split": "test", "filepath": "samples/test/fault.csv"}
+  ]
+}

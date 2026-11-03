@@ -1,0 +1,81 @@
+{
+  "format": "grouped-model-experiment-plan.v1",
+  "planning_only": true,
+  "status": "incomplete",
+  "instructions": "This is an experiment planning template, not the dataset_audit.py schema or a trainer configuration. Fill nulls from evidence before execution.",
+  "task": {
+    "type": null,
+    "target_labels_or_quantity": [],
+    "target_units": null,
+    "intended_domain": null,
+    "legal_inputs": [],
+    "forbidden_inputs": []
+  },
+  "sources": {
+    "dataset_manifest_path": null,
+    "dataset_manifest_sha256": null,
+    "source_kind": "unknown",
+    "label_origin": null,
+    "calibration_or_quality_evidence": [],
+    "excluded_data_with_reason": []
+  },
+  "independence": {
+    "observation_unit": null,
+    "primary_group_field": null,
+    "higher_level_group_fields": [],
+    "parent_source_and_interval_fields": [],
+    "duplicate_policy": null,
+    "overlap_policy": null,
+    "domain_shift_to_test": null
+  },
+  "split": {
+    "strategy": null,
+    "seed_or_deterministic_rule": null,
+    "train_groups": [],
+    "validation_groups": [],
+    "test_groups": [],
+    "split_frozen_before_fitting": false,
+    "test_set_access_policy": null,
+    "class_coverage_requirements": null,
+    "insufficient_groups_behavior": "report insufficient independent data; do not substitute random window splitting"
+  },
+  "pipeline": {
+    "feature_or_tensor_schema": null,
+    "units_and_order": null,
+    "imputation": null,
+    "normalization": null,
+    "feature_selection": null,
+    "fit_scope": "training folds only",
+    "baseline": null,
+    "candidate_models": [],
+    "hyperparameter_selection_data": "training/validation only"
+  },
+  "evaluation": {
+    "primary_metric": null,
+    "secondary_metrics": [],
+    "aggregation_unit": null,
+    "per_class_or_condition_breakdown": [],
+    "confidence_interval_method": null,
+    "minimum_detectable_effect": null,
+    "inference_latency_start_event": null,
+    "inference_latency_end_event": null,
+    "repeat_and_warmup_plan": null,
+    "synthetic_data_role": "software and boundary validation only"
+  },
+  "artifact": {
+    "model_schema": null,
+    "training_code_revision": null,
+    "preprocessing_sha256": null,
+    "model_sha256": null,
+    "source_and_split_manifest_sha256": null,
+    "target_runtime_compatibility": null
+  },
+  "results": {
+    "status": "not_run",
+    "audit_output_path": null,
+    "training_output_path": null,
+    "held_out_evaluation_path": null,
+    "limitations": [],
+    "hardware_validation_status": "not_run"
+  }
+}

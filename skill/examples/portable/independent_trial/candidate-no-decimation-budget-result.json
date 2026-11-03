@@ -1,0 +1,27 @@
+{
+  "status": "fail",
+  "schema": "engineering-budget.v1",
+  "basis": "declared inputs only; no measured hardware bandwidth",
+  "quantities": {
+    "record_bytes": 36,
+    "raw_bytes_per_second": 720000,
+    "raw_bits_per_second": 5760000,
+    "duration_payload_bytes": 43200000,
+    "uart_payload_bytes_per_second": 11520.0,
+    "uart_margin_bytes_per_second": -708480.0,
+    "storage_bytes_per_second": 2000000,
+    "storage_margin_bytes_per_second": 1280000,
+    "storage_capacity_to_required_ratio": 2.7777777777777777,
+    "analysis_sampling_hz": 20000.0,
+    "analysis_nyquist_hz": 10000.0,
+    "fft_observation_seconds": 0.0512,
+    "fft_bin_spacing_hz": 19.53125
+  },
+  "checks": {
+    "uart_full_raw_feasible": false,
+    "storage_full_raw_feasible": true,
+    "fft_window_fits_duration": true,
+    "signal_below_analysis_nyquist": true
+  },
+  "resources": {}
+}

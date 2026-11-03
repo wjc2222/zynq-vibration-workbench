@@ -1,0 +1,138 @@
+{
+  "format": "fpga-soc-project-contract.v1",
+  "planning_only": true,
+  "status": "incomplete",
+  "instructions": "Fill confirmed project facts. null means unknown, not zero or permission. This is not a CLI profile or executable deployment configuration.",
+  "project": {
+    "name": null,
+    "task_input": null,
+    "task_output": null,
+    "source_revision": null,
+    "source_root": null,
+    "output_root": null,
+    "protected_baseline": [],
+    "permitted_operations": [
+      "host planning"
+    ],
+    "source_kind": "unknown"
+  },
+  "target": {
+    "vendor": null,
+    "device_part": null,
+    "board": null,
+    "tool_versions": {},
+    "os": null,
+    "compiler_or_sdk": null,
+    "abi": null,
+    "clock_domains": [],
+    "memory_map_source": null
+  },
+  "data": {
+    "channels": null,
+    "channel_names": [],
+    "units": [],
+    "sampling_hz": null,
+    "adc_or_source": null,
+    "payload_encoding": null,
+    "bytes_per_sample": null,
+    "record_bytes": null,
+    "byte_order": null,
+    "frame_protocol_revision": null,
+    "crc_specification": null,
+    "index_or_timestamp_semantics": null,
+    "peak_burst_bytes": null,
+    "maximum_service_stall_seconds": null,
+    "raw_authoritative_output": null,
+    "preview_semantics": null,
+    "loss_policy": null
+  },
+  "requirements": {
+    "continuous_duration_seconds": null,
+    "throughput_records_per_second": null,
+    "latency_start_event": null,
+    "latency_end_event": null,
+    "latency_limit_seconds": null,
+    "persistence_level": null,
+    "maximum_power_watts": null,
+    "resource_limits": {},
+    "failure_behavior": null
+  },
+  "partition": {
+    "ps_baseline": null,
+    "pl_candidates": [],
+    "chosen_boundary": null,
+    "decision_evidence": [],
+    "control_abi_version": null,
+    "data_interface": null,
+    "completion_semantics": null,
+    "backpressure_semantics": null,
+    "timeout_and_recovery": null
+  },
+  "pl": {
+    "clock_hz": null,
+    "fir_taps": null,
+    "fir_coefficient_sha256": null,
+    "analysis_decimation": null,
+    "fft_size": null,
+    "fft_order": null,
+    "fft_scaling": null,
+    "input_signed_bits": null,
+    "coefficient_signed_bits": null,
+    "accumulator_bits": null,
+    "rounding": null,
+    "overflow_policy": null,
+    "shared_core_schedule": null,
+    "datapath_stages": [],
+    "resource_estimates": {},
+    "implemented_resource_report": null,
+    "proposed_only_changes": []
+  },
+  "ps": {
+    "task_type": null,
+    "feature_or_tensor_schema": null,
+    "legal_inference_inputs": [],
+    "forbidden_leakage_inputs": [],
+    "independent_group_definition": null,
+    "split_manifest": null,
+    "preprocessing_fit_scope": "training groups only",
+    "model_type": null,
+    "model_sha256": null,
+    "quality_rejection_policy": null
+  },
+  "ui": {
+    "framework": null,
+    "resolution_pixels": null,
+    "input_method": null,
+    "display_units": [],
+    "mode_and_range_policy": null,
+    "preview_queue_limit": null,
+    "job_identity_rule": null,
+    "writable_persistent_config_root": null,
+    "response_measurement_events": null
+  },
+  "acceptance": {
+    "plan_path": null,
+    "numeric_reference_source": null,
+    "numeric_comparison_scope": null,
+    "atol": null,
+    "rtol": null,
+    "tolerance_basis": null,
+    "performance_scope": null,
+    "independent_test_definition": null,
+    "required_evidence_kinds": [],
+    "hardware_items_not_yet_verified": []
+  },
+  "unknowns": [
+    {
+      "field": "target.device_part",
+      "blocks": "device-specific resource and timing acceptance",
+      "how_to_resolve": "inspect the actual project/target specification"
+    }
+  ],
+  "reusable_tool_inputs": {
+    "note": "Create separate profiles from confirmed facts. Do not pass this whole contract to the CLIs.",
+    "budget_profile_path": null,
+    "dataset_manifest_path": null,
+    "tool_contract_reference": "../references/tool-contracts.md"
+  }
+}

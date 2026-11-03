@@ -1,0 +1,100 @@
+{
+  "format": "target-specific-deployment-plan.v1",
+  "planning_only": true,
+  "status": "incomplete",
+  "instructions": "Local planning record only. This file does not authorize or execute board operations. Keep real device/media identities private.",
+  "request": {
+    "objective": null,
+    "authorized_operations": [
+      "host planning"
+    ],
+    "explicit_target": null,
+    "persistent_changes_requested": false,
+    "existing_pause_constraints": []
+  },
+  "target_identity": {
+    "board_or_device": null,
+    "identity_observed_at": null,
+    "jtag_or_equivalent": null,
+    "uart_or_equivalent": null,
+    "running_boot_identity": null,
+    "media_identity": null,
+    "identity_evidence_path": null
+  },
+  "storage": {
+    "layout_evidence_path": null,
+    "partition_or_region_map": [],
+    "boot_chain": null,
+    "active_payload_locations": [],
+    "writable_regions": [],
+    "must_preserve_regions": [],
+    "free_space_bytes": null,
+    "filesystem_or_flash_semantics": null
+  },
+  "compatibility": {
+    "device_part": null,
+    "application_abi": null,
+    "driver_uapi_revision": null,
+    "fpga_register_abi": null,
+    "kernel_or_rtos_version": null,
+    "device_tree_or_bsp_revision": null,
+    "model_schema": null
+  },
+  "candidate_artifacts": [],
+  "preserve_inventory": {
+    "manifest_path": null,
+    "manifest_sha256": null,
+    "raw_data": null,
+    "calibration": null,
+    "configuration": null,
+    "models": null,
+    "old_payloads": null
+  },
+  "backup": {
+    "location": null,
+    "original_manifest_path": null,
+    "backup_manifest_path": null,
+    "hashes_verified": false,
+    "restore_readability_verified": false
+  },
+  "change_plan": {
+    "mode": null,
+    "exact_files_or_address_ranges": [],
+    "steps": [],
+    "sync_and_readback_method": null,
+    "unmount_or_flash_finalization": null,
+    "irreversible_operations": []
+  },
+  "rollback": {
+    "trigger_conditions": [],
+    "previous_artifact_manifest": null,
+    "recovery_entry": null,
+    "restore_steps": [],
+    "verified_restoration_status": "not_run"
+  },
+  "acceptance": {
+    "prepared": "pending",
+    "written_and_readback": "not_run",
+    "running_identity": "not_run",
+    "preserved_data": "not_run",
+    "software_reboot": "not_run",
+    "physical_cold_boot": "not_run",
+    "physical_input_or_touch": "not_run",
+    "real_acquisition": "not_run",
+    "model_or_task_independent_validation": "not_run"
+  },
+  "stop_conditions": [
+    "target identity is unresolved",
+    "write range or boot path is unresolved",
+    "required preservation/backup cannot be verified",
+    "candidate and running ABI are incompatible",
+    "requested operation exceeds current authorization or conflicts with a pause"
+  ],
+  "receipt": {
+    "actual_target": null,
+    "actual_artifact_sha256s": {},
+    "observations": [],
+    "failed_or_unverified_items": [],
+    "record_path": null
+  }
+}

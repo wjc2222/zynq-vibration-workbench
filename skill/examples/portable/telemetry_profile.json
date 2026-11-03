@@ -1,0 +1,16 @@
+{
+  "channels": 12,
+  "sampling_hz": 20,
+  "bytes_per_sample": 4,
+  "per_record_overhead_bytes": 16,
+  "uart_baud": 115200,
+  "uart_framing_efficiency": 0.8,
+  "storage_MBps": 0.01,
+  "duration_seconds": 60,
+  "analysis_decimation": 1,
+  "fft_size": 256,
+  "signal_max_hz": 8,
+  "resources": {
+    "scheduled_tasks": {"used": 3, "capacity": 8, "limit_fraction": 0.75}
+  }
+}

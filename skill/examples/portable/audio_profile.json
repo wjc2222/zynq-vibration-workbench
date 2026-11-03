@@ -1,0 +1,17 @@
+{
+  "channels": 2,
+  "sampling_hz": 48000,
+  "bytes_per_sample": 3,
+  "per_record_overhead_bytes": 4,
+  "uart_baud": 12000000,
+  "uart_framing_efficiency": 0.8,
+  "storage_MBps": 4,
+  "duration_seconds": 30,
+  "analysis_decimation": 2,
+  "fft_size": 4096,
+  "signal_max_hz": 10000,
+  "resources": {
+    "processing_units": {"used": 80, "capacity": 200, "limit_fraction": 0.8},
+    "buffer_bytes": {"used": 32768, "capacity": 131072}
+  }
+}

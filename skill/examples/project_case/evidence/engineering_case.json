@@ -1,0 +1,140 @@
+{
+  "schema": "published-engineering-case.v1",
+  "source_kind": "historical actual engineering evidence; no new hardware run",
+  "architecture": "ps_fed_axil_replay_coprocessor",
+  "rawtap_implemented": false,
+  "hp2_dma_implemented": false,
+  "part": "xc7z020clg400-2",
+  "analysis_clock_hz": 100000000,
+  "resources": {
+    "lut": {
+      "used": 14722,
+      "capacity": 53200
+    },
+    "ff": {
+      "used": 20024,
+      "capacity": 106400
+    },
+    "bram36_equivalent": {
+      "used": 71.5,
+      "capacity": 140
+    },
+    "dsp": {
+      "used": 19,
+      "capacity": 220
+    }
+  },
+  "timing_ns": {
+    "wns": 0.603,
+    "whs": 0.045
+  },
+  "drc_error_count": 0,
+  "inherited_unsafe_cdc_endpoints": 2,
+  "fir": {
+    "scope": "FIR-only RTL with explicit nonfunctional FFT stub",
+    "board_verified": false,
+    "routed_timing_verified": false,
+    "symmetric_cases": 28,
+    "symmetric_exact_sample_checks": 688128,
+    "symmetric_stat_checks": 504,
+    "coefficient_symmetry_exact": true,
+    "profiles": [
+      {
+        "profile": 0,
+        "input_rate_hz": 50000,
+        "taps": 641,
+        "multiplier_lanes": 3,
+        "direct_mac_terms": 641,
+        "symmetric_mac_terms": 321,
+        "direct_fir_state_cycles": 5267456,
+        "symmetric_fir_state_cycles": 2654208,
+        "fir_cycle_reduction_percent": 49.61119751166407,
+        "direct_start_to_mean_cycles": 5377789,
+        "symmetric_start_to_mean_cycles": 2764541,
+        "start_to_mean_reduction_percent": 48.593353141969686,
+        "simulated_start_to_mean_ms_at_100mhz": 27.64541
+      },
+      {
+        "profile": 1,
+        "input_rate_hz": 25000,
+        "taps": 321,
+        "multiplier_lanes": 3,
+        "direct_mac_terms": 321,
+        "symmetric_mac_terms": 161,
+        "direct_fir_state_cycles": 2646016,
+        "symmetric_fir_state_cycles": 1343488,
+        "fir_cycle_reduction_percent": 49.22600619195047,
+        "direct_start_to_mean_cycles": 2713474,
+        "symmetric_start_to_mean_cycles": 1410946,
+        "start_to_mean_reduction_percent": 48.00222887707787,
+        "simulated_start_to_mean_ms_at_100mhz": 14.10946
+      },
+      {
+        "profile": 2,
+        "input_rate_hz": 10000,
+        "taps": 129,
+        "multiplier_lanes": 3,
+        "direct_mac_terms": 129,
+        "symmetric_mac_terms": 65,
+        "direct_fir_state_cycles": 1073152,
+        "symmetric_fir_state_cycles": 557056,
+        "fir_cycle_reduction_percent": 48.091603053435115,
+        "direct_start_to_mean_cycles": 1114885,
+        "symmetric_start_to_mean_cycles": 598789,
+        "start_to_mean_reduction_percent": 46.291411221785204,
+        "simulated_start_to_mean_ms_at_100mhz": 5.98789
+      },
+      {
+        "profile": 3,
+        "input_rate_hz": 5000,
+        "taps": 65,
+        "multiplier_lanes": 3,
+        "direct_mac_terms": 65,
+        "symmetric_mac_terms": 33,
+        "direct_fir_state_cycles": 548864,
+        "symmetric_fir_state_cycles": 294912,
+        "fir_cycle_reduction_percent": 46.26865671641791,
+        "direct_start_to_mean_cycles": 582022,
+        "symmetric_start_to_mean_cycles": 328070,
+        "start_to_mean_reduction_percent": 43.632714914556495,
+        "simulated_start_to_mean_ms_at_100mhz": 3.2807
+      }
+    ]
+  },
+  "mmio": {
+    "scope": "Actual UART-recorded synthetic driver A/B on the same PL; three timings per rate/backend and seven complete-payload comparisons. Not mechanical-fault accuracy, physical touch latency or acquisition concurrency.",
+    "timing_scope": "elapsed_ms/cpu_ms are CLI accelerator-run metrics. PL cycles cover START-to-DONE, including PS input gaps and FIR/statistics/Hann/XFFT/bands; exclude result readback and later ARM checks. They are not FIR-only cycles. Reference medians are an environment control, not an identical RTL implementation.",
+    "sample_rate_hz": 50000,
+    "old_median_ms": 124.239595,
+    "new_median_ms": 76.995511,
+    "repetitions_per_rate_backend": 3,
+    "complete_payload_comparisons": 7,
+    "exclude_from_exact_compare": [
+      "cycle counters"
+    ]
+  },
+  "limitations": [
+    "FIR-only simulations use an explicitly nonfunctional FFT stub.",
+    "MMIO performance uses synthetic input on one board, not mechanical accuracy or concurrent UI latency.",
+    "Positive timing slack under existing constraints does not eliminate inherited CDC/constraint warnings."
+  ],
+  "provenance": {
+    "routed_reports": [
+      {
+        "file": "utilization.rpt",
+        "original_sha256": "9f3084a558446e8cb62ddcfc843c179bef5428f93cfa363ada40a0186be410cb",
+        "public_sha256": "418e74bd50537bc57ab36aaeab407dca0a7dc15c059a2db9990bf4197b4b7212",
+        "transformation": "Only Host and Command header lines redacted; all numeric tables and other lines byte-identical."
+      },
+      {
+        "file": "timing_summary.rpt",
+        "original_sha256": "ce7e295b3de9d2450d2161f2b89d1b18d44d429407a9e1f70470c2007736800d",
+        "public_sha256": "2426946b39d3ba8dbe457fb34451cd22c28204f0315cbd1d6b27bd4503937eed",
+        "transformation": "Only Host and Command header lines redacted; all numeric tables and other lines byte-identical."
+      }
+    ],
+    "fir_summary_original_sha256": "abc904f1fb90be4993545a7bd8bd4f7aa5e7f777d2064c99db10e2724cd1b1f7",
+    "mmio_summary_original_sha256": "3d087ce6d578089003849e6f9095b0816f1b614551d1f6878de23584a7481e4c",
+    "summary_transformation": "Selected fields only, private file paths and port identities omitted; not byte-identical to original JSON."
+  }
+}

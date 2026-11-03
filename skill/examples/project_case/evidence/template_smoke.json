@@ -1,0 +1,33 @@
+{
+  "schema": "vivado-template-smoke.v1",
+  "tool": "Vivado 2025.2",
+  "part": "xc7z020clg400-2",
+  "design": "synthetic minimal single-register design, synthesized in memory",
+  "template_sha256": "0c5437f7414b4ab5645eb19ff8290f08c9dffbb0b3aca704456378c4b6bc172b",
+  "template_configured_for_test": {
+    "clock_name": "sample_clk",
+    "period_ns": 10.0,
+    "required_ports": {
+      "clk": "IN",
+      "dout": "OUT"
+    }
+  },
+  "checks": [
+    {
+      "name": "default_unknown_target",
+      "passed": true
+    },
+    {
+      "name": "real_vivado_inventory",
+      "passed": true
+    },
+    {
+      "name": "wrong_clock_rejected",
+      "passed": true
+    }
+  ],
+  "scope": "Actual Vivado execution, not a mock. No board programming, routing, DMA/AXI traffic or PYNQ operation.",
+  "workflow": "Copy template to a new ASCII output directory, fill target/clock/ports, source it in the matching synthesized design. Confirm rejection with the default unknown target and a 9ns expected period against the actual 10ns clock.",
+  "original_log_sha256": "a43f4e548e9722e985462bffbd483d24380bb0116c4fcfec93bce9ecd1ca6e62",
+  "source_log_retained_locally": true
+}

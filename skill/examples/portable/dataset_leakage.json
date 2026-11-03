@@ -1,0 +1,8 @@
+{
+  "expected_labels": ["normal"],
+  "required_splits": ["train", "test"],
+  "rows": [
+    {"label": "normal", "group": "same-session", "split": "train", "filepath": "samples/shared.csv", "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+    {"label": "normal", "session": "same-session", "split": "test", "filepath": "samples/shared.csv", "hash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+  ]
+}
