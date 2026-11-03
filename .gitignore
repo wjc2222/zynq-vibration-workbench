@@ -3,7 +3,6 @@
 __pycache__/
 *.pyc
 .venv/
-build/
 build-*/
 .Xil/
 *.jou
@@ -25,3 +24,7 @@ private_review/
 .env
 .env.*
 # Coefficient .mem and synthetic test source are intentionally tracked.
+
+# Official build/reports and declared synthetic fixture are tracked sources/evidence.
+!build/reports/**/*.log
+!data/*.bin

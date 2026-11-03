@@ -1,0 +1,140 @@
+Internal ctest changing into directory: <host-build>
+Test project <host-build>
+      Start  1: accelerator_contract
+ 1/67 Test  #1: accelerator_contract .........................   Passed    0.13 sec
+      Start  2: accelerator_comparison_faults
+ 2/67 Test  #2: accelerator_comparison_faults ................   Passed    0.02 sec
+      Start  3: capture_service_protocol
+ 3/67 Test  #3: capture_service_protocol .....................   Passed   22.46 sec
+      Start  4: stream_service_storage_protocol
+ 4/67 Test  #4: stream_service_storage_protocol ..............   Passed   10.10 sec
+      Start  5: stream_delete_operator_labels
+ 5/67 Test  #5: stream_delete_operator_labels ................   Passed    0.13 sec
+      Start  6: stream_display_raw_payload
+ 6/67 Test  #6: stream_display_raw_payload ...................   Passed    0.05 sec
+      Start  7: stream_delete_directory_identity
+ 7/67 Test  #7: stream_delete_directory_identity .............   Passed    0.05 sec
+      Start  8: stream_bridge_protocol
+ 8/67 Test  #8: stream_bridge_protocol .......................   Passed   32.06 sec
+      Start  9: sha256_known_vectors
+ 9/67 Test  #9: sha256_known_vectors .........................   Passed    0.03 sec
+      Start 10: candidate_model_math_and_state
+10/67 Test #10: candidate_model_math_and_state ...............   Passed    0.13 sec
+      Start 11: per_channel_calibration
+11/67 Test #11: per_channel_calibration ......................   Passed    0.03 sec
+      Start 12: core_crc_and_execution
+12/67 Test #12: core_crc_and_execution .......................   Passed    2.97 sec
+      Start 13: detection_profile_and_gates
+13/67 Test #13: detection_profile_and_gates ..................   Passed    0.05 sec
+      Start 14: candidate_cli_provenance_and_rejection
+14/67 Test #14: candidate_cli_provenance_and_rejection .......   Passed    0.39 sec
+      Start 15: path_protection_relative_missing
+15/67 Test #15: path_protection_relative_missing .............   Passed    0.67 sec
+      Start 16: detection_cli
+16/67 Test #16: detection_cli ................................   Passed    0.25 sec
+      Start 17: core_protocol_and_signal
+17/67 Test #17: core_protocol_and_signal .....................   Passed    0.82 sec
+      Start 18: storage_post_rename_sync
+18/67 Test #18: storage_post_rename_sync .....................   Passed    6.23 sec
+      Start 19: candidate_speed_domain_policy
+19/67 Test #19: candidate_speed_domain_policy ................   Passed    0.05 sec
+      Start 20: reference_library_math_and_provenance
+20/67 Test #20: reference_library_math_and_provenance ........   Passed    0.02 sec
+      Start 21: reference_ensemble_robustness
+21/67 Test #21: reference_ensemble_robustness ................   Passed    0.03 sec
+      Start 22: reference_validation_group_holdout
+22/67 Test #22: reference_validation_group_holdout ...........   Passed    0.44 sec
+      Start 23: reference_speed_tolerant_policy
+23/67 Test #23: reference_speed_tolerant_policy ..............   Passed    0.04 sec
+      Start 24: supervised_rpmfree_features
+24/67 Test #24: supervised_rpmfree_features ..................   Passed    0.04 sec
+      Start 25: supervised_training_and_group_holdout
+25/67 Test #25: supervised_training_and_group_holdout ........   Passed    0.08 sec
+      Start 26: gui_plot_cache_interaction
+26/67 Test #26: gui_plot_cache_interaction ...................   Passed    1.21 sec
+      Start 27: gui_raw_preview_math
+27/67 Test #27: gui_raw_preview_math .........................   Passed    0.01 sec
+      Start 28: gui_workbench_interaction
+28/67 Test #28: gui_workbench_interaction ....................   Passed    3.08 sec
+      Start 29: gui_detection_states
+29/67 Test #29: gui_detection_states .........................   Passed    1.64 sec
+      Start 30: gui_async_states
+30/67 Test #30: gui_async_states .............................   Passed    2.88 sec
+      Start 31: gui_acquisition_service
+31/67 Test #31: gui_acquisition_service ......................   Passed    9.30 sec
+      Start 32: reference_library_workflow
+32/67 Test #32: reference_library_workflow ...................   Passed    2.78 sec
+      Start 33: reference_ensemble_workflow
+33/67 Test #33: reference_ensemble_workflow ..................   Passed    3.67 sec
+      Start 34: v7_root_window_flow
+34/67 Test #34: v7_root_window_flow ..........................   Passed   12.38 sec
+      Start 35: v7_compact_layout_flow
+35/67 Test #35: v7_compact_layout_flow .......................   Passed   12.17 sec
+      Start 36: new_workbench_fixed_ranges
+36/67 Test #36: new_workbench_fixed_ranges ...................   Passed    3.75 sec
+      Start 37: v7_record_labels_storage
+37/67 Test #37: v7_record_labels_storage .....................   Passed    0.05 sec
+      Start 38: v7_record_labels_capture
+38/67 Test #38: v7_record_labels_capture .....................   Passed    1.76 sec
+      Start 39: candidate_panel_workflow
+39/67 Test #39: candidate_panel_workflow .....................   Passed    3.26 sec
+      Start 40: new_workbench_preview_batch_ui
+40/67 Test #40: new_workbench_preview_batch_ui ...............   Passed    0.74 sec
+      Start 41: new_workbench_preview_backlog_165ms
+41/67 Test #41: new_workbench_preview_backlog_165ms ..........   Passed    3.19 sec
+      Start 42: new_workbench_preview_backlog_overflow
+42/67 Test #42: new_workbench_preview_backlog_overflow .......   Passed    3.11 sec
+      Start 43: new_workbench_zero_centered
+43/67 Test #43: new_workbench_zero_centered ..................   Passed    0.97 sec
+      Start 44: new_workbench_live_view_exact
+44/67 Test #44: new_workbench_live_view_exact ................   Passed    0.46 sec
+      Start 45: new_workbench_calibration_settings
+45/67 Test #45: new_workbench_calibration_settings ...........   Passed    0.52 sec
+      Start 46: new_workbench_calibration_integration
+46/67 Test #46: new_workbench_calibration_integration ........   Passed    3.51 sec
+      Start 47: new_workbench_touch_directory
+47/67 Test #47: new_workbench_touch_directory ................   Passed    0.61 sec
+      Start 48: new_workbench_touch_directory_sync_failure
+48/67 Test #48: new_workbench_touch_directory_sync_failure ...   Passed    0.53 sec
+      Start 49: new_workbench_touch_gestures
+49/67 Test #49: new_workbench_touch_gestures .................   Passed    3.30 sec
+      Start 50: new_workbench_raw_fidelity
+50/67 Test #50: new_workbench_raw_fidelity ...................   Passed    1.04 sec
+      Start 51: new_workbench_live_follow
+51/67 Test #51: new_workbench_live_follow ....................   Passed    0.43 sec
+      Start 52: new_workbench_stream_continuity_w1
+52/67 Test #52: new_workbench_stream_continuity_w1 ...........   Passed    0.53 sec
+      Start 53: new_workbench_stream_timed_w0
+53/67 Test #53: new_workbench_stream_timed_w0 ................   Passed    0.45 sec
+      Start 54: new_workbench_stream_timed_w1
+54/67 Test #54: new_workbench_stream_timed_w1 ................   Passed    0.43 sec
+      Start 55: new_workbench_stream_stop_w0
+55/67 Test #55: new_workbench_stream_stop_w0 .................   Passed    0.04 sec
+      Start 56: new_workbench_stream_stop_w1
+56/67 Test #56: new_workbench_stream_stop_w1 .................   Passed    0.04 sec
+      Start 57: new_workbench_stream_close_w0
+57/67 Test #57: new_workbench_stream_close_w0 ................   Passed    0.03 sec
+      Start 58: new_workbench_stream_close_w1
+58/67 Test #58: new_workbench_stream_close_w1 ................   Passed    0.02 sec
+      Start 59: new_workbench_single_waveform
+59/67 Test #59: new_workbench_single_waveform ................   Passed    0.88 sec
+      Start 60: new_workbench_stack_navigation
+60/67 Test #60: new_workbench_stack_navigation ...............   Passed    0.80 sec
+      Start 61: new_workbench_fresh_user
+61/67 Test #61: new_workbench_fresh_user .....................   Passed   16.59 sec
+      Start 62: new_workbench_stream_page
+62/67 Test #62: new_workbench_stream_page ....................   Passed    4.84 sec
+      Start 63: new_workbench_parameters
+63/67 Test #63: new_workbench_parameters .....................   Passed    0.59 sec
+      Start 64: new_workbench_capture_worker
+64/67 Test #64: new_workbench_capture_worker .................   Passed   38.65 sec
+      Start 65: new_workbench_native_drop
+65/67 Test #65: new_workbench_native_drop ....................   Passed    2.08 sec
+      Start 66: new_workbench_window_data
+66/67 Test #66: new_workbench_window_data ....................   Passed    6.35 sec
+      Start 67: new_workbench_capture_flow
+67/67 Test #67: new_workbench_capture_flow ...................   Passed   15.48 sec
+
+100% tests passed, 0 tests failed out of 67
+
+Total Test time (real) = 241.62 sec

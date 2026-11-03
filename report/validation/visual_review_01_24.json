@@ -1,0 +1,233 @@
+{
+  "schema": "final-word-pdf-visual-review.v1",
+  "reviewer": "official_report_materials",
+  "docx_sha256": "ceea5482efdca670ff688d9f1a0db418a5819dd6d4e2c8f8e4b1a7420b9d8047",
+  "pdf_sha256": "f5d58bc35151d2125dbca95aa372cc9052a7baaed609a5c5703abe873d304686",
+  "page_count": 42,
+  "landscape_pages": [
+    5,
+    8,
+    12
+  ],
+  "method": "Each final 130dpi full-page PNG 1-24 opened individually with view_image; visual review performed after metadata-cleared final DOCX was exported read-only by Microsoft Word. No old 36-page render evidence reused.",
+  "overall_pass": true,
+  "pages": [
+    {
+      "page": 1,
+      "image": "page-01.png",
+      "image_sha256": "5c937ba546d46be352acc99b7bf15d57fd992802fe4359c24999100db0b3181f",
+      "pass": true,
+      "observations": [
+        "封面标题、版本表和摘要完整；无缺字、表格溢出或页脚重叠。"
+      ]
+    },
+    {
+      "page": 2,
+      "image": "page-02.png",
+      "image_sha256": "57a1c6509ae8aedf9863feba1238ce2a0ce7a92ed8d07635152e79c650d60c4a",
+      "pass": true,
+      "observations": [
+        "21项内容导览的页码与实际章首对应，点引导线及七目录说明清楚。"
+      ]
+    },
+    {
+      "page": 3,
+      "image": "page-03.png",
+      "image_sha256": "0936c2f9ac83968373e190a34f326bdcde6d19c6d649a7bb40028bf14e5d9753",
+      "pass": true,
+      "observations": [
+        "背景、前人工作与创新正文段落完整，引用符号和中英文字体可读。"
+      ]
+    },
+    {
+      "page": 4,
+      "image": "page-04.png",
+      "image_sha256": "ded24f6bc6c1bcb35a8ed88d2821f1b98cbdf73fe70d6f2c814e5193380f19ff",
+      "pass": true,
+      "observations": [
+        "系统架构正文与另页图2-1说明完整，独立采集与分析边界清楚。"
+      ]
+    },
+    {
+      "page": 5,
+      "image": "page-05.png",
+      "image_sha256": "62a8355def3acfb188658ab96995791194007694ca7bfff677375b1a4d1237f4",
+      "pass": true,
+      "observations": [
+        "A4横向系统框图等比完整，三面板、线条、标签、图2-1题注与页码未越界。"
+      ]
+    },
+    {
+      "page": 6,
+      "image": "page-06.png",
+      "image_sha256": "ec4dea51957eda10db575ea6463365a8c23decd816c496b6df13fbea72f4baf3",
+      "pass": true,
+      "observations": [
+        "表3-1表头、字段和下方段落完整，单位与长英文标识清楚。"
+      ]
+    },
+    {
+      "page": 7,
+      "image": "page-07.png",
+      "image_sha256": "4677dd1977794168157de121dd09faa6b5aae9f8bb5f5a3bd5939a6d375fd4bb",
+      "pass": true,
+      "observations": [
+        "PL固定点、支持长度与FFT正文可读，未出现截断或异常分页。"
+      ]
+    },
+    {
+      "page": 8,
+      "image": "page-08.png",
+      "image_sha256": "98bcfa1535855dfa47e2caea0042e508690e67921aad784af313533edc88f737",
+      "pass": true,
+      "observations": [
+        "A4横向PL图完整，功率/频带累加措辞正确，图4-1题注不与正文或页脚重叠。"
+      ]
+    },
+    {
+      "page": 9,
+      "image": "page-09.png",
+      "image_sha256": "da51bfd385633b32e9ff53395a9e29861f4be26d8af45e1f59f970b8c911a3f7",
+      "pass": true,
+      "observations": [
+        "PS/PL接口正文及寄存器标识可读，段落与页脚保持间距。"
+      ]
+    },
+    {
+      "page": 10,
+      "image": "page-10.png",
+      "image_sha256": "40e26bd255332f7fbeefb44d0119a1eb175cf940f81f3117d1009b9ee8c5160e",
+      "pass": true,
+      "observations": [
+        "表6-1与69/42维说明完整，末段没有进入页脚。"
+      ]
+    },
+    {
+      "page": 11,
+      "image": "page-11.png",
+      "image_sha256": "90ee309f920a083579528169d19247db4efd76e9533aa4e2b76fafa01c0f2b3a",
+      "pass": true,
+      "observations": [
+        "训练参数、会话留出与开发结果均可读，没有孤立标题或段落缺失。"
+      ]
+    },
+    {
+      "page": 12,
+      "image": "page-12.png",
+      "image_sha256": "72a2fc8dfb36ad36c02bd63f50c3297ddcff173cd6126c8637012671928413ec",
+      "pass": true,
+      "observations": [
+        "A4横向训练检测图完整，69维提取/42维输入、RPM边界和图7-1题注清楚。"
+      ]
+    },
+    {
+      "page": 13,
+      "image": "page-13.png",
+      "image_sha256": "f22cdfd9265716468edeb2fe33af340df575eb3b4f1e099fe285684eeb74197b",
+      "pass": true,
+      "observations": [
+        "采集GUI等比显示，图8-1题注、单位公式和说明完整。"
+      ]
+    },
+    {
+      "page": 14,
+      "image": "page-14.png",
+      "image_sha256": "d1d743108f142e99ecee66ab2487f5293b19b5101b8f9858b96a571aa811cab7",
+      "pass": true,
+      "observations": [
+        "检测GUI等比显示，图9-1题注和四类得分语义完整，历史记录ID按公开范围保留。"
+      ]
+    },
+    {
+      "page": 15,
+      "image": "page-15.png",
+      "image_sha256": "1cb03db4119d1fc4295fab86116d4074a475182ca9ba8c67503ff0d74868fa99",
+      "pass": true,
+      "observations": [
+        "训练GUI、图10-1题注与后续模型管理段落可读，无图文覆盖；历史记录目录名保留。"
+      ]
+    },
+    {
+      "page": 16,
+      "image": "page-16.png",
+      "image_sha256": "82a38aa035f378c83cdb4e8b61ec42b4cdc1b1b0f22500017b83d96069bdce04",
+      "pass": true,
+      "observations": [
+        "表11-1及三个性能口径完整，长证据名可正常换行，末段未裁切。"
+      ]
+    },
+    {
+      "page": 17,
+      "image": "page-17.png",
+      "image_sha256": "d833978a05b33b1000ad4c40a752750e043b3648f1d76b82c1a55b1b6536c8a5",
+      "pass": true,
+      "observations": [
+        "表12-1和资源/时序/现场验收边界完整，页码正常。"
+      ]
+    },
+    {
+      "page": 18,
+      "image": "page-18.png",
+      "image_sha256": "c7f14028874854aca253155697b725dbd23cbfbfd98c0984cef1bee30f1b48bd",
+      "pass": true,
+      "observations": [
+        "表13-1的失败、规则与验证对象完整，底部段落无截断。"
+      ]
+    },
+    {
+      "page": 19,
+      "image": "page-19.png",
+      "image_sha256": "2645ce0596178ca37c713976ad2e47c1b98c4d5d85743d120bef3aa67d42f698",
+      "pass": true,
+      "observations": [
+        "Skill v2的48文件、6模板、5CLI及89+3验证说明在同页清楚呈现。"
+      ]
+    },
+    {
+      "page": 20,
+      "image": "page-20.png",
+      "image_sha256": "08ed802ef7b3cef76f03e9c19d1103ce50215de133e0fcc39b8f671f895761fd",
+      "pass": true,
+      "observations": [
+        "大模型两案标题、原文与编辑说明完整，集合内摘录编号可读。"
+      ]
+    },
+    {
+      "page": 21,
+      "image": "page-21.png",
+      "image_sha256": "a02aef5c065ac19d521b01ec473a03599db703abcf7fe7a4085782e62a622253",
+      "pass": true,
+      "observations": [
+        "大模型后三案及性能范围完整，标题层级和段落间距可辨认。"
+      ]
+    },
+    {
+      "page": 22,
+      "image": "page-22.png",
+      "image_sha256": "7ae683de5d21f38fb57be7737481ec15c07662bd30dfc94b52798b3871110b2c",
+      "pass": true,
+      "observations": [
+        "七目录说明与build/scripts命令完整可读，续行反引号及示例路径未裁切。"
+      ]
+    },
+    {
+      "page": 23,
+      "image": "page-23.png",
+      "image_sha256": "de148e6430fe03fcd38a285d509d6d7970e6451f3f7efe1b7a5c6120cebc6997",
+      "pass": true,
+      "observations": [
+        "现场操作及未完成物理验收边界完整，未把训练回放当独立准确率。"
+      ]
+    },
+    {
+      "page": 24,
+      "image": "page-24.png",
+      "image_sha256": "95bf7490bc0817228b578023b5d708fc3a3bb8d1dac302b77a4c1f803791a040",
+      "pass": true,
+      "observations": [
+        "参考文献和表A-1完整，长URL正常换行，历史XSim边界说明留在正文区域。"
+      ]
+    }
+  ],
+  "evidence_storage": "Page PNGs retained with local verification evidence, not repository assets."
+}

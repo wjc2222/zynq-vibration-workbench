@@ -1,0 +1,515 @@
+{
+  "schema": "zynq_vibration.native_supervised_fixed_protocol_audit.v1",
+  "validated": false,
+  "training_is_native_cpp": true,
+  "python_classifier_used": false,
+  "window_random_split": false,
+  "seed_search": false,
+  "hyperparameter_search": false,
+  "input_windows_sha256": "9776a4187ae22a7e6cd631f4eef89e125bfb33848e58fd25aa25769e1ba0d3be",
+  "input_labels_sha256": "2c36c3714be9a0adb266ab1b605d2ea682b18815269b275a59937962394b15b3",
+  "native_probe_sha256": "b249aee4f2f4846d41d025651fe86babba40baceb22ba33e744f8765d3f676dd",
+  "input_windows": 79,
+  "labelled_source_files": 9,
+  "input_warning_windows": 0,
+  "input_fatal_reason_windows": 0,
+  "audit_warnings_and_reasons_preserved": true,
+  "protocol": {
+    "feature_set": "TimeSpectrum42: channel coordinates0..11 and63..68",
+    "majority_tie_policy": "highest_mean_score_among_highest_vote_classes_then_fixed_class_order",
+    "weighting": "one_per_session_divided_across_its_windows",
+    "rf42": {
+      "trees": 32,
+      "maximum_depth": 3,
+      "minimum_leaf_windows": 2,
+      "bootstrap": false,
+      "random_features": "floor_sqrt_active_count",
+      "criterion": "weighted_gini",
+      "seed": 20261102
+    },
+    "linear42": {
+      "l2_mean_loss": 0.1,
+      "iterations": 800,
+      "initial_learning_rate": 0.15,
+      "optimizer": "full_batch_gradient_with_Armijo_backtracking"
+    }
+  },
+  "results": {
+    "rf42": {
+      "independent_machine_validated": false,
+      "heldout_sessions": 9,
+      "session_equal_window_accuracy": 0.5925925925925926,
+      "whole_session_mean_score_correct": 5,
+      "whole_session_majority_correct": 6,
+      "mean_score_confusion_session_counts": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "majority_confusion_session_counts": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "session_predictions": [
+        {
+          "heldout_session": "433011c124e54c68b7c13656134a81ba",
+          "scoring_label": "misalignment",
+          "windows": 6,
+          "mean_scores": [
+            55.989583333333336,
+            3.9062500000000004,
+            39.657738095238095,
+            0.44642857142857156
+          ],
+          "window_votes": [
+            6,
+            0,
+            0,
+            0
+          ],
+          "mean_score_classification": "normal",
+          "majority_classification": "normal"
+        },
+        {
+          "heldout_session": "4893b1d5ad554fe2a6fe02682bea8e9f",
+          "scoring_label": "imbalance",
+          "windows": 6,
+          "mean_scores": [
+            53.00595238095239,
+            28.640873015873012,
+            11.58234126984127,
+            6.770833333333333
+          ],
+          "window_votes": [
+            6,
+            0,
+            0,
+            0
+          ],
+          "mean_score_classification": "normal",
+          "majority_classification": "normal"
+        },
+        {
+          "heldout_session": "4ce5895ecb9c451cb07a081b8e5a1fd8",
+          "scoring_label": "imbalance",
+          "windows": 6,
+          "mean_scores": [
+            4.389880952380952,
+            43.00595238095239,
+            22.65625,
+            29.947916666666668
+          ],
+          "window_votes": [
+            0,
+            4,
+            0,
+            2
+          ],
+          "mean_score_classification": "imbalance",
+          "majority_classification": "imbalance"
+        },
+        {
+          "heldout_session": "649b6e77fd5049009471c60ca2b4cba2",
+          "scoring_label": "normal",
+          "windows": 6,
+          "mean_scores": [
+            30.654761904761898,
+            15.604967948717949,
+            52.69860347985348,
+            1.0416666666666667
+          ],
+          "window_votes": [
+            1,
+            0,
+            5,
+            0
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "97e6e8fc533b4bf49796ccc98ad9210f",
+          "scoring_label": "misalignment",
+          "windows": 6,
+          "mean_scores": [
+            7.762101902726902,
+            17.376691595441596,
+            50.530849358974365,
+            24.33035714285714
+          ],
+          "window_votes": [
+            0,
+            0,
+            5,
+            1
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "a28ee9e24dc04546938786c62c6f6ec7",
+          "scoring_label": "looseness",
+          "windows": 6,
+          "mean_scores": [
+            3.6429716117216118,
+            30.425347222222225,
+            35.76055021367521,
+            30.171130952380953
+          ],
+          "window_votes": [
+            0,
+            0,
+            2,
+            4
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "looseness"
+        },
+        {
+          "heldout_session": "b272a14c0aa54dc39228e50cf22aaee0",
+          "scoring_label": "looseness",
+          "windows": 6,
+          "mean_scores": [
+            15.731534090909093,
+            8.570075757575756,
+            33.231872294372295,
+            42.46651785714286
+          ],
+          "window_votes": [
+            0,
+            0,
+            0,
+            6
+          ],
+          "mean_score_classification": "looseness",
+          "majority_classification": "looseness"
+        },
+        {
+          "heldout_session": "bf0329a9ac0c4198a80348901dcb9c30",
+          "scoring_label": "normal",
+          "windows": 6,
+          "mean_scores": [
+            88.9520202020202,
+            4.494160353535354,
+            6.330605158730159,
+            0.22321428571428578
+          ],
+          "window_votes": [
+            6,
+            0,
+            0,
+            0
+          ],
+          "mean_score_classification": "normal",
+          "majority_classification": "normal"
+        },
+        {
+          "heldout_session": "f78112ef623245a584a03e6ebb70c01a",
+          "scoring_label": "normal",
+          "windows": 6,
+          "mean_scores": [
+            43.489583333333336,
+            3.6458333333333335,
+            38.28125,
+            14.583333333333334
+          ],
+          "window_votes": [
+            6,
+            0,
+            0,
+            0
+          ],
+          "mean_score_classification": "normal",
+          "majority_classification": "normal"
+        }
+      ],
+      "majority_tie_policy": "highest_mean_score_among_highest_vote_classes_then_fixed_class_order",
+      "interpretation": "Whole-session aggregation is not real-time single-window accuracy. All results use the same small-rig development dataset; future independent blind captures remain required.",
+      "cpp_probe_result": "trained=supervised_random_forest_v1 active_features=42 source_files=9 training_windows=54 heldout_sessions=9 internal_session_equal_window_accuracy=0.592593 machine_validated=false",
+      "model_sha256": "c4e9488403335b93a1583858fd6d8197ee0b4d2ea1e5bca7cff9253cc049824f",
+      "validation_sha256": "8c950baf9bc6f8e770818abf945d552359706e326f91b479320d35b4dc8d0d24",
+      "full_fit_replay_sha256": "f2cbd064a54fc4288dd77b27d359b392d763adab4378a9c8f715e9141aa16317"
+    },
+    "linear42": {
+      "independent_machine_validated": false,
+      "heldout_sessions": 9,
+      "session_equal_window_accuracy": 0.5,
+      "whole_session_mean_score_correct": 6,
+      "whole_session_majority_correct": 6,
+      "mean_score_confusion_session_counts": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "majority_confusion_session_counts": [
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "session_predictions": [
+        {
+          "heldout_session": "433011c124e54c68b7c13656134a81ba",
+          "scoring_label": "misalignment",
+          "windows": 6,
+          "mean_scores": [
+            40.572581714949415,
+            3.7194324657674387,
+            48.89560904617025,
+            6.812376773112895
+          ],
+          "window_votes": [
+            3,
+            0,
+            3,
+            0
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "4893b1d5ad554fe2a6fe02682bea8e9f",
+          "scoring_label": "imbalance",
+          "windows": 6,
+          "mean_scores": [
+            46.3299851861062,
+            50.451179104180845,
+            2.4412768613354845,
+            0.7775588483774688
+          ],
+          "window_votes": [
+            2,
+            4,
+            0,
+            0
+          ],
+          "mean_score_classification": "imbalance",
+          "majority_classification": "imbalance"
+        },
+        {
+          "heldout_session": "4ce5895ecb9c451cb07a081b8e5a1fd8",
+          "scoring_label": "imbalance",
+          "windows": 6,
+          "mean_scores": [
+            5.088549480159775,
+            57.291632636983955,
+            3.0817516395936657,
+            34.53806624326261
+          ],
+          "window_votes": [
+            0,
+            4,
+            0,
+            2
+          ],
+          "mean_score_classification": "imbalance",
+          "majority_classification": "imbalance"
+        },
+        {
+          "heldout_session": "649b6e77fd5049009471c60ca2b4cba2",
+          "scoring_label": "normal",
+          "windows": 6,
+          "mean_scores": [
+            3.269242429628875,
+            5.315798018208586,
+            91.18357986532918,
+            0.2313796868333705
+          ],
+          "window_votes": [
+            0,
+            0,
+            6,
+            0
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "97e6e8fc533b4bf49796ccc98ad9210f",
+          "scoring_label": "misalignment",
+          "windows": 6,
+          "mean_scores": [
+            33.13617942340978,
+            3.0350733757955175,
+            50.05312234927564,
+            13.775624851519064
+          ],
+          "window_votes": [
+            1,
+            0,
+            5,
+            0
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "a28ee9e24dc04546938786c62c6f6ec7",
+          "scoring_label": "looseness",
+          "windows": 6,
+          "mean_scores": [
+            0.8542555384674585,
+            2.022398464668247,
+            93.49942053326255,
+            3.623925463601737
+          ],
+          "window_votes": [
+            0,
+            0,
+            6,
+            0
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "b272a14c0aa54dc39228e50cf22aaee0",
+          "scoring_label": "looseness",
+          "windows": 6,
+          "mean_scores": [
+            0.023036010454508992,
+            0.17972605768251956,
+            92.62952406316406,
+            7.167713868698919
+          ],
+          "window_votes": [
+            0,
+            0,
+            6,
+            0
+          ],
+          "mean_score_classification": "misalignment",
+          "majority_classification": "misalignment"
+        },
+        {
+          "heldout_session": "bf0329a9ac0c4198a80348901dcb9c30",
+          "scoring_label": "normal",
+          "windows": 6,
+          "mean_scores": [
+            60.745729397709056,
+            6.7046781193486495,
+            30.248748382292465,
+            2.3008441006498246
+          ],
+          "window_votes": [
+            5,
+            0,
+            1,
+            0
+          ],
+          "mean_score_classification": "normal",
+          "majority_classification": "normal"
+        },
+        {
+          "heldout_session": "f78112ef623245a584a03e6ebb70c01a",
+          "scoring_label": "normal",
+          "windows": 6,
+          "mean_scores": [
+            83.77269005369284,
+            0.6433146802423179,
+            9.8589113636588,
+            5.72508390240604
+          ],
+          "window_votes": [
+            6,
+            0,
+            0,
+            0
+          ],
+          "mean_score_classification": "normal",
+          "majority_classification": "normal"
+        }
+      ],
+      "majority_tie_policy": "highest_mean_score_among_highest_vote_classes_then_fixed_class_order",
+      "interpretation": "Whole-session aggregation is not real-time single-window accuracy. All results use the same small-rig development dataset; future independent blind captures remain required.",
+      "cpp_probe_result": "trained=supervised_linear_softmax_v1 active_features=42 source_files=9 training_windows=54 heldout_sessions=9 internal_session_equal_window_accuracy=0.5 machine_validated=false",
+      "model_sha256": "ab6c5d75b3ec77f110650846c94531dbf4c5bd335a2ad09e464d23102406ec71",
+      "validation_sha256": "4d69bebed819df0cf5e1576e0c4802c422cbfbfe474efb2c305764a747ef79b7",
+      "full_fit_replay_sha256": "bcba07641d2e2cf659e17c267d9e0f2cef3ea355ebea2e462b17a1e6d835e8f0"
+    }
+  }
+}

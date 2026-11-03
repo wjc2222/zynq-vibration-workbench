@@ -1,0 +1,858 @@
+{
+  "schema": "zynq_vibration.public_xsim_crops.v1",
+  "source_mapping_sha256": "bea565320d008cc21fa49a858962743b8a17acb8340c8ffc026d704bf69f337b",
+  "analysis21_27_are_V6": true,
+  "WDB_files_included": false,
+  "full_window_originals_included": false,
+  "native_WCFG_included": false,
+  "images": [
+    {
+      "name": "01_adc_interface",
+      "crop": "xsim/01_adc_interface.png",
+      "crop_sha256": "e31c70667c5c0069b3efbe0fcec9b5b14ddc9ed8d10e4f39b77ef6d58bac7679",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "1.753334 us",
+        "ZoomEndTime": "10.423335 us",
+        "Cursor1Time": "7.000000 us"
+      },
+      "signals": [
+        "/tb_report_adc/conv",
+        "/tb_report_adc/busy",
+        "/tb_report_adc/cs",
+        "/tb_report_adc/rd",
+        "/tb_report_adc/adc_data",
+        "/tb_report_adc/first",
+        "/tb_report_adc/frame_valid",
+        "/tb_report_adc/frame_count",
+        "/tb_report_adc/dut/state"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "61240dfcb08e3be6aabf346bf672ddefc20f4a1641b3791fbaee882a0d2b5f51",
+      "native_wcfg_sha256": "e02345d9caaea43b68e5c550a38d1b46e53538dfc093e462812091578b9dc774",
+      "source_WDB_sha256": "6da10a0775eb499fc3dac1f8e056041181a0801970d2a7c210641386d7b2db6b"
+    },
+    {
+      "name": "02_adc_faults",
+      "crop": "xsim/02_adc_faults.png",
+      "crop_sha256": "798f40f47e2f8f4ce3393125960267aaf01df5bf54a8375f005b6b0c7c4e5043",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "0.000000 us",
+        "ZoomEndTime": "433.500001 us",
+        "Cursor1Time": "70.000000 us"
+      },
+      "signals": [
+        "/tb_report_adc/phase",
+        "/tb_report_adc/conv",
+        "/tb_report_adc/busy",
+        "/tb_report_adc/cs",
+        "/tb_report_adc/rd",
+        "/tb_report_adc/first",
+        "/tb_report_adc/frame_count",
+        "/tb_report_adc/debug_status",
+        "/tb_report_adc/dut/state"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "b2b8a7cb4b3ae2c7a9c5e0563ee13c94044319e9b5fcb676d9413210c0f36835",
+      "native_wcfg_sha256": "109d72d0536a553c029abe5703cd6b322d6ae419693baacd5519d72d9cad32c2",
+      "source_WDB_sha256": "6da10a0775eb499fc3dac1f8e056041181a0801970d2a7c210641386d7b2db6b"
+    },
+    {
+      "name": "03_speed_filter_period",
+      "crop": "xsim/03_speed_filter_period.png",
+      "crop_sha256": "2c083617d84e2525155d8e2c5f771d8acbd25188cded6368ce38bb61c905318a",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        445
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "500.000 ns",
+        "ZoomEndTime": "2,632.964 ns",
+        "Cursor1Time": "1,570.000 ns"
+      },
+      "signals": [
+        "/tb_report_speed/phase",
+        "/tb_report_speed/speed_in",
+        "/tb_report_speed/dut/speed_meta",
+        "/tb_report_speed/sync_level",
+        "/tb_report_speed/filtered_level",
+        "/tb_report_speed/edge_pulse",
+        "/tb_report_speed/edge_count",
+        "/tb_report_speed/period_ticks",
+        "/tb_report_speed/period_valid",
+        "/tb_report_speed/timed_out"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "52edf5006d39aef5468bbb89c7268df817793990f15205bf514fafce2d6aac72",
+      "native_wcfg_sha256": "218ec701328b6adece820a90988b9b840300b1682c544ec031017e751f2ad054",
+      "source_WDB_sha256": "9a2fdb54538abad3f2071561d1d97cba1e69c3faec8a1d6712fef119f00c9a28"
+    },
+    {
+      "name": "04_speed_timeout",
+      "crop": "xsim/04_speed_timeout.png",
+      "crop_sha256": "71c193e736f55442fe887a1f5907928382a6c8d1ce69c097e6c97829748b0076",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "3,300.000 ns",
+        "ZoomEndTime": "5,148.570 ns",
+        "Cursor1Time": "3,970.000 ns"
+      },
+      "signals": [
+        "/tb_report_speed/phase",
+        "/tb_report_speed/speed_in",
+        "/tb_report_speed/filtered_level",
+        "/tb_report_speed/edge_pulse",
+        "/tb_report_speed/edge_count",
+        "/tb_report_speed/period_ticks",
+        "/tb_report_speed/period_valid",
+        "/tb_report_speed/timed_out",
+        "/tb_report_speed/dut/age"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "7acea88e1ac3a04ab5ac8ef295801275c7f601d177c71653ca061877bf4cfae3",
+      "native_wcfg_sha256": "42739ef187d894d5e176e4242d3b95e784090f36511825028e937c78e2c42fce",
+      "source_WDB_sha256": "9a2fdb54538abad3f2071561d1d97cba1e69c3faec8a1d6712fef119f00c9a28"
+    },
+    {
+      "name": "05_raw32_packet",
+      "crop": "xsim/05_raw32_packet.png",
+      "crop_sha256": "0bd7e3a4d23403a21140f6c0452b5faf144ce1477196261a26c0957e26acdf0a",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        445
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "100.000 ns",
+        "ZoomEndTime": "892.926 ns",
+        "Cursor1Time": "450.000 ns"
+      },
+      "signals": [
+        "/tb_report_packet/trigger",
+        "/tb_report_packet/frame",
+        "/tb_report_packet/valid",
+        "/tb_report_packet/ready",
+        "/tb_report_packet/data",
+        "/tb_report_packet/last",
+        "/tb_report_packet/beat",
+        "/tb_report_packet/record_index",
+        "/tb_report_packet/record_tick",
+        "/tb_report_packet/record_period"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "e578f631e7a2c762490af8980a472adbe31c29486b49571c2b562ad43a149f73",
+      "native_wcfg_sha256": "4134cc43203226c0283c3c4a6b02de010783009ea736ab48ada8d5497da2b201",
+      "source_WDB_sha256": "e4fd059a46e9efd89d4340e83cfd1c18874e4d13c4322c1a88d1ec2b25f8aef3"
+    },
+    {
+      "name": "05b_raw32_code_detail",
+      "crop": "xsim/05b_raw32_code_detail.png",
+      "crop_sha256": "f033eacfb86ea47e70b0076bd3ec77aa404a492b295f1a2ed338d5958df2bc98",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        445
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "300.000 ns",
+        "ZoomEndTime": "472.814 ns",
+        "Cursor1Time": "435.000 ns"
+      },
+      "signals": [
+        "/tb_report_packet/valid",
+        "/tb_report_packet/ready",
+        "/tb_report_packet/data",
+        "/tb_report_packet/last",
+        "/tb_report_packet/beat",
+        "/tb_report_packet/record_index",
+        "/tb_report_packet/record_x",
+        "/tb_report_packet/record_y",
+        "/tb_report_packet/record_z",
+        "/tb_report_packet/record_flags"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "763b594fe0f41508662fa3e82d2bb7f2c7d19e308c5a8132031ab11f14a53b24",
+      "native_wcfg_sha256": "1f9a7685c293909422e4c0e47a1218af8af42c9fc47f62b4fc0a619e1cbb3bc6",
+      "source_WDB_sha256": "e4fd059a46e9efd89d4340e83cfd1c18874e4d13c4322c1a88d1ec2b25f8aef3"
+    },
+    {
+      "name": "01b_adc_readout_detail",
+      "crop": "xsim/01b_adc_readout_detail.png",
+      "crop_sha256": "4ca081572f24c3a21210f8a524edc077d090e45b55d5032b1daf1fdffd9777d8",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        300
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "6,800.000 ns",
+        "ZoomEndTime": "8,120.406 ns",
+        "Cursor1Time": "7,550.000 ns"
+      },
+      "signals": [
+        "/tb_report_adc/cs",
+        "/tb_report_adc/rd",
+        "/tb_report_adc/adc_data",
+        "/tb_report_adc/first",
+        "/tb_report_adc/frame_valid",
+        "/tb_report_adc/dut/state"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "b9c5e97895e4ecec9055e598c98d9b16772daa533ff32913e7eee9482d4caeb9",
+      "native_wcfg_sha256": "4d24bd4a3eadfe62468befb6d8dd9dcbab2d9e4aa4873015027efcee813632f4",
+      "source_WDB_sha256": "6da10a0775eb499fc3dac1f8e056041181a0801970d2a7c210641386d7b2db6b"
+    },
+    {
+      "name": "06_stream_stop_rollover",
+      "crop": "xsim/06_stream_stop_rollover.png",
+      "crop_sha256": "2abd0cc0f1a418690684092cd39d01ec9f719e6a1f4dc56b98086460a92ea90c",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        445
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "1,900.000 ns",
+        "ZoomEndTime": "3,180.881 ns",
+        "Cursor1Time": "2,900.000 ns"
+      },
+      "signals": [
+        "/tb_capture_stream_edges/stop_stream",
+        "/tb_capture_stream_edges/ready",
+        "/tb_capture_stream_edges/valid",
+        "/tb_capture_stream_edges/data",
+        "/tb_capture_stream_edges/last",
+        "/tb_capture_stream_edges/base",
+        "/tb_capture_stream_edges/captured64",
+        "/tb_capture_stream_edges/sent64",
+        "/tb_capture_stream_edges/source_done",
+        "/tb_capture_stream_edges/stream_done"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "e50778b586ef2d0405199507e0690b349bf9ac751068713cf459bad898339742",
+      "native_wcfg_sha256": "7f86b7a3f79954847220912abc8b4b948a8452e00824e0196258ae039509428c",
+      "source_WDB_sha256": "3e08bad31bba9a77c6b3900ea5ec07247741f7699c8770fbaaa2eb9b970ce520"
+    },
+    {
+      "name": "15_capture_axi_control",
+      "crop": "xsim/15_capture_axi_control.png",
+      "crop_sha256": "36344c23a9a046ff5394aafce0ab109e5639f2218393acef6bbe1cf076c2bd57",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "500.000 ns",
+        "ZoomEndTime": "1,312.558 ns",
+        "Cursor1Time": "850.000 ns"
+      },
+      "signals": [
+        "/tb_capture_merge/awa",
+        "/tb_capture_merge/awv",
+        "/tb_capture_merge/awr",
+        "/tb_capture_merge/wd",
+        "/tb_capture_merge/wv",
+        "/tb_capture_merge/wr",
+        "/tb_capture_merge/bv",
+        "/tb_capture_merge/br",
+        "/tb_capture_merge/bp"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "a8a72cb47e8c877989dfc7ce11ed0098e9fe83d6c6a36bb33f83f981f63e6933",
+      "native_wcfg_sha256": "6a702e62987fa706463060779a3328490100fec337303997e0fd2258d7592529",
+      "source_WDB_sha256": "c754a1bc04cf098c18182e4b6f87836139cb0153dfd41d84ae302352513bec15"
+    },
+    {
+      "name": "08_stream_40ms_boundary",
+      "crop": "xsim/08_stream_40ms_boundary.png",
+      "crop_sha256": "e22d1453f46c8f4715bd5bd7e14a95f4628f47947bd1454732ed9c9292b84207",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "40,001,700.000 ns",
+        "ZoomEndTime": "40,003,021.542 ns",
+        "Cursor1Time": "40,002,500.000 ns"
+      },
+      "signals": [
+        "/tb_capture_streaming/tv",
+        "/tb_capture_streaming/tl",
+        "/tb_capture_streaming/dut/captured64",
+        "/tb_capture_streaming/dut/sent64",
+        "/tb_capture_streaming/dut/u_capture/chunk_position",
+        "/tb_capture_streaming/dut/u_capture/pending_index",
+        "/tb_capture_streaming/dut/source_done",
+        "/tb_capture_streaming/dut/stream_done",
+        "/tb_capture_streaming/dut/overflow"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "ce88528a9eec2b5c5acc3945c233cd366803c9eb8487eea11b5710643eb1f669",
+      "native_wcfg_sha256": "adf7fef78ab130933bc7761fcbf701acaf8a74389df0e276268ae6c3f58b88cc",
+      "source_WDB_sha256": "9d099d6ab4977927ae0f602e46311cc2328beac253bb0f0eb407e3ba840ba1da"
+    },
+    {
+      "name": "09_mmcm_clocks",
+      "crop": "xsim/09_mmcm_clocks.png",
+      "crop_sha256": "bcbc1d5b64195e20782f2389c359ea0140ac5de89026012cc29ed8dbf560c11c",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "10,000.000 ns",
+        "ZoomEndTime": "10,152.351 ns",
+        "Cursor1Time": "10,080.000 ns"
+      },
+      "signals": [
+        "/tb_report_clocks/clk50",
+        "/tb_report_clocks/capture_clk50",
+        "/tb_report_clocks/dut/lock1",
+        "/tb_report_clocks/dut/lock2",
+        "/tb_report_clocks/locked",
+        "/tb_report_clocks/pixel_clk",
+        "/tb_report_clocks/serial_clk",
+        "/tb_report_clocks/checked_pixel",
+        "/tb_report_clocks/checked_serial"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "ba94f234d8361caf133edd1e41a98cfb96767addb972b72153079873b2c8a781",
+      "native_wcfg_sha256": "509d593db2369507d005a4f22dabd0f74e8deef7d4a3ac498c25cf29855d30d4",
+      "source_WDB_sha256": "be13c23d44fd1772f9ce0c67702c24951faf0d0c58843fb7e9da1516edd0722c"
+    },
+    {
+      "name": "10_display_status",
+      "crop": "xsim/10_display_status.png",
+      "crop_sha256": "05f2fa944680d40781ecada2f0602aa390ae6742a16d0d1a1b4939407cfb1191",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        445
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "0.000 ns",
+        "ZoomEndTime": "1,564.176 ns",
+        "Cursor1Time": "1,000.000 ns"
+      },
+      "signals": [
+        "/tb_report_status/phase",
+        "/tb_report_status/mmcm_locked",
+        "/tb_report_status/video_locked",
+        "/tb_report_status/underflow",
+        "/tb_report_status/overflow",
+        "/tb_report_status/vsync",
+        "/tb_report_status/dut/frame_gray",
+        "/tb_report_status/status",
+        "/tb_report_status/control",
+        "/tb_report_status/video_hold"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "70e1eb68e13d69352f18a618bcd56aac3d64a785339f48195be2003f21f3d3bb",
+      "native_wcfg_sha256": "364243e1aaecc3cf250ca714c3d0ac8850ec153888b093ca7cb35568adf0753a",
+      "source_WDB_sha256": "21d98533432bf8e732189a79f821629667e80d1b8276b1ee0272d52c35313e64"
+    },
+    {
+      "name": "11_tmds_control",
+      "crop": "xsim/11_tmds_control.png",
+      "crop_sha256": "3ae0f3c860375fcb317a22199b3804db1dfc9eed2fb92dcbb7fc1c9b22db0bd8",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "540.000 ns",
+        "ZoomEndTime": "600.941 ns",
+        "Cursor1Time": "580.000 ns"
+      },
+      "signals": [
+        "/tb_report_tmds/pixel_clk",
+        "/tb_report_tmds/serial_clk",
+        "/tb_report_tmds/de",
+        "/tb_report_tmds/hsync",
+        "/tb_report_tmds/vsync",
+        "/tb_report_tmds/hdmi_clk_p",
+        "/tb_report_tmds/hdmi_clk_n",
+        "/tb_report_tmds/hdmi_data_p",
+        "/tb_report_tmds/hdmi_data_n"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "54631602ab1bdad61c0005eec57a2edf41db61264058974bb177a230905623b4",
+      "native_wcfg_sha256": "75b59d54d5af26afc509d431c7d1a380813734e39d4e40258697bdcb5b99d5de",
+      "source_WDB_sha256": "a8d5069ab03ec42e6eaa38abb5ef14330bd1344daf0a1d11e7fb04d7769d8d08"
+    },
+    {
+      "name": "12_tmds_active_encoding",
+      "crop": "xsim/12_tmds_active_encoding.png",
+      "crop_sha256": "d385e787482a1a7dfc9d7a290b1bcabf445bdfd5056b8d9ea09928b425678f26",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        270
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "3,000.000 ns",
+        "ZoomEndTime": "3,203.138 ns",
+        "Cursor1Time": "3,100.000 ns"
+      },
+      "signals": [
+        "/tb_report_tmds/pixel_clk",
+        "/tb_report_tmds/encoder_de",
+        "/tb_report_tmds/encoder_data",
+        "/tb_report_tmds/encoder_word",
+        "/tb_report_tmds/expected_word"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "1e1ccdc3b72652e89291a591f06b2899f4afed1509ae9292b9853d884f607de0",
+      "native_wcfg_sha256": "912ceced69d0dead32abcf27649627edeb2ba1b4dd46381d884effee6de87be9",
+      "source_WDB_sha256": "a8d5069ab03ec42e6eaa38abb5ef14330bd1344daf0a1d11e7fb04d7769d8d08"
+    },
+    {
+      "name": "13_vtc_line_timing",
+      "crop": "xsim/13_vtc_line_timing.png",
+      "crop_sha256": "1efca67c52b66f5b1d1bbc7b13675de35ff6de101a2c24e2e0c024cc6da6214a",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        270
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "108.000000 us",
+        "ZoomEndTime": "136.439549 us",
+        "Cursor1Time": "120.000000 us"
+      },
+      "signals": [
+        "/tb_report_vtc/hsync",
+        "/tb_report_vtc/hblank",
+        "/tb_report_vtc/active_video",
+        "/tb_report_vtc/vsync",
+        "/tb_report_vtc/vblank"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "93893382aec29707b283227bd770ee5c99b785683c866daa461715e0617ae7f4",
+      "native_wcfg_sha256": "26f3a738197c58c67ea2e9c1f6bc6d93bd93c8465994987a9fc21767a9a92ae2",
+      "source_WDB_sha256": "d6d5e9137a1a7ce44fb7059c5360baf6ec555c65021d9e41bce084e727df19fc"
+    },
+    {
+      "name": "14_vtc_frame_timing",
+      "crop": "xsim/14_vtc_frame_timing.png",
+      "crop_sha256": "ce1bbc8f4bc6971aa67b7b1b0ec09a2a27e92467586a72fbe8c51b79215d37ca",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        230
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "15,900.000000 us",
+        "ZoomEndTime": "16,915.698219 us",
+        "Cursor1Time": "16,150.000000 us"
+      },
+      "signals": [
+        "/tb_report_vtc/configured",
+        "/tb_report_vtc/vsync",
+        "/tb_report_vtc/vblank",
+        "/tb_report_vtc/frame_seen"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "013576408000602819234c4fb62fcc9434a9d67b9776658e1b343394619978c4",
+      "native_wcfg_sha256": "7c8ead1008937f998cefec8c678bd524c8864cbbcbf020953b0f5a7a0cce6b99",
+      "source_WDB_sha256": "d6d5e9137a1a7ce44fb7059c5360baf6ec555c65021d9e41bce084e727df19fc"
+    },
+    {
+      "name": "17_dma_sg_descriptor",
+      "crop": "xsim/17_dma_sg_descriptor.png",
+      "crop_sha256": "338774bf95626ed6161f331d52c48c6263a2b9fe9cf98616e2ea1d90a529c64d",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        370
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "5,700.000 ns",
+        "ZoomEndTime": "5,943.766 ns",
+        "Cursor1Time": "5,740.000 ns"
+      },
+      "signals": [
+        "/tb_dma_report/bench/m_axi_sg_araddr",
+        "/tb_dma_report/bench/m_axi_sg_arlen",
+        "/tb_dma_report/bench/m_axi_sg_arvalid",
+        "/tb_dma_report/bench/m_axi_sg_arready",
+        "/tb_dma_report/bench/m_axi_sg_rdata",
+        "/tb_dma_report/bench/m_axi_sg_rvalid",
+        "/tb_dma_report/bench/m_axi_sg_rready",
+        "/tb_dma_report/bench/m_axi_sg_rlast"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "62f634dc40b0fbe7a1ac982c82dda29c3de1e27fe16edc6f6cbde41fbe584d27",
+      "native_wcfg_sha256": "ff3594e2eb97cbb589abb45a6b95b305cc972bb2ac59ba4e86452796c620f42a",
+      "source_WDB_sha256": "2d51a9ef0f594ef5172b5235c5056e4526825b9c3601ec5ec7035d42857eeef6"
+    },
+    {
+      "name": "18_dma_s2mm_write",
+      "crop": "xsim/18_dma_s2mm_write.png",
+      "crop_sha256": "58cfe55f1a15767b32c040a280ef735c490ecdcb535d07f74af75f6eafb5fff4",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "73.000000 us",
+        "ZoomEndTime": "78.082863 us",
+        "Cursor1Time": "73.330000 us"
+      },
+      "signals": [
+        "/tb_dma_report/bench/m_axi_s2mm_awaddr",
+        "/tb_dma_report/bench/m_axi_s2mm_awvalid",
+        "/tb_dma_report/bench/m_axi_s2mm_awready",
+        "/tb_dma_report/bench/m_axi_s2mm_wdata",
+        "/tb_dma_report/bench/m_axi_s2mm_wvalid",
+        "/tb_dma_report/bench/m_axi_s2mm_wready",
+        "/tb_dma_report/bench/m_axi_s2mm_wlast",
+        "/tb_dma_report/bench/m_axi_s2mm_bvalid",
+        "/tb_dma_report/bench/m_axi_s2mm_bready"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "0703c17acaade8a8ad4b56611c4c431e98e55e1e7b0639de5a72c154acf70812",
+      "native_wcfg_sha256": "0db7ea5daa55addfc56eecf2185a9695e2d6b7399546422e7f9050b7606a0df0",
+      "source_WDB_sha256": "2d51a9ef0f594ef5172b5235c5056e4526825b9c3601ec5ec7035d42857eeef6"
+    },
+    {
+      "name": "19_vdma_read_pixels",
+      "crop": "xsim/19_vdma_read_pixels.png",
+      "crop_sha256": "8dc100321112bfcd83ec98bd44ee5c7f8eddfa94273ea63ffb7211a487de4577",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        445
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "5,280.000 ns",
+        "ZoomEndTime": "5,523.976 ns",
+        "Cursor1Time": "5,340.000 ns"
+      },
+      "signals": [
+        "/tb_vendor_video/araddr",
+        "/tb_vendor_video/arvalid",
+        "/tb_vendor_video/arready",
+        "/tb_vendor_video/rdata",
+        "/tb_vendor_video/rvalid",
+        "/tb_vendor_video/rready",
+        "/tb_vendor_video/axis_data",
+        "/tb_vendor_video/axis_valid",
+        "/tb_vendor_video/axis_ready",
+        "/tb_vendor_video/axis_user"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "e835330151df53ebb392a01cf2b3cb5c78d3d25c6821f735919ab9af9a9fd7da",
+      "native_wcfg_sha256": "02f7aadf495a525d8e2f0762dc3c2f8c61e6694807f3b6bc896f79cccc9367cd",
+      "source_WDB_sha256": "e2e0919181e540443da5d16b61ce5d19736d588b95a38b33e292ba804c559176"
+    },
+    {
+      "name": "20_video_out_pixels",
+      "crop": "xsim/20_video_out_pixels.png",
+      "crop_sha256": "aac31953be79a3dca64841fc97623360a990ae06986aa037e79bbc01cbc3da03",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        300
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "100,003,300.000 ns",
+        "ZoomEndTime": "100,003,421.881 ns",
+        "Cursor1Time": "100,003,355.000 ns"
+      },
+      "signals": [
+        "/tb_vendor_video/pixel_clk",
+        "/tb_vendor_video/locked",
+        "/tb_vendor_video/vid_active_video",
+        "/tb_vendor_video/vid_data",
+        "/tb_vendor_video/underflow",
+        "/tb_vendor_video/overflow"
+      ],
+      "version_scope": "Captured20261031 protected capture/display baseline; native XSim verification, not new mechanical experiment",
+      "original_sha256": "eca80c95a584b5ea94d22524d2c048216468f381bd1bffc38c546f8e39aebb0f",
+      "native_wcfg_sha256": "4f52b543e1ba89d572a707027c9dd4e0ddd105942a9b2d8b2693dbd8e943981d",
+      "source_WDB_sha256": "e2e0919181e540443da5d16b61ce5d19736d588b95a38b33e292ba804c559176"
+    },
+    {
+      "name": "21_analysis_axi",
+      "crop": "xsim/21_analysis_axi.png",
+      "crop_sha256": "cd9a073bb913abb80c44ec0c224b9bae9246bd33a57eea569b08e95d623b15b1",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "45,315.000 ns",
+        "ZoomEndTime": "45,700.963 ns",
+        "Cursor1Time": "45,535.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/awaddr",
+        "/tb_analysis_report/wdata",
+        "/tb_analysis_report/awvalid",
+        "/tb_analysis_report/awready",
+        "/tb_analysis_report/wvalid",
+        "/tb_analysis_report/wready",
+        "/tb_analysis_report/bvalid",
+        "/tb_analysis_report/dut/input_push",
+        "/tb_analysis_report/dut/fifo_count"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "5a48a0d775cabf326effe0d07ad8c365612ef8119bf5b98fd79ae3bfe5ea98ae",
+      "native_wcfg_sha256": "e13c2ed778e912fc8f6fb05e8c29b11f67604a8061042be1377a699fc64f014d",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    },
+    {
+      "name": "22_analysis_fir",
+      "crop": "xsim/22_analysis_fir.png",
+      "crop_sha256": "eeaf3ef37be3788add5bdf48f9fe06eadcaa80e5238d23dc216f7713f592862a",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        370
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "90,175.000 ns",
+        "ZoomEndTime": "90,479.971 ns",
+        "Cursor1Time": "90,295.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/dut/state",
+        "/tb_analysis_report/dut/raw_count",
+        "/tb_analysis_report/dut/low_count",
+        "/tb_analysis_report/dut/fir_cycle",
+        "/tb_analysis_report/dut/hq0",
+        "/tb_analysis_report/dut/cq",
+        "/tb_analysis_report/dut/acc0",
+        "/tb_analysis_report/dut/filtered0"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "15935b0fdda5cdd90444afc92bffe0d54b8a623812bd31fc1ef09d26f0813eab",
+      "native_wcfg_sha256": "68f7203be525b4712425816c52242eb885b967d1f4596223d76e0853fa943abf",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    },
+    {
+      "name": "23_analysis_stats",
+      "crop": "xsim/23_analysis_stats.png",
+      "crop_sha256": "cf4a3b05cb875224e4deca187f0b32603d8506b4ce42aa10fb52df65331f8a13",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "90,215.000 ns",
+        "ZoomEndTime": "90,428.479 ns",
+        "Cursor1Time": "90,295.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/dut/state",
+        "/tb_analysis_report/dut/filtered0",
+        "/tb_analysis_report/dut/square0",
+        "/tb_analysis_report/sum_ch0",
+        "/tb_analysis_report/sumsq_ch0",
+        "/tb_analysis_report/min_ch0",
+        "/tb_analysis_report/max_ch0",
+        "/tb_analysis_report/rawclip_ch0",
+        "/tb_analysis_report/saturation_ch0"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "fec1ac236ab9d4f1bfe292b617769d1ddd48bab03735f66c574da395b0ae93dd",
+      "native_wcfg_sha256": "9d0af85487a80f5e7bc62625a68ee2a5081adc9a7de5efc623b06f28816e082d",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    },
+    {
+      "name": "24_analysis_hann",
+      "crop": "xsim/24_analysis_hann.png",
+      "crop_sha256": "0b2d5b6f6160175feedd15bc7509309ebdf740ef15a23f9087519b625a8f7590",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "53,987,125.000 ns",
+        "ZoomEndTime": "53,987,287.651 ns",
+        "Cursor1Time": "53,987,180.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/dut/fft_input_index",
+        "/tb_analysis_report/mean_ch0",
+        "/tb_analysis_report/dut/read_sample0",
+        "/tb_analysis_report/dut/fft_centered",
+        "/tb_analysis_report/dut/fft_hann_q",
+        "/tb_analysis_report/dut/fft_window_product",
+        "/tb_analysis_report/dut/fft_input",
+        "/tb_analysis_report/dut/fft_send_valid",
+        "/tb_analysis_report/dut/fft_input_ready"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "6eead5e2664fc7cf18120231b0f407d01ffe4f9c6d27bb9a3be4e28f6bcc29f3",
+      "native_wcfg_sha256": "21dd4c05220332b4d110293ed3902641a81e0f0a50735fde31093aed577befd0",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    },
+    {
+      "name": "25_analysis_fft",
+      "crop": "xsim/25_analysis_fft.png",
+      "crop_sha256": "4fa081321340d2b360bcfca22a2e45fa560cb3a0b2013f4af5fd27cea1243ed4",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        370
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "55,222,595.000 ns",
+        "ZoomEndTime": "55,222,676.253 ns",
+        "Cursor1Time": "55,222,630.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/dut/axis",
+        "/tb_analysis_report/dut/fft_valid",
+        "/tb_analysis_report/dut/fft_last",
+        "/tb_analysis_report/dut/fft_re",
+        "/tb_analysis_report/dut/fft_im",
+        "/tb_analysis_report/dut/fft_user",
+        "/tb_analysis_report/bfp_ch0",
+        "/tb_analysis_report/dut/power_index"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "fc2b61122926979598bc6b3799a5b24b3d74623cb6e6c06c68d1c138cca428c3",
+      "native_wcfg_sha256": "ad37dd8833351ab3fe1f942883bc74f38ddc9f629da0589f73704fe60af45d19",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    },
+    {
+      "name": "26_analysis_power",
+      "crop": "xsim/26_analysis_power.png",
+      "crop_sha256": "9ed239d3fcf599715261014d07b9c7aa734fedad1b2bba369d68c7fd7eed6820",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "55,222,615.000 ns",
+        "ZoomEndTime": "55,222,716.656 ns",
+        "Cursor1Time": "55,222,640.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/dut/fft_valid",
+        "/tb_analysis_report/dut/fft_re2",
+        "/tb_analysis_report/dut/fft_im2",
+        "/tb_analysis_report/dut/power_valid",
+        "/tb_analysis_report/dut/power_index",
+        "/tb_analysis_report/dut/fft_power",
+        "/tb_analysis_report/dut/weighted_power",
+        "/tb_analysis_report/band_order0",
+        "/tb_analysis_report/band_reference"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "5e4cbb2a1b0e189eb384230aa03ae8db38ae358fa84c686b35259026c63d893c",
+      "native_wcfg_sha256": "5e76897a7e1bfbeb59ebbb3fe0c415edd5bc2c371f722ee9be8bacd7ba915ee0",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    },
+    {
+      "name": "27_analysis_result",
+      "crop": "xsim/27_analysis_result.png",
+      "crop_sha256": "c513705deffccc94f541e97be8b10601103cc1037f1a3190c0d85f302831af8b",
+      "crop_box_xywh": [
+        43,
+        320,
+        1100,
+        410
+      ],
+      "crop_operation": "Lossless pixel crop only; no drawing, annotation, resize or synthetic replacement",
+      "native_saved_zoom": {
+        "ZoomStartTime": "58,258,775.000 ns",
+        "ZoomEndTime": "58,258,978.311 ns",
+        "Cursor1Time": "58,258,875.000 ns"
+      },
+      "signals": [
+        "/tb_analysis_report/dut/state",
+        "/tb_analysis_report/awaddr",
+        "/tb_analysis_report/wdata",
+        "/tb_analysis_report/araddr",
+        "/tb_analysis_report/rvalid",
+        "/tb_analysis_report/rdata",
+        "/tb_analysis_report/dut/result_index",
+        "/tb_analysis_report/dut/result_ready_index",
+        "/tb_analysis_report/dut/result_value"
+      ],
+      "version_scope": "Historical V6 analysis chain, captured20261031; NOT latest V7 symmetric FIR",
+      "original_sha256": "a08291364e5565e3f6cb743f90ff6e60289c5fe6d98c723e2669112ece3030d1",
+      "native_wcfg_sha256": "75cfc9fc672e844963352d9bca924403b6b6cdeea43460ab7ecd599b4a7e01e3",
+      "source_WDB_sha256": "8719c695fecb9cdc0f16744ae78774e0921ae613ab943cb876a47ee5cd1088de"
+    }
+  ]
+}

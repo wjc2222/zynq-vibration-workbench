@@ -1,0 +1,67 @@
+{
+  "schema": "user-real-photo-assets.v1",
+  "snapshot_date": "2026-11-04",
+  "images": [
+    {
+      "file": "photos/ax7z020_board.png",
+      "sha256": "ec72496b7a714ed20cdf7101c46cf9e47a1cdbcfdd6a75aab746f1d89c010a0b",
+      "size_pixels": [
+        1280,
+        960
+      ],
+      "source_kind": "user-supplied real photograph",
+      "image_bytes_unchanged": true
+    },
+    {
+      "file": "photos/acquisition_board.png",
+      "sha256": "f78288f9cd37c9668dac37d5f4c579c7adc225056f8e918e75841e4bdb175fce",
+      "size_pixels": [
+        1280,
+        960
+      ],
+      "source_kind": "user-supplied real photograph",
+      "image_bytes_unchanged": true
+    },
+    {
+      "file": "photos/sensors_and_mount.png",
+      "sha256": "43881abd9b0a8e9facd659fd85f98e8bf2b47999619769cd5983d3c94dcca0c7",
+      "size_pixels": [
+        1280,
+        960
+      ],
+      "source_kind": "user-supplied real photograph",
+      "image_bytes_unchanged": true
+    },
+    {
+      "file": "photos/system_overview.png",
+      "sha256": "e576ffa0487e565465d0fe7485db2861a794e7708933bb9c3a2bd625874537fa",
+      "size_pixels": [
+        1280,
+        960
+      ],
+      "source_kind": "user-supplied real photograph",
+      "image_bytes_unchanged": true
+    },
+    {
+      "file": "photos/mechanical_bench.png",
+      "sha256": "ffdc53922ae722b5741e0bce47da0b8986185e3fb3d7b9e1db1f41986e8d43b4",
+      "size_pixels": [
+        1280,
+        1707
+      ],
+      "source_kind": "user-supplied real photograph",
+      "image_bytes_unchanged": true
+    },
+    {
+      "file": "photos/front_panel.png",
+      "sha256": "c3c7ce54a3a3c36fda36fc4b7270e492b221a893ca28eb07a5a5586aad032524",
+      "size_pixels": [
+        1280,
+        960
+      ],
+      "source_kind": "user-supplied real photograph",
+      "image_bytes_unchanged": true
+    }
+  ],
+  "note": "Public repository copies are byte-identical to user-provided real photos. No generated image replacement or pixel editing."
+}

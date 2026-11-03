@@ -1,0 +1,123 @@
+{
+  "schema": "final-word-report-acceptance.v2",
+  "snapshot_date": "2026-11-04",
+  "docx": "report/design_report.docx",
+  "docx_sha256": "ceea5482efdca670ff688d9f1a0db418a5819dd6d4e2c8f8e4b1a7420b9d8047",
+  "pdf": "report/design_report.pdf",
+  "pdf_sha256": "f5d58bc35151d2125dbca95aa372cc9052a7baaed609a5c5703abe873d304686",
+  "renderer": "Microsoft Word 16.0 native ExportAsFixedFormat, final DOCX opened read-only after author metadata clearing",
+  "page_count": 42,
+  "page_sizes": {
+    "portrait": "A4 210 x 297 mm",
+    "landscape": "A4 297 x 210 mm"
+  },
+  "landscape_pages": [
+    5,
+    8,
+    12
+  ],
+  "pages_individually_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "visual_review_pass": true,
+  "content_consistency_pass": true,
+  "checks": [
+    "page size/count and orientation",
+    "chapter and paragraph breaks",
+    "contents numbers against final Word pagination",
+    "footer and continuous page numbering",
+    "visible Chinese/Latin font glyphs",
+    "tables, image proportions and numbered captions",
+    "formula and units readability",
+    "overlap/clipping",
+    "abnormal blank pages",
+    "last-page layout",
+    "six user photographs embedded byte-identically",
+    "three frozen diagrams embedded byte-identically",
+    "author metadata and public interaction references"
+  ],
+  "images": {
+    "actual_gui": 3,
+    "real_xsim_crop": 27,
+    "authored_architecture": 3,
+    "user_real_photographs": 6,
+    "physical_photo_placeholders": 0
+  },
+  "original_snapshot_protected": {
+    "date": "2026-11-03",
+    "docx_sha256": "983590d31556c0bd357700ad22937db65ec42786a83d13dd231bfde569f3dc6f",
+    "changed": false,
+    "note": "The original submission report remains protected locally. Its old 36-page visual acceptance is not reused for this revised report."
+  },
+  "public_metadata": {
+    "docx_author_fields_empty": true,
+    "pdf_no_personal_author": true,
+    "screenshot_record_ids": "Historical random nonpersonal capture-session file/directory names retained by publication decision; no underlying sample/model files published with these screenshots.",
+    "example_paths": "Generic E:/v7_new_pl and D:/vivado/2025.2/Vivado/bin retained as replaceable command examples."
+  },
+  "boundaries": [
+    "User-provided real photos document the apparatus, not a new mechanical classification or physical cold-boot test.",
+    "Photo B6 has no running screen image; the caption explicitly says so.",
+    "Historical V6 XSim analysis images remain labeled and do not replace V7 implementation evidence.",
+    "Editing the final DOCX invalidates this PDF acceptance; rerender and inspect affected pages.",
+    "Fresh host/FFT verification performed after this report snapshot may be documented in separate repository validation records without rewriting historical results."
+  ],
+  "review_records": {
+    "validation/visual_review_01_24.json": {
+      "sha256": "3f05b42ce9aba419f61e35ca48489aa3ab04181ff7c900bc194b7c633929af35"
+    },
+    "validation/visual_review_25_42.json": {
+      "sha256": "0a6c1e7c35fd94550dca1f25b9df03ddcf33123878a598d2a49705c5dacda054"
+    }
+  },
+  "assets": {
+    "photos_manifest": "report/photos/manifest.json",
+    "photo_manifest_sha256": "2d7cc406caa00c7b792bcdd7875f12eb1da216df89583c5939f19297a201cfe0",
+    "diagram_names": [
+      "system_architecture",
+      "pl_processing",
+      "training_detection"
+    ]
+  }
+}

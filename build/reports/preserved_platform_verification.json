@@ -1,0 +1,179 @@
+{
+  "status": "passed",
+  "scope": "byte identity of capture/display platform source and staged implementation inputs",
+  "protected_v6_files": 34,
+  "modified_capture_or_display_files": 0,
+  "integration_exception": "Generated create_combined.tcl adds an independent AXI-Lite analysis module at 0x43c20000; source baseline script is unchanged",
+  "files": [
+    {
+      "file": "combined/constraints/ax7z020_combined.xdc",
+      "sha256": "6bebd8d050e0b253f43ecdc33cfdfcda66c4c838a7ef8114bef6701a21c0be08",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/rtl/ad7606_controller.v",
+      "sha256": "98603c4fda87ce4dcf0c8a50a7274f3c7432adc5015c17f5e3dcf03dbe8fe0b6",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/rtl/capture_ip.v",
+      "sha256": "29b9fdff1994f942f4cfeec251395d27e290a2e4ae43726f5e1d61a207fb032a",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/rtl/capture_stream.v",
+      "sha256": "ded85a7aefbcd0539277922bf1c4b4029ee41ef49e7ee5a1b7d41b0f11305d7c",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/rtl/combined_clocks.v",
+      "sha256": "94daabc3b321b3c2adab76d3afad2d72e7031ee47044d9931e7af0125efe95f1",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/rtl/speed_meter.v",
+      "sha256": "025eb21a333a742e326d2c2510f76c98915c43fd84dd5fad3263f520c6539d7d",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/scripts/audit_gray.tcl",
+      "sha256": "183bf1ca2758114435833d555ce095b01627e5f8cbf934eff019e70158713f26",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/scripts/audit_routed.tcl",
+      "sha256": "dd404db31dc5b3e81646e2bbcdd84274297c80a4297e139db44c5d194105a090",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/scripts/build_combined.ps1",
+      "sha256": "e8389a4f828e60518d79671d8a0c8bc84bdb326c1c0b0faa4fe102e68f35d4cc",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/scripts/build_combined.tcl",
+      "sha256": "6faff44d51dc7c11fede2cfd1fa27487605b8fd2ef19569b53b60e2664cf025f",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/scripts/create_combined.tcl",
+      "sha256": "f041aa7979abe672348d3c674973bdf096a5ef7643fb5f920db432c78f74cd21",
+      "staged_unchanged": false
+    },
+    {
+      "file": "combined/scripts/simulate_capture.ps1",
+      "sha256": "8f1dfe737e59273f7447bdbcbff621a0f08e330c229940a5ad173ba0aa7c0d87",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/scripts/simulate_stream.ps1",
+      "sha256": "136afe072b7206f2f88628aa92ced630c6af7f444c9618e0844d758fad7293ea",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/sim/tb_capture_merge.sv",
+      "sha256": "ff79cba42e621b6143bdb150606a478ee68dc4ae86524d4b1a28a11bbe0c0be2",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/sim/tb_capture_stream_edges.sv",
+      "sha256": "391c17db0c4437d80daaafddc9853d58440343a87888b0a321aa62b1a2626080",
+      "staged_unchanged": true
+    },
+    {
+      "file": "combined/sim/tb_capture_streaming.sv",
+      "sha256": "83f9e0281204d796705a3da3c8900e402113fe6f5161a33a1a7995b491d53344",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/board/ps_config_base.tcl",
+      "sha256": "5d31a42261128ed0e807bf04db80977edc8ef0fa5c84cac0404cdf07b83db6ef",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/rtl/display_clocks.v",
+      "sha256": "87b040e4197b49e07e502dc97d9910b2af2e965e4b918db6af3b732ed913f648",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/rtl/display_phy.v",
+      "sha256": "36063113e7e6edefb12fd8d8b13eb8e17b42ebde41cb9d3957fa32ec4c25ef5f",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/rtl/display_status.v",
+      "sha256": "58d93f8de10f6d92a74fee73eb711e374ba0b2ba1536dcd87147e6113823fb48",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/component.xml",
+      "sha256": "74d0e3a5bed164f964113fb77abc0bafef47311413df5de3bfaa9669de1239ae",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/LICENSE.txt",
+      "sha256": "ff7b2d54b44818dd85502d841c378f2d29dbcff54757fabb72c9597df9f65e12",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/ClockGen.vhd",
+      "sha256": "3c0e051da8b76d1996980a16c7a09a6120ce70516e40f5611ff8b502c170aa0f",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/DVI_Constants.vhd",
+      "sha256": "4f634d35e638f89040a0c58a199a13ced67cd757a36763e98c75acd2edebc863",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/OutputSERDES.vhd",
+      "sha256": "8145971992829bc520cd1c82dbb78a54d2ea91146417bd69cb62af1e158c76f6",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/rgb2dvi.vhd",
+      "sha256": "0d3b820a350f5e4bdc2256c7b8e376987836248b3c015fa74ad852629da81385",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/rgb2dvi.xdc",
+      "sha256": "5263196a2c78a5c1818991c9372d8be2e1e905c7dc7c66e2098ed1c4b16208e4",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/rgb2dvi_clocks.xdc",
+      "sha256": "c4000cd15bebbe58173441e638df21bdc07ac21094883d9a12d19413aa7140eb",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/rgb2dvi_ooc.xdc",
+      "sha256": "f568c86aadff12555ded6d5913c970304c28534d8c07844b1a28f8c775cd0038",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/SyncAsync.vhd",
+      "sha256": "8c226a1121313391bf99c207857632f5883938f1d9c7856c8310c41af1596cbe",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/SyncAsyncReset.vhd",
+      "sha256": "09d342d737f70901cba6236f7ead07afa29a4de8b8b78c3b3237900a0a2a61d7",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/rgb2dvi/src/TMDS_Encoder.vhd",
+      "sha256": "a92ae95220730c43fb5a806714aa8f0076936c301dcf15b321206ac8d8b28748",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/sha256.json",
+      "sha256": "a8b06ce94371e05c8652eda308581c97bdb3c64f71d9fceb3fb7dcd6ccc6fbde",
+      "staged_unchanged": true
+    },
+    {
+      "file": "display/vendor/SOURCE.md",
+      "sha256": "d9054c1b4726e2f31485fa84c244d567922f0e5a7c94905742fdc2bc151cee3d",
+      "staged_unchanged": true
+    }
+  ]
+}

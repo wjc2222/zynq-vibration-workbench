@@ -1,0 +1,885 @@
+{
+  "schema": "zynq_vibration.final_pdf_independent_visual_qa.v1",
+  "reviewed_at_utc": "2026-11-03T17:49:59.821303+00:00",
+  "reviewer": "official_source_layout",
+  "method": "Each complete final 130-dpi PNG page was individually viewed using view_image; PDF image bounds and page count were independently cross-checked with PyMuPDF. Text extraction was not used as a substitute for visual inspection.",
+  "status": "pass",
+  "document_identity": {
+    "docx": "report/design_report.docx",
+    "docx_sha256": "ceea5482efdca670ff688d9f1a0db418a5819dd6d4e2c8f8e4b1a7420b9d8047",
+    "pdf": "report/design_report.pdf",
+    "pdf_sha256": "f5d58bc35151d2125dbca95aa372cc9052a7baaed609a5c5703abe873d304686",
+    "page_count": 42
+  },
+  "reviewed_range": [
+    25,
+    42
+  ],
+  "reviewed_page_count": 18,
+  "source_figure_completeness": {
+    "hardware_photos": 6,
+    "xsim_figures": 27,
+    "figure_labels": "B1-B6 and C1-C27",
+    "xsim_mapping": "sim/screenshot_mapping.json",
+    "xsim_mapping_sha256": "4c91513356241e40dd0b2a93d4bcd85c450afa7d44fda1f8696565f84f411a4e",
+    "mapping_count": 27
+  },
+  "scope_limits": [
+    "Review applies only to the exact DOCX/PDF hashes recorded above and final PNG evidence hashes below.",
+    "This is a layout/readability review, not renewed board or mechanical-accuracy acceptance.",
+    "XSim source viewports contain normal ellipses, finite time windows and some truncated vector suffixes; captions/observation lines identify the signals. These inherited viewport limits were not treated as new document crop defects."
+  ],
+  "blocking_findings": [],
+  "pages": [
+    {
+      "page": 25,
+      "verdict": "pass",
+      "evidence_png": "page-25.png",
+      "evidence_png_sha256": "7c4d5c069d85ba8744ec93904318c311637cb64f3cf673ffbb798a9bc54e4ab7",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix B / hardware assembly and mechanical rig",
+      "figures": [
+        "B1"
+      ],
+      "embedded_image_count": 1,
+      "image_boxes_pt": [
+        [
+          63.8,
+          139.88,
+          531.47,
+          490.63
+        ]
+      ],
+      "visual_observation": "The overview photo, appendix heading, figure caption and explanatory paragraph fit. The running-screen photo is identified as appearance evidence, not a new recognition result.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 26,
+      "verdict": "pass",
+      "evidence_png": "page-26.png",
+      "evidence_png_sha256": "5ead13865b77f77d23bf419d51974bdef3920a778be4fc71855a9c1f0d7246ce",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "B.1 / controller and acquisition boards",
+      "figures": [
+        "B2",
+        "B3"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          127.57,
+          89.12,
+          467.7,
+          344.22
+        ],
+        [
+          127.57,
+          366.54,
+          467.7,
+          621.64
+        ]
+      ],
+      "visual_observation": "Both board photos retain aspect ratio and visible detail. Each caption stays on the same page directly below its photo.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 27,
+      "verdict": "pass",
+      "evidence_png": "page-27.png",
+      "evidence_png_sha256": "ca3d63d4da7421ddd494c237e4ddac50913db1130cc65e5948e4147ea44ff049",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "B.2 / mechanical rig and sensor installation",
+      "figures": [
+        "B4"
+      ],
+      "embedded_image_count": 1,
+      "image_boxes_pt": [
+        [
+          116.25,
+          89.12,
+          479.05,
+          572.95
+        ]
+      ],
+      "visual_observation": "The portrait rig photo is complete and centered. Caption and the note about CH1-CH3 verification fit below it without touching the footer.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 28,
+      "verdict": "pass",
+      "evidence_png": "page-28.png",
+      "evidence_png_sha256": "e39efc388b18983740b0c2c21b1799c5be09e197a764c3d4300497e12a1b39b9",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "B.3 / sensor parts and terminal panel",
+      "figures": [
+        "B5",
+        "B6"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          127.57,
+          89.12,
+          467.7,
+          344.22
+        ],
+        [
+          127.57,
+          366.54,
+          467.7,
+          621.64
+        ]
+      ],
+      "visual_observation": "Both hardware photos and their captions are complete. The terminal screen being blank is accurately distinguished in its caption.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 29,
+      "verdict": "pass",
+      "evidence_png": "page-29.png",
+      "evidence_png_sha256": "19abd74b23fefe4b6b33d9a2b89e8d6279e80a8520a9615919df2d444f5eb067",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 1",
+      "figures": [
+        "C1",
+        "C2"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ],
+        [
+          59.55,
+          365.29,
+          535.75,
+          542.78
+        ]
+      ],
+      "visual_observation": "ADC conversion/readout and ADC fault screenshots, captions and signal-observation lines are legible. The historical capture date and V6 analysis scope note are visible.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 30,
+      "verdict": "pass",
+      "evidence_png": "page-30.png",
+      "evidence_png_sha256": "59f1020f762b939634f5bfe0c7441d8738abe8b9690472cfe385c0dd76c8c051",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 2",
+      "figures": [
+        "C3",
+        "C4"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          332.52
+        ],
+        [
+          59.55,
+          380.44,
+          535.75,
+          557.93
+        ]
+      ],
+      "visual_observation": "Speed filtering/period and timeout screenshots fit within the text margins; waveforms, signal names and captions are legible.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 31,
+      "verdict": "pass",
+      "evidence_png": "page-31.png",
+      "evidence_png_sha256": "f357c8b1fca0aebcb8cfea08d22a586223d5d81b7eee8ab9526cf9ab01fbeac7",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 3",
+      "figures": [
+        "C5",
+        "C6"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          332.52
+        ],
+        [
+          59.55,
+          380.44,
+          535.75,
+          573.08
+        ]
+      ],
+      "visual_observation": "RAW32 packet and code-detail screenshots are distinct and complete; captions and observation lines remain paired with the correct image.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 32,
+      "verdict": "pass",
+      "evidence_png": "page-32.png",
+      "evidence_png_sha256": "895cb7dd03ce6011a714d5addd1a0337cce186c2416372e8c7ca9b5c51aef9f7",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 4",
+      "figures": [
+        "C7",
+        "C8"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.67,
+          269.73
+        ],
+        [
+          59.55,
+          317.64,
+          535.75,
+          510.28
+        ]
+      ],
+      "visual_observation": "ADC readout detail and stream stop/rollover screenshots are legible, with complete captions and no image/text collision.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 33,
+      "verdict": "pass",
+      "evidence_png": "page-33.png",
+      "evidence_png_sha256": "596fd5bd1ae3779fab0778b50c0e3a64d4c93a310a8a78fe6b19d0afabb5d521",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 5",
+      "figures": [
+        "C9",
+        "C10"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ],
+        [
+          59.55,
+          365.29,
+          535.75,
+          542.78
+        ]
+      ],
+      "visual_observation": "Capture AXI control and 40 ms chunk-boundary screenshots fit. The long figure C10 caption remains centered within the margins.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 34,
+      "verdict": "pass",
+      "evidence_png": "page-34.png",
+      "evidence_png_sha256": "5a3ed9489fb06e87b50529efac1cafe15efeb3bea9d852dbee89cb46503716a2",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 6",
+      "figures": [
+        "C11",
+        "C12"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ],
+        [
+          59.55,
+          365.29,
+          535.75,
+          557.93
+        ]
+      ],
+      "visual_observation": "MMCM clocks and display-status screenshots show their signal/value panels and waveforms clearly. Captions and observation lines are not clipped.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 35,
+      "verdict": "pass",
+      "evidence_png": "page-35.png",
+      "evidence_png_sha256": "124d85fd2af49a08d6897543af250119f59f946e4d0c9eb69483bcd587891fd5",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 7",
+      "figures": [
+        "C13",
+        "C14"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ],
+        [
+          59.55,
+          365.29,
+          535.61,
+          482.14
+        ]
+      ],
+      "visual_observation": "TMDS control and active-pixel encoding screenshots preserve their different aspect ratios. Both figure labels and signal lines fit.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 36,
+      "verdict": "pass",
+      "evidence_png": "page-36.png",
+      "evidence_png_sha256": "2e0c78db6b961a42b7bc315f8d99fde795bfaa7ec7822d5a50b0357d0b995594",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 8",
+      "figures": [
+        "C15",
+        "C16"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.61,
+          256.73
+        ],
+        [
+          59.55,
+          304.64,
+          535.66,
+          404.19
+        ]
+      ],
+      "visual_observation": "Line/frame timing screenshots are intentionally shallow because of their original aspect ratios. The page has deliberate lower whitespace, not an empty-page or missing-caption defect.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 37,
+      "verdict": "pass",
+      "evidence_png": "page-37.png",
+      "evidence_png_sha256": "92cc59c116200e77c699bb65243595a1c37848a0fcdb7d255a5b4e654da1c9c1",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 9",
+      "figures": [
+        "C17",
+        "C18"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.67,
+          300.03
+        ],
+        [
+          59.55,
+          347.94,
+          535.75,
+          525.43
+        ]
+      ],
+      "visual_observation": "DMA SG descriptor and S2MM-write screenshots are clear. Long AXI signal names retain source-viewport limits; full base names are provided in the observation lines.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 38,
+      "verdict": "pass",
+      "evidence_png": "page-38.png",
+      "evidence_png_sha256": "7911395ac4b87705607fcfe486b2e16285167b30ff7e24f96897478b3d14f2d4",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 10",
+      "figures": [
+        "C19",
+        "C20"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          332.52
+        ],
+        [
+          59.55,
+          380.44,
+          535.67,
+          510.29
+        ]
+      ],
+      "visual_observation": "VDMA pixel-read and video-output pixel screenshots are legible. Headings, captions and footer 38 are complete.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 39,
+      "verdict": "pass",
+      "evidence_png": "page-39.png",
+      "evidence_png_sha256": "b1e05994733d497dbe729ac51b89de6ccc339c3e84eaffe24a20254f222c6d98",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 11",
+      "figures": [
+        "C21",
+        "C22"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ],
+        [
+          59.55,
+          365.29,
+          535.67,
+          525.44
+        ]
+      ],
+      "visual_observation": "Analysis AXI and FIR screenshots are paired with the correct captions. The page explicitly retains the V6 historical-image scope statement.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 40,
+      "verdict": "pass",
+      "evidence_png": "page-40.png",
+      "evidence_png_sha256": "56dc434fdbdde97bd161e28bcd8327941e750272501544591a3cabbe671215b8",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 12",
+      "figures": [
+        "C23",
+        "C24"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ],
+        [
+          59.55,
+          365.29,
+          535.75,
+          542.78
+        ]
+      ],
+      "visual_observation": "Statistics and Hann screenshots preserve readable selected values, waveform context and signal names. Captions and notes fit without clipping.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 41,
+      "verdict": "pass",
+      "evidence_png": "page-41.png",
+      "evidence_png_sha256": "f237d4cd17ad7ccae806532b9ccbf34f6c0a9da76dd50603651422d1539f7e88",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 13",
+      "figures": [
+        "C25",
+        "C26"
+      ],
+      "embedded_image_count": 2,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.67,
+          300.03
+        ],
+        [
+          59.55,
+          347.94,
+          535.75,
+          525.43
+        ]
+      ],
+      "visual_observation": "FFT and power/band-accumulation screenshots are legible and correctly captioned. The source screenshot ellipses are not confused with missing document text.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    },
+    {
+      "page": 42,
+      "verdict": "pass",
+      "evidence_png": "page-42.png",
+      "evidence_png_sha256": "f24d1f7317065fa46e142d561953365b716c4105281dcdb97a6756608e7a1108",
+      "render_pixels": [
+        1075,
+        1521
+      ],
+      "page_size_pt": [
+        595.32,
+        841.92
+      ],
+      "orientation": "portrait",
+      "rotation_degrees": 0,
+      "heading_scope": "Appendix C / native Vivado screenshots 14",
+      "figures": [
+        "C27"
+      ],
+      "embedded_image_count": 1,
+      "image_boxes_pt": [
+        [
+          59.55,
+          139.88,
+          535.75,
+          317.37
+        ]
+      ],
+      "visual_observation": "The final result-index/readback screenshot, caption and observation line are complete. One final figure intentionally leaves whitespace; footer 42 is present and no extra blank final page follows.",
+      "checks": {
+        "heading_hierarchy": "pass",
+        "caption_pairing_and_readability": "pass",
+        "image_aspect_ratio_and_document_bounds": "pass",
+        "visible_font_replacement_artifacts": "none observed",
+        "overlap_or_clipped_document_text": "none observed",
+        "page_number_and_footer": "pass",
+        "paragraph_and_page_breaks": "pass",
+        "tables_and_equations": "not present in this page range"
+      },
+      "findings": []
+    }
+  ],
+  "identity_rechecked_after_review": {
+    "docx_sha256": "ceea5482efdca670ff688d9f1a0db418a5819dd6d4e2c8f8e4b1a7420b9d8047",
+    "pdf_sha256": "f5d58bc35151d2125dbca95aa372cc9052a7baaed609a5c5703abe873d304686"
+  },
+  "public_transformation": "Absolute local paths replaced by repository-relative deliverable paths or page-image basenames; verdicts, observations and hashes unchanged.",
+  "original_local_review_sha256": "f17ba7dc8dd25f1e4b0b0e943c5cd8c6ea8ea4bea073a333388933cedda1ae1f",
+  "evidence_storage": "Page PNGs retained with local verification evidence, not repository assets."
+}

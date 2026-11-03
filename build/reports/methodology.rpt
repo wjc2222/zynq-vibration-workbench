@@ -1,0 +1,394 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov  1 23:17:51 2026
+| Host         : [PRIVATE_HOST_REDACTED]
+| Command      : [PRIVATE_COMMAND_PATH_REDACTED]
+| Design       : combined_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 52
++-----------+----------+-------------------------------------------------+--------+
+| Rule      | Severity | Description                                     | Checks |
++-----------+----------+-------------------------------------------------+--------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                    | 6      |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 38     |
+| TIMING-18 | Warning  | Missing input or output delay                   | 5      |
+| XDCB-1    | Warning  | Runtime intensive exceptions                    | 1      |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects     | 2      |
++-----------+----------+-------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+combined_i/capture_memory/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+combined_i/capture_memory/s01_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gpregsm1.curr_fwft_state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR,
+combined_i/memory_bus/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR
+ (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[0] in site SLICE_X53Y72 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[10] in site SLICE_X57Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[11] in site SLICE_X54Y68 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[12] in site SLICE_X54Y70 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][12] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[13] in site SLICE_X51Y76 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][13] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[14] in site SLICE_X55Y69 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][14] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[15] in site SLICE_X52Y75 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][15] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[16] in site SLICE_X51Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][16] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[17] in site SLICE_X53Y81 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][17] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[18] in site SLICE_X51Y82 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][18] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[19] in site SLICE_X53Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][19] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[1] in site SLICE_X55Y73 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[20] in site SLICE_X50Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][20] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[21] in site SLICE_X49Y80 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][21] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[22] in site SLICE_X50Y82 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][22] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[23] in site SLICE_X51Y86 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][23] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#17 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[24] in site SLICE_X49Y86 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][24] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#18 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[25] in site SLICE_X48Y86 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][25] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#19 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[26] in site SLICE_X51Y80 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][26] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#20 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[27] in site SLICE_X50Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][27] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[28] in site SLICE_X49Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][28] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#22 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[29] in site SLICE_X51Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][29] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[2] in site SLICE_X56Y68 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#24 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[30] in site SLICE_X52Y78 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][30] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#25 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[31] in site SLICE_X52Y84 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][31] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#26 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[3] in site SLICE_X55Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#27 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[4] in site SLICE_X53Y70 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#28 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[5] in site SLICE_X54Y72 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#29 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[6] in site SLICE_X52Y70 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#30 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[7] in site SLICE_X56Y73 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#31 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[8] in site SLICE_X53Y68 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#32 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.lite_rdata_cdc_from_reg[9] in site SLICE_X52Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/capture_dma/U0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_ASYNC_READ.REG_DATA2LITE_CLOCK/syncstages_ff_reg[0][9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#33 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/status_monitor/inst/flags_sync_reg[0] in site SLICE_X62Y42 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/status_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS4/syncstages_ff_reg[0][0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#34 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/status_monitor/inst/flags_sync_reg[1] in site SLICE_X65Y45 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/status_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS4/syncstages_ff_reg[0][1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#35 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/status_monitor/inst/flags_sync_reg[2] in site SLICE_X64Y48 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/status_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS4/syncstages_ff_reg[0][2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#36 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/status_monitor/inst/flags_sync_reg[3] in site SLICE_X62Y45 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/status_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS4/syncstages_ff_reg[0][3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#37 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/status_monitor/inst/flags_sync_reg[4] in site SLICE_X62Y48 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/status_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS4/syncstages_ff_reg[0][4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#38 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell combined_i/status_monitor/inst/flags_sync_reg[5] in site SLICE_X57Y46 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell combined_i/status_gpio/U0/gpio_core_1/Dual.INPUT_DOUBLE_REGS4/syncstages_ff_reg[0][5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on ad_convsta relative to the rising and/or falling clock edge(s) of board_50mhz.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on ad_convstb relative to the rising and/or falling clock edge(s) of board_50mhz.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on ad_cs_n relative to the rising and/or falling clock edge(s) of board_50mhz.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on ad_rd_n relative to the rising and/or falling clock edge(s) of board_50mhz.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on ad_reset relative to the rising and/or falling clock edge(s) of board_50mhz.
+Related violations: <none>
+
+XDCB-1#1 Warning
+Runtime intensive exceptions  
+The following constraint contains more than 10000 objects. To preserve runtime and memory performance, it is recommended to include minimum number of objects. Check whether this list can be simplified.
+-to = expands to 21333 design objects. 
+set_max_delay -datapath_only -from [get_ports {{ad_data[*]} ad_firstdata}] -to [all_registers] 10.000
+[SOURCE_ROOT]/combined/constraints/ax7z020_combined.xdc (Line: 55)
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ */busy_meta_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: [SOURCE_ROOT]/combined/constraints/ax7z020_combined.xdc (Line: 52)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ */speed_meta_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: [SOURCE_ROOT]/combined/constraints/ax7z020_combined.xdc (Line: 65)
+Related violations: <none>
+
+

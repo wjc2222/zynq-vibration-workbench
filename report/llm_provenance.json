@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "scope": "public curated visible-message excerpts",
+  "curation_snapshot_date": "2026-11-04",
+  "case_count": 6,
+  "selected_message_count": 28,
+  "excerpt_count": 29,
+  "source_full_log_exported": false,
+  "source_location": "Private source log retained outside this repository; not included.",
+  "allowed_records": "Only user visible text, or assistant visible commentary/final answers.",
+  "excluded_records": [
+    "analysis and internal reasoning",
+    "system/developer instructions",
+    "tool calls and responses",
+    "unrelated/private messages",
+    "attachment content",
+    "full private conversation"
+  ],
+  "hash_spec": "original_visible_message_sha256 = SHA256(UTF8 of original visible text blocks joined with one LF, without normalization). excerpt_sha256 = SHA256(UTF8 exact excerpt). excerpt_offsets_codepoints uses Python Unicode codepoint indices [start,end) within the original visible text.",
+  "excerpt_policy": "Exact contiguous source substrings from the prior curated export. Multiple spans of one original message remain separate. Omitted prefixes/suffixes are explicit; editorial summaries are labeled non-verbatim.",
+  "public_transformation": {
+    "input": "Previously verified project-specific curated visible-message collection; no raw log read for this public packaging step.",
+    "removed_metadata": [
+      "private source session ID",
+      "private source message ID",
+      "original source log line number",
+      "original source log ordinal",
+      "original message UTC timestamps",
+      "private source log basename",
+      "source log size and filesystem timestamps",
+      "local preparation publication-status marker"
+    ],
+    "replacement_metadata": "message_ref and chronology_index are newly assigned within this selected collection in original source order. They are not original platform IDs.",
+    "preserved": [
+      "all 29 exact excerpt strings",
+      "original visible-message SHA-256",
+      "excerpt SHA-256",
+      "codepoint offsets",
+      "omitted_before/omitted_after",
+      "roles and visible-message phases",
+      "non-verbatim summaries and limitations"
+    ],
+    "source_text_redactions_in_selected_spans": 0,
+    "verification": "All excerpt strings compared exactly with the existing curated JSONL; all 29 excerpt hashes recomputed successfully. Original full-message hashes and offset correspondence were verified during original extraction, not rederived from a full private log during public packaging.",
+    "private_absolute_paths_in_input_selected_spans": 0
+  },
+  "publication_note": "This directory contains the public-ready selection. It does not contain a full conversation export or a new claim that historical statements are measurements.",
+  "artifacts": {
+    "llm_interactions.md": {
+      "sha256": "85e29b1f54fe187df68840d69477b4b95fc050f9b4203e615a10558190e7b7df",
+      "size_bytes": 22828
+    },
+    "llm_interactions.jsonl": {
+      "sha256": "4088e212e4ef57588157e61dc037423dc430600351e51e4a351d0c5b6bc223bb",
+      "size_bytes": 30060
+    }
+  }
+}

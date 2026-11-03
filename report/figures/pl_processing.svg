@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#638f93"/></marker></defs><rect width="2400" height="1500" fill="white"/>
+<text x="1200" y="67.08" text-anchor="middle" font-family="Microsoft YaHei" font-size="52" font-weight="700" fill="#284d50">PL 分析数据通路与资源分工</text>
+<text x="1200" y="119.53999999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">三轴并行对称 FIR；共享 8192 点 Hann / XFFT；分析时钟 100 MHz</text>
+<rect x="70" y="167.7" width="620" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="380.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">输入与片上缓存</text>
+<rect x="820" y="167.7" width="760" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="1200.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">对称 FIR 与抽取</text>
+<rect x="1710" y="167.7" width="620" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="2020.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">共享频域与结果</text>
+<rect x="110" y="283.8" width="540" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="380.0" y="328.7436" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">PS · AXI-Lite 送料</text>
+<text x="380.0" y="371.1416" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">512 帧 FIFO / 信用握手</text>
+<text x="380.0" y="413.5396" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">signed16 三轴原始码</text>
+<rect x="110" y="593.4" width="540" height="172.0" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="380.0" y="645.0344" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">双口 BRAM</text>
+<text x="380.0" y="689.9264" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">前向 / 镜像历史样本</text>
+<text x="380.0" y="734.8183999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">signed24 冻结系数</text>
+<rect x="110" y="954.6" width="540" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="380.0" y="997.6343999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">LUT + FF</text>
+<text x="380.0" y="1042.5264" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">调度 / valid / 索引</text>
+<text x="380.0" y="1087.4184" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">状态与握手对齐</text>
+<rect x="860" y="283.8" width="680" height="107.5" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="348.0764" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">镜像预加：16 + 16 → 17 bit</text>
+<rect x="860" y="468.7" width="680" height="107.5" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="532.9764" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">17 × 24 → 41 bit 乘积</text>
+<rect x="860" y="653.6" width="680" height="107.5" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="718.4612" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="700" fill="#284d50">三轴 signed56 累加</text>
+<rect x="860" y="838.5" width="680" height="150.5" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="881.2936" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">完整累加后统一舍入</text>
+<text x="1200.0" y="923.6916" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">signed24 饱和 / 抽取</text>
+<text x="1200.0" y="966.0895999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">50 / 25 / 10 / 5 kHz → 5 kHz</text>
+<rect x="1750" y="283.8" width="540" height="129.0" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="315.8436" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">统计量与原码端点</text>
+<text x="2020.0" y="358.2416" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">clip 计数 / 三轴窗口</text>
+<text x="2020.0" y="400.63960000000003" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">8192 点窗口 BRAM</text>
+<rect x="1750" y="516.0" width="540" height="146.2" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="577.1804" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">Hann 加窗</text>
+<text x="2020.0" y="622.0724" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">共享 8192 点实际 XFFT</text>
+<rect x="1750" y="761.1" width="540" height="146.2" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="822.2804" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">功率 / 频带累加</text>
+<text x="2020.0" y="867.1724" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">结果 BRAM 冻结</text>
+<rect x="1750" y="1006.1999999999999" width="540" height="111.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="1050.8426" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">PS 索引与读取</text>
+<text x="2020.0" y="1093.2405999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">INDEX → READY → LO / HI</text>
+<path d="M 650 361.2 L 860 361.2" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 650 670.8 L 750 670.8 L 750 516.0 L 860 516.0" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1200 391.3 L 1200 468.7" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1200 576.2 L 1200 653.6" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1200 761.1 L 1200 838.5" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1540 911.6 L 1640 911.6 L 1640 348.3 L 1750 348.3" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 2020 412.8 L 2020 516.0" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 2020 662.2 L 2020 761.1" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 2020 907.3 L 2020 1006.1999999999999" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 650 1023.4 L 780 1023.4 L 780 937.4 L 860 937.4" fill="none" stroke="#638f93" stroke-width="2.5" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="1200" y="1073.28" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">每轴乘加项：L → (L + 1) / 2</text>
+<text x="1200" y="1126.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">BRAM 历史 / 系数 / 窗口 / 结果</text>
+<rect x="70" y="1247.0" width="2260" height="129.0" rx="5" fill="#f3fafb" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="355" y="1296.8799999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">DSP：定点乘加</text>
+<text x="355" y="1346.76" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">Hann / FFT / 平方</text>
+<text x="915" y="1296.8799999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">LUT：协议与调度</text>
+<text x="915" y="1346.76" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">比较 / 饱和 / 状态机</text>
+<text x="1475" y="1296.8799999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">FF：流水与冻结</text>
+<text x="1475" y="1346.76" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">valid / 索引 / 中间状态</text>
+<text x="2040" y="1296.8799999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">BRAM：双口缓存</text>
+<text x="2040" y="1346.76" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">明确端口与访问延迟</text>
+<text x="1200" y="1427.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">奇数对称系数：h[k] = h[L−1−k]；中心样本仅使用一次。</text></svg>

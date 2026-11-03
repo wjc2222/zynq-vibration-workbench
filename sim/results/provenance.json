@@ -1,0 +1,253 @@
+{
+  "schema": "zynq_vibration.fresh_validation_provenance.v1",
+  "scope": "Fresh actual simulations and independent vendor-model comparison; no board access, no mechanical training/accuracy claim. Canonical original production source is unchanged.",
+  "files": [
+    {
+      "path": "sim/README.md",
+      "bytes": 4506,
+      "sha256": "055e97672dfbe476cc2c4c03a5eec1b7a659378044a0628df20e8bdf2c159215",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_input_0.txt",
+      "bytes": 362735,
+      "sha256": "a4906a178869acae0cfbec64c903896d7daed523e80ce2b0ab3466b84f89ad6e",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_input_1.txt",
+      "bytes": 363884,
+      "sha256": "a70abce1af1e8a90b9aa539da880e4332a6d6eb199e3bd1a88f8afac081448d4",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_input_2.txt",
+      "bytes": 365473,
+      "sha256": "b6f32cb532616e3ecfdda2c6d0e68a6c45a26abc9a20ed90eabfe8da312c6ef5",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_input_3.txt",
+      "bytes": 366852,
+      "sha256": "a86098ca476dcf1f9b1d7327bc7917ac37b398b330e3e33080a3c4801bb8f91e",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_output_0.txt",
+      "bytes": 436230,
+      "sha256": "7d02ab40f8dc7234dd00ee39207621c31cad19f4baa4b16a62038f8e4f5803ef",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_output_1.txt",
+      "bytes": 434507,
+      "sha256": "6752b88ba5f7961782c6252f2afa9c290ae411deaece5f6edd67ba29acc03590",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_output_2.txt",
+      "bytes": 440123,
+      "sha256": "87a13d50b9328a16f6248073b7ce1872a18e7eec054a73201e0cf9ca2614c822",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/fft_output_3.txt",
+      "bytes": 435414,
+      "sha256": "cce472a1b808b59dee7dee4173dd2716d0aca49ead332410528377ad4c01813d",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/rtl_stats_0.txt",
+      "bytes": 155,
+      "sha256": "12d00ec3f90257fe3e04ee1e0bf8d3fd49703a2fdb40bfb37bf1812acd6e8d3c",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/rtl_stats_1.txt",
+      "bytes": 155,
+      "sha256": "48563b0d2669cb368e17936c8ea77fdeb188dab6faeb8f9a9335139bed811d0e",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/rtl_stats_2.txt",
+      "bytes": 156,
+      "sha256": "b3d90c22a1f0e5dffd647db974b3def2a3c7e13b15525d31a11a4ae7b9672d16",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/fft_captures/rtl_stats_3.txt",
+      "bytes": 157,
+      "sha256": "c49c6e564034107f5bd75ad13cbd4917acd21bd3aa5c9a8ea383120d36db0c96",
+      "origin": "fresh_actual_RTL_synthetic_stimulus_output"
+    },
+    {
+      "path": "sim/results/full_numeric_verification.json",
+      "bytes": 6229,
+      "sha256": "5dc72b7f26f95e3045b154de98b3b63643e324de7e13766ce7e5b23187c13f44",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/results/isolated_fir_fixtures.json",
+      "bytes": 11485,
+      "sha256": "6bcb1145dff2d1e7469211978795a21475e12334ca40d3a7f1814247d40e5e0d",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/results/layout_revalidation.json",
+      "bytes": 20684,
+      "sha256": "7ad1eb3dbd9f8660fb709c9fd6fd96707767279cd3af45e5e30f6f45bcf8b164",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/results/README.md",
+      "bytes": 1924,
+      "sha256": "948f60819c4c479876f472f3ba789f0239b247736a72c029fd523fe774d0ba03",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/run_fft_compare.py",
+      "bytes": 2926,
+      "sha256": "9bd9ad869fb0cfaf3dc40ff358b4146745806600f45d78b15115766c0f636fad",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/run_isolated.ps1",
+      "bytes": 2732,
+      "sha256": "7e2fac02060926352c1e32257ac13ac2320adc1c2c7a3444196df723ae4cb0e3",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/run_xsim.ps1",
+      "bytes": 1743,
+      "sha256": "431fc5534288fa21d91354f72a300e2800d3c66372e9578541e98c5bec738d8b",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/stage_analysis.ps1",
+      "bytes": 1887,
+      "sha256": "8c2127b687f38142f87a2a2fce8b2666ddfbcf2584034235144c6ebea59c7e70",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    },
+    {
+      "path": "sim/validate_public_evidence.py",
+      "bytes": 2704,
+      "sha256": "72afa4b6d7c5cb43e258a378d2a7c81b9d137afe9189e5c597aa1bd9771458f6",
+      "origin": "fresh_validation_report_or_auxiliary_source_tool"
+    }
+  ],
+  "capture_copy_provenance": [
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_0.txt",
+      "public_path": "sim/results/fft_captures/fft_input_0.txt",
+      "original_sha256": "a4906a178869acae0cfbec64c903896d7daed523e80ce2b0ab3466b84f89ad6e",
+      "public_sha256": "a4906a178869acae0cfbec64c903896d7daed523e80ce2b0ab3466b84f89ad6e",
+      "bytes": 362735,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_0.txt",
+      "public_path": "sim/results/fft_captures/fft_output_0.txt",
+      "original_sha256": "7d02ab40f8dc7234dd00ee39207621c31cad19f4baa4b16a62038f8e4f5803ef",
+      "public_sha256": "7d02ab40f8dc7234dd00ee39207621c31cad19f4baa4b16a62038f8e4f5803ef",
+      "bytes": 436230,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_0.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_0.txt",
+      "original_sha256": "12d00ec3f90257fe3e04ee1e0bf8d3fd49703a2fdb40bfb37bf1812acd6e8d3c",
+      "public_sha256": "12d00ec3f90257fe3e04ee1e0bf8d3fd49703a2fdb40bfb37bf1812acd6e8d3c",
+      "bytes": 155,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_1.txt",
+      "public_path": "sim/results/fft_captures/fft_input_1.txt",
+      "original_sha256": "a70abce1af1e8a90b9aa539da880e4332a6d6eb199e3bd1a88f8afac081448d4",
+      "public_sha256": "a70abce1af1e8a90b9aa539da880e4332a6d6eb199e3bd1a88f8afac081448d4",
+      "bytes": 363884,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_1.txt",
+      "public_path": "sim/results/fft_captures/fft_output_1.txt",
+      "original_sha256": "6752b88ba5f7961782c6252f2afa9c290ae411deaece5f6edd67ba29acc03590",
+      "public_sha256": "6752b88ba5f7961782c6252f2afa9c290ae411deaece5f6edd67ba29acc03590",
+      "bytes": 434507,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_1.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_1.txt",
+      "original_sha256": "48563b0d2669cb368e17936c8ea77fdeb188dab6faeb8f9a9335139bed811d0e",
+      "public_sha256": "48563b0d2669cb368e17936c8ea77fdeb188dab6faeb8f9a9335139bed811d0e",
+      "bytes": 155,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_2.txt",
+      "public_path": "sim/results/fft_captures/fft_input_2.txt",
+      "original_sha256": "b6f32cb532616e3ecfdda2c6d0e68a6c45a26abc9a20ed90eabfe8da312c6ef5",
+      "public_sha256": "b6f32cb532616e3ecfdda2c6d0e68a6c45a26abc9a20ed90eabfe8da312c6ef5",
+      "bytes": 365473,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_2.txt",
+      "public_path": "sim/results/fft_captures/fft_output_2.txt",
+      "original_sha256": "87a13d50b9328a16f6248073b7ce1872a18e7eec054a73201e0cf9ca2614c822",
+      "public_sha256": "87a13d50b9328a16f6248073b7ce1872a18e7eec054a73201e0cf9ca2614c822",
+      "bytes": 440123,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_2.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_2.txt",
+      "original_sha256": "b3d90c22a1f0e5dffd647db974b3def2a3c7e13b15525d31a11a4ae7b9672d16",
+      "public_sha256": "b3d90c22a1f0e5dffd647db974b3def2a3c7e13b15525d31a11a4ae7b9672d16",
+      "bytes": 156,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_3.txt",
+      "public_path": "sim/results/fft_captures/fft_input_3.txt",
+      "original_sha256": "a86098ca476dcf1f9b1d7327bc7917ac37b398b330e3e33080a3c4801bb8f91e",
+      "public_sha256": "a86098ca476dcf1f9b1d7327bc7917ac37b398b330e3e33080a3c4801bb8f91e",
+      "bytes": 366852,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_3.txt",
+      "public_path": "sim/results/fft_captures/fft_output_3.txt",
+      "original_sha256": "cce472a1b808b59dee7dee4173dd2716d0aca49ead332410528377ad4c01813d",
+      "public_sha256": "cce472a1b808b59dee7dee4173dd2716d0aca49ead332410528377ad4c01813d",
+      "bytes": 435414,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_3.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_3.txt",
+      "original_sha256": "c49c6e564034107f5bd75ad13cbd4917acd21bd3aa5c9a8ea383120d36db0c96",
+      "public_sha256": "c49c6e564034107f5bd75ad13cbd4917acd21bd3aa5c9a8ea383120d36db0c96",
+      "bytes": 157,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    }
+  ],
+  "hash_exclusions": [
+    "This provenance file excludes its own hash to avoid self-reference; the final root repository manifest covers it."
+  ],
+  "numeric_output_original_sha256": "5dc72b7f26f95e3045b154de98b3b63643e324de7e13766ce7e5b23187c13f44",
+  "numeric_output_public_sha256": "5dc72b7f26f95e3045b154de98b3b63643e324de7e13766ce7e5b23187c13f44"
+}

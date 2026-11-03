@@ -1,0 +1,387 @@
+{
+  "scope": "HOST unchanged production PS reference only; SYNTHETIC engineering fixture, not physical measurement or hardware validation",
+  "sample_rate_hz": 50000,
+  "frames": 82551,
+  "rotation_hz": 25,
+  "hardware_executed": false,
+  "tolerances_changed": false,
+  "coefficients_sha256": "2a194220bdde8914d19a5b2d27826010a66e12ee1d9d2076c314d4da930147f8",
+  "channels": [
+    {
+      "channel": 1,
+      "peak_bin": 410,
+      "peak_power_adc2": 940829.0840008244,
+      "default_floor_power_adc2": 0.009408290840008243,
+      "strong_bin_count": 39,
+      "raw_endpoint_count": 0,
+      "reference_power_adc2": 13624088.43253856,
+      "bands": [
+        {
+          "index": 0,
+          "kind": "order",
+          "power_adc2": 719980.3704553486,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 25508720.01085367,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 1,
+          "kind": "order",
+          "power_adc2": 768788.0173184257,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 27237962.43093721,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 2,
+          "kind": "order",
+          "power_adc2": 819201.035912884,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 29024082.76004381,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 3,
+          "kind": "order",
+          "power_adc2": 871219.324496738,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 30867077.39348099,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 4,
+          "kind": "order",
+          "power_adc2": 924829.6991030206,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 32766479.22667784,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 5,
+          "kind": "order",
+          "power_adc2": 980039.6778135728,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 34722554.6233473,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 6,
+          "kind": "order",
+          "power_adc2": 1036828.086425648,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 36734553.38691249,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 7,
+          "kind": "order",
+          "power_adc2": 1095186.029074407,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 38802160.339162,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 8,
+          "kind": "order",
+          "power_adc2": 1155161.615126298,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 40927079.98261973,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 9,
+          "kind": "order",
+          "power_adc2": 1216763.897791561,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 43109633.0702044,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 10,
+          "kind": "order",
+          "power_adc2": 1280004.057026642,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 45350215.70490764,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 11,
+          "kind": "order",
+          "power_adc2": 1344843.418163236,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 47647457.65314294,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 12,
+          "kind": "order",
+          "power_adc2": 1411243.202182171,
+          "eligibility_threshold_adc2": 0.02822487252002473,
+          "eligibility_margin_ratio": 49999984.98419913,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 13,
+          "kind": "reference",
+          "power_adc2": 13624088.43253856,
+          "eligibility_threshold_adc2": 7.677165325446726,
+          "eligibility_margin_ratio": 1774624.858915069,
+          "evaluated_against_unchanged_default_floor": true
+        }
+      ]
+    },
+    {
+      "channel": 2,
+      "peak_bin": 410,
+      "peak_power_adc2": 602128.6653481134,
+      "default_floor_power_adc2": 0.006021286653481134,
+      "strong_bin_count": 39,
+      "raw_endpoint_count": 0,
+      "reference_power_adc2": 8719387.878541602,
+      "bands": [
+        {
+          "index": 0,
+          "kind": "order",
+          "power_adc2": 460787.6369340183,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 25508813.61697114,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 1,
+          "kind": "order",
+          "power_adc2": 492023.2557034502,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 27237991.03740244,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 2,
+          "kind": "order",
+          "power_adc2": 524290.3496601728,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 29024270.05126668,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 3,
+          "kind": "order",
+          "power_adc2": 557575.7058441583,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 30866919.20027882,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 4,
+          "kind": "order",
+          "power_adc2": 591887.0707083945,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 32766367.32152046,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 5,
+          "kind": "order",
+          "power_adc2": 627223.578604661,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 34722566.4934387,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 6,
+          "kind": "order",
+          "power_adc2": 663564.9239049609,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 36734392.61365225,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 7,
+          "kind": "order",
+          "power_adc2": 700919.4171973852,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 38802305.74928462,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 8,
+          "kind": "order",
+          "power_adc2": 739300.2377446214,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 40927035.49316456,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 9,
+          "kind": "order",
+          "power_adc2": 778727.486032336,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 43109694.59116761,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 10,
+          "kind": "order",
+          "power_adc2": 819202.0612869539,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 45350332.8237076,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 11,
+          "kind": "order",
+          "power_adc2": 860692.7269861667,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 47647220.96334496,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 12,
+          "kind": "order",
+          "power_adc2": 903193.4263195449,
+          "eligibility_threshold_adc2": 0.0180638599604434,
+          "eligibility_margin_ratio": 50000023.7101802,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 13,
+          "kind": "reference",
+          "power_adc2": 8719387.878541602,
+          "eligibility_threshold_adc2": 4.913369909240606,
+          "eligibility_margin_ratio": 1774624.75645137,
+          "evaluated_against_unchanged_default_floor": true
+        }
+      ]
+    },
+    {
+      "channel": 3,
+      "peak_bin": 410,
+      "peak_power_adc2": 338697.9767844704,
+      "default_floor_power_adc2": 0.003386979767844704,
+      "strong_bin_count": 39,
+      "raw_endpoint_count": 0,
+      "reference_power_adc2": 4904663.873211707,
+      "bands": [
+        {
+          "index": 0,
+          "kind": "order",
+          "power_adc2": 259194.20667,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 25508882.4888314,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 1,
+          "kind": "order",
+          "power_adc2": 276765.3941000205,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 27238170.19591464,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 2,
+          "kind": "order",
+          "power_adc2": 294911.8702081136,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 29024075.57001539,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 3,
+          "kind": "order",
+          "power_adc2": 313639.8526822494,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 30867210.53172331,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 4,
+          "kind": "order",
+          "power_adc2": 332934.8919091633,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 32766153.00648082,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 5,
+          "kind": "order",
+          "power_adc2": 352812.1048118559,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 34722390.74286597,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 6,
+          "kind": "order",
+          "power_adc2": 373256.3329678927,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 36734431.90808837,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 7,
+          "kind": "order",
+          "power_adc2": 394267.3910391028,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 38802258.26188838,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 8,
+          "kind": "order",
+          "power_adc2": 415860.5968055773,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 40927377.32041518,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 9,
+          "kind": "order",
+          "power_adc2": 438030.6317865105,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 43109265.65953972,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 10,
+          "kind": "order",
+          "power_adc2": 460798.2506802972,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 45349965.87569668,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 11,
+          "kind": "order",
+          "power_adc2": 484144.7008423958,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 47647632.40677992,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 12,
+          "kind": "order",
+          "power_adc2": 508047.646936136,
+          "eligibility_threshold_adc2": 0.01016093930353411,
+          "eligibility_margin_ratio": 50000067.09610303,
+          "evaluated_against_unchanged_default_floor": true
+        },
+        {
+          "index": 13,
+          "kind": "reference",
+          "power_adc2": 4904663.873211707,
+          "eligibility_threshold_adc2": 2.763775490561278,
+          "eligibility_margin_ratio": 1774624.563377848,
+          "evaluated_against_unchanged_default_floor": true
+        }
+      ]
+    }
+  ],
+  "all_42_channel_band_comparisons_eligible": true,
+  "raw_sha256": "02fe2c7c661375e46de4adc766525950116c97bbec1effa0b14ce133527b002a",
+  "source_sha256": {
+    "artifacts/new-board-20261103/multisine-reference-proof.cpp": "3a073041c17193b01e5dbef984ddcd72437a8db436958085e47993db024fbfa2",
+    "software/accelerator/src/accelerator.cpp": "3d7e52449203ea0eb793f5bc49fadc271ab3b406a2bc310c7d43b9f474ed1001",
+    "hardware/analysis_v6/data/analysis_coefficients.hpp": "4c10d8407a2c4fd4441227395ccd6deeeb852b5c7cd9833d2a16bd0b6688fef9"
+  }
+}

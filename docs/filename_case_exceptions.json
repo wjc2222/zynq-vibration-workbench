@@ -1,0 +1,282 @@
+{
+  "schema": "filename-case-exceptions.v1",
+  "basis": "Guide3.3.5.4 requires lowercase names while its example uses README.md; preserve documented tool and source conventions.",
+  "no_non_ascii_or_spaces": true,
+  "exceptions": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "reason": "GitHub issue-template discovery convention.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "board/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "build/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "build/reports/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "data/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "report/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "sim/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "sim/results/README.md",
+      "reason": "Explicit README entry-point convention used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "skill/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "skill/SKILL.md",
+      "reason": "Agent skill entry-point convention; readable entry required by the reusable package.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "skill/examples/portable/independent_trial/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "skill/examples/project_case/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/ClockGen.vhd",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/DVI_Constants.vhd",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/OutputSERDES.vhd",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/SyncAsync.vhd",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/SyncAsyncReset.vhd",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/TMDS_Encoder.vhd",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/Kconfig",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/LICENSE",
+      "reason": "Preserved third-party source/license name and existing project binding.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/Makefile",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/linux/br2-external/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/S90vibration-gui",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/ax7z020-display-tools/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/qt-ax7zfb/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/vibration-offline/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/Kconfig",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/Makefile",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg/Kconfig",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg/Makefile",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/S90vibration-gui",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/ax7z020-display-tools/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/qt-ax7zfb/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/vibration-offline/Config.in",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/CMakeLists.txt",
+      "reason": "Build-system/kernel/init filename convention; changing case would alter build or startup behavior.",
+      "official_exemption_confirmed": false
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/README.md",
+      "reason": "Explicit name used by the official recommended structure and repository discovery.",
+      "official_exemption_confirmed": false
+    }
+  ]
+}

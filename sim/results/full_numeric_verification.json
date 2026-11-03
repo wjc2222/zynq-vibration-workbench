@@ -1,0 +1,195 @@
+{
+  "status": "passed",
+  "method": "whole raw-to-FFT RTL",
+  "FIR_profiles": 4,
+  "FIR_sample_checks": 98304,
+  "stats_exact": true,
+  "stats_verification": "full raw-to-FFT RTL",
+  "hann_input_exact": true,
+  "fft_complex_checks": 98304,
+  "power_and_bands_exact": null,
+  "RTL_vs_installed_AMD_model": [
+    {
+      "profile": 0,
+      "axis": 0,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 8,
+      "relative_spectrum_l2": 2.5538920584266556e-06,
+      "dominant_peak_bin_actual": 136,
+      "dominant_peak_bin_double": 136,
+      "dominant_five_bin_rms_relative_error": 5.732832400389936e-08
+    },
+    {
+      "profile": 0,
+      "axis": 1,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 9,
+      "relative_spectrum_l2": 4.165270886611845e-06,
+      "dominant_peak_bin_actual": 1170,
+      "dominant_peak_bin_double": 1170,
+      "dominant_five_bin_rms_relative_error": 2.993178415199666e-08
+    },
+    {
+      "profile": 0,
+      "axis": 2,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 3,
+      "relative_spectrum_l2": 2.6608984583314795e-06,
+      "dominant_peak_bin_actual": 2835,
+      "dominant_peak_bin_double": 2835,
+      "dominant_five_bin_rms_relative_error": 1.307730502902597e-07
+    },
+    {
+      "profile": 1,
+      "axis": 0,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 8,
+      "relative_spectrum_l2": 2.7030655485055486e-06,
+      "dominant_peak_bin_actual": 136,
+      "dominant_peak_bin_double": 136,
+      "dominant_five_bin_rms_relative_error": 4.167492819622297e-08
+    },
+    {
+      "profile": 1,
+      "axis": 1,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 9,
+      "relative_spectrum_l2": 4.39512083968106e-06,
+      "dominant_peak_bin_actual": 1170,
+      "dominant_peak_bin_double": 1170,
+      "dominant_five_bin_rms_relative_error": 6.131901124166856e-09
+    },
+    {
+      "profile": 1,
+      "axis": 2,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 4,
+      "relative_spectrum_l2": 2.061902437024109e-06,
+      "dominant_peak_bin_actual": 477,
+      "dominant_peak_bin_double": 477,
+      "dominant_five_bin_rms_relative_error": 4.5886919401491214e-07
+    },
+    {
+      "profile": 2,
+      "axis": 0,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 8,
+      "relative_spectrum_l2": 2.683685553266934e-06,
+      "dominant_peak_bin_actual": 136,
+      "dominant_peak_bin_double": 136,
+      "dominant_five_bin_rms_relative_error": 2.1312101847510182e-08
+    },
+    {
+      "profile": 2,
+      "axis": 1,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 9,
+      "relative_spectrum_l2": 4.5617901490495775e-06,
+      "dominant_peak_bin_actual": 1170,
+      "dominant_peak_bin_double": 1170,
+      "dominant_five_bin_rms_relative_error": 3.652225642829251e-09
+    },
+    {
+      "profile": 2,
+      "axis": 2,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 4,
+      "relative_spectrum_l2": 1.5230903039977836e-06,
+      "dominant_peak_bin_actual": 2179,
+      "dominant_peak_bin_double": 2179,
+      "dominant_five_bin_rms_relative_error": 9.15956027677996e-08
+    },
+    {
+      "profile": 3,
+      "axis": 0,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 8,
+      "relative_spectrum_l2": 2.7078278404215043e-06,
+      "dominant_peak_bin_actual": 136,
+      "dominant_peak_bin_double": 136,
+      "dominant_five_bin_rms_relative_error": 4.443359463675832e-08
+    },
+    {
+      "profile": 3,
+      "axis": 1,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 9,
+      "relative_spectrum_l2": 4.458940541871862e-06,
+      "dominant_peak_bin_actual": 1170,
+      "dominant_peak_bin_double": 1170,
+      "dominant_five_bin_rms_relative_error": 7.064855836054612e-08
+    },
+    {
+      "profile": 3,
+      "axis": 2,
+      "complex_codes_checked": 8192,
+      "bit_exact": true,
+      "exponent": 5,
+      "relative_spectrum_l2": 1.416766836100028e-06,
+      "dominant_peak_bin_actual": 3113,
+      "dominant_peak_bin_double": 3113,
+      "dominant_five_bin_rms_relative_error": 3.415296629129872e-07
+    }
+  ],
+  "board_verified": false,
+  "capture_files": [
+    {
+      "file": "fft_input_0.txt",
+      "sha256": "a4906a178869acae0cfbec64c903896d7daed523e80ce2b0ab3466b84f89ad6e",
+      "bytes": 362735
+    },
+    {
+      "file": "fft_output_0.txt",
+      "sha256": "7d02ab40f8dc7234dd00ee39207621c31cad19f4baa4b16a62038f8e4f5803ef",
+      "bytes": 436230
+    },
+    {
+      "file": "fft_input_1.txt",
+      "sha256": "a70abce1af1e8a90b9aa539da880e4332a6d6eb199e3bd1a88f8afac081448d4",
+      "bytes": 363884
+    },
+    {
+      "file": "fft_output_1.txt",
+      "sha256": "6752b88ba5f7961782c6252f2afa9c290ae411deaece5f6edd67ba29acc03590",
+      "bytes": 434507
+    },
+    {
+      "file": "fft_input_2.txt",
+      "sha256": "b6f32cb532616e3ecfdda2c6d0e68a6c45a26abc9a20ed90eabfe8da312c6ef5",
+      "bytes": 365473
+    },
+    {
+      "file": "fft_output_2.txt",
+      "sha256": "87a13d50b9328a16f6248073b7ce1872a18e7eec054a73201e0cf9ca2614c822",
+      "bytes": 440123
+    },
+    {
+      "file": "fft_input_3.txt",
+      "sha256": "a86098ca476dcf1f9b1d7327bc7917ac37b398b330e3e33080a3c4801bb8f91e",
+      "bytes": 366852
+    },
+    {
+      "file": "fft_output_3.txt",
+      "sha256": "cce472a1b808b59dee7dee4173dd2716d0aca49ead332410528377ad4c01813d",
+      "bytes": 435414
+    }
+  ],
+  "vivado": "2025.2",
+  "ip_vlnv": "xilinx.com:ip:xfft:9.1",
+  "ip_revision": 15,
+  "installed_vendor_model_sha256": "75e4ab4a00992a045722a611b6f33d6308ca32f9a0104912c170d42e5e4129ff",
+  "rtl_sha256": "d510d6dbd7904f4fe967323a064c4ed189f12f89732ec924fb356febf4c8eeae",
+  "fir_rom_sha256": "6da2a678dd3cc97f5783686230be598a453eb91ee027404d1bb2a3ceab93b486",
+  "hann_rom_sha256": "571921b4de73dfdbad852f4f6222966f5219077eae58d9da9fb53f6381ecc1b3"
+}

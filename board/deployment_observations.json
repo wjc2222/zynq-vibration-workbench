@@ -1,0 +1,41 @@
+{
+  "schema": "ax7z020.v7.new-board-final-deployment.v1",
+  "status": "solidified_latest_program_and_fpga_user_runtime_acceptance",
+  "sealed_utc": "2026-11-03T06:43:39.567166+00:00",
+  "program_and_fpga_persisted": true,
+  "normal_SD_reboot_autostart_verified_before_final_cleanup": true,
+  "normal_boot_method": "Linux reboot; no JTAG loading or U-Boot autoboot interruption",
+  "additional_reboot_after_cleanup": false,
+  "physical_cold_boot_verified": false,
+  "physical_touch_and_mechanical_collection_on_new_board_verified": false,
+  "model_migration": false,
+  "new_training_performed": false,
+  "model_state": "Untrained; user will collect four labeled states and train on this board.",
+  "PL_numerical_acceptance": {
+    "synthetic": true,
+    "real_mechanical_accuracy": false,
+    "required_band_comparisons_passed": 42,
+    "thresholds_changed": false,
+    "evidence": "numeric-acceptance.json"
+  },
+  "prior_nonpassing_check_explanations": [
+    "postboot top-level failed due CRLF preservation-ledger transport; corrected LF ledger in postboot-lf proves all530 precleanup hashes.",
+    "postboot-lf top-level failed due single-sine comparison returning4 for weak required bands. Later numeric-ui completed with multisine NUMERIC_RC0 and all42 band comparisons evaluated and passed."
+  ],
+  "public_summary": true,
+  "new_board_tests_performed_during_publication": false,
+  "source_sha256": "1da22dede5a560f93b836faa3b218516c550c0f43147ecdf0599e8407c489629",
+  "omitted_private_fields": [
+    "serial_port",
+    "SD_CID",
+    "boot_UUID",
+    "process_identity",
+    "private_transcripts",
+    "private_board_filesystem_inventory"
+  ],
+  "limits": [
+    "Observations were made in the archived 2026-11-03 deployment, not rerun during publication.",
+    "No physical power-off cold boot, manual touch or mechanical recognition acceptance is established.",
+    "hardware_id in numeric_acceptance.json is a design identifier register, not a unique board serial."
+  ]
+}

@@ -1,0 +1,2726 @@
+{
+  "schema": "official-layout-source-map.v1",
+  "previous_commit": "bb9738df24bf1cf25e34478a1efab233e20345a3",
+  "files": [
+    {
+      "previous_path": ".gitattributes",
+      "path": ".gitattributes",
+      "original_sha256": "25f4f6b27860f9180c8ce4abafa01dec69e484e3062d44c21b16bc1c1d0dc63f"
+    },
+    {
+      "previous_path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "original_sha256": "75b2f1d8d9aa5caaec77d9aceb4781451dc095bb4dcdf519d9a5b9a6c7c0a807"
+    },
+    {
+      "previous_path": ".github/pull_request_template.md",
+      "path": ".github/pull_request_template.md",
+      "original_sha256": "43e2e0bbe0ee25e2febda52459d772b28026e69edc0f05ff7e297ed2b016b067"
+    },
+    {
+      "previous_path": ".gitignore",
+      "path": ".gitignore",
+      "original_sha256": "7762549d56cce27d1e9b510b7aa806c077f5cd54244ed75e85fee99c2fd3d906"
+    },
+    {
+      "previous_path": "build-entrypoints/build-arm.sh",
+      "path": "build/scripts/build-arm.sh",
+      "original_sha256": "4f4745a72bd4ae38511d86d2d057b14bcfb5c4d536c59333e919226c86e60a66"
+    },
+    {
+      "previous_path": "build-entrypoints/build-host.sh",
+      "path": "build/scripts/build-host.sh",
+      "original_sha256": "68bcd36411f4febd6310eb10eda9fd83c3d027049ba82c6bddc2e06ab8330f3c"
+    },
+    {
+      "previous_path": "build-entrypoints/build-pl.ps1",
+      "path": "build/scripts/build-pl.ps1",
+      "original_sha256": "6c8523fe7005fe3f825d56e081c22544cf1556109c827ba242604003b3db0366"
+    },
+    {
+      "previous_path": "build-entrypoints/verify_source_manifest.py",
+      "path": "build/scripts/verify_source_manifest.py",
+      "original_sha256": "566b135d498cec6b900adb58ed7b145c7590d67f674c155107da4b5e08c88bf1"
+    },
+    {
+      "previous_path": "CONTRIBUTING.md",
+      "path": "contributing.md",
+      "original_sha256": "6df4cea1c25764041e918a1c8abacec85c3fc517111d6a09a11878db50a5db5c"
+    },
+    {
+      "previous_path": "docs/architecture.md",
+      "path": "docs/architecture.md",
+      "original_sha256": "c825a37e4f8caa6f5bbca376f8bcb530102835a26600999c76dc66934d9b4b85"
+    },
+    {
+      "previous_path": "docs/build.md",
+      "path": "docs/build.md",
+      "original_sha256": "bd490e895b6189c3288d69f6a5ad0b45f988421fa7f4df3edbd3b8391b744b1f"
+    },
+    {
+      "previous_path": "docs/dependencies.md",
+      "path": "docs/dependencies.md",
+      "original_sha256": "61b795f4ccd4dd2c8686a29078eadeb54e7faab6fe18aa136d97d9acedc62f2d"
+    },
+    {
+      "previous_path": "docs/operation.md",
+      "path": "docs/operation.md",
+      "original_sha256": "3910e1bbdc514f6bc590761eee09512d9e1e8a73e4b8a6bd091a90ed2276f156"
+    },
+    {
+      "previous_path": "docs/release_checklist.md",
+      "path": "docs/release_checklist.md",
+      "original_sha256": "b01fb2c9b63972a8221aeb93b65e90043b0b8ac992100d0b4f4935cc595b00ab"
+    },
+    {
+      "previous_path": "docs/release_notes.md",
+      "path": "docs/release_notes.md",
+      "original_sha256": "a8b5f6e4cdfcc5ca3a7fb492b1808607644c47c64255533091cae3b3f5263041"
+    },
+    {
+      "previous_path": "docs/upstream_sources.json",
+      "path": "docs/upstream_sources.json",
+      "original_sha256": "c516af0cd1027dead3a0f873ff56de055f246d8f91e705b9798b15f217e622c3"
+    },
+    {
+      "previous_path": "docs/validation.md",
+      "path": "docs/validation.md",
+      "original_sha256": "1dd11fc48d0e0adb0b39ebe81eacb3b087a31ebb0937fbf3c5c8b130fa07d6fa"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/analysis_coefficients.hpp",
+      "path": "src/fpga-effective/source/analysis_v6/data/analysis_coefficients.hpp",
+      "original_sha256": "4c10d8407a2c4fd4441227395ccd6deeeb852b5c7cd9833d2a16bd0b6688fef9"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/coefficients.json",
+      "path": "src/fpga-effective/source/analysis_v6/data/coefficients.json",
+      "original_sha256": "d6e5b267923346a8ab349e373ea8137e41854667de933db5a537f4b66bdceadb"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/fir_10000.mem",
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_10000.mem",
+      "original_sha256": "15908dcf2fa2d52288ca69c095120a3716796f2fc0244923f582874c179ae9b9"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/fir_25000.mem",
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_25000.mem",
+      "original_sha256": "ee4a463c079568e8927a329504ac80fb52556e0f0eeeef9c7c28a955c9d55ba3"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/fir_5000.mem",
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_5000.mem",
+      "original_sha256": "623b1ac8ca6ec1e0a3c2b5560015c934a3c07ac3070b0aed9e09c6c5a4bed9cf"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/fir_50000.mem",
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_50000.mem",
+      "original_sha256": "4cae882f90050669db709bea07d9085073512bc1081a7244c905c5acd9cee5e7"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/fir_all.mem",
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_all.mem",
+      "original_sha256": "6da2a678dd3cc97f5783686230be598a453eb91ee027404d1bb2a3ceab93b486"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/data/hann_8192.mem",
+      "path": "src/fpga-effective/source/analysis_v6/data/hann_8192.mem",
+      "original_sha256": "571921b4de73dfdbad852f4f6222966f5219077eae58d9da9fb53f6381ecc1b3"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/rtl/detection_accel.sv",
+      "path": "src/fpga-effective/source/analysis_v6/rtl/detection_accel.sv",
+      "original_sha256": "d510d6dbd7904f4fe967323a064c4ed189f12f89732ec924fb356febf4c8eeae"
+    },
+    {
+      "previous_path": "fpga-effective/source/analysis_v6/rtl/detection_ip.v",
+      "path": "src/fpga-effective/source/analysis_v6/rtl/detection_ip.v",
+      "original_sha256": "018bcec39f5a2b3c96e6acd3d6013f7e0f8ceaa4ef2136a5c6385f1478057856"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/constraints/ax7z020_combined.xdc",
+      "path": "src/fpga-effective/source/combined/constraints/ax7z020_combined.xdc",
+      "original_sha256": "6bebd8d050e0b253f43ecdc33cfdfcda66c4c838a7ef8114bef6701a21c0be08"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/rtl/ad7606_controller.v",
+      "path": "src/fpga-effective/source/combined/rtl/ad7606_controller.v",
+      "original_sha256": "98603c4fda87ce4dcf0c8a50a7274f3c7432adc5015c17f5e3dcf03dbe8fe0b6"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/rtl/capture_ip.v",
+      "path": "src/fpga-effective/source/combined/rtl/capture_ip.v",
+      "original_sha256": "29b9fdff1994f942f4cfeec251395d27e290a2e4ae43726f5e1d61a207fb032a"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/rtl/capture_stream.v",
+      "path": "src/fpga-effective/source/combined/rtl/capture_stream.v",
+      "original_sha256": "ded85a7aefbcd0539277922bf1c4b4029ee41ef49e7ee5a1b7d41b0f11305d7c"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/rtl/combined_clocks.v",
+      "path": "src/fpga-effective/source/combined/rtl/combined_clocks.v",
+      "original_sha256": "94daabc3b321b3c2adab76d3afad2d72e7031ee47044d9931e7af0125efe95f1"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/rtl/speed_meter.v",
+      "path": "src/fpga-effective/source/combined/rtl/speed_meter.v",
+      "original_sha256": "025eb21a333a742e326d2c2510f76c98915c43fd84dd5fad3263f520c6539d7d"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/scripts/build_combined.tcl",
+      "path": "src/fpga-effective/source/combined/scripts/build_combined.tcl",
+      "original_sha256": "6faff44d51dc7c11fede2cfd1fa27487605b8fd2ef19569b53b60e2664cf025f"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/scripts/create_combined.tcl",
+      "path": "src/fpga-effective/source/combined/scripts/create_combined.tcl",
+      "original_sha256": "37a191a19e0dfdf6375943842db907af3513770aa24eb20906b243ccdcf1ea70"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/sim/tb_capture_merge.sv",
+      "path": "src/fpga-effective/source/combined/sim/tb_capture_merge.sv",
+      "original_sha256": "ff79cba42e621b6143bdb150606a478ee68dc4ae86524d4b1a28a11bbe0c0be2"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/sim/tb_capture_stream_edges.sv",
+      "path": "src/fpga-effective/source/combined/sim/tb_capture_stream_edges.sv",
+      "original_sha256": "391c17db0c4437d80daaafddc9853d58440343a87888b0a321aa62b1a2626080"
+    },
+    {
+      "previous_path": "fpga-effective/source/combined/sim/tb_capture_streaming.sv",
+      "path": "src/fpga-effective/source/combined/sim/tb_capture_streaming.sv",
+      "original_sha256": "83f9e0281204d796705a3da3c8900e402113fe6f5161a33a1a7995b491d53344"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/board/ps_config_base.tcl",
+      "path": "src/fpga-effective/source/display/board/ps_config_base.tcl",
+      "original_sha256": "5d31a42261128ed0e807bf04db80977edc8ef0fa5c84cac0404cdf07b83db6ef"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/rtl/display_clocks.v",
+      "path": "src/fpga-effective/source/display/rtl/display_clocks.v",
+      "original_sha256": "87b040e4197b49e07e502dc97d9910b2af2e965e4b918db6af3b732ed913f648"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/rtl/display_phy.v",
+      "path": "src/fpga-effective/source/display/rtl/display_phy.v",
+      "original_sha256": "36063113e7e6edefb12fd8d8b13eb8e17b42ebde41cb9d3957fa32ec4c25ef5f"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/rtl/display_status.v",
+      "path": "src/fpga-effective/source/display/rtl/display_status.v",
+      "original_sha256": "58d93f8de10f6d92a74fee73eb711e374ba0b2ba1536dcd87147e6113823fb48"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt",
+      "original_sha256": "ff7b2d54b44818dd85502d841c378f2d29dbcff54757fabb72c9597df9f65e12"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/ClockGen.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/ClockGen.vhd",
+      "original_sha256": "3c0e051da8b76d1996980a16c7a09a6120ce70516e40f5611ff8b502c170aa0f"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/DVI_Constants.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/DVI_Constants.vhd",
+      "original_sha256": "4f634d35e638f89040a0c58a199a13ced67cd757a36763e98c75acd2edebc863"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/OutputSERDES.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/OutputSERDES.vhd",
+      "original_sha256": "8145971992829bc520cd1c82dbb78a54d2ea91146417bd69cb62af1e158c76f6"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi.vhd",
+      "original_sha256": "0d3b820a350f5e4bdc2256c7b8e376987836248b3c015fa74ad852629da81385"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi.xdc",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi.xdc",
+      "original_sha256": "5263196a2c78a5c1818991c9372d8be2e1e905c7dc7c66e2098ed1c4b16208e4"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi_clocks.xdc",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi_clocks.xdc",
+      "original_sha256": "c4000cd15bebbe58173441e638df21bdc07ac21094883d9a12d19413aa7140eb"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi_ooc.xdc",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/rgb2dvi_ooc.xdc",
+      "original_sha256": "f568c86aadff12555ded6d5913c970304c28534d8c07844b1a28f8c775cd0038"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/SyncAsync.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/SyncAsync.vhd",
+      "original_sha256": "8c226a1121313391bf99c207857632f5883938f1d9c7856c8310c41af1596cbe"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/SyncAsyncReset.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/SyncAsyncReset.vhd",
+      "original_sha256": "09d342d737f70901cba6236f7ead07afa29a4de8b8b78c3b3237900a0a2a61d7"
+    },
+    {
+      "previous_path": "fpga-effective/source/display/vendor/rgb2dvi/src/TMDS_Encoder.vhd",
+      "path": "src/fpga-effective/source/display/vendor/rgb2dvi/src/TMDS_Encoder.vhd",
+      "original_sha256": "a92ae95220730c43fb5a806714aa8f0076936c301dcf15b321206ac8d8b28748"
+    },
+    {
+      "previous_path": "LICENSE",
+      "path": "license.txt",
+      "original_sha256": "32598fee49d43ba7327dfeab59bf4d16d2e7dfcbc42da5b51c0f0e5b8a6dda85"
+    },
+    {
+      "previous_path": "license_status.md",
+      "path": "license_status.md",
+      "original_sha256": "bde16631272ec8db84d36e1027a2657880249444f4520d7e15dd9363cda02f58"
+    },
+    {
+      "previous_path": "licenses/buildroot/copying.txt",
+      "path": "licenses/buildroot/copying.txt",
+      "original_sha256": "9755181e27175cb3510b4da8629caa406fb355a19aa8e7d55f06bf8ab33323c4"
+    },
+    {
+      "previous_path": "licenses/linux/copying.txt",
+      "path": "licenses/linux/copying.txt",
+      "original_sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0"
+    },
+    {
+      "previous_path": "licenses/linux/gpl-2.0.txt",
+      "path": "licenses/linux/gpl-2.0.txt",
+      "original_sha256": "f6b78c087c3ebdf0f3c13415070dd480a3f35d8fc76f3d02180a407c1c812f79"
+    },
+    {
+      "previous_path": "licenses/linux/linux-syscall-note.txt",
+      "path": "licenses/linux/linux-syscall-note.txt",
+      "original_sha256": "8e378ab93586eb55135d3bc119cce787f7324f48394777d00c34fa3d0be3303f"
+    },
+    {
+      "previous_path": "licenses/qt5base/license.fdl.txt",
+      "path": "licenses/qt5base/license.fdl.txt",
+      "original_sha256": "ed8742a95cb9db653a09b050e27ccff5e67ba69c14aa2c3137f2a4e1892f6c0d"
+    },
+    {
+      "previous_path": "licenses/qt5base/license.gpl2.txt",
+      "path": "licenses/qt5base/license.gpl2.txt",
+      "original_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "previous_path": "licenses/qt5base/license.gpl3-except.txt",
+      "path": "licenses/qt5base/license.gpl3-except.txt",
+      "original_sha256": "0dbe024961f6ab5c52689cbd036c977975d0d0f6a67ff97762d96cb819dd5652"
+    },
+    {
+      "previous_path": "licenses/qt5base/license.gpl3.txt",
+      "path": "licenses/qt5base/license.gpl3.txt",
+      "original_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "previous_path": "licenses/qt5base/license.lgplv3.txt",
+      "path": "licenses/qt5base/license.lgplv3.txt",
+      "original_sha256": "88ec689407cf2df9b2eb5c45952564d51ce73c129a3bdffb15c0d2d161ad7558"
+    },
+    {
+      "previous_path": "README.md",
+      "path": "README.md",
+      "original_sha256": "9050428ed1f176ec26c973969c5796319707d3556df7f726d9ddd9eeff1ea4b2"
+    },
+    {
+      "previous_path": "skill/examples/portable/audio_profile.json",
+      "path": "skill/examples/portable/audio_profile.json",
+      "original_sha256": "cb434b360789d6b55c7695547e61390c9de48c43cb0086b458f936bc9e4a46af"
+    },
+    {
+      "previous_path": "skill/examples/portable/dataset_good.json",
+      "path": "skill/examples/portable/dataset_good.json",
+      "original_sha256": "dd847a0e6e23212545f20dd4e0f6523887506474c6d3bf6515ff7d4b7ba51e39"
+    },
+    {
+      "previous_path": "skill/examples/portable/dataset_leakage.json",
+      "path": "skill/examples/portable/dataset_leakage.json",
+      "original_sha256": "6e32f16bbe2807c4d33f7f8661a24341ca7804fe2db71bc04989450b27cdfb44"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/candidate-grouped-dataset-result.json",
+      "path": "skill/examples/portable/independent_trial/candidate-grouped-dataset-result.json",
+      "original_sha256": "be6a28b9de83b2571d767c7d0a82e8be8db9baee39c6f71a9a662c4e37fd35d6"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/candidate-grouped-dataset.json",
+      "path": "skill/examples/portable/independent_trial/candidate-grouped-dataset.json",
+      "original_sha256": "73c11a3241e7033bad9ed8436fa10ceb85c17ecd1d7c5c67b4e7bdd2db971047"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/candidate-no-decimation-budget-result.json",
+      "path": "skill/examples/portable/independent_trial/candidate-no-decimation-budget-result.json",
+      "original_sha256": "a844505c6e664a1c074949bb7f28e2dd5a204699f7f3cbb90baad8e42cf1bea2"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/candidate-no-decimation-profile.json",
+      "path": "skill/examples/portable/independent_trial/candidate-no-decimation-profile.json",
+      "original_sha256": "d4cd1a628c5e703eb7190f8b5a55cd4d899faf2bb44523d1eff4b8e53ae5af4e"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/README.md",
+      "path": "skill/examples/portable/independent_trial/README.md",
+      "original_sha256": "f4cb8995c5a82b64495058814025e69671f19fc2c28959731dc95b725f7cdc86"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/requested-budget-result.json",
+      "path": "skill/examples/portable/independent_trial/requested-budget-result.json",
+      "original_sha256": "7ce0ed13fde7605a9bc93b1cf22a8e3c69c996e9949d73bccc8a611508026120"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/requested-dataset-result.json",
+      "path": "skill/examples/portable/independent_trial/requested-dataset-result.json",
+      "original_sha256": "d595284499dd368b3ef6ed16c3b537e6844cb4b660918c94b64c7c3be74ce03b"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/requested-dataset.json",
+      "path": "skill/examples/portable/independent_trial/requested-dataset.json",
+      "original_sha256": "f7e20727b5d699e042ffe68361d14eb61bb1a4a79dcb21596b05e5b0b879f1f9"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/requested-profile.json",
+      "path": "skill/examples/portable/independent_trial/requested-profile.json",
+      "original_sha256": "5bb9e67111b0b2ac39784a69e5ad2e28db7e7aebb79aecf6a08c3b084ff66c5c"
+    },
+    {
+      "previous_path": "skill/examples/portable/independent_trial/review.json",
+      "path": "skill/examples/portable/independent_trial/review.json",
+      "original_sha256": "33e332332a1928f9cc8e75e28b3db605374dea08b265f77db2a4ffce560fceda"
+    },
+    {
+      "previous_path": "skill/examples/portable/results-public.json",
+      "path": "skill/examples/portable/results-public.json",
+      "original_sha256": "f9f9bc112666052766de9a33a2c650a62ae8dafcc30df534ba73438d3afaaee8"
+    },
+    {
+      "previous_path": "skill/examples/portable/run_checks.py",
+      "path": "skill/examples/portable/run_checks.py",
+      "original_sha256": "44f69a3f43f53020e172f0bc932a4610a545bb3c54432d2a884217d39d06eabf"
+    },
+    {
+      "previous_path": "skill/examples/portable/telemetry_profile.json",
+      "path": "skill/examples/portable/telemetry_profile.json",
+      "original_sha256": "09773e2c8c118ac34c25d938ad3806381cac515671eed8f0f44911a710445cb4"
+    },
+    {
+      "previous_path": "skill/examples/project_case/evidence/engineering_case.json",
+      "path": "skill/examples/project_case/evidence/engineering_case.json",
+      "original_sha256": "e1c9bd7bac506042e58a72c52a394653ee2fda6b6016dc556a51ae7a5e5538d0"
+    },
+    {
+      "previous_path": "skill/examples/project_case/evidence/report_provenance.json",
+      "path": "skill/examples/project_case/evidence/report_provenance.json",
+      "original_sha256": "0677648eab9415010fe40f77ba4fd7ad03db01076d0bc19866b84d0ac7f5b492"
+    },
+    {
+      "previous_path": "skill/examples/project_case/evidence/template_smoke.json",
+      "path": "skill/examples/project_case/evidence/template_smoke.json",
+      "original_sha256": "5695f652452723768c86f3a67660fdd9944c6d60a48d3ddbf3eb8150fa7decbe"
+    },
+    {
+      "previous_path": "skill/examples/project_case/evidence/timing_summary.rpt",
+      "path": "skill/examples/project_case/evidence/timing_summary.rpt",
+      "original_sha256": "2426946b39d3ba8dbe457fb34451cd22c28204f0315cbd1d6b27bd4503937eed"
+    },
+    {
+      "previous_path": "skill/examples/project_case/evidence/utilization.rpt",
+      "path": "skill/examples/project_case/evidence/utilization.rpt",
+      "original_sha256": "418e74bd50537bc57ab36aaeab407dca0a7dc15c059a2db9990bf4197b4b7212"
+    },
+    {
+      "previous_path": "skill/examples/project_case/README.md",
+      "path": "skill/examples/project_case/README.md",
+      "original_sha256": "58b9c4aa45b1aef0cbfbe0e0ff732db8262bfbe9c8d213af4d1ed6f7cd1615a2"
+    },
+    {
+      "previous_path": "skill/examples/validation/results-public.json",
+      "path": "skill/examples/validation/results-public.json",
+      "original_sha256": "2262221f835a1068d27ea439007828b1d1f40b0045f9a26a770ad49fdfa9f7ed"
+    },
+    {
+      "previous_path": "skill/examples/validation/run_checks.py",
+      "path": "skill/examples/validation/run_checks.py",
+      "original_sha256": "646e390b7602d371761148deeaf77c8a7b3dbb0974f388aae74c883aedce02bf"
+    },
+    {
+      "previous_path": "skill/README.md",
+      "path": "skill/README.md",
+      "original_sha256": "fff2e5575d48102a6b0e589ac79053d22a2801954f0cef94702240186e831015"
+    },
+    {
+      "previous_path": "skill/references/acquisition.md",
+      "path": "skill/references/acquisition.md",
+      "original_sha256": "34d66923c9afa7bac68bd489bd722666c919639cc3cbc49fb8c3f8d2faf461b3"
+    },
+    {
+      "previous_path": "skill/references/adaptation.md",
+      "path": "skill/references/adaptation.md",
+      "original_sha256": "4dba506f44a2bff78d0cae6606e9e4467c2844a78dbca752f870bf4c5d46e66c"
+    },
+    {
+      "previous_path": "skill/references/deployment.md",
+      "path": "skill/references/deployment.md",
+      "original_sha256": "cff67fed3f5a52e0c2c0bd5d8b9392fc96b8cfa7e7b6facaf11f669d2496badc"
+    },
+    {
+      "previous_path": "skill/references/evidence-index.json",
+      "path": "skill/references/evidence-index.json",
+      "original_sha256": "641e62865e4979a08bb1aa6ff7cc80d87118fb37d4056eb199fd4ec8d887d2d8"
+    },
+    {
+      "previous_path": "skill/references/evidence.md",
+      "path": "skill/references/evidence.md",
+      "original_sha256": "961681d986f79d1c05f3bf3aa2e67ff88a21568db9ff5e44662fa7188381e6ba"
+    },
+    {
+      "previous_path": "skill/references/pl.md",
+      "path": "skill/references/pl.md",
+      "original_sha256": "45a650b870adf561de0b1e384e5959c94db4db82380a1504b9fa3cbb365cd2ff"
+    },
+    {
+      "previous_path": "skill/references/ps.md",
+      "path": "skill/references/ps.md",
+      "original_sha256": "77874501fe64bd592b39e8b875dd46c5c48e27bff306af86554bc3265e0a091b"
+    },
+    {
+      "previous_path": "skill/references/tool-contracts.md",
+      "path": "skill/references/tool-contracts.md",
+      "original_sha256": "ba08dc1ed3209611550525a7f2aa380543c5e6a72b9d20ca00deeedd50e5ae59"
+    },
+    {
+      "previous_path": "skill/references/troubleshooting.md",
+      "path": "skill/references/troubleshooting.md",
+      "original_sha256": "ef5d95e1ea0c65a9f33623d854c1102c8056d811daf789a7707582496fb58bbf"
+    },
+    {
+      "previous_path": "skill/references/ui.md",
+      "path": "skill/references/ui.md",
+      "original_sha256": "57ea008891a1cdde540401adfc696f047cd5a813c5abd23e6917874d1c6f35cf"
+    },
+    {
+      "previous_path": "skill/scripts/_portable_contract.py",
+      "path": "skill/scripts/_portable_contract.py",
+      "original_sha256": "97accd9dd418a4ae701fd48eb055962e784d505271e5ccc87a42fa894326462b"
+    },
+    {
+      "previous_path": "skill/scripts/compare_numeric.py",
+      "path": "skill/scripts/compare_numeric.py",
+      "original_sha256": "a272ac33db72ea4481ce02eebfb6b025278b7c2529087b35f582794555fbb016"
+    },
+    {
+      "previous_path": "skill/scripts/dataset_audit.py",
+      "path": "skill/scripts/dataset_audit.py",
+      "original_sha256": "5ec37ef043f6de1e90dc6206cdb65178070a26b0826d0b346b197dc156ee7c10"
+    },
+    {
+      "previous_path": "skill/scripts/engineering_budget.py",
+      "path": "skill/scripts/engineering_budget.py",
+      "original_sha256": "3d37fe3fd7542e93b89a3b800dae1df563ed37678fbc22345c4ee154728e960c"
+    },
+    {
+      "previous_path": "skill/scripts/project_audit.py",
+      "path": "skill/scripts/project_audit.py",
+      "original_sha256": "f3d6ebdbe057cac88d600128abbbf153dc23f816db135e75af8d90fdb6a92f01"
+    },
+    {
+      "previous_path": "skill/scripts/summarize_vivado.py",
+      "path": "skill/scripts/summarize_vivado.py",
+      "original_sha256": "d652285ff196b347795974d6851e7e282a6c94231409f4d64d5bad8fda5cf8c7"
+    },
+    {
+      "previous_path": "skill/SKILL.md",
+      "path": "skill/SKILL.md",
+      "original_sha256": "c2ae77f1c43e4fcd31df0aa944b6a7ca0f4ca2f5c898436c17c589e3b92d9c30"
+    },
+    {
+      "previous_path": "skill/templates/acceptance-plan.md",
+      "path": "skill/templates/acceptance-plan.md",
+      "original_sha256": "db0274a703990b98b9690c423dbc80d132e33175dcc2ecf001a4535b1cb3ccd1"
+    },
+    {
+      "previous_path": "skill/templates/deployment-plan.json",
+      "path": "skill/templates/deployment-plan.json",
+      "original_sha256": "15260641d2725e3c1d09ef7415dc93dbe707bb28877eff96f73e266b2f5f2c9d"
+    },
+    {
+      "previous_path": "skill/templates/experiment-plan.json",
+      "path": "skill/templates/experiment-plan.json",
+      "original_sha256": "106388c0949a765d3823a9b177421cf478f531d3948aaf724b8faa508e9e521c"
+    },
+    {
+      "previous_path": "skill/templates/optimization-review.md",
+      "path": "skill/templates/optimization-review.md",
+      "original_sha256": "ed6f8704c5f100181da59078c6705c96a67cba48ccbfbbb01545512f74575435"
+    },
+    {
+      "previous_path": "skill/templates/project-contract.json",
+      "path": "skill/templates/project-contract.json",
+      "original_sha256": "f10abf39a65a1bf9d3777c5126acdf309a0a62bfdcb455f4b8eba4bf50428a11"
+    },
+    {
+      "previous_path": "skill/templates/vivado-interface-checks.tcl",
+      "path": "skill/templates/vivado-interface-checks.tcl",
+      "original_sha256": "0c5437f7414b4ab5645eb19ff8290f08c9dffbb0b3aca704456378c4b6bc172b"
+    },
+    {
+      "previous_path": "third_party_notices.md",
+      "path": "third_party_notices.md",
+      "original_sha256": "486b2093fe669893e836dbd83fad64046eea5b2ec58043d944c1872bd059fcde"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/driver/codex_ax7z020_fb.c",
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/codex_ax7z020_fb.c",
+      "original_sha256": "5953e0d67a59572b623c8b4417d0fb3cb8fc61d50ee24fe424c5ba2f70b2e3a8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/driver/Kconfig",
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/Kconfig",
+      "original_sha256": "b8c943aad9393d3f6c8bfd2046a9e15972200cfbb41abc6ee54fa29d480333e3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/driver/LICENSE",
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/LICENSE",
+      "original_sha256": "f6b78c087c3ebdf0f3c13415070dd480a3f35d8fc76f3d02180a407c1c812f79"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/driver/Makefile",
+      "path": "src/workspace/zynq_vibration/hardware/display/driver/Makefile",
+      "original_sha256": "ae8efebdaadd612543711816f2e4a4edd5572727ccb08c8e1ab76a7af6d0c161"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/linux/display.dtsi",
+      "path": "src/workspace/zynq_vibration/hardware/display/linux/display.dtsi",
+      "original_sha256": "55eecc8a400514c26faae28234bd8a8d9b16e9e488f12dcde07334cb58d7bd73"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/linux/display_kernel.fragment",
+      "path": "src/workspace/zynq_vibration/hardware/display/linux/display_kernel.fragment",
+      "original_sha256": "2d27c921adf9a130068fcd3221dfb1d54a9553eba5c743ec834e4bdc7cf9f8e8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/tools/fb_scanout_test.c",
+      "path": "src/workspace/zynq_vibration/hardware/display/tools/fb_scanout_test.c",
+      "original_sha256": "f68fada4bda656055566d363fa4bce03d005f2b7e38eb9eec03d922bdac56a0d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/tools/uinput_drag_probe.c",
+      "path": "src/workspace/zynq_vibration/hardware/display/tools/uinput_drag_probe.c",
+      "original_sha256": "fff9cd5a39bc8777834a5b831bf26049a757a566fdfc0b6188e10b7c3fe2d0cb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/tools/uinput_touch_probe.c",
+      "path": "src/workspace/zynq_vibration/hardware/display/tools/uinput_touch_probe.c",
+      "original_sha256": "c6fdb4e0219cd5a4868393d91bde556f52778d13009ba7c407b93ad37a9cd8d9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/hardware/display/tools/verify_display_artifacts.ps1",
+      "path": "src/workspace/zynq_vibration/hardware/display/tools/verify_display_artifacts.ps1",
+      "original_sha256": "4812cc72a28895b2a7bf2dfc78daf69aaa392528a3dfd6d32b89b67627d02714"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/bootstrap_devices.txt",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/bootstrap_devices.txt",
+      "original_sha256": "d7ac6116650fd4f2237544b4b54e3c7179c0941f26efefff45e67c2054ab533e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/busybox.fragment",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/busybox.fragment",
+      "original_sha256": "72b15890ae1bff37d8d58a2a5cb3299c70a1f745b83ce968bec1bdd326831808"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/10-vibration-storage.rules",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/10-vibration-storage.rules",
+      "original_sha256": "5b0026f0daa421f8b3f59c1cbb014c8e258bf11fca44ad3d2c0c658b350adbc9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/S90vibration-gui",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/S90vibration-gui",
+      "original_sha256": "ba2f5f4a1bac4f8d48dcece1921a2362e40b0655c1455f3bedd03dc99b98f2ac"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/vibration-gui.default",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/display-service/vibration-gui.default",
+      "original_sha256": "aa1035853620d72974c9967b143e9f9765b27e305dbac419ff87d4fcf83a55a6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/display_kernel.fragment",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/display_kernel.fragment",
+      "original_sha256": "a04fe389f500a34cc797745443e7d39a5a62108edc540f584d27bed66341cbe1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/ax7z020-common.dtsi",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/ax7z020-common.dtsi",
+      "original_sha256": "3ad2ed8b890071e6a4dd9b83f65011e4e2efeadb37a84efb359ce2f34c471786"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/ax7z020-display.dtsi",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/ax7z020-display.dtsi",
+      "original_sha256": "55eecc8a400514c26faae28234bd8a8d9b16e9e488f12dcde07334cb58d7bd73"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/display/zynq-ax7z020.dts",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/display/zynq-ax7z020.dts",
+      "original_sha256": "b0bf7d2f05f326ebbae9c1d876e88e9a75d08d6db4f3f035caed746d91935714"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/linux/zynq-ax7z020.dts",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/linux/zynq-ax7z020.dts",
+      "original_sha256": "2f892d16ec742a7364b08056ad8ac24bdc6f284293df3d5caeaa24b739ace98c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/uboot/zynq-ax7z020.dts",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/dts/uboot/zynq-ax7z020.dts",
+      "original_sha256": "86f628681e5040e6cb450e2a937f180b4f8d9ec5e10063ecb47dc35d5bf9625c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/linux.config",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/linux.config",
+      "original_sha256": "8549ac8493435316642876cc4d74ad28dba06f23615546f3d9518d524bacf327"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/linux.fragment",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/linux.fragment",
+      "original_sha256": "25841b36cdd0076b0fa99aea48fc3652b531ba09e68f12c43ba5ddb3c25f9e7a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/post-build.sh",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/post-build.sh",
+      "original_sha256": "e4f8d418336fe218a84cc8424486210ba3898a1eff6482cb638cf70662554751"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/post-image.sh",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/post-image.sh",
+      "original_sha256": "8fcd43e17613e75cf1de1207606baa23359ab553b4dff4b55a57f88bedec146c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/ramboot.txt",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/ramboot.txt",
+      "original_sha256": "108f18939cb2d4c817777f786616bcbfc9ee2370a51117b5a7899aab524d897e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/etc/profile.d/vibration.sh",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/etc/profile.d/vibration.sh",
+      "original_sha256": "910c80e251b47d6430defd60db2c6c7db6dddf14d685b9b66f6f3b49bc8a2641"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/mount-captures-ro",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/mount-captures-ro",
+      "original_sha256": "273a97ebdba205cff42428fca041e47e8904e904ea48bdc0122deb62a6be0d9c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/platform-evidence",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/platform-evidence",
+      "original_sha256": "a07e41ebcda57d4c8aedaf785c89d4b074092808436f063b2780b0600043f70d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-speed-evidence",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-speed-evidence",
+      "original_sha256": "e05ece94302ef8c83af22c61353e62c0045b2b7a156b9f9ed0b3b0f7655ff5f5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-synthetic-evidence",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-synthetic-evidence",
+      "original_sha256": "fba43851350c087319136162c8cee5619c07327bdf52c0f9d401152a3be9be70"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/vibration-gui",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/vibration-gui",
+      "original_sha256": "7cd7d5a2a3ca3448868a811c71ba279df3797db465077015e5370cf14f79ca29"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/sd-initramfs.cmd",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/sd-initramfs.cmd",
+      "original_sha256": "3740e6e1761d04a88ff5d8aade458d3623ef25594ff8c9db1ee3a61c80ca798b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/uboot.env",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/uboot.env",
+      "original_sha256": "b6d3b456c20de61f18a60f3442e49a162305967eb149906d6d831694c1395c51"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/uboot.fragment",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/uboot.fragment",
+      "original_sha256": "19d9e1f8f7ebaa4f19af11420c214508cd867b90686dc98e4add491490f1cdbf"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/board/ax7z020/zynq-ax7z020.h",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/board/ax7z020/zynq-ax7z020.h",
+      "original_sha256": "9c4b7214f55b88fd955950fd8d64a5cbb85e317f8aea59be0965780b98bca8f9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/Config.in",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/Config.in",
+      "original_sha256": "ac1f04f8a03b578ab377b44d771670f9397a09b4a3d15b1fc47f1ff9eb9138de"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/configs/ax7z020_display.fragment",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/configs/ax7z020_display.fragment",
+      "original_sha256": "5532d76da735424bb071e53666e3d5af7b8276358be36966bd563eabf2339a92"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/configs/ax7z020_initramfs_defconfig",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/configs/ax7z020_initramfs_defconfig",
+      "original_sha256": "fdcd3f8ca6bef5336911d8c9842f0e1980674baf52ac14e56266d6447fc82be7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/configs/ax7z020_qt.fragment",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/configs/ax7z020_qt.fragment",
+      "original_sha256": "e8e234a8f73bb0cca2a48af1f571f5292f6c136b78e474731eec8bd5fd90b5c7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/configs/ax7z020_xlnx_reference_defconfig",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/configs/ax7z020_xlnx_reference_defconfig",
+      "original_sha256": "51f0866e0a7de8b40cf5e92bae426570fb85651a05b00180973b81c070f7e171"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/external.desc",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/external.desc",
+      "original_sha256": "30d9664bff2ffa9c2fc489d969c704dcdabbbdbe4e1f83313c473b03e02050be"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/external.mk",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/external.mk",
+      "original_sha256": "1c2a1ac8aab9544b57a2e26a8346c34588330fb21a81253b5e321293d96db906"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/package/ax7z020-display-tools/ax7z020-display-tools.mk",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/ax7z020-display-tools/ax7z020-display-tools.mk",
+      "original_sha256": "8cc3ed2e7f40f2fb2c8a726dfc3cbd4455008f9ab352748c860009fe745d881f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/package/ax7z020-display-tools/Config.in",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/ax7z020-display-tools/Config.in",
+      "original_sha256": "dee2db8c4cc14d28ec79950563f9ba087d6d3171143e1b1a2b02f3d20460d5bb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/package/qt-ax7zfb/Config.in",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/qt-ax7zfb/Config.in",
+      "original_sha256": "24427cb3bafee7b06bdde98262524f7f03eb8f95413d6cabee1f59d3a5d9cb72"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/package/qt-ax7zfb/qt-ax7zfb.mk",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/qt-ax7zfb/qt-ax7zfb.mk",
+      "original_sha256": "0f77edd79f6db92a589ad149de6b0bb93f4d219245e995f99aeab3cd8fbec950"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/package/vibration-offline/Config.in",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/vibration-offline/Config.in",
+      "original_sha256": "98c6e0d3f435da562254de4f7a0e3a8b6e9f8280c8bd9dbd72d1eb02102c8d50"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/package/vibration-offline/vibration-offline.mk",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/package/vibration-offline/vibration-offline.mk",
+      "original_sha256": "cf40dd172f49a25a88aa6b50c005db2a68fdf1b31060b85938a76bdc84d7a4e2"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/patches/linux/0001-usb-phy-ax7z020-ulpi-viewport.patch",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/patches/linux/0001-usb-phy-ax7z020-ulpi-viewport.patch",
+      "original_sha256": "ad7f0a391435e5942e673269b5512381fcbf05fb2895cfa7d34d54f9661f4bdc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/br2-external/patches/linux/linux.hash",
+      "path": "src/workspace/zynq_vibration/linux/br2-external/patches/linux/linux.hash",
+      "original_sha256": "d40e2c630d2a26658b11744ed9d92fcb274310bee4976efc50a0e468067d8641"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/display-platform.lock.json",
+      "path": "src/workspace/zynq_vibration/linux/display-platform.lock.json",
+      "original_sha256": "3fad2c56ff64575961ccd50c5aeefb99641ae2b2bd607cebf57e657023d0889e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/ax7zfb.json",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/ax7zfb.json",
+      "original_sha256": "4971f190d2ebc5f671fcc558123b002bc411349c4e6b39958fe46cae137a7530"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/ax7zfb.pro",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/ax7zfb.pro",
+      "original_sha256": "9cd866cef6275b53eb560d62d31e2622c566cdb0202c97a570555054f8b41b6c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/ax7zflipbuffer.h",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/ax7zflipbuffer.h",
+      "original_sha256": "9a95bf081b9173588138fa18c131e4c8bc66cfe4924dae2048f74b9f1b46a5ad"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/prepare.py",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/prepare.py",
+      "original_sha256": "6ab6fa1d045d086fe9c60338bc6286d1bb1c1d596a49b1577ca85220447ab1fc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/qax7zfbscreen.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/qax7zfbscreen.cpp",
+      "original_sha256": "db598e5761c329e6a510c41da29e6f15e0289d5c94237096aa402fee638d09ff"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/qax7zfbscreen.h",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/qax7zfbscreen.h",
+      "original_sha256": "fa805e2816aa7659e21889fb9fdc7f743bee5b2c4ea92f107b3b35c0c25aa3f9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/tests/host-tests.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/tests/host-tests.cpp",
+      "original_sha256": "d0ef362a88a78b9711b103897cfb19ab583b9cfc6df569c06b7f7f74de609fc8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb/tests/host-tests.pro",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb/tests/host-tests.pro",
+      "original_sha256": "786b217d28cf0c295d02a77b482be1bfcee01f85cde80613ba47d457f16d5492"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zfb.json",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zfb.json",
+      "original_sha256": "4971f190d2ebc5f671fcc558123b002bc411349c4e6b39958fe46cae137a7530"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zfb.pro",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zfb.pro",
+      "original_sha256": "bcb28862b5fb63cf7f77523b4a05c0c090f2245bfb2c26fb516dd7e77c8b234f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zflipbuffer.h",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zflipbuffer.h",
+      "original_sha256": "9a95bf081b9173588138fa18c131e4c8bc66cfe4924dae2048f74b9f1b46a5ad"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zsinglesource.h",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/ax7zsinglesource.h",
+      "original_sha256": "1c4e9278cc7df70b2e8e47a7dbaed2ee2a9d793f747fc46ac3ca72b2340723af"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/prepare.py",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/prepare.py",
+      "original_sha256": "bab9a4fe9fe7966da3cf6225fe673bafc8e9bb0ab2a54150cfcf7b2d103c526d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbscreen.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbscreen.cpp",
+      "original_sha256": "5b366df9f8c6bd3b1b993209f4dca328d17672fa3ebc899f7915faf0c720ec98"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbscreen.h",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbscreen.h",
+      "original_sha256": "4201244e7bbf94a306d053a20a563f4931680eef6c4343073f7e8e7514032c9e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbwindow.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbwindow.cpp",
+      "original_sha256": "c262679883b1166e7f1e78535955f4342b8ec080b29ed08d15c1fdeacc484e2b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbwindow.h",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/qax7zfbwindow.h",
+      "original_sha256": "ed7831a4444c92a83a4cf6135f8ff9dc331742333c63770d3871be8bce530da2"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/direct-host-tests.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/direct-host-tests.cpp",
+      "original_sha256": "66f5c60ebebedd83bd294d4096cda7e407674cd8cc851f6cd485489cd71c5d72"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/direct-host-tests.pro",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/direct-host-tests.pro",
+      "original_sha256": "7b6aacaa3ff85cfc528fe3441c7ac2ec51dab0c19e14304536c221d609773ce4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/host-tests.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/host-tests.cpp",
+      "original_sha256": "d0ef362a88a78b9711b103897cfb19ab583b9cfc6df569c06b7f7f74de609fc8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/host-tests.pro",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tests/host-tests.pro",
+      "original_sha256": "786b217d28cf0c295d02a77b482be1bfcee01f85cde80613ba47d457f16d5492"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tools/direct_scene.cpp",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tools/direct_scene.cpp",
+      "original_sha256": "a2890ef1676f1a084f806efc894f1c6abd67798796d95d7a878861ef360a3f5f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tools/direct_scene.pro",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tools/direct_scene.pro",
+      "original_sha256": "c75323ca92165cf28288205b4daafb1962aae260408a0b2fd2a2b30f0c2ba246"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/qt-ax7zfb-direct/tools/front_sync_dump.c",
+      "path": "src/workspace/zynq_vibration/linux/qt-ax7zfb-direct/tools/front_sync_dump.c",
+      "original_sha256": "a2af3595d68cc3705e1bb25bf3893f6afd5949cb2c3aa5df2ce1a4ce71ac8c8e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/archive-app-source.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/archive-app-source.py",
+      "original_sha256": "a059b3738d18c9e0df29eab13f82c12b6991f242c2cb545875ec6e5db0e3ed92"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/aria-wget.sh",
+      "path": "src/workspace/zynq_vibration/linux/scripts/aria-wget.sh",
+      "original_sha256": "a119adbb9fbc84eb23c5749bb3328f19135f3231f3eb627dc8050d37a480d2e6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/build.sh",
+      "path": "src/workspace/zynq_vibration/linux/scripts/build.sh",
+      "original_sha256": "d84e91c7fffaa3d6ec995eaab6399511c96bd865277fad9f47a45066de453006"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/check-host.sh",
+      "path": "src/workspace/zynq_vibration/linux/scripts/check-host.sh",
+      "original_sha256": "d87379db1524d61f908433708e95580c3fda4128ebd230594a46c61df9e61fc6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/compare-arm-evidence.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/compare-arm-evidence.py",
+      "original_sha256": "7cfc871804e2aaeed871493ca5bcefba865aac38c338262aa7086ae9c4d7505b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/compare-cpio.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/compare-cpio.py",
+      "original_sha256": "3aa067ed49a89fa78e3ef025e066b18e7aae08c51b0047f68d97a14bac3ee89c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/fetch-pinned.sh",
+      "path": "src/workspace/zynq_vibration/linux/scripts/fetch-pinned.sh",
+      "original_sha256": "710e67ecb635bbdac38ada8385cb23f2abe173b621a7dafc0b65f65088bec687"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/inject-display.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/inject-display.py",
+      "original_sha256": "1f4c41d2d40b857441341ab68af951bdd5a709d45e5e5f19fcd0abdaacc20c79"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/jtag-ram-uboot.tcl",
+      "path": "src/workspace/zynq_vibration/linux/scripts/jtag-ram-uboot.tcl",
+      "original_sha256": "b34fbaa6e11f956d56a93c767fb2318c49393796ed841fbbd3395d447e5a5e7b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/stage-artifacts.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/stage-artifacts.py",
+      "original_sha256": "53aebe01c82f2089a8d169f3d1ee141dabba285d6682103582fab56d4ef8143f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/stage-display-diagnostic.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/stage-display-diagnostic.py",
+      "original_sha256": "76a33a05e3f66239425774bd7b12f48059dc2ad1ed1fd956f4f8005afb32c689"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/stage-speed-fixture.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/stage-speed-fixture.py",
+      "original_sha256": "f277137053306afff4255faa84790ca5d5e2b26db47207a78d0d9ecdd9587321"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/stage-synthetic-fixture.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/stage-synthetic-fixture.py",
+      "original_sha256": "1bcc23083598fa9cd13b2de9ecb6e1ad14f150a367f916130286c1bbbf35722b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/verify-artifacts.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/verify-artifacts.py",
+      "original_sha256": "807aaf395da4c236d09666d0efde38044e76d01437ba573296572cee22907604"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/verify-config.py",
+      "path": "src/workspace/zynq_vibration/linux/scripts/verify-config.py",
+      "original_sha256": "a71eef86443cee744441d23d9e1833848ebbc06e562d418dd8cecb7aa456458a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/verify-upstream-release.sh",
+      "path": "src/workspace/zynq_vibration/linux/scripts/verify-upstream-release.sh",
+      "original_sha256": "84033e3f3147530c3e6da5356cd1a562c1b8a743ae0f48df92e7b2c201bd2da9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/scripts/versions.env",
+      "path": "src/workspace/zynq_vibration/linux/scripts/versions.env",
+      "original_sha256": "7bbd5482cc5e6488bbf5aace198e503f92a8ba0670f5ee0dac1af0b4be4625b9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration/linux/versions.lock.json",
+      "path": "src/workspace/zynq_vibration/linux/versions.lock.json",
+      "original_sha256": "ec6d09e4906ce1c9c1ce78cf5a96ce7bd6c61b26c835fb32fe7d6dd5a0996fce"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/include/ax7z020_capture.h",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/include/ax7z020_capture.h",
+      "original_sha256": "a1774467f791bce1e5c48a5df1e7fe1fd840e4e38df7a7bf365ca498cd863398"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/include/ax7z020_capture_preview.h",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/include/ax7z020_capture_preview.h",
+      "original_sha256": "dd61ea1aa299b5020943190a9dca4b3497f944217abf2c0ef0ec1553729f8980"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/include/ax7z020_capture_stream.h",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/include/ax7z020_capture_stream.h",
+      "original_sha256": "d79ac72067113823dc6a5e1da500d87d36d9d2dfb4b2160fabe0a33bcc7d06d9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/ax7z020_capture.c",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/ax7z020_capture.c",
+      "original_sha256": "a7cf712ee0e7a8e2bba5fda14999fed52dc56a90316e7177993a9558a79932ea"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/ax7z020_capture_sg.c",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/ax7z020_capture_sg.c",
+      "original_sha256": "31bbf7bdc686175481647ce902f9eea30bd3954417030beddaad99bf3409fa69"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/capture-sg.dtsi",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/capture-sg.dtsi",
+      "original_sha256": "1fc39560f3d888647784c9cb58bb4f37735e706f26d0aac9d208beb2d9a4aaa9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/capture.dtsi",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/capture.dtsi",
+      "original_sha256": "0bbc68c390fde4146b5a9fbda2c14d42f6b0d2b474cb3cadbb44394271ade516"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/combined_kernel.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/combined_kernel.fragment",
+      "original_sha256": "baf9aa94da3695972d65a15c8ebabd2afdb33d3d246de8e4ce7ff10af967d9d8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/Kconfig",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/Kconfig",
+      "original_sha256": "039874eb9f66c1eb3142aa3cf94f22b59497fb11d6c5ce42a3a83ffe18468fe3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/Makefile",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/Makefile",
+      "original_sha256": "2ea750da514597b93ee9ba330f0efcfa56d8f5176291d2ec21b9f21a91d7ef44"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/README.md",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/README.md",
+      "original_sha256": "381090957289abd583b92a98c25aee53b8270665a20fffd0a30b1475abb2250d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg/Kconfig",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg/Kconfig",
+      "original_sha256": "ff37a22d8e6d2065bbede3ddb43800c9fe93376e860e701105b1d2f8167400f8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg/Makefile",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg/Makefile",
+      "original_sha256": "1f049b9f3b77f768f71957967f591bb1bc2c8681160506eeda93a7884f51f922"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg_kernel.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg_kernel.fragment",
+      "original_sha256": "d6fa6b33d5ad309f36bb732fc6a89d85d36e204b3e226fdf668a136ccf291d0d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/SG_PREVIEW.md",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg_preview.md",
+      "original_sha256": "90cf6e582b33978f6c1b6143803d502444fc7d97fcdc1beb5a526c39c3fb4081"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/stream-dma-provenance.json",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/stream-dma-provenance.json",
+      "original_sha256": "5ddf07916460ddca1ce60dd768045a7f7ff7680b54f2bdf8e61946ba57cd47a4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/hardware/combined/linux/tests/stream_uapi_layout.c",
+      "path": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/tests/stream_uapi_layout.c",
+      "original_sha256": "7934298b9fa43e68a56a26df1fba525478fbf564f721f097eec60139ffcc8188"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/bootstrap_devices.txt",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/bootstrap_devices.txt",
+      "original_sha256": "d7ac6116650fd4f2237544b4b54e3c7179c0941f26efefff45e67c2054ab533e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/busybox.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/busybox.fragment",
+      "original_sha256": "72b15890ae1bff37d8d58a2a5cb3299c70a1f745b83ce968bec1bdd326831808"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/10-vibration-storage.rules",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/10-vibration-storage.rules",
+      "original_sha256": "5b0026f0daa421f8b3f59c1cbb014c8e258bf11fca44ad3d2c0c658b350adbc9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/S90vibration-gui",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/S90vibration-gui",
+      "original_sha256": "ba2f5f4a1bac4f8d48dcece1921a2362e40b0655c1455f3bedd03dc99b98f2ac"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/vibration-gui.default",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display-service/vibration-gui.default",
+      "original_sha256": "aa1035853620d72974c9967b143e9f9765b27e305dbac419ff87d4fcf83a55a6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display_kernel.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/display_kernel.fragment",
+      "original_sha256": "a04fe389f500a34cc797745443e7d39a5a62108edc540f584d27bed66341cbe1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/ax7z020-common.dtsi",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/ax7z020-common.dtsi",
+      "original_sha256": "3ad2ed8b890071e6a4dd9b83f65011e4e2efeadb37a84efb359ce2f34c471786"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/ax7z020-display.dtsi",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/ax7z020-display.dtsi",
+      "original_sha256": "55eecc8a400514c26faae28234bd8a8d9b16e9e488f12dcde07334cb58d7bd73"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/display/zynq-ax7z020.dts",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/display/zynq-ax7z020.dts",
+      "original_sha256": "b0bf7d2f05f326ebbae9c1d876e88e9a75d08d6db4f3f035caed746d91935714"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/linux/zynq-ax7z020.dts",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/linux/zynq-ax7z020.dts",
+      "original_sha256": "2f892d16ec742a7364b08056ad8ac24bdc6f284293df3d5caeaa24b739ace98c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/uboot/zynq-ax7z020.dts",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/dts/uboot/zynq-ax7z020.dts",
+      "original_sha256": "86f628681e5040e6cb450e2a937f180b4f8d9ec5e10063ecb47dc35d5bf9625c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/linux.config",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/linux.config",
+      "original_sha256": "8549ac8493435316642876cc4d74ad28dba06f23615546f3d9518d524bacf327"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/linux.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/linux.fragment",
+      "original_sha256": "25841b36cdd0076b0fa99aea48fc3652b531ba09e68f12c43ba5ddb3c25f9e7a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/post-build.sh",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/post-build.sh",
+      "original_sha256": "e4f8d418336fe218a84cc8424486210ba3898a1eff6482cb638cf70662554751"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/post-image.sh",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/post-image.sh",
+      "original_sha256": "8fcd43e17613e75cf1de1207606baa23359ab553b4dff4b55a57f88bedec146c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/ramboot.txt",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/ramboot.txt",
+      "original_sha256": "108f18939cb2d4c817777f786616bcbfc9ee2370a51117b5a7899aab524d897e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/etc/profile.d/vibration.sh",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/etc/profile.d/vibration.sh",
+      "original_sha256": "910c80e251b47d6430defd60db2c6c7db6dddf14d685b9b66f6f3b49bc8a2641"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/mount-captures-ro",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/mount-captures-ro",
+      "original_sha256": "273a97ebdba205cff42428fca041e47e8904e904ea48bdc0122deb62a6be0d9c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/platform-evidence",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/platform-evidence",
+      "original_sha256": "a07e41ebcda57d4c8aedaf785c89d4b074092808436f063b2780b0600043f70d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-speed-evidence",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-speed-evidence",
+      "original_sha256": "e05ece94302ef8c83af22c61353e62c0045b2b7a156b9f9ed0b3b0f7655ff5f5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-synthetic-evidence",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/run-synthetic-evidence",
+      "original_sha256": "fba43851350c087319136162c8cee5619c07327bdf52c0f9d401152a3be9be70"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/vibration-gui",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/rootfs-overlay/usr/bin/vibration-gui",
+      "original_sha256": "7cd7d5a2a3ca3448868a811c71ba279df3797db465077015e5370cf14f79ca29"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/sd-initramfs.cmd",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/sd-initramfs.cmd",
+      "original_sha256": "3740e6e1761d04a88ff5d8aade458d3623ef25594ff8c9db1ee3a61c80ca798b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/uboot.env",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/uboot.env",
+      "original_sha256": "b6d3b456c20de61f18a60f3442e49a162305967eb149906d6d831694c1395c51"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/uboot.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/uboot.fragment",
+      "original_sha256": "19d9e1f8f7ebaa4f19af11420c214508cd867b90686dc98e4add491490f1cdbf"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/zynq-ax7z020.h",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/board/ax7z020/zynq-ax7z020.h",
+      "original_sha256": "9c4b7214f55b88fd955950fd8d64a5cbb85e317f8aea59be0965780b98bca8f9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/Config.in",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/Config.in",
+      "original_sha256": "ac1f04f8a03b578ab377b44d771670f9397a09b4a3d15b1fc47f1ff9eb9138de"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_display.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_display.fragment",
+      "original_sha256": "5532d76da735424bb071e53666e3d5af7b8276358be36966bd563eabf2339a92"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_initramfs_defconfig",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_initramfs_defconfig",
+      "original_sha256": "fdcd3f8ca6bef5336911d8c9842f0e1980674baf52ac14e56266d6447fc82be7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_qt.fragment",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_qt.fragment",
+      "original_sha256": "e8e234a8f73bb0cca2a48af1f571f5292f6c136b78e474731eec8bd5fd90b5c7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_xlnx_reference_defconfig",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/configs/ax7z020_xlnx_reference_defconfig",
+      "original_sha256": "51f0866e0a7de8b40cf5e92bae426570fb85651a05b00180973b81c070f7e171"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/external.desc",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/external.desc",
+      "original_sha256": "30d9664bff2ffa9c2fc489d969c704dcdabbbdbe4e1f83313c473b03e02050be"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/external.mk",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/external.mk",
+      "original_sha256": "1c2a1ac8aab9544b57a2e26a8346c34588330fb21a81253b5e321293d96db906"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/package/ax7z020-display-tools/ax7z020-display-tools.mk",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/ax7z020-display-tools/ax7z020-display-tools.mk",
+      "original_sha256": "8cc3ed2e7f40f2fb2c8a726dfc3cbd4455008f9ab352748c860009fe745d881f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/package/ax7z020-display-tools/Config.in",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/ax7z020-display-tools/Config.in",
+      "original_sha256": "dee2db8c4cc14d28ec79950563f9ba087d6d3171143e1b1a2b02f3d20460d5bb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/package/qt-ax7zfb/Config.in",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/qt-ax7zfb/Config.in",
+      "original_sha256": "24427cb3bafee7b06bdde98262524f7f03eb8f95413d6cabee1f59d3a5d9cb72"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/package/qt-ax7zfb/qt-ax7zfb.mk",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/qt-ax7zfb/qt-ax7zfb.mk",
+      "original_sha256": "0f77edd79f6db92a589ad149de6b0bb93f4d219245e995f99aeab3cd8fbec950"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/package/vibration-offline/Config.in",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/vibration-offline/Config.in",
+      "original_sha256": "98c6e0d3f435da562254de4f7a0e3a8b6e9f8280c8bd9dbd72d1eb02102c8d50"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/package/vibration-offline/vibration-offline.mk",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/package/vibration-offline/vibration-offline.mk",
+      "original_sha256": "cf40dd172f49a25a88aa6b50c005db2a68fdf1b31060b85938a76bdc84d7a4e2"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/patches/linux/0001-usb-phy-ax7z020-ulpi-viewport.patch",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/patches/linux/0001-usb-phy-ax7z020-ulpi-viewport.patch",
+      "original_sha256": "ad7f0a391435e5942e673269b5512381fcbf05fb2895cfa7d34d54f9661f4bdc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/br2-external/patches/linux/linux.hash",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/br2-external/patches/linux/linux.hash",
+      "original_sha256": "d40e2c630d2a26658b11744ed9d92fcb274310bee4976efc50a0e468067d8641"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/combined/scripts/build-kernel-sg.sh",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/combined/scripts/build-kernel-sg.sh",
+      "original_sha256": "dfb65ced6991b1de9a507831b73f3192f7f88b6f6338fc01460176b5fdbd22b1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/combined/scripts/prepare-kernel-sg.py",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/combined/scripts/prepare-kernel-sg.py",
+      "original_sha256": "a25d922d3e9411244b005b6ea28d5e9dd3b4797d1ba73adf6f78fb913b4761e5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_continuous_v4/linux/combined/scripts/verify-kernel-sg.py",
+      "path": "src/workspace/zynq_vibration_continuous_v4/linux/combined/scripts/verify-kernel-sg.py",
+      "original_sha256": "d2887c40cc3b5bc3551eb8c56188f53d49ac945aee5c45bd1e5fd92f6a0db89c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/CMakeLists.txt",
+      "original_sha256": "88c98356843997c603077a6426f657b6da99822a1b4fbf3f4c36aef5920a3f25"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/analysis_coefficients.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/analysis_coefficients.hpp",
+      "original_sha256": "4c10d8407a2c4fd4441227395ccd6deeeb852b5c7cd9833d2a16bd0b6688fef9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/coefficients.json",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/coefficients.json",
+      "original_sha256": "d6e5b267923346a8ab349e373ea8137e41854667de933db5a537f4b66bdceadb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_10000.mem",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_10000.mem",
+      "original_sha256": "15908dcf2fa2d52288ca69c095120a3716796f2fc0244923f582874c179ae9b9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_25000.mem",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_25000.mem",
+      "original_sha256": "ee4a463c079568e8927a329504ac80fb52556e0f0eeeef9c7c28a955c9d55ba3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_5000.mem",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_5000.mem",
+      "original_sha256": "623b1ac8ca6ec1e0a3c2b5560015c934a3c07ac3070b0aed9e09c6c5a4bed9cf"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_50000.mem",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_50000.mem",
+      "original_sha256": "4cae882f90050669db709bea07d9085073512bc1081a7244c905c5acd9cee5e7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_all.mem",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/fir_all.mem",
+      "original_sha256": "6da2a678dd3cc97f5783686230be598a453eb91ee027404d1bb2a3ceab93b486"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/hann_8192.mem",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/data/hann_8192.mem",
+      "original_sha256": "571921b4de73dfdbad852f4f6222966f5219077eae58d9da9fb53f6381ecc1b3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/export_implemented.tcl",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/export_implemented.tcl",
+      "original_sha256": "37e344542de5826b7d562950d4febe3adfc83fa9bc1075cbe2914ad27583ef91"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/generate_fft.tcl",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/generate_fft.tcl",
+      "original_sha256": "3e8cab1f90516225d7c0ccfdb41904b92264908fbb428bb71403aba499896e59"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/prepare_replay_batch.tcl",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/prepare_replay_batch.tcl",
+      "original_sha256": "9dc74d7f8fa979829a088fb59d5a6e9bf0631c14fe75786ef6eec5cd5cbcc39f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/seal_evidence.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/seal_evidence.py",
+      "original_sha256": "86151d90ce347e50ee32cb48f54c823e1fe330fa142a83ea5c1b0a78df05ceb7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/simulate.tcl",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/simulate.tcl",
+      "original_sha256": "998ee0f0d4d886377283e441b6dd99d2f778bd7a9e71c1c60d940da74fb980aa"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/synthesize_analysis_ooc.tcl",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/synthesize_analysis_ooc.tcl",
+      "original_sha256": "d5219b06c318dbcb47e4dbceb0bfe7fed4f2cd08142412802f5f8ebb41ec6d47"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/check_preserved_platform.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/check_preserved_platform.py",
+      "original_sha256": "8b2c3a2af2c04ccdd2c69d3191621620b585e85808b50eb473e39b414e3f6920"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/compare_fft_model.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/compare_fft_model.py",
+      "original_sha256": "fd344ac967d2a957e4ea1fd15f724098d1193373d88383102b4d85658a1c90f6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/design_coefficients.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/design_coefficients.py",
+      "original_sha256": "d4df0f82ae3806f3e66e952a5f4936faf5c3a9ab8ec0e8e31801c6cc9e2be77d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/diagnose_fft_quantization.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/diagnose_fft_quantization.py",
+      "original_sha256": "8c4899467bb465a6b7c6184db27bdce8fdf88da875d26d03a5007ed1500ea05b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_fft_stub.sv",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_fft_stub.sv",
+      "original_sha256": "dcc62b1fa92ec0fc91680d323a2fa5c1dcd480601f1e81ecbb4e5b69abda386a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_generate.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_generate.py",
+      "original_sha256": "45f31be1e685d8722f8ea3d4dbe314f58283647bb3fbc9880ac1e03c0ad7cfad"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_tb.sv",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_tb.sv",
+      "original_sha256": "7247df30fb9d8e9ea8c57dff3ff05039d0d47d79cc5cee3bfef33d206d6ef2df"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/ISOLATED-UNITS.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/isolated-units.md",
+      "original_sha256": "481491c30b3ec56aa956992d4805adcd0c5247792bba997c3877e4dcf4c5b08a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/make_vectors.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/make_vectors.py",
+      "original_sha256": "754a70c9a40cd1951bac3495dde731a4134500463968d0d5f5828fd974e7f8f8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/result_port_unit_tb.sv",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/result_port_unit_tb.sv",
+      "original_sha256": "07aa0e7ee6f15f40c71e6eec3672076e5a126f344fdc729bd602cccea6c71c22"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/run_isolated_units.ps1",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/run_isolated_units.ps1",
+      "original_sha256": "9ade728486d069ef78e0fa268bd5544dff53587a4ff014070b4cd875f4548322"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/summarize_fir_performance.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/summarize_fir_performance.py",
+      "original_sha256": "1007bcd9ee0eb6833ce63f1808e5b03d4544353f3b2d6def008377a62bcb2dbf"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/tb_detection_accel.sv",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/tb_detection_accel.sv",
+      "original_sha256": "a463d4d34e217cb08efdd7449e762499aa22ca4dc45f5b5f62a4d8cc023c9054"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/tb_fft_unit.sv",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/tb_fft_unit.sv",
+      "original_sha256": "741de79d1f9dc9e4b429694a9efc9f384863f270d382928273d95a029dd4c789"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_accel.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_accel.h",
+      "original_sha256": "b231b5a8b96f3731146774be4ede327ea37acaa052949278cf6ecd9f69513d4f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_accel_regs.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_accel_regs.h",
+      "original_sha256": "0353a53da6879783cc2d48b7f9129f0fb91f22bd8f518e25228158092c3bf3b0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_capture.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_capture.h",
+      "original_sha256": "a1774467f791bce1e5c48a5df1e7fe1fd840e4e38df7a7bf365ca498cd863398"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_capture_preview.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_capture_preview.h",
+      "original_sha256": "dd61ea1aa299b5020943190a9dca4b3497f944217abf2c0ef0ec1553729f8980"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_capture_stream.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/include/ax7z020_capture_stream.h",
+      "original_sha256": "d79ac72067113823dc6a5e1da500d87d36d9d2dfb4b2160fabe0a33bcc7d06d9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/ax7z020_accel.c",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/ax7z020_accel.c",
+      "original_sha256": "9a8658ebcd135238673162ecf950a7faae2a467ed631c8d9b9044dc69754e5d8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/build_candidate.sh",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/build_candidate.sh",
+      "original_sha256": "9570060bd88df4d8c56b7c6bbe76f2e7ef7a11b72e9f31fc2eb7f8df6f29d0fe"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/ax7z020_accel.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/ax7z020_accel.h",
+      "original_sha256": "b231b5a8b96f3731146774be4ede327ea37acaa052949278cf6ecd9f69513d4f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/ax7z020_accel_regs.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/ax7z020_accel_regs.h",
+      "original_sha256": "0353a53da6879783cc2d48b7f9129f0fb91f22bd8f518e25228158092c3bf3b0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/publisher-sha256.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/publisher-sha256.hpp",
+      "original_sha256": "8df0f228a4563ec8ae0880b3e8c109c8aa9e1762ef0c40846deef1be1e10c2d8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/v7_credit_policy.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/include/v7_credit_policy.h",
+      "original_sha256": "719fee84d2f51f450ff33febfc1a1c58a419ef45e6ea211c535c0e4704d0cc48"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/complete_result_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/complete_result_probe.cpp",
+      "original_sha256": "6d24e29df1054a5003f9ef964a4f67bfc7659d1aa37ec4bd978da52a3c72e645"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/credit_policy_test.c",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/credit_policy_test.c",
+      "original_sha256": "960591e75d2aed8185c43f817ce43448d07ea368cb63d2e87221ea6bd7af1dcf"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/run_result_port_test.ps1",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/run_result_port_test.ps1",
+      "original_sha256": "357fbd116c30651597a5ad7f6d283b834f29ce93a743fa6b16f5dabd35cf443d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/v7_mmio_result_tb.sv",
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/v7_mmio_result_tb.sv",
+      "original_sha256": "66dc13975c360dc653526946c5c03a480b7e9168bfb6be209b58e9570506c758"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/build_and_test.sh",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/build_and_test.sh",
+      "original_sha256": "3044bbba39f41d4aa17beb2f2617348545ef8a2277ed30c61035f815a86a6407"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/CMakeLists.txt",
+      "original_sha256": "00275f5d4c5991580194843281c29166ce4eac03db690e4b0575dded6b786c4a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/include/vibration/accelerator.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/include/vibration/accelerator.hpp",
+      "original_sha256": "212faaf0513c9f48bc0a0780b783df0f540a3e229913a1f20e9d35738192dda5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/src/accelerator.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/src/accelerator.cpp",
+      "original_sha256": "3d7e52449203ea0eb793f5bc49fadc271ab3b406a2bc310c7d43b9f474ed1001"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/src/cli.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/src/cli.cpp",
+      "original_sha256": "067de330d5e8039b140adc128d31feb8b50c35c5d6e55ac89c631c681c99afee"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/tests/accelerator_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/tests/accelerator_test.cpp",
+      "original_sha256": "9bf40945a89e39b2c4fa58470e291f615a1b0fcb67683c364fe0b9ed9391ceba"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/tests/comparison_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/tests/comparison_test.cpp",
+      "original_sha256": "9358e14ddffe1b895293b2a466ad866c32f224e1985811b3ae084b8a27f1685c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/tests/driver_negative_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/tests/driver_negative_test.cpp",
+      "original_sha256": "369261d97c684e11270ce0a2baec16ae4c2670af246e14daa5f5a67e0dcbf9d4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/accelerator/tests/dump_driver_result.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/accelerator/tests/dump_driver_result.cpp",
+      "original_sha256": "d0615b810b453e38e1a8ba558c3057e52b756752c921ace92179c7bce1642c7c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/canonical_base64.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/canonical_base64.hpp",
+      "original_sha256": "01170073742c25f0050a381db77755348460b84620624ec660a5b970b543cd9c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/capture_output.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/capture_output.cpp",
+      "original_sha256": "10fe808976576de4103c6af7f2ac44112f2bb0d000fe86cbd3e54ce9df707c9b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/capture_output.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/capture_output.hpp",
+      "original_sha256": "8965bf94fd40b17f72310adfec06f76b7ca43a19f9f336ca5e870a14a9b7cc50"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/capture_profile.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/capture_profile.hpp",
+      "original_sha256": "a5fad1d3456d18a1035e9d651e970a6c935647d61c0c0fc9616c3ca144966587"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/capture_service.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/capture_service.cpp",
+      "original_sha256": "f3392ced7ad33688ac474f44a9992a53bac5d5f38d8e6b077f23dac6f451396d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/CMakeLists.txt",
+      "original_sha256": "3dcff29db1f78cab2982026218e1b11fe0e04e675cb77dc1653fca0d4ec6df0e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/contract-v2.json",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/contract-v2.json",
+      "original_sha256": "d5d61957fb9593de65a6ef6ff09efa61d16bf30fc6adc526c0f5791673e41ae8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/include/vibration/ax7z020_capture.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/include/vibration/ax7z020_capture.h",
+      "original_sha256": "a1774467f791bce1e5c48a5df1e7fe1fd840e4e38df7a7bf365ca498cd863398"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/include/vibration/ax7z020_capture_preview.h",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/include/vibration/ax7z020_capture_preview.h",
+      "original_sha256": "dd61ea1aa299b5020943190a9dca4b3497f944217abf2c0ef0ec1553729f8980"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/preview-contract-v1.json",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/preview-contract-v1.json",
+      "original_sha256": "036016f4ddb08766ea7d12c5c384073bb7631c4cd5c05f9bea88b3fc8cc6f40b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/preview_schedule.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/preview_schedule.hpp",
+      "original_sha256": "11b466b314dc36df2a37b496e44f67e719583b476175980073099d645b797821"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/profile-contract-v1.json",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/profile-contract-v1.json",
+      "original_sha256": "467f4e57fae104f74874718bca80434d22d541d4f6473e72690ebb40b784f676"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/README.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/README.md",
+      "original_sha256": "fe2bbcb2577291d9051e2077d891685eaf13085003d7507ac58c9df0cba91fdc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/acquisition/tests/test_service.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/acquisition/tests/test_service.py",
+      "original_sha256": "de7ced0bf7aeda049f6305eb32032f46d280eca4c9c8db075027298421de76b3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/app/gui_main.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/app/gui_main.cpp",
+      "original_sha256": "915210d2fd8b496516f9fbff6edf798f6f254c355cf43655a1ccc7d8059bea85"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/CMakeLists.txt",
+      "original_sha256": "5892d9d406d0e4667c9a0de4c2d90b23b6075c84571dd3f77fec860abe785906"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/candidate_model.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/candidate_model.hpp",
+      "original_sha256": "8776a65bb748cf460dec2bbe8a44158f680e640a183d151c4446d5e9c8c187e5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/core.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/core.hpp",
+      "original_sha256": "7a8376c45de71994e605ee96e99af4ffb2ea1d9408c4ff1a9fe51d0ab18c5c1e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/detection.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/detection.hpp",
+      "original_sha256": "03cfbe7c7634d41dd4a17f7b68f0044c5dbfe93f49517206a91c91ab3b375cfb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/reference_library.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/reference_library.hpp",
+      "original_sha256": "ff084e37d8b7afa98c4c1f0e067cd071e202827ecd6a9e8231a2e674c396d157"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/reference_validation.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/reference_validation.hpp",
+      "original_sha256": "324c1d5adea17f4e6d663eb336886b0a3b2a52597e1f81839567d67e9be90cc0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/sha256.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/sha256.hpp",
+      "original_sha256": "6c47520253ae6f6567427efd1e630951a7f02adf2a5bbb46452418bd644e07df"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/supervised_features.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/supervised_features.hpp",
+      "original_sha256": "53d1fc29ee25ad63766134884e1d2859de82064d2304d74c8b7e9512b7bd7999"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/include/vibration/supervised_model.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/include/vibration/supervised_model.hpp",
+      "original_sha256": "6499d2cb0492bfb5319163e09e11fcc9d6b16f4a5c2382d4749f633e80aeaef4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/candidate_model.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/candidate_model.cpp",
+      "original_sha256": "14b8a9477f76c2ca0e6650aaa591c70d97613fdf8b58fb9827e426e717db7fc5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/cli.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/cli.cpp",
+      "original_sha256": "4c1328ff6188cf641424e72d6f299225330dfb68e05787ef089e1e354b5b7a4b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/core.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/core.cpp",
+      "original_sha256": "070c03ce5fc401bf59758bd37386ae7b77368c31306183349b777adc8017f81f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/detect_cli.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/detect_cli.cpp",
+      "original_sha256": "fb885af87b2da97a16b032c33db1909ecf1b401c1c132ca3425b962994a87d1c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/detection.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/detection.cpp",
+      "original_sha256": "7dbe0ab1175a65c33f200c2af5767b05f0e82f83a29ef6f72df43f1be2b4b241"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/reference_library.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/reference_library.cpp",
+      "original_sha256": "95259bbed3bea1a23ebe8c1f349c0f2028078f0e19440eeb6e53be8e358e9570"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/reference_validation.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/reference_validation.cpp",
+      "original_sha256": "c1fca2267ec0945d09cf0b378f383c0ae5762b2d51225fd3cbe5235165d148d4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/supervised_features.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/supervised_features.cpp",
+      "original_sha256": "a41f63ae4dc762beb5cf205d456118830e80be58fd053a41248e561b6c23e530"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/core/src/supervised_model.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/core/src/supervised_model.cpp",
+      "original_sha256": "afd5e14444538f06a074bf6fd9f4a4bf07317ba09d85238c09fbe0cfc03660ae"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/acquisition_panel.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/acquisition_panel.cpp",
+      "original_sha256": "150af709b892a0d7b925905d898b9f2028033d02209af7fac37f6c66aca287c0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/acquisition_panel.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/acquisition_panel.hpp",
+      "original_sha256": "2a4c2d13a35ddd76437a7354db78ee97adcb676d072dddfbea20646bc4373483"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/acquisition_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/acquisition_probe.cpp",
+      "original_sha256": "6ee98fcf70b9ad1774ef161aa0852a234c7a5b161f9e33158c2342708993892f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/CMakeLists.txt",
+      "original_sha256": "8b6f19cbe5ff078c5a5f7764711fbb84106bf684d8840f8fce5c08c9056b703c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/gui_detection_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/gui_detection_probe.cpp",
+      "original_sha256": "2c5c8f6d80b5e97152a6b990315887b9e15ba2173fe23d7994a55a1e0addef37"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/gui_state_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/gui_state_probe.cpp",
+      "original_sha256": "a34576f92cda3038293c606c44dae77ed7a1c06c81f703c06e5ab8c6e75eeb22"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/gui_workbench_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/gui_workbench_probe.cpp",
+      "original_sha256": "0aec8d9bd10a8e13107c25a74521d5f6e6917878f0ccd170a9ab587525fbd794"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/main_window.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/main_window.cpp",
+      "original_sha256": "c51c5fce953c654204d870e31a2ced9c9b21fa3163043bfb6daa69af4799a4da"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/main_window.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/main_window.hpp",
+      "original_sha256": "5a9679b6a17d6eef090f5d375a234e3c58afbde3f71f7b437a202fccd36a3e2c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/native_icons.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/native_icons.hpp",
+      "original_sha256": "7dd20940a5205da6db2adc0901d43622681d113320ba69354bdd2c1c0e9dc7de"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/plot_interaction_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/plot_interaction_probe.cpp",
+      "original_sha256": "cc6a98ac8e4ec47a4fd6b15791259e23b50690e13ddd107c53b2872aeebf3f50"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/plot_widget.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/plot_widget.cpp",
+      "original_sha256": "05b3679b2ae1b694498f320bb2200e51b3034ee6ade6ea8cb851fa357602d8d9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/plot_widget.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/plot_widget.hpp",
+      "original_sha256": "218ed19f969f80886efbf7303803e3a441c19165b54c9a6ed7d09c718a209cbd"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/README.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/README.md",
+      "original_sha256": "80fafa8b93bc42ea15f577cdeec2aec315252db62629593ffab31637f5434300"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/test_acquisition_gui.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/test_acquisition_gui.py",
+      "original_sha256": "e842766fdc9ee49f88223d2602e03578b876795648bcd8348676ff7942ec9836"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/test_detection_gui.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/test_detection_gui.py",
+      "original_sha256": "2591470b52be2a2c32fd6771706964a10d178ee20d207abdd9ee6994abaa8151"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/test_gui.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/test_gui.py",
+      "original_sha256": "dcc916963c809ad89693d85faed183f1cf81ead3bca7b8a74ba2c5aac1f17f20"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/test_workbench_gui.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/test_workbench_gui.py",
+      "original_sha256": "0a6037a09aa848a3e6668082d3d799284f2100bfadd180086b3551518487cf5f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/view_math.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/view_math.cpp",
+      "original_sha256": "904ee7595279313f4ceae68ff5324b952ab6e0fa13de3f4adcff151efd409a5c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/view_math.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/view_math.hpp",
+      "original_sha256": "be0ed12a138f3aa716bf2571325fd01dcf7aed15172681b87edfbb77bc323fbd"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/gui/view_math_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/gui/view_math_test.cpp",
+      "original_sha256": "721abe6c11822aa307fac6a68f81df1fb2a5d9a173b6c70af1cc353da685ec5a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/CMakeLists.txt",
+      "original_sha256": "26b180d48706ea330a1bc63bff9ceb6cabb084dbc560483d1d0f2e88b9704e47"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/contract-v1.json",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/contract-v1.json",
+      "original_sha256": "a7ac797849363848ebc001db02c2fa7cdf6baa8b5ac9c30928877945a73463bb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/main.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/main.cpp",
+      "original_sha256": "42a0d94cc4c64170379846f0f55b41bb45b6dd6942cfaaa9653e8bf510b6a8fa"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/raw_window_stats.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/raw_window_stats.hpp",
+      "original_sha256": "33a5b3f33f4f67953c2193aa9af94b702e0c627aada4f022578f084d3f496376"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/README.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/README.md",
+      "original_sha256": "b16388e05aefa7b0ff3022da8a68dfa8b7175a55899c44acf6a6c3d623faba03"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/raw_window_stats_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/raw_window_stats_test.cpp",
+      "original_sha256": "407ed72109855d0e0a68f94890715be709e58b6c9e560b6ffa5e80b1db3a6b69"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/test_baud.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/test_baud.py",
+      "original_sha256": "501c344def7e0ecbdcffefacf99f961b15057c928890697dc995e9a764801d14"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/test_bridge.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/test_bridge.py",
+      "original_sha256": "a3aa02f89608287c9b161d08df150b84633da4a862b418961a4c7f227ab27e98"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/test_pc_interop.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_bridge/tests/test_pc_interop.py",
+      "original_sha256": "b2b80424cd5098b3a36b4c98a0c14e25a0e187834efeaacace6ed9bb5007acab"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/app.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/app.py",
+      "original_sha256": "c316431fdabe7a8559098867733c0841293aaf7739596ad50a62d71ae3994ddc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/local_waveform.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/local_waveform.py",
+      "original_sha256": "56464ac1f246036fae54c7834c0d4ccf3123f6369d45b19cce7e371cfd2470c6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/plots.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/plots.py",
+      "original_sha256": "28448662debb9185b751c68e561b6b16c9d1d0e28c48ee455ef4049d726b9d82"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/preview_payload.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/preview_payload.py",
+      "original_sha256": "84264d9fd5f22bc7f27512fa0a4af3a74ed02fa806948c8e77377cdaf8ceb1a6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/protocol.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/protocol.py",
+      "original_sha256": "a6f9d640eb1fc7230d939a79115dd7c92f7c875000c56d2f5c2a3d8944d28336"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/serial_device.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/serial_device.py",
+      "original_sha256": "4498213d3e1141127ef70a74452ab92b0189f91d0e951f26c11f652798dede0d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/session.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/session.py",
+      "original_sha256": "26edb3889c31ddee43aa6491c2adcb79ff7cf90d7ebcd7ad531628dd10ab341e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/single_waveform.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/single_waveform.py",
+      "original_sha256": "49acd830fdcf6c4b140a7562f803024acaf98ef5b5c8ee927b41ba5248d46840"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_capture_parameters.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_capture_parameters.py",
+      "original_sha256": "850415ac83f2bf78b3298a255d56a83e6f5d102095a0b29ae62f3ccce1ee2ddf"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_display_ownership.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_display_ownership.py",
+      "original_sha256": "1994a8a01986b6585cafc14aa0a83585fa2d3b92287d9fe120ef93468506f510"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_drag.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_drag.py",
+      "original_sha256": "f684c1775b177ee2d0b84912bfd8ccbd078a3a74f20a557aa34b719fa2545342"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_gui.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_gui.py",
+      "original_sha256": "4b4c31ff212a7bdec86ce9d1336f41f18914409a567b1f4701471e6b93977298"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_local_waveform.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_local_waveform.py",
+      "original_sha256": "0108e93b6ff1584a59706f785e1c2d1ae7622119b2a522c3b031a4e993cb322d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_protocol.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_protocol.py",
+      "original_sha256": "fd3a8c7d380fb03ecd1b36a7b4e7ecee2092fcea166390be8fc9c6d81fb6d729"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_sd_records.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_sd_records.py",
+      "original_sha256": "0886bca66cbb6aec039369e442f12d8bac7ca282c6f862a38863a5676ebf5db7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_session.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_session.py",
+      "original_sha256": "ba101a1df9309e2f5d9e77a236056a8cf5da7ab12a001aa45d0fa6807f693bf1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_single_waveform.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_single_waveform.py",
+      "original_sha256": "8abbb28ca179e882a9206527a9db0b8685afb3333ede03fddcbe7c1f41710d00"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_stream_gui.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_stream_gui.py",
+      "original_sha256": "11bd6683d3a08435a2524724c690ec6a84996d93573384a5ad73530730d9451b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/test_waveform_fidelity.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/test_waveform_fidelity.py",
+      "original_sha256": "b37d119f22f37c465358764ebc1ed8cb5b258177195aefdb9e7d8e7cefd513d5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/tests/test_waveform_navigation.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/tests/test_waveform_navigation.py",
+      "original_sha256": "41e111e4c6d4f35c80a365090a1be0e27cb02aa77d61101514280c8faeb5cca0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/serial_pc/waveform_controls.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/serial_pc/waveform_controls.py",
+      "original_sha256": "bb93b07185cb64bd6728b350f0c34e401e626160e39844bd5a3dd8c34399466a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/CMakeLists.txt",
+      "original_sha256": "34084eaa29b75361aa0972d40afb9151ebf27b7a4247ed8105c51e25c485c689"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/display_payload.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/display_payload.hpp",
+      "original_sha256": "9987da1004c2e64544fa85331cdaeaa5a9d99479f3f1df7138e8b513c1652e70"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/main.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/main.cpp",
+      "original_sha256": "05c0e700721deea085c357b99941547a44fbb37378a36635a4784d672f4469b3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/protocol.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/protocol.hpp",
+      "original_sha256": "3db9267ad1bf4ee6656eec3ddfd61b19b12b162a5b8292b313b5b1eff8b30151"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/README.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/README.md",
+      "original_sha256": "84ac0728bd8964584ce778cc9ddd982ded1f4f1b06bf21e9b2400c8bd7a0e50b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/records.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/records.hpp",
+      "original_sha256": "7bf4465688a5ecec13ba808e38ac0691069b45b886824af95b9f5b461a139d5a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/delete_labels_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/delete_labels_test.cpp",
+      "original_sha256": "d6b41c373b41d5e82568f3779204786b8f7723e584fdbc279d906d4fd77606bd"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/delete_race_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/delete_race_test.cpp",
+      "original_sha256": "d25b530e14af123683a3052b79fe9b2c6059076e8477a6d6bb40cfaeffaeba4c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/display_payload_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/display_payload_test.cpp",
+      "original_sha256": "990c40678c26cc3c8f3deb5802c34211406d401a5ac6c831d92c4fb8820057e4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/service_fault_proxy.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/service_fault_proxy.py",
+      "original_sha256": "a1ac9dce9d8adfb8f3c44c58523535e0a994da18f3f2d482269ff91ff55fbbf8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/test_bridge.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/stream_bridge/tests/test_bridge.py",
+      "original_sha256": "88fdd6a0f25944ae89599aed6fa0c14380f42e6f652f050a2c6c64e1f38814ec"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/streaming/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/CMakeLists.txt",
+      "original_sha256": "4e91bc25580a577deb2ac6062cb57012f9cc24fdf8d654a6d51cabbc791318ca"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/streaming/README.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/README.md",
+      "original_sha256": "0b99a7c6ef5004eda5db813afb93195734a7b57025157fc99bbbb29432a807f1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/streaming/stream_output.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/stream_output.cpp",
+      "original_sha256": "b44c18f4ce9fe3683b9e598dbb6dfa5997c63e603b65354ec427d4d027fcd07d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/streaming/stream_output.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/stream_output.hpp",
+      "original_sha256": "63ac7472e556ab6a298b467f052cf0b96a6f66d206b41db712ccddafb5f42b07"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/streaming/stream_service.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/stream_service.cpp",
+      "original_sha256": "bed3a095b448a0813523011174d2969413416cef63005ab949e9f054f2531000"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/streaming/tests/test_stream.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/streaming/tests/test_stream.py",
+      "original_sha256": "11a05c649d2d7c6a4151e7a52c417d3dd066e32a9186c31b09f506549440dd54"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/calibration_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/calibration_test.cpp",
+      "original_sha256": "3b83482235d0177428f4efa6e1ebbd5ce92f5eff3faea0c68d96d10572b919c9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/candidate_model_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/candidate_model_test.cpp",
+      "original_sha256": "1f690c9ded2f6e28cee870064a5d9a478247d2e9ea6608b26bb58ee1d8c3385b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/candidate_speed_domain_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/candidate_speed_domain_test.cpp",
+      "original_sha256": "417c226f76f034d675958b611cd73b0848bcc9301c3ce503b58df3366d5111b7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/CMakeLists.txt",
+      "original_sha256": "367c2a96dfaadf99222e11bd36e0e85e2361bf1b9e2857cc3f480a30661faa75"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/core_execution_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/core_execution_test.cpp",
+      "original_sha256": "6874b3183fb4c45d71e83336fc5fd3af2b21b1da7f5b655a7a55d6eddcf68d4c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/detection_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/detection_test.cpp",
+      "original_sha256": "9db23c4eed7fb53a4b9220fffa6aa6d5a9fc92152058e50076dc92cc77920bf3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/path_protection_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/path_protection_test.cpp",
+      "original_sha256": "a49d07747db46c369971e887a22ec1f6782be35b8268f1a20d7ad35ccd90e7e1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/reference_ensemble_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/reference_ensemble_test.cpp",
+      "original_sha256": "b02b7c35743522d0c164340b16f628fe7f900a51ad79585125823342e9c5e6d0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/reference_library_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/reference_library_test.cpp",
+      "original_sha256": "fb32ff7abfc6827e5ae1d5c199b56180c82d53c4455ad70b3448165d3d90fc9d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/reference_speed_tolerant_replay.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/reference_speed_tolerant_replay.py",
+      "original_sha256": "67434eca212ffb44c592cb7cc052c6504fb36d9681d88ded4797482e84cf0a4a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/reference_speed_tolerant_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/reference_speed_tolerant_test.cpp",
+      "original_sha256": "597b503746ecac7ece597c75069d34d91264cbaefc3878518da4490d40acfd08"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/reference_validation_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/reference_validation_test.cpp",
+      "original_sha256": "cd4ac35ee97581fa3eeba594ee1df835480636b91fad6c34215a222c8cff08a0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/sha256_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/sha256_test.cpp",
+      "original_sha256": "8b4903193921e5174778c150bb31b41a25e42197bfc739c745ab78fbaebbf696"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/storage_sync_fault.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/storage_sync_fault.cpp",
+      "original_sha256": "d8b20e233ad1e626f01ae0fbf4bf374653fdfaed9d2d1df41daeb85268973bd3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/supervised_features_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/supervised_features_test.cpp",
+      "original_sha256": "411d9e7d1ed426292c49ff679a5f6e8c207cd6b25c9dade314074607c80f2776"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/supervised_model_test.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/supervised_model_test.cpp",
+      "original_sha256": "830cabfb21aaf2bcaf194496c5f3b3eab2352fdf274b54723e358ada1c6f0eb7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/supervised_training_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/supervised_training_probe.cpp",
+      "original_sha256": "7850647fbec0e022252fd008126477502f4aa6217bed2efdfc57c8bd268a903f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_candidate_cli.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_candidate_cli.py",
+      "original_sha256": "2db60acd5999f3ed5528910d475c78f15ac5b3268ce5076c86ec3cbaf9e8a676"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_cli_output_protection.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_cli_output_protection.py",
+      "original_sha256": "06db673c9f4a53606bfcfc520eab09d2578393914e105ded422973abf7e9e89a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_core.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_core.py",
+      "original_sha256": "912eb28e11fdb85ded05c5c31bb813f946707105fede21cfe20f6d69777e834e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_detection_cli.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_detection_cli.py",
+      "original_sha256": "792659c2d4e44822ca35ae54439ea7ee8a20824f80af40c0127883435ae4b65b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_path_protection.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_path_protection.py",
+      "original_sha256": "73e9580f44df54fd02da85e0691693cceecf0d861dad76b124050a556efa8e0a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_storage_sync.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_storage_sync.py",
+      "original_sha256": "f04934563658292a91ccc0b263c26098da1b10d52490089d22cd8d95b0650114"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/tests/test_supervised_training_probe.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/tests/test_supervised_training_probe.py",
+      "original_sha256": "8c044731e4ba253cdfccd9f1d287f660e405f615c4275271d5dfe9bcf9cd01ea"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/analysis_pane.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/analysis_pane.cpp",
+      "original_sha256": "47eca19a6745a073099caaf30200de43e4a95d9d1d516060087ae6d9943b7247"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/analysis_pane.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/analysis_pane.hpp",
+      "original_sha256": "2c1f5d10c5d821dd489348996d5649c31b1f9452f55115738832b814666dadd3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/calibration_settings.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/calibration_settings.cpp",
+      "original_sha256": "7a44bd5f02be53b65824dd5cb3354d1bc5ec43e6e4af2458b86e2b7bf18419a4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/calibration_settings.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/calibration_settings.hpp",
+      "original_sha256": "b82e12bb964ff209b21180680fe059e52f0bf5f0b95a10c9e82fdd2d5770f6e5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/candidate_panel.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/candidate_panel.cpp",
+      "original_sha256": "d64b851cdf0c566f745f37aeeb70f34b4af0a5c66a76c571115a387f0bec3602"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/candidate_panel.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/candidate_panel.hpp",
+      "original_sha256": "0c72c9c53ab5dc713404254c4c153e0f8b1bd8369bd2ee3f75f63333c5a3182d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/capture_client.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/capture_client.cpp",
+      "original_sha256": "f48ae35686300f123c0095c67e6768b09682f328ff5520fff3432dcf7501ce5a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/capture_client.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/capture_client.hpp",
+      "original_sha256": "2211514e982d52106fbf544f56dde4206c0baa0f9d3ec31f855ce7011d5cf645"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/capture_page.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/capture_page.cpp",
+      "original_sha256": "35c2e8b90b36b30c5e69406157cae3bff6df6c461b63cf054693319d4409115e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/capture_page.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/capture_page.hpp",
+      "original_sha256": "89e98b47cf22bb21c61d784f99b2bf9b40d2b7f4d6b3c8cc2faee1eed7d86b88"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/capture_transport.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/capture_transport.cpp",
+      "original_sha256": "6ddc11e885002c616ad8d06d7a91233adc15540556fdd1bd2b46b1cbd3f6e0a8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/capture_transport.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/capture_transport.hpp",
+      "original_sha256": "2fc39154e5cd61db26b6c5674bde82c4f59f849e9e4031901da557ccb161ece0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/CMakeLists.txt",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/CMakeLists.txt",
+      "original_sha256": "185e572d8594d9a6f98c9a8872d791edac0e32fbc2024c637615bf8d0f04fee7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/controls.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/controls.cpp",
+      "original_sha256": "6ef0a57f601f59e95dd47208fd7902b2da13b5983d4447291ae084b66e918ca9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/controls.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/controls.hpp",
+      "original_sha256": "6394fc7e107c1b5c1e7f4ef14608d121397a3d11179600e7d5e882e64c30956a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/detection_pane.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/detection_pane.cpp",
+      "original_sha256": "e123824c1441275adf17c13cd7fa895c5630aa5eb22ab01dae52cf4e0d2e7e7c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/detection_pane.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/detection_pane.hpp",
+      "original_sha256": "2ad7b482bb68bfcb183fc72c9889d24fa1ebfc3248c6a9cf1611d0ec7ba7c396"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/live_preview_model.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/live_preview_model.cpp",
+      "original_sha256": "f38992ab5ca4db97e14e280870399e85220f92fdb47851149e78200186ec8fc3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/live_preview_model.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/live_preview_model.hpp",
+      "original_sha256": "54c4f3ad2ac40a59807e6e45c119a653988c02df2e5c083807380ee25a6e946f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/live_render_budget.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/live_render_budget.hpp",
+      "original_sha256": "f16315740c89c1458b4c72e1685252bbf35695dcb34ce2c5de916a6a04bd471c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/main.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/main.cpp",
+      "original_sha256": "63808f7fbbf5c26d1525e609f1382f7536a943665a341e713f4021241cec5aeb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/plot_canvas.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/plot_canvas.cpp",
+      "original_sha256": "59724a63fb4f3f80edcc5a53ba83a96e8b96ea9cdce7085cfefdf61f2c96907b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/plot_canvas.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/plot_canvas.hpp",
+      "original_sha256": "591d593b4bb96e5b1ae2a9c76142351153bbe6977fee70cda79eccf5434d4bf1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/record_labels.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/record_labels.cpp",
+      "original_sha256": "5f1a425338499c5eb21623514bc9c0f3e94a07d170a6a858f2b6d37aac4cdde7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/record_labels.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/record_labels.hpp",
+      "original_sha256": "0417298bc5e8499af68b3a258ee6a8d19186afe5cf2ad4a8ca828918cc837f2f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/reference_display.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/reference_display.hpp",
+      "original_sha256": "30637973b7b620a5eb877527c168221130e94490dd0b0d63ff4517753410cf7e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/single_waveform_view.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/single_waveform_view.cpp",
+      "original_sha256": "7c71a739c2f35590ffbbb6cd302ffc516ac5236154c79b33ab7a3616d3a17c94"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/single_waveform_view.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/single_waveform_view.hpp",
+      "original_sha256": "bdcbf28bd24798bdfdde1cb03245305cc417389f167d84f214b3abfe82a72d0e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/stream_preview_contract.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/stream_preview_contract.hpp",
+      "original_sha256": "b962b5b13f1aad8bdf63e976fdf82614a8979197f6864fd9e4fdff712179dd72"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/analysis_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/analysis_probe.cpp",
+      "original_sha256": "9d1c75ff67837a6ccb12afa9e75f3f79ecc77362f800752b2c02e0bf61ef23e4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/arm_stream_ui_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/arm_stream_ui_probe.cpp",
+      "original_sha256": "cb449030eaf08ea1e11188fea334b57f02462ffb802c78f6e011adfd0ddaa6c7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/board_live_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/board_live_probe.cpp",
+      "original_sha256": "9ebf352cc950d0cf9c7d14347fbc0c64792b52380d8aa218c59bfd12bdc2195d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/board_stream_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/board_stream_probe.cpp",
+      "original_sha256": "0b931f130c5db17d71f20396c4327807432ea128db6a586181bda719fe91b0f9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/BOARD_STREAM_PROBE.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/board_stream_probe.md",
+      "original_sha256": "b48dcea9e83fbe735d431b32df3ebca9e136887cc4fa58b9c72851fa7f28b93c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/calibration_integration_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/calibration_integration_probe.cpp",
+      "original_sha256": "92dad3ab08b3e5f6ac48a837e004808ce8fb498a70250e4dd34497dce6470378"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/calibration_settings_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/calibration_settings_probe.cpp",
+      "original_sha256": "c2273d1b2bf04c60c16a246e6b8cb4ffae7057fa55ae959228a283088469776a"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/candidate_panel_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/candidate_panel_probe.cpp",
+      "original_sha256": "6eb561cedc65f296e250d60b1fe98ead6d3584a7525b25e8b2485b4ba85970f5"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/capture_page_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/capture_page_probe.cpp",
+      "original_sha256": "d538824290ab4995157b670d9e01db7afc23d51a6a7338912bd64f40c3c1d645"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/capture_parameters_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/capture_parameters_probe.cpp",
+      "original_sha256": "162b8080bebd729a1e10d78b63e5d60f2c8beb005448e6013c4e7ebcfac1471c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/capture_worker_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/capture_worker_probe.cpp",
+      "original_sha256": "d3595e2d55f6b8e165bb89489499106e589662472e4ad0ca2735132a644d5bcc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/compact_layout_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/compact_layout_probe.cpp",
+      "original_sha256": "df925d024bda58a38bc8fe5583193d6d4fc8f7b00fdb0a793e1998abedf7bcf0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/fake_capture_peer.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/fake_capture_peer.py",
+      "original_sha256": "12959af6a0093dec04238d5231339f5ad260c6ac9a205e4e5dc975d119f06931"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/fixed_ranges_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/fixed_ranges_probe.cpp",
+      "original_sha256": "116453836906d0bff7ff1f250a4a09cdc1c67920b8c372a6b0e4587f51ada8bc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/fresh_user_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/fresh_user_probe.cpp",
+      "original_sha256": "cdb1c0462af66b4e1c4ac38c6582c654ebd267437f5a3ce4db1a9c26b3e53ab7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_follow_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_follow_probe.cpp",
+      "original_sha256": "7d6ae3798e85ecb80c3b93c21cb23a7c9034356243ea5db22a84232ea7fe21f2"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_preview_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_preview_probe.cpp",
+      "original_sha256": "ef566c8e2925fbfd13759711aebc8eba50d2607684f823ca8abb4d49913b197d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_view_exact_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_view_exact_probe.cpp",
+      "original_sha256": "9b5ed141af386200ea736e872b490529eef3fc9fd3a7a92c1a5d34026f4a936d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_window_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/live_window_probe.cpp",
+      "original_sha256": "9de806e45e659f506aabcbd114a635f9a19e936a6ae9f056949e866ed093aea4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/native_drop_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/native_drop_probe.cpp",
+      "original_sha256": "47f1934ed8c5a14e7ce8450a4685635dbdb653fcd66745019a4e1e5f409bea8f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/plot_render_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/plot_render_probe.cpp",
+      "original_sha256": "3af1ef16ef153cf1e967896083c89143ca578a03c3b501ca8b27fc481c4bf972"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/preview_backlog_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/preview_backlog_probe.cpp",
+      "original_sha256": "96761173c7a66ce555a49c7ddd5c761ae685ed087e177e2c7cb517a5ecc62ef1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/preview_batch_ui_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/preview_batch_ui_probe.cpp",
+      "original_sha256": "984fc880ae930692616b2d408149247f6c43b24be964e0cd540097942b14b7ec"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/preview_paint_audit.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/preview_paint_audit.cpp",
+      "original_sha256": "eef7c6d321866373269a49c5c2690bde13292e9f83331f8635885b7b400251de"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/raster_composition_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/raster_composition_probe.cpp",
+      "original_sha256": "2419008b849e4fbca47a4ba1acdf0c7abda67dfd7066501a80608e68b06c78ca"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/raw_fidelity_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/raw_fidelity_probe.cpp",
+      "original_sha256": "89969f91d6f2986c38ac5b1a637f119c19c6782f45ca9ba328f474963f80e714"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/record_labels_capture_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/record_labels_capture_probe.cpp",
+      "original_sha256": "c712a42f17da287159a64738f22942efbb8f9a12a1a43d232cdd05b5821a0166"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/record_labels_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/record_labels_probe.cpp",
+      "original_sha256": "a972a464b670b60bc01850d157aba646f5443108486bc9098699157cfbcb28f4"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/reference_ensemble_workflow_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/reference_ensemble_workflow_probe.cpp",
+      "original_sha256": "770782afbb0dd1b3c663f5e7d44fbb0eb6c5785d09535f5541bceaf59113a1fe"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/reference_library_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/reference_library_probe.cpp",
+      "original_sha256": "1641cfa91a62c67d1948824089528d8f52f04e2a943edb420e62296b9795409c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/root_window_flow_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/root_window_flow_probe.cpp",
+      "original_sha256": "96a6d8aac4d3267706f84d461a5c3dedabf72ae0f9f574adde142e138ab6b8da"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/run_compact_layout_host.sh",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/run_compact_layout_host.sh",
+      "original_sha256": "7706864622adeebb6d7e8f5f3108ee0cbeee6b3e8bec4cf18b04233251e571de"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/run_preview_paint_audit.sh",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/run_preview_paint_audit.sh",
+      "original_sha256": "b716984eae2cec1ff9a23d7c194e8838a5af5e5689b9abd9594ae304f3cf0360"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/single_waveform_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/single_waveform_probe.cpp",
+      "original_sha256": "171448b1494e25bbe116ca44004382d88251f379b0bf82bb3a6e24765b68db54"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/stream_page_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/stream_page_probe.cpp",
+      "original_sha256": "e01fe9c90e357df1d1a80b55a413e7982b730a3abb300a818298f79c382227cb"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/stream_transport_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/stream_transport_probe.cpp",
+      "original_sha256": "01d80c695f460a542620b9c7e1f266040559eadb2357e827d2e947c86658562b"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_capture_page.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_capture_page.py",
+      "original_sha256": "46234e643e26411f9d933e7fac5ee3f12303ba08501ab5994a73958fe3f5164f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_capture_parameters.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_capture_parameters.py",
+      "original_sha256": "5e71dde8bc1662f6d7d0770d723218aa8cda0674e73256653330c724319fecf9"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_capture_worker.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_capture_worker.py",
+      "original_sha256": "cfcb32f9ae1b7d69225fe8bd2a756aff9efc5b5769db022470000526852965a2"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_fonts.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_fonts.hpp",
+      "original_sha256": "c583954526d87f1fc1d4822ddc42fa7019f746bc504a39020bd3d1b5097d6057"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_fresh_user.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_fresh_user.py",
+      "original_sha256": "460aa35610dcf2249c4d2eb0f212b2864f430eeffb0cb29f500cce332fa5477d"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_native_drop.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_native_drop.py",
+      "original_sha256": "0dc1a44a5fbdd4a29faec957bbfda3d6befd0d545d583b8291257fdb64461125"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_stream_page.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_stream_page.py",
+      "original_sha256": "a4ec243a0cee647a9cf56012b14310deb817e5ad3507afeec9d1dcc4e056a195"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_window_data.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/test_window_data.py",
+      "original_sha256": "1faa3b67510f667db901dadcf350a7ab7ee6e946f49f78ee4dbcf4a3de9354c7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/touch_directory_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/touch_directory_probe.cpp",
+      "original_sha256": "1b94ebf8101832103f50e305aed9854cc7451dd03d17213bfe5b81fa27c64062"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/touch_gesture_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/touch_gesture_probe.cpp",
+      "original_sha256": "71f8a7070b4a56e1a0a25e26fbb0a6b6b5101024ecaf55f35107b35555a89b9f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/ui_interaction.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/ui_interaction.hpp",
+      "original_sha256": "386e2009b6946338f9e80db92bf63299a6d3162030e9d760369b1164c45cb8dc"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/unified_layout_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/unified_layout_probe.cpp",
+      "original_sha256": "f3eb2799bfab028b5ebf4b5f15e617542d0b49c235795acbb2075b28e77961e3"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/waveform_navigation_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/waveform_navigation_probe.cpp",
+      "original_sha256": "2cbe1b6ad6b2cff8f8e4c080afd30e7e8f215101ed21759591b5c1692aec3570"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/window_data_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/window_data_probe.cpp",
+      "original_sha256": "5bf36fd8c5ceb47b1f798a4a27a3246cff3ab894b26e6f98e98195eae17b8650"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/tests/zero_centered_axis_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/zero_centered_axis_probe.cpp",
+      "original_sha256": "2eb792e6109b547170ff46fbdfb5b74763cb5cb34b1e433046480aa817020759"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/timing_stats.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/timing_stats.hpp",
+      "original_sha256": "9c3621ae105ab6bf7762bb51fd609b2e11424ca3592f30a741533653b888b11f"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/touch_directory_dialog.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/touch_directory_dialog.cpp",
+      "original_sha256": "ad11fa73298a1a09140cdb87bb22229717596af847abd1f0b9f2ab86e40ede29"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/touch_directory_dialog.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/touch_directory_dialog.hpp",
+      "original_sha256": "b98ffa9306a3c127b93f085fa179294464980db49e43408331eac1002f3bac27"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/touch_keyboard.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/touch_keyboard.cpp",
+      "original_sha256": "9998d7fa5ed3518126c03d149a0563e6174390544090fdd9b1138c101b545647"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/touch_keyboard.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/touch_keyboard.hpp",
+      "original_sha256": "dcb39c5116af8efe4245c658a32658c3117c1c7f80d710793b51219f70a8147c"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/waveform_stack.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/waveform_stack.cpp",
+      "original_sha256": "9879a2b4503197bf6c3584f0dbc62b4de69bfc6ce8888a153594be45c29ed141"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/waveform_stack.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/waveform_stack.hpp",
+      "original_sha256": "062b7b244d8303f8ff1a15e1887cd153a94df17d578f15dc9fcbf85a7f232cc1"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/window.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/window.cpp",
+      "original_sha256": "cfc6c111b54fdca11cf3569ba022e68c1de752dde8f8dd06063b8bf9371af387"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/software/workbench/window.hpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/software/workbench/window.hpp",
+      "original_sha256": "051546debeb78387b48b52db47c3c2d58ed75cd8a278e9c90f57d836fa97b6e8"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/generate_fixture.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/generate_fixture.py",
+      "original_sha256": "cec82d07118375cc8f18caa89f234ae7182cf39336873d2962c2031bcfe3c9a7"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/model_training/interop_probe.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/interop_probe.cpp",
+      "original_sha256": "fcefd196dfb86ff4af490df8e8536b71afdf947c77b32d7291181a444bc22697"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/model_training/README.md",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/README.md",
+      "original_sha256": "6dc1a02e028a650a8ab73fbe3cb3684c76da21c86752845d603cf256430f07f0"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/model_training/reproduce_interop.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/reproduce_interop.py",
+      "original_sha256": "7e54c3399cbb641e1fa75ea04bea79e3fdaa81b6709cd2364252a465694c2ac6"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/model_training/test_train_model.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/test_train_model.py",
+      "original_sha256": "f3057f73a3cd081464aa081f74f703182f3c4fd0560f30b9dc848e67c8ac1b31"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/model_training/train_model.py",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/train_model.py",
+      "original_sha256": "bfae38fd8c25cc246af682fc8718fd33fdc70d60baf98c9e28d7de666dacee1e"
+    },
+    {
+      "previous_path": "workspace/zynq_vibration_workbench_v7/tools/model_training/weak_signal_audit.cpp",
+      "path": "src/workspace/zynq_vibration_workbench_v7/tools/model_training/weak_signal_audit.cpp",
+      "original_sha256": "8dc7d260f51e6f1af52573ff0eca6a7ad6b83940f099db778a888d932611252b"
+    }
+  ],
+  "documentation_filename_changes": {
+    "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/SG_PREVIEW.md": "src/workspace/zynq_vibration_continuous_v4/hardware/combined/linux/sg_preview.md",
+    "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/ISOLATED-UNITS.md": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/isolated-units.md",
+    "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/BOARD_STREAM_PROBE.md": "src/workspace/zynq_vibration_workbench_v7/software/workbench/tests/board_stream_probe.md"
+  }
+}

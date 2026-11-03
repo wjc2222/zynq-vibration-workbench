@@ -1,0 +1,425 @@
+{
+  "scope": "FIR only; FFT is stubbed and unverified",
+  "cases": [
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "full",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "7939cff82791692e8b5e584ea99128e5620fad6607084a1b02d2d0631d0e080a"
+    },
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "dc",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "e5cf0ddef46165487d367e3ee8cec484b22bf418eb4a831ce3ef5f683c10c8be"
+    },
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "step",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "f89baa9b71c3b9188f311f78858a0ada6cd7184f3813cb3c942fb638f5cfe229"
+    },
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "alternating",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "f11410b593467053f8c59c07b4a02ea06025d119da84d12aa3ca68cf1f6c13d4"
+    },
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "impulse",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "1d9372a6eabe63df29351edfe573f2f8a5dc1e8e99e24b3c57ce3cac368b3406"
+    },
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "noise",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "83e383c4b87ac43e183b9cf0d256c781b7173549285b666645d6e35fe5ae2841"
+    },
+    {
+      "profile": 0,
+      "fs": 50000,
+      "taps": 641,
+      "decimation": 10,
+      "kind": "adversarial_saturation",
+      "raw_frames": 82551,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        1,
+        1,
+        1
+      ],
+      "raw_sha256": "d93666db255b8aea619205cdcf006d2fd5cd6dc819d7bfb96147c63641b42d8d"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "full",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "e44ee576a03f4c53e43828f853ef4357c8e89f0ad9e7682390546a5ddbe03327"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "dc",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "fa0dffa46be1f44f7dc6dd366f5d8bf67b2c9af8fdd14915d6b452754ce5bfdc"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "step",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "700e93834f0ea68ab9e0559191707afa7af0ecd96240c34e384912c6a93f542f"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "alternating",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "8949007667d424f52935a3ff0ace4d3d511c958024e5980e565bc3271d8c0972"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "impulse",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "323f6a7b8dca48cb23470f2c4bc2f3ab662c0fd477fdb6ee309ab73b5194a361"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "noise",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "f4aa735a707becd5dd1adc187f557aea7bc7b8ee0ff1a0532bca5c85a9368dc5"
+    },
+    {
+      "profile": 1,
+      "fs": 25000,
+      "taps": 321,
+      "decimation": 5,
+      "kind": "adversarial_saturation",
+      "raw_frames": 41276,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        1,
+        1,
+        1
+      ],
+      "raw_sha256": "20ffb5c65963cdac14a8abec2d26eb8a2b7fe4e43cfea5876b19b3ae19fd4f77"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "full",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "9927c82227549493c0fdd55c9f5d3aac816f463db29d0211423a2997ccbbe94d"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "dc",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "d2ad80e8722dc7bb1a1ac844a0eb386d1203d5d667d35b14d07dd78ab1e7bb99"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "step",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "2bd9a6129f17438aad570770cca86e7aa8c7fef55363b35879cd8b4ef62d6716"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "alternating",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "b57f4fb47bcc1aef86b87c48b430ead399d749790460faa46280f7f5fa55e23b"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "impulse",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "c1ba43fed96c068be32c6b43e07d1e4b912465e3cd9fdb9c2f5dff47a699b71f"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "noise",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "f64299025101f7414bdd77763fb1a49f1f2f73763d283221233c558b9f4d8991"
+    },
+    {
+      "profile": 2,
+      "fs": 10000,
+      "taps": 129,
+      "decimation": 2,
+      "kind": "adversarial_saturation",
+      "raw_frames": 16511,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        1,
+        1,
+        1
+      ],
+      "raw_sha256": "fd2922d9d8e285484a2419897b1a3f4df737156e00dc6aabe2c8d775b37550b0"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "full",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "ac01d5e54a5eb469e8760f388225732ce40c5dc117c41e8738138cc9dc8ed9f0"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "dc",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "37abf367661092f8d95b09bb5187097d5a4873c75e0ef04502226051cbb32b58"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "step",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "ea3fd89157107bfd57bc9dc81dd6afe46c1fec6f9e235c530253b5ebd11b96cd"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "alternating",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "a019fa7cb126b0de1bba020aa8babe0a54058da4a82d6f93fd104b7dd1ae36f4"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "impulse",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "5538632e9a69208b8705b5fbf4c6bb394e38f77c87a3854d81faa67fc108e1e9"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "noise",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        0,
+        0,
+        0
+      ],
+      "raw_sha256": "0d6d010342098c4bd71cc9ef6b724db1bbfefdc15e1a516f4396d434f08bf71a"
+    },
+    {
+      "profile": 3,
+      "fs": 5000,
+      "taps": 65,
+      "decimation": 1,
+      "kind": "adversarial_saturation",
+      "raw_frames": 8256,
+      "reference": "integer64 convolution, nearest ties-even Q23 to Q7, signed24 clamp",
+      "saturation_counts": [
+        1,
+        1,
+        1
+      ],
+      "raw_sha256": "f60ab1a5834ccb86022bb54fb89238bfcdc7ac45d7435316fb8d9fa55f5c8cb9"
+    }
+  ]
+}

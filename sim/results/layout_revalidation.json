@@ -1,0 +1,376 @@
+{
+  "schema": "zynq_vibration.public_layout_revalidation.v1",
+  "updated_utc": "2026-11-03T18:11:06.292517+00:00",
+  "scope": "New Vivado 2025.2 simulations from canonical staged public source layout; bus/FIR use an FFT stub and forced final state for isolated readback. Full XFFT/golden comparison is separate.",
+  "source_files": [
+    {
+      "path": "src/fpga-effective/source/analysis_v6/rtl/detection_accel.sv",
+      "sha256": "d510d6dbd7904f4fe967323a064c4ed189f12f89732ec924fb356febf4c8eeae"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_all.mem",
+      "sha256": "6da2a678dd3cc97f5783686230be598a453eb91ee027404d1bb2a3ceab93b486"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/hann_8192.mem",
+      "sha256": "571921b4de73dfdbad852f4f6222966f5219077eae58d9da9fb53f6381ecc1b3"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_tb.sv",
+      "sha256": "7247df30fb9d8e9ea8c57dff3ff05039d0d47d79cc5cee3bfef33d206d6ef2df"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_fft_stub.sv",
+      "sha256": "dcc62b1fa92ec0fc91680d323a2fa5c1dcd480601f1e81ecbb4e5b69abda386a"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/fir_unit_generate.py",
+      "sha256": "45f31be1e685d8722f8ea3d4dbe314f58283647bb3fbc9880ac1e03c0ad7cfad"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/result_port_unit_tb.sv",
+      "sha256": "07aa0e7ee6f15f40c71e6eec3672076e5a126f344fdc729bd602cccea6c71c22"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/combined/linux/accelerator_candidates/v7_mmio_r1/tests/v7_mmio_result_tb.sv",
+      "sha256": "66dc13975c360dc653526946c5c03a480b7e9168bfb6be209b58e9570506c758"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/tb_detection_accel.sv",
+      "sha256": "a463d4d34e217cb08efdd7449e762499aa22ca4dc45f5b5f62a4d8cc023c9054"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/compare_fft_model.py",
+      "sha256": "fd344ac967d2a957e4ea1fd15f724098d1193373d88383102b4d85658a1c90f6"
+    },
+    {
+      "path": "sim/stage_analysis.ps1",
+      "sha256": "8c2127b687f38142f87a2a2fce8b2666ddfbcf2584034235144c6ebea59c7e70"
+    },
+    {
+      "path": "sim/run_isolated.ps1",
+      "sha256": "7e2fac02060926352c1e32257ac13ac2320adc1c2c7a3444196df723ae4cb0e3"
+    },
+    {
+      "path": "sim/run_xsim.ps1",
+      "sha256": "431fc5534288fa21d91354f72a300e2800d3c66372e9578541e98c5bec738d8b"
+    },
+    {
+      "path": "sim/run_fft_compare.py",
+      "sha256": "9bd9ad869fb0cfaf3dc40ff358b4146745806600f45d78b15115766c0f636fad"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/export_implemented.tcl",
+      "sha256": "37e344542de5826b7d562950d4febe3adfc83fa9bc1075cbe2914ad27583ef91"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/generate_fft.tcl",
+      "sha256": "3e8cab1f90516225d7c0ccfdb41904b92264908fbb428bb71403aba499896e59"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/prepare_replay_batch.tcl",
+      "sha256": "9dc74d7f8fa979829a088fb59d5a6e9bf0631c14fe75786ef6eec5cd5cbcc39f"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/seal_evidence.py",
+      "sha256": "86151d90ce347e50ee32cb48f54c823e1fe330fa142a83ea5c1b0a78df05ceb7"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/simulate.tcl",
+      "sha256": "998ee0f0d4d886377283e441b6dd99d2f778bd7a9e71c1c60d940da74fb980aa"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/scripts/synthesize_analysis_ooc.tcl",
+      "sha256": "d5219b06c318dbcb47e4dbceb0bfe7fed4f2cd08142412802f5f8ebb41ec6d47"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/check_preserved_platform.py",
+      "sha256": "8b2c3a2af2c04ccdd2c69d3191621620b585e85808b50eb473e39b414e3f6920"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/design_coefficients.py",
+      "sha256": "d4df0f82ae3806f3e66e952a5f4936faf5c3a9ab8ec0e8e31801c6cc9e2be77d"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/diagnose_fft_quantization.py",
+      "sha256": "8c4899467bb465a6b7c6184db27bdce8fdf88da875d26d03a5007ed1500ea05b"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/isolated-units.md",
+      "sha256": "481491c30b3ec56aa956992d4805adcd0c5247792bba997c3877e4dcf4c5b08a"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/make_vectors.py",
+      "sha256": "754a70c9a40cd1951bac3495dde731a4134500463968d0d5f5828fd974e7f8f8"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/run_isolated_units.ps1",
+      "sha256": "9ade728486d069ef78e0fa268bd5544dff53587a4ff014070b4cd875f4548322"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/summarize_fir_performance.py",
+      "sha256": "1007bcd9ee0eb6833ce63f1808e5b03d4544353f3b2d6def008377a62bcb2dbf"
+    },
+    {
+      "path": "src/workspace/zynq_vibration_workbench_v7/hardware/analysis_v6/tests/tb_fft_unit.sv",
+      "sha256": "741de79d1f9dc9e4b429694a9efc9f384863f270d382928273d95a029dd4c789"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/analysis_coefficients.hpp",
+      "sha256": "4c10d8407a2c4fd4441227395ccd6deeeb852b5c7cd9833d2a16bd0b6688fef9"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/coefficients.json",
+      "sha256": "d6e5b267923346a8ab349e373ea8137e41854667de933db5a537f4b66bdceadb"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_10000.mem",
+      "sha256": "15908dcf2fa2d52288ca69c095120a3716796f2fc0244923f582874c179ae9b9"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_25000.mem",
+      "sha256": "ee4a463c079568e8927a329504ac80fb52556e0f0eeeef9c7c28a955c9d55ba3"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_5000.mem",
+      "sha256": "623b1ac8ca6ec1e0a3c2b5560015c934a3c07ac3070b0aed9e09c6c5a4bed9cf"
+    },
+    {
+      "path": "src/fpga-effective/source/analysis_v6/data/fir_50000.mem",
+      "sha256": "4cae882f90050669db709bea07d9085073512bc1081a7244c905c5acd9cee5e7"
+    }
+  ],
+  "isolated_tests": [
+    {
+      "test": "public_result_port_unit_tb",
+      "status": "passed",
+      "raw_private_log_sha256": "41579c29effd3ea1bd6967d3748171d5a0df7c2ee68017f597d8161edbd0e566",
+      "completion_and_cycle_markers": [
+        "RESULT_PORT_UNIT_PASS transactions=37345 ready_polls=74589 scope=BUS_ONLY_FIR_FFT_NOT_TESTED"
+      ],
+      "raw_log_in_public_repository": false
+    },
+    {
+      "test": "public_v7_mmio_result_tb",
+      "status": "passed",
+      "raw_private_log_sha256": "20f21c4983bd08009b7f6036699edbf3bfd4449142b8801330d45d933f376100",
+      "completion_and_cycle_markers": [
+        "V7_LO32_RESULT_PORT_PASS transactions=37345 ready_polls=74589 scope=LO32_SIGN_AND_NO_READ_SIDE_EFFECTS_FFT_NOT_TESTED"
+      ],
+      "raw_log_in_public_repository": false
+    },
+    {
+      "test": "public_fir_unit_tb",
+      "status": "passed",
+      "raw_private_log_sha256": "0d8901a33c314570004a219a5c51406e9fcfc759f9d344cb9ede32b97b8183a4",
+      "completion_and_cycle_markers": [
+        "FIR_UNIT_CYCLES profile=0 kind=0 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=0 kind=1 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=0 kind=2 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=0 kind=3 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=0 kind=4 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=0 kind=5 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=0 kind=6 symmetric=1 fir_state_cycles=2654208 start_to_mean_cycles=2764541",
+        "FIR_UNIT_CYCLES profile=1 kind=0 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=1 kind=1 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=1 kind=2 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=1 kind=3 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=1 kind=4 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=1 kind=5 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=1 kind=6 symmetric=1 fir_state_cycles=1343488 start_to_mean_cycles=1410946",
+        "FIR_UNIT_CYCLES profile=2 kind=0 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=2 kind=1 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=2 kind=2 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=2 kind=3 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=2 kind=4 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=2 kind=5 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=2 kind=6 symmetric=1 fir_state_cycles=557056 start_to_mean_cycles=598789",
+        "FIR_UNIT_CYCLES profile=3 kind=0 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_CYCLES profile=3 kind=1 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_CYCLES profile=3 kind=2 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_CYCLES profile=3 kind=3 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_CYCLES profile=3 kind=4 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_CYCLES profile=3 kind=5 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_CYCLES profile=3 kind=6 symmetric=1 fir_state_cycles=294912 start_to_mean_cycles=328070",
+        "FIR_UNIT_PASS cases=28 exact_sample_reads=688128 scope=FIR_ONLY_FFT_STUBBED"
+      ],
+      "raw_log_in_public_repository": false
+    },
+    {
+      "test": "public_fir_unit_direct_tb",
+      "status": "passed",
+      "raw_private_log_sha256": "59c7157f1a47a740f62de40d61c980fe04d0436b83f8bf6e3662450dc6f62107",
+      "completion_and_cycle_markers": [
+        "FIR_UNIT_CYCLES profile=0 kind=6 symmetric=0 fir_state_cycles=5267456 start_to_mean_cycles=5377789",
+        "FIR_UNIT_CYCLES profile=1 kind=6 symmetric=0 fir_state_cycles=2646016 start_to_mean_cycles=2713474",
+        "FIR_UNIT_CYCLES profile=2 kind=6 symmetric=0 fir_state_cycles=1073152 start_to_mean_cycles=1114885",
+        "FIR_UNIT_CYCLES profile=3 kind=6 symmetric=0 fir_state_cycles=548864 start_to_mean_cycles=582022",
+        "FIR_UNIT_PASS cases=4 exact_sample_reads=98304 scope=FIR_ONLY_FFT_STUBBED"
+      ],
+      "raw_log_in_public_repository": false
+    }
+  ],
+  "isolated_totals": {
+    "result_port_tests": 2,
+    "transactions_each": 37345,
+    "ready_polls_each": 74589,
+    "symmetric_fir_cases": 28,
+    "symmetric_exact_sample_reads": 688128,
+    "direct_adversarial_cases": 4,
+    "direct_exact_sample_reads": 98304
+  },
+  "full_raw_to_fft": {
+    "status": "passed",
+    "completion_marker": "RTL_PASS profiles=4 sample_checks=32768",
+    "completed_profile_markers": [
+      "PROFILE_PASS profile=0 raw=82551 filtered=8192 cycles=3207303",
+      "PROFILE_PASS profile=1 raw=41276 filtered=8192 cycles=1853708",
+      "PROFILE_PASS profile=2 raw=16511 filtered=8192 cycles=1041551",
+      "PROFILE_PASS profile=3 raw=8256 filtered=8192 cycles=770832"
+    ],
+    "raw_private_log_sha256": "9b3da4c60739861b4ef49c870e8c6688a0fabf6ad819ba6ef098d4d8245ae4ec",
+    "raw_log_in_public_repository": false,
+    "generated_fft_xci_sha256": "12fda5ec2becb6c75ee8eb5f77d73c607b4d43299639b2084210292e1e41f7fb",
+    "scope": "All four raw-to-FIR/Hann/actual vendor XFFT RTL profiles, accepted by exact testbench completion assertions; not a board run."
+  },
+  "full_AMD_model_comparison": {
+    "status": "passed",
+    "source_comparator_sha256": "fd344ac967d2a957e4ea1fd15f724098d1193373d88383102b4d85658a1c90f6",
+    "auxiliary_comparator_sha256": "52d0eda7776faa5e197793567d62e48ebca08019834ced3b096cb4c4dae6e9fc",
+    "auxiliary_change": "Only normalized-text vendor ZIP installation-path binding is replaced with an environment lookup; comparison algorithm/coefficients/tolerances unchanged. Original public source preserved.",
+    "FIR_profiles": 4,
+    "FIR_sample_checks": 98304,
+    "fft_complex_checks": 98304,
+    "profile_axis_combinations": 12,
+    "all_complex_codes_bit_exact": true,
+    "statistics_exact": true,
+    "hann_input_exact": true,
+    "maximum_relative_spectrum_l2": 4.5617901490495775e-06,
+    "maximum_dominant_five_bin_rms_relative_error": 4.5886919401491214e-07,
+    "maximum_dominant_peak_bin_difference": 0,
+    "power_and_band_sums_checked_by_this_full_comparator": false,
+    "details": "sim/results/full_numeric_verification.json",
+    "installed_vendor_model_sha256": "75e4ab4a00992a045722a611b6f33d6308ca32f9a0104912c170d42e5e4129ff",
+    "vendor_binaries_redistributed": false
+  },
+  "board_hardware_accessed": false,
+  "historical_27_screenshots_regenerated": false,
+  "mechanical_accuracy_claim": false,
+  "private_logs_policy": "Full simulator logs contain private absolute work paths and remain outside this repository; SHA256 and exact completion/cycle observations are retained here.",
+  "canonical_stage_byte_identity": {
+    "status": "passed",
+    "workspace_files_compared": 28,
+    "effective_rtl_sha256": "d510d6dbd7904f4fe967323a064c4ed189f12f89732ec924fb356febf4c8eeae",
+    "rule": "workspace scripts/tests/data; effective data overrides matching names and effective RTL copied byte-for-byte"
+  },
+  "integer_capture_artifacts": [
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_0.txt",
+      "public_path": "sim/results/fft_captures/fft_input_0.txt",
+      "original_sha256": "a4906a178869acae0cfbec64c903896d7daed523e80ce2b0ab3466b84f89ad6e",
+      "public_sha256": "a4906a178869acae0cfbec64c903896d7daed523e80ce2b0ab3466b84f89ad6e",
+      "bytes": 362735,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_0.txt",
+      "public_path": "sim/results/fft_captures/fft_output_0.txt",
+      "original_sha256": "7d02ab40f8dc7234dd00ee39207621c31cad19f4baa4b16a62038f8e4f5803ef",
+      "public_sha256": "7d02ab40f8dc7234dd00ee39207621c31cad19f4baa4b16a62038f8e4f5803ef",
+      "bytes": 436230,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_0.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_0.txt",
+      "original_sha256": "12d00ec3f90257fe3e04ee1e0bf8d3fd49703a2fdb40bfb37bf1812acd6e8d3c",
+      "public_sha256": "12d00ec3f90257fe3e04ee1e0bf8d3fd49703a2fdb40bfb37bf1812acd6e8d3c",
+      "bytes": 155,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_1.txt",
+      "public_path": "sim/results/fft_captures/fft_input_1.txt",
+      "original_sha256": "a70abce1af1e8a90b9aa539da880e4332a6d6eb199e3bd1a88f8afac081448d4",
+      "public_sha256": "a70abce1af1e8a90b9aa539da880e4332a6d6eb199e3bd1a88f8afac081448d4",
+      "bytes": 363884,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_1.txt",
+      "public_path": "sim/results/fft_captures/fft_output_1.txt",
+      "original_sha256": "6752b88ba5f7961782c6252f2afa9c290ae411deaece5f6edd67ba29acc03590",
+      "public_sha256": "6752b88ba5f7961782c6252f2afa9c290ae411deaece5f6edd67ba29acc03590",
+      "bytes": 434507,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_1.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_1.txt",
+      "original_sha256": "48563b0d2669cb368e17936c8ea77fdeb188dab6faeb8f9a9335139bed811d0e",
+      "public_sha256": "48563b0d2669cb368e17936c8ea77fdeb188dab6faeb8f9a9335139bed811d0e",
+      "bytes": 155,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_2.txt",
+      "public_path": "sim/results/fft_captures/fft_input_2.txt",
+      "original_sha256": "b6f32cb532616e3ecfdda2c6d0e68a6c45a26abc9a20ed90eabfe8da312c6ef5",
+      "public_sha256": "b6f32cb532616e3ecfdda2c6d0e68a6c45a26abc9a20ed90eabfe8da312c6ef5",
+      "bytes": 365473,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_2.txt",
+      "public_path": "sim/results/fft_captures/fft_output_2.txt",
+      "original_sha256": "87a13d50b9328a16f6248073b7ce1872a18e7eec054a73201e0cf9ca2614c822",
+      "public_sha256": "87a13d50b9328a16f6248073b7ce1872a18e7eec054a73201e0cf9ca2614c822",
+      "bytes": 440123,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_2.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_2.txt",
+      "original_sha256": "b3d90c22a1f0e5dffd647db974b3def2a3c7e13b15525d31a11a4ae7b9672d16",
+      "public_sha256": "b3d90c22a1f0e5dffd647db974b3def2a3c7e13b15525d31a11a4ae7b9672d16",
+      "bytes": 156,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_input_3.txt",
+      "public_path": "sim/results/fft_captures/fft_input_3.txt",
+      "original_sha256": "a86098ca476dcf1f9b1d7327bc7917ac37b398b330e3e33080a3c4801bb8f91e",
+      "public_sha256": "a86098ca476dcf1f9b1d7327bc7917ac37b398b330e3e33080a3c4801bb8f91e",
+      "bytes": 366852,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/fft_output_3.txt",
+      "public_path": "sim/results/fft_captures/fft_output_3.txt",
+      "original_sha256": "cce472a1b808b59dee7dee4173dd2716d0aca49ead332410528377ad4c01813d",
+      "public_sha256": "cce472a1b808b59dee7dee4173dd2716d0aca49ead332410528377ad4c01813d",
+      "bytes": 435414,
+      "integer_rows": 24576,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    },
+    {
+      "source_artifact": "fresh_actual_xsim/rtl_stats_3.txt",
+      "public_path": "sim/results/fft_captures/rtl_stats_3.txt",
+      "original_sha256": "c49c6e564034107f5bd75ad13cbd4917acd21bd3aa5c9a8ea383120d36db0c96",
+      "public_sha256": "c49c6e564034107f5bd75ad13cbd4917acd21bd3aa5c9a8ea383120d36db0c96",
+      "bytes": 157,
+      "integer_rows": 3,
+      "scope": "Actual RTL observations under synthetic test stimuli; not sensor measurements"
+    }
+  ]
+}

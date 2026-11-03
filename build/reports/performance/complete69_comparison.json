@@ -1,0 +1,26 @@
+{
+  "scope": "Actual AX7Z020 PL-backed complete69 extraction API, excludes file loading/UI/whole training; GUI stopped, no ADC acquisition, 5 measured files, 30 windows, 3 alternating runs per version. All six rows compared except elapsed_ms.",
+  "all_non_timing_fields_equal": true,
+  "all69_double_bits_equal": true,
+  "metrics": {
+    "baseline": {
+      "n": 90,
+      "median_ms": 295.016562,
+      "mean_ms": 295.24353857777777,
+      "min_ms": 293.872616,
+      "max_ms": 297.743661,
+      "p95_ms": 296.305713
+    },
+    "optimized": {
+      "n": 90,
+      "median_ms": 286.8485275,
+      "mean_ms": 287.3983461111111,
+      "min_ms": 285.056073,
+      "max_ms": 290.914383,
+      "p95_ms": 289.722356
+    }
+  },
+  "median_latency_reduction_percent": 2.768669814544189,
+  "classification_algorithm_changed": false,
+  "model_retrained": false
+}

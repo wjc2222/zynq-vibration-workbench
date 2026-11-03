@@ -1,6 +1,6 @@
 # 发布与复现检查
 
-源码仓库名为 `zynq-vibration-workbench`，目标账户为 `wjc2222`。项目原创部分采用 MIT，组件例外见 [许可说明](../license_status.md)。远程源码仓库已公开；具体版本由Git提交与SOURCE_MANIFEST.json绑定。
+源码仓库名为 `zynq-vibration-workbench`，目标账户为 `wjc2222`。项目原创部分采用 MIT，组件例外见 [许可说明](../license_status.md)。远程源码仓库已公开；具体版本由Git提交与source_manifest.json绑定。
 
 - [x] 参赛组别：初级组。
 - [x] 明确本次范围为源码、配置、脚本、测试、Skill 与文档。

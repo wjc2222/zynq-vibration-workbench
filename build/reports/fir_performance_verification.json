@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "scope": "FIR-only RTL with explicit nonfunctional FFT stub",
+  "board_verified": false,
+  "routed_timing_verified": false,
+  "symmetric_cases": 28,
+  "symmetric_exact_sample_checks": 688128,
+  "symmetric_stat_checks": 504,
+  "direct_adversarial_cases": 4,
+  "direct_exact_sample_checks": 98304,
+  "result_port_transactions": 37345,
+  "coefficient_symmetry_exact": true,
+  "timing_caveat": "100 MHz simulated AXI testbench feeding; excludes real PS MMIO, FFT, readback, GUI and capture time",
+  "profiles": [
+    {
+      "profile": 0,
+      "input_rate_hz": 50000,
+      "taps": 641,
+      "multiplier_lanes": 3,
+      "direct_mac_terms": 641,
+      "symmetric_mac_terms": 321,
+      "direct_fir_state_cycles": 5267456,
+      "symmetric_fir_state_cycles": 2654208,
+      "fir_cycle_reduction_percent": 49.61119751166407,
+      "direct_start_to_mean_cycles": 5377789,
+      "symmetric_start_to_mean_cycles": 2764541,
+      "start_to_mean_reduction_percent": 48.593353141969686,
+      "simulated_start_to_mean_ms_at_100mhz": 27.64541
+    },
+    {
+      "profile": 1,
+      "input_rate_hz": 25000,
+      "taps": 321,
+      "multiplier_lanes": 3,
+      "direct_mac_terms": 321,
+      "symmetric_mac_terms": 161,
+      "direct_fir_state_cycles": 2646016,
+      "symmetric_fir_state_cycles": 1343488,
+      "fir_cycle_reduction_percent": 49.22600619195047,
+      "direct_start_to_mean_cycles": 2713474,
+      "symmetric_start_to_mean_cycles": 1410946,
+      "start_to_mean_reduction_percent": 48.00222887707787,
+      "simulated_start_to_mean_ms_at_100mhz": 14.10946
+    },
+    {
+      "profile": 2,
+      "input_rate_hz": 10000,
+      "taps": 129,
+      "multiplier_lanes": 3,
+      "direct_mac_terms": 129,
+      "symmetric_mac_terms": 65,
+      "direct_fir_state_cycles": 1073152,
+      "symmetric_fir_state_cycles": 557056,
+      "fir_cycle_reduction_percent": 48.091603053435115,
+      "direct_start_to_mean_cycles": 1114885,
+      "symmetric_start_to_mean_cycles": 598789,
+      "start_to_mean_reduction_percent": 46.291411221785204,
+      "simulated_start_to_mean_ms_at_100mhz": 5.98789
+    },
+    {
+      "profile": 3,
+      "input_rate_hz": 5000,
+      "taps": 65,
+      "multiplier_lanes": 3,
+      "direct_mac_terms": 65,
+      "symmetric_mac_terms": 33,
+      "direct_fir_state_cycles": 548864,
+      "symmetric_fir_state_cycles": 294912,
+      "fir_cycle_reduction_percent": 46.26865671641791,
+      "direct_start_to_mean_cycles": 582022,
+      "symmetric_start_to_mean_cycles": 328070,
+      "start_to_mean_reduction_percent": 43.632714914556495,
+      "simulated_start_to_mean_ms_at_100mhz": 3.2807
+    }
+  ],
+  "source_sha256": {
+    "rtl/detection_accel.sv": "d510d6dbd7904f4fe967323a064c4ed189f12f89732ec924fb356febf4c8eeae",
+    "tests/fir_unit_tb.sv": "7247df30fb9d8e9ea8c57dff3ff05039d0d47d79cc5cee3bfef33d206d6ef2df",
+    "tests/fir_unit_fft_stub.sv": "dcc62b1fa92ec0fc91680d323a2fa5c1dcd480601f1e81ecbb4e5b69abda386a",
+    "tests/result_port_unit_tb.sv": "07aa0e7ee6f15f40c71e6eec3672076e5a126f344fdc729bd602cccea6c71c22",
+    "tests/fir_unit_generate.py": "45f31be1e685d8722f8ea3d4dbe314f58283647bb3fbc9880ac1e03c0ad7cfad",
+    "tests/run_isolated_units.ps1": "9ade728486d069ef78e0fa268bd5544dff53587a4ff014070b4cd875f4548322",
+    "data/fir_all.mem": "6da2a678dd3cc97f5783686230be598a453eb91ee027404d1bb2a3ceab93b486",
+    "data/hann_8192.mem": "571921b4de73dfdbad852f4f6222966f5219077eae58d9da9fb53f6381ecc1b3"
+  },
+  "evidence_sha256": {
+    "symmetric-fir.log": "20a42f7d8a2a6f60e9abb501dd19bbcc552d0557e32e310fa1945c7040116a77",
+    "direct-fir.log": "aef9698f20bb7bc2f25680ac8f7cdbf9224162cebb7b7b9689e1bc69d931802f",
+    "result-port.log": "53ae669f137a9fd97ccbc4087efa79a782e7fcf154fc8342259af39cb3471b80"
+  }
+}

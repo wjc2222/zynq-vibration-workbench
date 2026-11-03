@@ -1,0 +1,379 @@
+{
+  "schema": "ax7z020.v7.new-board.synthetic-numeric-acceptance.v1",
+  "status": "passed_saved_board_evidence_independently_checked",
+  "read_only_extraction": true,
+  "new_hardware_tests_performed_by_extractor": false,
+  "synthetic": true,
+  "scope": "One synthetic 50kHz multisine engineering numerical comparison on deployed PL against existing double PS reference; NOT measured mechanical vibration, training, model accuracy or vendor bit-exact acceptance",
+  "physical_mechanical_accuracy": null,
+  "real_training_or_model_validation": false,
+  "thresholds_or_production_code_modified": false,
+  "fixture": {
+    "path": "SYNTHETIC-numeric-multisine-50k-82551-s16le3.bin",
+    "bytes": 495306,
+    "sha256": "02fe2c7c661375e46de4adc766525950116c97bbec1effa0b14ce133527b002a"
+  },
+  "fixture_upload": {
+    "path": "upload-numeric/report.json",
+    "bytes": 219,
+    "sha256": "3c3a5fc9943fdec676ef1305a8a7243a296e6efd5490bc3e651603b452a671ca"
+  },
+  "source_report": {
+    "path": "numeric-ui/report.json",
+    "bytes": 30246,
+    "sha256": "6aee858938e24988ed29d4848c0fdf6ad9d10bb3ff6092726fe7eb64fbefa559"
+  },
+  "source_report_status": "completed",
+  "source_steps": [
+    0,
+    1
+  ],
+  "captured_result_text_sha256": "ae1f38e7ef86f865c3d49980f63f559f629af4b4c283be0292b7f20da6f4a94a",
+  "numeric_exit_code": 0,
+  "hardware_id": 910249537,
+  "revision": 393217,
+  "coefficients_sha256": "2a194220bdde8914d19a5b2d27826010a66e12ee1d9d2076c314d4da930147f8",
+  "tolerances": {
+    "rms_relative_tolerance": 0.01,
+    "peak_bin_tolerance": 1,
+    "noise_floor_relative_to_reference_peak_db": -80,
+    "strong_bin_margin_above_floor_db": 20,
+    "noise_floor_source": "provisional engineering floor, not a measured FFT numeric floor",
+    "acceptance_basis": "strict double-reference engineering comparison; not vendor bit-exact implementation acceptance"
+  },
+  "metrics": {
+    "channels": 3,
+    "required_channel_band_comparisons": 42,
+    "evaluated_and_passed_channel_band_comparisons": 42,
+    "max_lowband_q8_error": 0,
+    "statistics_and_raw_clip_counts_exact": true,
+    "saturation_count": 0,
+    "raw_ADC_endpoint_counts": [
+      0,
+      0,
+      0
+    ],
+    "peak_bin_deltas": [
+      0,
+      0,
+      0
+    ],
+    "strong_bins_per_channel": [
+      39,
+      39,
+      39
+    ],
+    "max_strong_bin_rms_relative_error": 7.11562399005203e-07,
+    "max_spectrum_rms_actual_relative_error": 2.36561348494335e-06,
+    "max_total_rms_actual_relative_error": 4.90139572301605e-08,
+    "max_band_rms_actual_relative_error_independently_recomputed": 2.3741584733552652e-07
+  },
+  "channels": [
+    {
+      "channel": 1,
+      "max_lowband_q8_error": 0,
+      "statistics_and_raw_clips_exact": true,
+      "peak_bin_hardware": 410,
+      "peak_bin_reference": 410,
+      "peak_bin_delta": 0,
+      "strong_bins": 39,
+      "excluded_low_power_bins": 4058,
+      "max_strong_bin_rms_relative_error": 4.24662855569312e-07,
+      "spectrum_rms_actual_relative_error": 1.4328388311582e-06,
+      "total_rms_actual_relative_error": 1.7592540289616e-08,
+      "passed": true
+    },
+    {
+      "channel": 2,
+      "max_lowband_q8_error": 0,
+      "statistics_and_raw_clips_exact": true,
+      "peak_bin_hardware": 410,
+      "peak_bin_reference": 410,
+      "peak_bin_delta": 0,
+      "strong_bins": 39,
+      "excluded_low_power_bins": 4058,
+      "max_strong_bin_rms_relative_error": 7.11562399005203e-07,
+      "spectrum_rms_actual_relative_error": 1.76369094682154e-06,
+      "total_rms_actual_relative_error": 4.0820317471411e-08,
+      "passed": true
+    },
+    {
+      "channel": 3,
+      "max_lowband_q8_error": 0,
+      "statistics_and_raw_clips_exact": true,
+      "peak_bin_hardware": 410,
+      "peak_bin_reference": 410,
+      "peak_bin_delta": 0,
+      "strong_bins": 39,
+      "excluded_low_power_bins": 4058,
+      "max_strong_bin_rms_relative_error": 5.1321606101993e-07,
+      "spectrum_rms_actual_relative_error": 2.36561348494335e-06,
+      "total_rms_actual_relative_error": 4.90139572301605e-08,
+      "passed": true
+    }
+  ],
+  "independently_recomputed_band_errors": [
+    {
+      "channel": 1,
+      "band_index": 0,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.3795362959727893e-07
+    },
+    {
+      "channel": 1,
+      "band_index": 1,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 2.0250099326229344e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 2,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 2.8785621707569352e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 3,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 3.225560273386622e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 4,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 3.741052681193467e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 5,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 4.900756243933182e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 6,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.4029866893037748e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 7,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.1949035935595413e-07
+    },
+    {
+      "channel": 1,
+      "band_index": 8,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.955827601875376e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 9,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 7.489728433152912e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 10,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 3.4558055061367674e-09
+    },
+    {
+      "channel": 1,
+      "band_index": 11,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 8.761993285460901e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 12,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.4316855496463269e-08
+    },
+    {
+      "channel": 1,
+      "band_index": 13,
+      "kind": "reference",
+      "recomputed_actual_rms_relative_error": 1.759125012573788e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 0,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.3870363472171868e-07
+    },
+    {
+      "channel": 2,
+      "band_index": 1,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.4263182923963927e-07
+    },
+    {
+      "channel": 2,
+      "band_index": 2,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 2.308396896572724e-07
+    },
+    {
+      "channel": 2,
+      "band_index": 3,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.200421447370024e-07
+    },
+    {
+      "channel": 2,
+      "band_index": 4,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.1422469201133474e-07
+    },
+    {
+      "channel": 2,
+      "band_index": 5,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 9.376884619632031e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 6,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 6.358653655288148e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 7,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 4.227848577144543e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 8,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 2.6703062221745583e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 9,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 4.5069324282996694e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 10,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 9.73521615149753e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 11,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 7.85028085940109e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 12,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 7.951253137333426e-08
+    },
+    {
+      "channel": 2,
+      "band_index": 13,
+      "kind": "reference",
+      "recomputed_actual_rms_relative_error": 4.0817967717823194e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 0,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 2.3741584733552652e-07
+    },
+    {
+      "channel": 3,
+      "band_index": 1,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 2.3473702552658297e-07
+    },
+    {
+      "channel": 3,
+      "band_index": 2,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.0649401514193191e-07
+    },
+    {
+      "channel": 3,
+      "band_index": 3,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 3.312403717431814e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 4,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.6132213384589281e-07
+    },
+    {
+      "channel": 3,
+      "band_index": 5,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 9.766720357060405e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 6,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 7.613352112138221e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 7,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 8.749839637138528e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 8,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.2627677790121738e-07
+    },
+    {
+      "channel": 3,
+      "band_index": 9,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 1.377295146326389e-07
+    },
+    {
+      "channel": 3,
+      "band_index": 10,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 4.145687365950863e-09
+    },
+    {
+      "channel": 3,
+      "band_index": 11,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 4.661994654638425e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 12,
+      "kind": "order",
+      "recomputed_actual_rms_relative_error": 9.90223266764883e-08
+    },
+    {
+      "channel": 3,
+      "band_index": 13,
+      "kind": "reference",
+      "recomputed_actual_rms_relative_error": 4.900892200371324e-08
+    }
+  ],
+  "timing_one_run_only": {
+    "elapsed_ms": 77.560861,
+    "cpu_ms": 76.70211,
+    "pl_cycles": "3658438"
+  },
+  "limits": [
+    "39 eligible strong bins per channel pass; 4058 weak bins per channel do not carry an individual 1% relative-error claim. Overall spectral RMS is separately evaluated.",
+    "No physical power-off cold boot, sensor installation, mechanical fault accuracy or manual touch acceptance is established by this numerical test.",
+    "Additional board verification was stopped at the user request; future validation belongs to the user."
+  ]
+}

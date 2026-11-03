@@ -1,14 +1,14 @@
 # 第三方来源与许可说明
 
-项目原创部分采用 [MIT](LICENSE)。以下第三方和派生组件保留自己的版权、许可条件及免责条款；根目录许可证不覆盖这些声明。
+项目原创部分采用 [MIT](license.txt)。以下第三方和派生组件保留自己的版权、许可条件及免责条款；根目录许可证不覆盖这些声明。
 
 ## 随源码提供的组件
 
 | 组件/文件 | 许可与处理 |
 |---|---|
-| Digilent rgb2dvi | 2014 Digilent BSD-3-Clause，保留 `fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt` 及源码原头；上游仓库根 MIT 不替换这个 IP 的 BSD 声明 |
-| Linux 采集、分析、显示驱动 | `.c` 文件按 GPL-2.0-only 等原头；相关 UAPI 另按 MIT 等逐文件声明。文本见 `licenses/linux/` 和 `workspace/zynq_vibration/hardware/display/driver/LICENSE` |
-| Qt ax7zfb 配套 | `workspace/zynq_vibration/linux/qt-ax7zfb/`、`qt-ax7zfb-direct/` 保留 LGPL-3.0-only；准备脚本从匹配 Qt 源生成 integration 派生文件并保留原头，许可文本见 `licenses/qt5base/` |
+| Digilent rgb2dvi | 2014 Digilent BSD-3-Clause，保留 `src/fpga-effective/source/display/vendor/rgb2dvi/LICENSE.txt` 及源码原头；上游仓库根 MIT 不替换这个 IP 的 BSD 声明 |
+| Linux 采集、分析、显示驱动 | `.c` 文件按 GPL-2.0-only 等原头；相关 UAPI 另按 MIT 等逐文件声明。文本见 `licenses/linux/` 和 `src/workspace/zynq_vibration/hardware/display/driver/LICENSE` |
+| Qt ax7zfb 配套 | `src/workspace/zynq_vibration/linux/qt-ax7zfb/`、`qt-ax7zfb-direct/` 保留 LGPL-3.0-only；准备脚本从匹配 Qt 源生成 integration 派生文件并保留原头，许可文本见 `licenses/qt5base/` |
 | DTS/DTSI、U-Boot 板级头及补丁 | 保留文件已有 GPL-2.0-or-later 等声明及被修改上游的适用许可 |
 | Buildroot external 配置与 recipe | 项目原创配置、脚本采用 MIT，修改上游部分按原许可；Buildroot 本体文本见 `licenses/buildroot/copying.txt` |
 

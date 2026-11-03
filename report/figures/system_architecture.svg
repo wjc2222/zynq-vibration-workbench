@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#638f93"/></marker></defs><rect width="2400" height="1500" fill="white"/>
+<text x="1200" y="67.08" text-anchor="middle" font-family="Microsoft YaHei" font-size="52" font-weight="700" fill="#284d50">系统总体架构</text>
+<text x="1200" y="119.53999999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">原码采集保存、PS 送料分析与显示通路协同工作</text>
+<rect x="70" y="167.7" width="600" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="370.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">传感与外设</text>
+<rect x="800" y="167.7" width="700" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="1150.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">PL · FPGA</text>
+<rect x="1590" y="167.7" width="740" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="1960.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">PS · ARM Linux</text>
+<rect x="100" y="288.1" width="540" height="133.3" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="370.0" y="343.49260000000004" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">三轴 IEPE 振动传感器</text>
+<text x="370.0" y="385.8906" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">调理 → AD7606：V1 / V3 / V5</text>
+<rect x="100" y="559.0" width="540" height="124.7" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="370.0" y="609.4304" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">霍尔转速传感器</text>
+<text x="370.0" y="654.3224" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">整形与电平调理</text>
+<rect x="100" y="829.9" width="540" height="137.6" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="370.0" y="887.4426000000001" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">板载时钟与复位</text>
+<text x="370.0" y="929.8406" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">采集 50 MHz / 分析 100 MHz</text>
+<rect x="100" y="1066.4" width="540" height="103.2" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="370.0" y="1127.9415999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">HDMI 显示屏 + USB 触摸</text>
+<rect x="840" y="288.1" width="620" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1150.0" y="333.04359999999997" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">采集控制 · 50 MHz</text>
+<text x="1150.0" y="375.4416" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">AD7606 读取 + 转速计数</text>
+<text x="1150.0" y="417.8396" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">capture_stream：32 字节帧</text>
+<rect x="840" y="524.6" width="620" height="120.39999999999999" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1150.0" y="572.8804" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">AXI DMA · S2MM / SG</text>
+<text x="1150.0" y="617.7724000000001" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">经 HP1 写入 PS DDR</text>
+<rect x="840" y="752.5" width="620" height="197.79999999999998" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1150.0" y="797.7445999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">PS 送料分析 · 100 MHz</text>
+<text x="1150.0" y="840.1425999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">AXI-Lite → 512 帧 FIFO</text>
+<text x="1150.0" y="882.5405999999998" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">FIR / 统计 → Hann / FFT / 频带</text>
+<text x="1150.0" y="924.9385999999998" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">结果冻结后由 PS 读取</text>
+<rect x="840" y="1057.8" width="620" height="111.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1150.0" y="1102.4425999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">VDMA · HP0 / VTC</text>
+<text x="1150.0" y="1144.8405999999998" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">rgb2dvi → HDMI</text>
+<rect x="1630" y="288.1" width="660" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1960.0" y="333.04359999999997" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">DDR 缓冲与采集服务</text>
+<text x="1960.0" y="375.4416" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">完整性检查 / 原码 SD 记录</text>
+<text x="1960.0" y="417.8396" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">PS 组织分析窗口</text>
+<rect x="1630" y="752.5" width="660" height="197.79999999999998" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1960.0" y="817.0344" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">PL 结果 → 69 维特征</text>
+<text x="1960.0" y="861.9264" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">RF42 现场训练与推理</text>
+<text x="1960.0" y="906.8184" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">四类状态 / 证据 / 警告</text>
+<rect x="1630" y="1049.2" width="660" height="120.39999999999999" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1960.0" y="1098.1426" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">Qt 工作台 / 帧缓冲</text>
+<text x="1960.0" y="1140.5405999999998" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">DDR 图像 + USB 触摸交互</text>
+<path d="M 640 352.6 L 840 352.6" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 640 620.92 L 735 620.92 L 735 408.5 L 840 408.5" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1150 442.9 L 1150 524.6" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1460 584.8 L 1540 584.8 L 1540 365.5 L 1630 365.5" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1960 442.9 L 1960 752.5" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1630 804.1 L 1460 804.1" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1460 894.4 L 1630 894.4" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1960 950.3 L 1960 1049.2" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1630 1100.8 L 1460 1100.8" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 840 1118.0 L 640 1118.0" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 640 1152.4 L 735 1152.4 L 735 1186.8 L 2310 1186.8 L 2310 1075.0 L 2290 1075.0" fill="none" stroke="#638f93" stroke-width="2.5" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 640 894.4 L 765 894.4 L 765 473.0 L 860 473.0 L 860 442.9" fill="none" stroke="#638f93" stroke-width="2.5" stroke-dasharray="12 10" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 765 894.4 L 795 894.4 L 795 860.0 L 840 860.0" fill="none" stroke="#638f93" stroke-width="2.5" stroke-dasharray="12 10" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 110 1322.68 L 210 1322.68" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="235" y="1333.0" text-anchor="start" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">数据流</text>
+<path d="M 530 1322.68 L 630 1322.68" fill="none" stroke="#638f93" stroke-width="2.5" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="655" y="1333.0" text-anchor="start" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">控制 / 读取</text>
+<path d="M 1070 1322.68 L 1170 1322.68" fill="none" stroke="#638f93" stroke-width="2.5" stroke-dasharray="12 10" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<text x="1195" y="1333.0" text-anchor="start" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">时钟 / 复位</text>
+<text x="1200" y="1406.1" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">分析入口为 PS 送料；采集保存独立运行。各通路按实际接口与地址映射验收。</text></svg>

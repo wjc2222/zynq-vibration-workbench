@@ -1,0 +1,451 @@
+{
+  "schema": "zynq_vibration.public_evidence_provenance.v1",
+  "source_archive": "zynq_vibration_submission_20261103",
+  "policy": "Original and public SHA256. Numerical values unchanged. Identified private source-path/header redaction only; board receipt is an explicitly bounded summary. Raw private receipts are not included.",
+  "files": [
+    {
+      "source": "build/reports/cdc.rpt",
+      "public": "build/reports/cdc.rpt",
+      "original_sha256": "5983e8402a382b45ddb426dcbda4cb7ebdc6bfbf397c32932848c27f7b41a1c5",
+      "public_sha256": "423126bf0c2cebdd1543de75061a0d31a8c6c4704ad5eeb77768c6155c01d757",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/clocks.rpt",
+      "public": "build/reports/clocks.rpt",
+      "original_sha256": "0f2600dd0cdc25984510431978e56b17867c41953eee5be933b3ceb8f54373c4",
+      "public_sha256": "cafa82ae45b5313e93ffd6694e8e7a09ece8fbb2c65cb7169e9e57e580333c6a",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/clock_utilization.rpt",
+      "public": "build/reports/clock_utilization.rpt",
+      "original_sha256": "d0a95ecb4dac1ac3ea00c0d90fd7730d461ad6b37f86a6e65802109a23cb1604",
+      "public_sha256": "108a31ad873f6091e2ff62bb2299701aeaeb04f5c9e9e923b979ff90e915d992",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/drc.rpt",
+      "public": "build/reports/drc.rpt",
+      "original_sha256": "e0d0d93dc46b6b11ed932c5d8a683da709c107101d9bc897d92b235c32557020",
+      "public_sha256": "faeb0028eff2b354cdac9e8b6267199ce765f359c671e9cbb1e9f868bbd68754",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/fir_performance_verification.json",
+      "public": "build/reports/fir_performance_verification.json",
+      "original_sha256": "abc904f1fb90be4993545a7bd8bd4f7aa5e7f777d2064c99db10e2724cd1b1f7",
+      "public_sha256": "abc904f1fb90be4993545a7bd8bd4f7aa5e7f777d2064c99db10e2724cd1b1f7",
+      "changes": []
+    },
+    {
+      "source": "build/reports/implementation_manifest.json",
+      "public": "build/reports/implementation_manifest.json",
+      "original_sha256": "b55e4d722834f3b03d051660edc7e2e96e440e7d4c45cf23515cb10ad180afd8",
+      "public_sha256": "9e7bcf83f1717ef71bde1b1a6a9ec2319f80c21dfc3df34c4f566f7061b2fb05",
+      "changes": [
+        "Identified absolute host source path fields redacted; numerical values unchanged."
+      ]
+    },
+    {
+      "source": "build/reports/io.rpt",
+      "public": "build/reports/io.rpt",
+      "original_sha256": "16408a6f8daa992ae2fa5bd9259ceb5f2047b7b295b8b15e4ff8c43d03205382",
+      "public_sha256": "215ab6d222fe4cf0c2f6f1f3b06e7292425f56849da804c9e617211ac1c9e1d3",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/methodology.rpt",
+      "public": "build/reports/methodology.rpt",
+      "original_sha256": "14de6fb9f20cfeb576e4da779d6289f3d32e1f77678fc8baaca65f5257ed135e",
+      "public_sha256": "6e6a9755f3eef6d7bc96ca7fd50f9e2f9cf98397b68786990d70defd433cfce1",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/numeric_verification.json",
+      "public": "build/reports/numeric_verification.json",
+      "original_sha256": "5dc72b7f26f95e3045b154de98b3b63643e324de7e13766ce7e5b23187c13f44",
+      "public_sha256": "5dc72b7f26f95e3045b154de98b3b63643e324de7e13766ce7e5b23187c13f44",
+      "changes": []
+    },
+    {
+      "source": "build/reports/preserved_platform_verification.json",
+      "public": "build/reports/preserved_platform_verification.json",
+      "original_sha256": "42dc8fe3fc68ea23ce814084f2a3714a63f5905b771d28033bacf287dffe04cd",
+      "public_sha256": "42dc8fe3fc68ea23ce814084f2a3714a63f5905b771d28033bacf287dffe04cd",
+      "changes": []
+    },
+    {
+      "source": "build/reports/timing_summary.rpt",
+      "public": "build/reports/timing_summary.rpt",
+      "original_sha256": "ce7e295b3de9d2450d2161f2b89d1b18d44d429407a9e1f70470c2007736800d",
+      "public_sha256": "94c3c54e412a1d428cd074929fa87b6b933d2ce906df29d5638a0721d67e5c01",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/utilization.rpt",
+      "public": "build/reports/utilization.rpt",
+      "original_sha256": "9f3084a558446e8cb62ddcfc843c179bef5428f93cfa363ada40a0186be410cb",
+      "public_sha256": "4220acd904bee60e57da8cb658a0f60d5f08c9988bd857b87c80dd214695efe5",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/performance/complete69_comparison.json",
+      "public": "build/reports/performance/complete69_comparison.json",
+      "original_sha256": "a8caf188101c3a0d5e946a65e88ab2ec96b1562b48f9438c867d14b31b372cd7",
+      "public_sha256": "a8caf188101c3a0d5e946a65e88ab2ec96b1562b48f9438c867d14b31b372cd7",
+      "changes": []
+    },
+    {
+      "source": "build/reports/performance/mmio_driver_comparison.json",
+      "public": "build/reports/performance/mmio_driver_comparison.json",
+      "original_sha256": "3d087ce6d578089003849e6f9095b0816f1b614551d1f6878de23584a7481e4c",
+      "public_sha256": "cf65512a4ba76bede241d80386d52fc9053a7d8aa17896bff0f68179a7e58dd9",
+      "changes": [
+        "Identified private absolute source paths and serial port fields redacted; all numerical, boolean and null values unchanged."
+      ]
+    },
+    {
+      "source": "build/reports/performance/mmio_independent_acceptance.json",
+      "public": "build/reports/performance/mmio_independent_acceptance.json",
+      "original_sha256": "ff9579a8ac914c00be3ef885e710efe798cc70774591e1f03dc143d9dc57a623",
+      "public_sha256": "660e5ac8a5dfac8580b0021e1e9e9811019910b087aacef38567fb3a245e1190",
+      "changes": [
+        "Identified absolute host source path fields redacted; numerical values unchanged."
+      ]
+    },
+    {
+      "source": "build/reports/performance/native_fixed_protocol_audit.json",
+      "public": "build/reports/performance/native_fixed_protocol_audit.json",
+      "original_sha256": "b0ac684cae90ad9b5427a87bfd9d67861337c08eeea75a404672ccfcef6709f0",
+      "public_sha256": "b0ac684cae90ad9b5427a87bfd9d67861337c08eeea75a404672ccfcef6709f0",
+      "changes": []
+    },
+    {
+      "source": "build/reports/synthesis/direct-ooc-ram.txt",
+      "public": "build/reports/synthesis/direct-ooc-ram.txt",
+      "original_sha256": "1f19afa25b26b1b3f09f75cd334663c05bff98788ac8e0b9ce24e8b44efe989b",
+      "public_sha256": "3b2f7bd96414773a017beca2c4c461a9fa7633770a771772a521d489e08459d3",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/synthesis/direct-ooc-timing.txt",
+      "public": "build/reports/synthesis/direct-ooc-timing.txt",
+      "original_sha256": "d4fa516fdf0427c91cccec41311d97a553190934704c9042f5a42190c082f2ca",
+      "public_sha256": "1d3c46b9579ed55e90bf27004d2279dd00624274478d0a130c1dcd65a2375044",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/synthesis/direct-ooc-utilization.txt",
+      "public": "build/reports/synthesis/direct-ooc-utilization.txt",
+      "original_sha256": "3225efbb93073412b658c65083f4540fd27dca7fde2dbf26ae792cf73691553a",
+      "public_sha256": "b6f951178f27907cae3e7ea1af837b8aedefb177fc5befee45214587bd9881f5",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/synthesis/symmetric-ooc-ram.txt",
+      "public": "build/reports/synthesis/symmetric-ooc-ram.txt",
+      "original_sha256": "a2a8892b5e15cd98cc8c00df1d1a605e184dc570117947df72c234fffc23116b",
+      "public_sha256": "18241b19a017e8f421184e18a13d1c1a3a5d15d8ace637bb2b4a9d106d129e88",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/synthesis/symmetric-ooc-timing.txt",
+      "public": "build/reports/synthesis/symmetric-ooc-timing.txt",
+      "original_sha256": "488a2345f0f97c1aba5645a57ec387495d5e6193f8959b5f271304b8a625f02b",
+      "public_sha256": "d9449a410acc7ba9f5468dbb99c43518281395e250ff294c3014ebf89129c9c4",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "build/reports/synthesis/symmetric-ooc-utilization.txt",
+      "public": "build/reports/synthesis/symmetric-ooc-utilization.txt",
+      "original_sha256": "934d4662941d075bdcdbc9ab28cffc91a547afc535f7662d53d0040cc7f6a3ae",
+      "public_sha256": "b1a52c47630a4a1476cf57738dbe9ce3ad99e1ffc1b1cba283dcf4c24da9e529",
+      "changes": [
+        "Vivado report Host/Command header fields and identified absolute XDC source prefix redacted; numerical values and source filename/line references preserved."
+      ]
+    },
+    {
+      "source": "board/numeric_acceptance.json",
+      "public": "board/numeric_acceptance.json",
+      "original_sha256": "16515e3c3daa5405fa74a2189071f91f296347638876e5d8c5a08884b5de4602",
+      "public_sha256": "16515e3c3daa5405fa74a2189071f91f296347638876e5d8c5a08884b5de4602",
+      "changes": []
+    },
+    {
+      "source": "board/deployment_receipt.json",
+      "public": "board/deployment_observations.json",
+      "original_sha256": "1da22dede5a560f93b836faa3b218516c550c0f43147ecdf0599e8407c489629",
+      "public_sha256": "4e79ef19d8904b1b5a05af6050d7c5dacdaf7db62cb689dcad4533fcd7cf6f0a",
+      "changes": [
+        "Bounded public observation summary; private unit identity, raw transcripts, filesystem inventory and artifact inventory omitted."
+      ]
+    },
+    {
+      "source": "data/generate_capture_fixture.py",
+      "public": "data/generate_capture_fixture.py",
+      "original_sha256": "cec82d07118375cc8f18caa89f234ae7182cf39336873d2962c2031bcfe3c9a7",
+      "public_sha256": "cec82d07118375cc8f18caa89f234ae7182cf39336873d2962c2031bcfe3c9a7",
+      "changes": []
+    },
+    {
+      "source": "data/generate_numeric_multisine.py",
+      "public": "data/generate_numeric_multisine.py",
+      "original_sha256": "8e611b3d811803dcc8637765aa514dfef628ba36a7a042f8a479a758735f4a22",
+      "public_sha256": "8e611b3d811803dcc8637765aa514dfef628ba36a7a042f8a479a758735f4a22",
+      "changes": []
+    },
+    {
+      "source": "data/multisine_reference_proof.cpp",
+      "public": "data/multisine_reference_proof.cpp",
+      "original_sha256": "3a073041c17193b01e5dbef984ddcd72437a8db436958085e47993db024fbfa2",
+      "public_sha256": "3a073041c17193b01e5dbef984ddcd72437a8db436958085e47993db024fbfa2",
+      "changes": []
+    },
+    {
+      "source": "data/synthetic_numeric_host_reference.json",
+      "public": "data/synthetic_numeric_host_reference.json",
+      "original_sha256": "81e7e25de47b93dc04561f9edeb0a753d7ec209fb43af012c3ec37402ca55a8f",
+      "public_sha256": "81e7e25de47b93dc04561f9edeb0a753d7ec209fb43af012c3ec37402ca55a8f",
+      "changes": []
+    },
+    {
+      "source": "data/synthetic_numeric_multisine_50k_s16le3.bin",
+      "public": "data/synthetic_numeric_multisine_50k_s16le3.bin",
+      "original_sha256": "02fe2c7c661375e46de4adc766525950116c97bbec1effa0b14ce133527b002a",
+      "public_sha256": "02fe2c7c661375e46de4adc766525950116c97bbec1effa0b14ce133527b002a",
+      "changes": []
+    },
+    {
+      "source": "data/synthetic_numeric_multisine_proof.json",
+      "public": "data/synthetic_numeric_multisine_proof.json",
+      "original_sha256": "427d30152e341162f9f6f338ce67729dbbfcef9ef23f3df068a82376b8313f25",
+      "public_sha256": "427d30152e341162f9f6f338ce67729dbbfcef9ef23f3df068a82376b8313f25",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/01_adc_interface.png",
+      "public": "sim/xsim/01_adc_interface.png",
+      "original_sha256": "e31c70667c5c0069b3efbe0fcec9b5b14ddc9ed8d10e4f39b77ef6d58bac7679",
+      "public_sha256": "e31c70667c5c0069b3efbe0fcec9b5b14ddc9ed8d10e4f39b77ef6d58bac7679",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/02_adc_faults.png",
+      "public": "sim/xsim/02_adc_faults.png",
+      "original_sha256": "798f40f47e2f8f4ce3393125960267aaf01df5bf54a8375f005b6b0c7c4e5043",
+      "public_sha256": "798f40f47e2f8f4ce3393125960267aaf01df5bf54a8375f005b6b0c7c4e5043",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/03_speed_filter_period.png",
+      "public": "sim/xsim/03_speed_filter_period.png",
+      "original_sha256": "2c083617d84e2525155d8e2c5f771d8acbd25188cded6368ce38bb61c905318a",
+      "public_sha256": "2c083617d84e2525155d8e2c5f771d8acbd25188cded6368ce38bb61c905318a",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/04_speed_timeout.png",
+      "public": "sim/xsim/04_speed_timeout.png",
+      "original_sha256": "71c193e736f55442fe887a1f5907928382a6c8d1ce69c097e6c97829748b0076",
+      "public_sha256": "71c193e736f55442fe887a1f5907928382a6c8d1ce69c097e6c97829748b0076",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/05_raw32_packet.png",
+      "public": "sim/xsim/05_raw32_packet.png",
+      "original_sha256": "0bd7e3a4d23403a21140f6c0452b5faf144ce1477196261a26c0957e26acdf0a",
+      "public_sha256": "0bd7e3a4d23403a21140f6c0452b5faf144ce1477196261a26c0957e26acdf0a",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/05b_raw32_code_detail.png",
+      "public": "sim/xsim/05b_raw32_code_detail.png",
+      "original_sha256": "f033eacfb86ea47e70b0076bd3ec77aa404a492b295f1a2ed338d5958df2bc98",
+      "public_sha256": "f033eacfb86ea47e70b0076bd3ec77aa404a492b295f1a2ed338d5958df2bc98",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/01b_adc_readout_detail.png",
+      "public": "sim/xsim/01b_adc_readout_detail.png",
+      "original_sha256": "4ca081572f24c3a21210f8a524edc077d090e45b55d5032b1daf1fdffd9777d8",
+      "public_sha256": "4ca081572f24c3a21210f8a524edc077d090e45b55d5032b1daf1fdffd9777d8",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/06_stream_stop_rollover.png",
+      "public": "sim/xsim/06_stream_stop_rollover.png",
+      "original_sha256": "2abd0cc0f1a418690684092cd39d01ec9f719e6a1f4dc56b98086460a92ea90c",
+      "public_sha256": "2abd0cc0f1a418690684092cd39d01ec9f719e6a1f4dc56b98086460a92ea90c",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/15_capture_axi_control.png",
+      "public": "sim/xsim/15_capture_axi_control.png",
+      "original_sha256": "36344c23a9a046ff5394aafce0ab109e5639f2218393acef6bbe1cf076c2bd57",
+      "public_sha256": "36344c23a9a046ff5394aafce0ab109e5639f2218393acef6bbe1cf076c2bd57",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/08_stream_40ms_boundary.png",
+      "public": "sim/xsim/08_stream_40ms_boundary.png",
+      "original_sha256": "e22d1453f46c8f4715bd5bd7e14a95f4628f47947bd1454732ed9c9292b84207",
+      "public_sha256": "e22d1453f46c8f4715bd5bd7e14a95f4628f47947bd1454732ed9c9292b84207",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/09_mmcm_clocks.png",
+      "public": "sim/xsim/09_mmcm_clocks.png",
+      "original_sha256": "bcbc1d5b64195e20782f2389c359ea0140ac5de89026012cc29ed8dbf560c11c",
+      "public_sha256": "bcbc1d5b64195e20782f2389c359ea0140ac5de89026012cc29ed8dbf560c11c",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/10_display_status.png",
+      "public": "sim/xsim/10_display_status.png",
+      "original_sha256": "05f2fa944680d40781ecada2f0602aa390ae6742a16d0d1a1b4939407cfb1191",
+      "public_sha256": "05f2fa944680d40781ecada2f0602aa390ae6742a16d0d1a1b4939407cfb1191",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/11_tmds_control.png",
+      "public": "sim/xsim/11_tmds_control.png",
+      "original_sha256": "3ae0f3c860375fcb317a22199b3804db1dfc9eed2fb92dcbb7fc1c9b22db0bd8",
+      "public_sha256": "3ae0f3c860375fcb317a22199b3804db1dfc9eed2fb92dcbb7fc1c9b22db0bd8",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/12_tmds_active_encoding.png",
+      "public": "sim/xsim/12_tmds_active_encoding.png",
+      "original_sha256": "d385e787482a1a7dfc9d7a290b1bcabf445bdfd5056b8d9ea09928b425678f26",
+      "public_sha256": "d385e787482a1a7dfc9d7a290b1bcabf445bdfd5056b8d9ea09928b425678f26",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/13_vtc_line_timing.png",
+      "public": "sim/xsim/13_vtc_line_timing.png",
+      "original_sha256": "1efca67c52b66f5b1d1bbc7b13675de35ff6de101a2c24e2e0c024cc6da6214a",
+      "public_sha256": "1efca67c52b66f5b1d1bbc7b13675de35ff6de101a2c24e2e0c024cc6da6214a",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/14_vtc_frame_timing.png",
+      "public": "sim/xsim/14_vtc_frame_timing.png",
+      "original_sha256": "ce1bbc8f4bc6971aa67b7b1b0ec09a2a27e92467586a72fbe8c51b79215d37ca",
+      "public_sha256": "ce1bbc8f4bc6971aa67b7b1b0ec09a2a27e92467586a72fbe8c51b79215d37ca",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/17_dma_sg_descriptor.png",
+      "public": "sim/xsim/17_dma_sg_descriptor.png",
+      "original_sha256": "338774bf95626ed6161f331d52c48c6263a2b9fe9cf98616e2ea1d90a529c64d",
+      "public_sha256": "338774bf95626ed6161f331d52c48c6263a2b9fe9cf98616e2ea1d90a529c64d",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/18_dma_s2mm_write.png",
+      "public": "sim/xsim/18_dma_s2mm_write.png",
+      "original_sha256": "58cfe55f1a15767b32c040a280ef735c490ecdcb535d07f74af75f6eafb5fff4",
+      "public_sha256": "58cfe55f1a15767b32c040a280ef735c490ecdcb535d07f74af75f6eafb5fff4",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/19_vdma_read_pixels.png",
+      "public": "sim/xsim/19_vdma_read_pixels.png",
+      "original_sha256": "8dc100321112bfcd83ec98bd44ee5c7f8eddfa94273ea63ffb7211a487de4577",
+      "public_sha256": "8dc100321112bfcd83ec98bd44ee5c7f8eddfa94273ea63ffb7211a487de4577",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/20_video_out_pixels.png",
+      "public": "sim/xsim/20_video_out_pixels.png",
+      "original_sha256": "aac31953be79a3dca64841fc97623360a990ae06986aa037e79bbc01cbc3da03",
+      "public_sha256": "aac31953be79a3dca64841fc97623360a990ae06986aa037e79bbc01cbc3da03",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/21_analysis_axi.png",
+      "public": "sim/xsim/21_analysis_axi.png",
+      "original_sha256": "cd9a073bb913abb80c44ec0c224b9bae9246bd33a57eea569b08e95d623b15b1",
+      "public_sha256": "cd9a073bb913abb80c44ec0c224b9bae9246bd33a57eea569b08e95d623b15b1",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/22_analysis_fir.png",
+      "public": "sim/xsim/22_analysis_fir.png",
+      "original_sha256": "eeaf3ef37be3788add5bdf48f9fe06eadcaa80e5238d23dc216f7713f592862a",
+      "public_sha256": "eeaf3ef37be3788add5bdf48f9fe06eadcaa80e5238d23dc216f7713f592862a",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/23_analysis_stats.png",
+      "public": "sim/xsim/23_analysis_stats.png",
+      "original_sha256": "cf4a3b05cb875224e4deca187f0b32603d8506b4ce42aa10fb52df65331f8a13",
+      "public_sha256": "cf4a3b05cb875224e4deca187f0b32603d8506b4ce42aa10fb52df65331f8a13",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/24_analysis_hann.png",
+      "public": "sim/xsim/24_analysis_hann.png",
+      "original_sha256": "0b2d5b6f6160175feedd15bc7509309ebdf740ef15a23f9087519b625a8f7590",
+      "public_sha256": "0b2d5b6f6160175feedd15bc7509309ebdf740ef15a23f9087519b625a8f7590",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/25_analysis_fft.png",
+      "public": "sim/xsim/25_analysis_fft.png",
+      "original_sha256": "4fa081321340d2b360bcfca22a2e45fa560cb3a0b2013f4af5fd27cea1243ed4",
+      "public_sha256": "4fa081321340d2b360bcfca22a2e45fa560cb3a0b2013f4af5fd27cea1243ed4",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/26_analysis_power.png",
+      "public": "sim/xsim/26_analysis_power.png",
+      "original_sha256": "9ed239d3fcf599715261014d07b9c7aa734fedad1b2bba369d68c7fd7eed6820",
+      "public_sha256": "9ed239d3fcf599715261014d07b9c7aa734fedad1b2bba369d68c7fd7eed6820",
+      "changes": []
+    },
+    {
+      "source": "sim/xsim/27_analysis_result.png",
+      "public": "sim/xsim/27_analysis_result.png",
+      "original_sha256": "c513705deffccc94f541e97be8b10601103cc1037f1a3190c0d85f302831af8b",
+      "public_sha256": "c513705deffccc94f541e97be8b10601103cc1037f1a3190c0d85f302831af8b",
+      "changes": []
+    },
+    {
+      "source": "sim/screenshot_mapping.json",
+      "public": "sim/screenshot_mapping.json",
+      "original_sha256": "bea565320d008cc21fa49a858962743b8a17acb8340c8ffc026d704bf69f337b",
+      "public_sha256": "4c91513356241e40dd0b2a93d4bcd85c450afa7d44fda1f8696565f84f411a4e",
+      "changes": [
+        "Public crop mapping; private absolute source paths omitted; original/WCFG/WDB hashes and version scope preserved; excluded originals/WCFG are not claimed present."
+      ]
+    }
+  ]
+}

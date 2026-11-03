@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#638f93"/></marker></defs><rect width="2400" height="1500" fill="white"/>
+<text x="1200" y="67.08" text-anchor="middle" font-family="Microsoft YaHei" font-size="52" font-weight="700" fill="#284d50">PS 现场训练、独立验证与在线检测</text>
+<text x="1200" y="119.53999999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">统一特征配置；会话分组隔离；随机森林使用 42 维时域 / 频域特征</text>
+<rect x="70" y="167.7" width="620" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="380.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">样本与质量</text>
+<rect x="820" y="167.7" width="760" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="1200.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">现场训练与验证</text>
+<rect x="1710" y="167.7" width="620" height="1040.6" rx="5" fill="#fbfdfd" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="2020.0" y="223.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="42" font-weight="700" fill="#284d50">在线检测与报告</text>
+<rect x="110" y="283.8" width="540" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="380.0" y="324.92519999999996" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="700" fill="#284d50">四类标签</text>
+<text x="380.0" y="372.3112" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="400" fill="#284d50">正常 / 不平衡</text>
+<text x="380.0" y="419.69719999999995" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="400" fill="#284d50">不对中 / 松动</text>
+<rect x="110" y="584.8" width="540" height="172.0" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="380.0" y="638.3436" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">原始采集记录</text>
+<text x="380.0" y="680.7416" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">完整性 / 采样率 / 配置</text>
+<text x="380.0" y="723.1396" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">来源会话 ID 与数据身份</text>
+<rect x="110" y="920.1999999999999" width="540" height="163.4" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="380.0" y="969.4436" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">统一分析窗口</text>
+<text x="380.0" y="1011.8416" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">PS 送料 → PL 运算</text>
+<text x="380.0" y="1054.2395999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">形成 69 维统一特征</text>
+<rect x="860" y="283.8" width="680" height="172.0" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="333.5252" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="700" fill="#284d50">按采集会话分组</text>
+<text x="1200.0" y="380.9112" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="400" fill="#284d50">训练组与独立留出组</text>
+<text x="1200.0" y="428.2972" text-anchor="middle" font-family="Microsoft YaHei" font-size="38" font-weight="400" fill="#284d50">同源窗口不跨组</text>
+<rect x="860" y="593.4" width="680" height="163.4" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="640.7343999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">统一 69 维特征定义</text>
+<text x="1200.0" y="685.6264" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">选择 42 维时域 / 频域</text>
+<text x="1200.0" y="730.5183999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">训练随机森林 RF42</text>
+<rect x="860" y="937.4" width="680" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="1200.0" y="982.3435999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">模型冻结与保存</text>
+<text x="1200.0" y="1024.7415999999998" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">模型身份 / 配置 / 样本来源</text>
+<text x="1200.0" y="1067.1396" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">独立留出会话评分</text>
+<rect x="1750" y="283.8" width="540" height="154.8" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="326.8344" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">新的检测窗口</text>
+<text x="2020.0" y="371.7264" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">同配置的 PL 分析</text>
+<text x="2020.0" y="416.6184" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">统一 69 维特征</text>
+<rect x="1750" y="593.4" width="540" height="163.4" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="640.7343999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">加载冻结 RF42</text>
+<text x="2020.0" y="685.6264" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">输入选定 42 维特征</text>
+<text x="2020.0" y="730.5183999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">输出四类评分</text>
+<rect x="1750" y="937.4" width="540" height="180.6" rx="5" fill="#e7f5f7" stroke="#638f93" stroke-width="2.5"/>
+<text x="2020.0" y="974.0446" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="700" fill="#284d50">状态与分析报告</text>
+<text x="2020.0" y="1016.4425999999999" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">正常 / 不平衡</text>
+<text x="2020.0" y="1058.8405999999998" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">不对中 / 松动</text>
+<text x="2020.0" y="1101.2385999999997" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">证据 / 警告 / 数据来源</text>
+<path d="M 380 438.59999999999997 L 380 584.8" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 380 756.8 L 380 920.1999999999999" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 650 657.9 L 755 657.9 L 755 365.5 L 860 365.5" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 650 997.6 L 780 997.6 L 780 675.1 L 860 675.1" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1200 455.8 L 1200 593.4" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1200 756.8 L 1200 937.4" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 2020 438.59999999999997 L 2020 593.4" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 1540 1014.8 L 1645 1014.8 L 1645 675.1 L 1750 675.1" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<path d="M 2020 756.8 L 2020 937.4" fill="none" stroke="#638f93" stroke-width="4.2" marker-end="url(#arrow)" stroke-linejoin="round"/>
+<rect x="70" y="1247.0" width="2260" height="129.0" rx="5" fill="#f3fafb" stroke="#bfd4d6" stroke-width="2.5"/>
+<text x="1200" y="1298.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="700" fill="#284d50">转速用于显示与辅助信息；当前监督分类不以 RPM 门控。</text>
+<text x="1200" y="1350.2" text-anchor="middle" font-family="Microsoft YaHei" font-size="36" font-weight="400" fill="#284d50">独立留出标签仅用于评分；训练回放须明确标识。</text>
+<text x="1200" y="1427.6" text-anchor="middle" font-family="Microsoft YaHei" font-size="34" font-weight="400" fill="#284d50">主机或合成输入的检查记录，不等同于真实机械故障识别精度。</text></svg>

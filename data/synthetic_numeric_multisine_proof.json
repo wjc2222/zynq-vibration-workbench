@@ -1,0 +1,167 @@
+{
+  "schema": "ax7z020.v7.synthetic-numeric-fixture.v1",
+  "synthetic": true,
+  "scope": "Engineering numeric comparison only; NOT measured machine/sensor data, training data, model validation or fault accuracy",
+  "sample_rate_hz": 50000,
+  "frames": 82551,
+  "channels": 3,
+  "layout": "chronological frame-interleaved CH1 CH2 CH3 signed int16 little endian, no header",
+  "bytes": 495306,
+  "sha256": "02fe2c7c661375e46de4adc766525950116c97bbec1effa0b14ce133527b002a",
+  "rotation_hz": 25,
+  "tones": [
+    {
+      "order": 0.5,
+      "bin": 20,
+      "frequency_hz": 12.20703125,
+      "amplitude_CH1_ADC": 1200,
+      "band_first_bin": 19,
+      "band_last_bin": 21,
+      "phase_radians": 0.0
+    },
+    {
+      "order": 1,
+      "bin": 41,
+      "frequency_hz": 25.0244140625,
+      "amplitude_CH1_ADC": 1240,
+      "band_first_bin": 40,
+      "band_last_bin": 42,
+      "phase_radians": -0.0
+    },
+    {
+      "order": 1.5,
+      "bin": 61,
+      "frequency_hz": 37.2314453125,
+      "amplitude_CH1_ADC": 1280,
+      "band_first_bin": 60,
+      "band_last_bin": 62,
+      "phase_radians": -0.483321946706122
+    },
+    {
+      "order": 2,
+      "bin": 82,
+      "frequency_hz": 50.048828125,
+      "amplitude_CH1_ADC": 1320,
+      "band_first_bin": 81,
+      "band_last_bin": 83,
+      "phase_radians": -1.4499658401183662
+    },
+    {
+      "order": 2.5,
+      "bin": 102,
+      "frequency_hz": 62.255859375,
+      "amplitude_CH1_ADC": 1360,
+      "band_first_bin": 101,
+      "band_last_bin": 103,
+      "phase_radians": -2.8999316802367323
+    },
+    {
+      "order": 3,
+      "bin": 123,
+      "frequency_hz": 75.0732421875,
+      "amplitude_CH1_ADC": 1400,
+      "band_first_bin": 122,
+      "band_last_bin": 124,
+      "phase_radians": -4.8332194670612205
+    },
+    {
+      "order": 4,
+      "bin": 164,
+      "frequency_hz": 100.09765625,
+      "amplitude_CH1_ADC": 1440,
+      "band_first_bin": 163,
+      "band_last_bin": 165,
+      "phase_radians": -7.2498292005918294
+    },
+    {
+      "order": 5,
+      "bin": 205,
+      "frequency_hz": 125.1220703125,
+      "amplitude_CH1_ADC": 1480,
+      "band_first_bin": 204,
+      "band_last_bin": 206,
+      "phase_radians": -10.149760880828563
+    },
+    {
+      "order": 6,
+      "bin": 246,
+      "frequency_hz": 150.146484375,
+      "amplitude_CH1_ADC": 1520,
+      "band_first_bin": 245,
+      "band_last_bin": 247,
+      "phase_radians": -13.533014507771416
+    },
+    {
+      "order": 7,
+      "bin": 287,
+      "frequency_hz": 175.1708984375,
+      "amplitude_CH1_ADC": 1560,
+      "band_first_bin": 286,
+      "band_last_bin": 288,
+      "phase_radians": -17.399590081420392
+    },
+    {
+      "order": 8,
+      "bin": 328,
+      "frequency_hz": 200.1953125,
+      "amplitude_CH1_ADC": 1600,
+      "band_first_bin": 327,
+      "band_last_bin": 329,
+      "phase_radians": -21.749487601775492
+    },
+    {
+      "order": 9,
+      "bin": 369,
+      "frequency_hz": 225.2197265625,
+      "amplitude_CH1_ADC": 1640,
+      "band_first_bin": 368,
+      "band_last_bin": 370,
+      "phase_radians": -26.582707068836708
+    },
+    {
+      "order": 10,
+      "bin": 410,
+      "frequency_hz": 250.244140625,
+      "amplitude_CH1_ADC": 1680,
+      "band_first_bin": 409,
+      "band_last_bin": 411,
+      "phase_radians": -31.899248482604055
+    }
+  ],
+  "amplitude_scales": [
+    1,
+    0.8,
+    0.6
+  ],
+  "DC_ADC": [
+    100,
+    -150,
+    75
+  ],
+  "observed_minimum_ADC": [
+    -8871,
+    -7236,
+    -5319
+  ],
+  "observed_maximum_ADC": [
+    9036,
+    6814,
+    5069
+  ],
+  "raw_rms_ADC": [
+    3688.485730111456,
+    2958.5805847995002,
+    2218.899005724214
+  ],
+  "conservative_peak_bounds_ADC": [
+    18820.5,
+    15126.5,
+    11307.5
+  ],
+  "raw_ADC_endpoints": 0,
+  "CLI_noise_floor_or_tolerances_changed": false,
+  "coherence_proof": "f_k=k*5000/8192; decimation10 gives 8192-sample analysis integer bin; full FIR history prevents startup transient",
+  "band_coverage_proof": "Each nearest integer analysis bin is explicitly verified inside its unchanged CLI +/-1.5-bin order band; reference bins4..819 contain all13 tones",
+  "suggested_command": "vibration-accel-cli --backend hardware --fs 50000 --raw /tmp/v7-new-board-20261103/SYNTHETIC-numeric-multisine-50k-82551-s16le3.bin --rotation-hz 25 --compare",
+  "hardware_tested_by_generator": false
+}
